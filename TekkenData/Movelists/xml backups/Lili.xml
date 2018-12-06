@@ -1,0 +1,1924 @@
+<?xml version="1.0" ?>
+<character id="15" name="Lili" version="0">
+	<moves>
+		<move>
+			<id>1</id>
+			<name>Command</name>
+			<command>Command</command>
+			<hitLevel>Hit level</hitLevel>
+			<damage>Damage</damage>
+			<StartUp>Start up frame</StartUp>
+			<BlockFrame>Block frame</BlockFrame>
+			<HitFrame>Hit frame</HitFrame>
+			<CounterHitFrame>Counter hit frame</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Notes/>
+			</tags>
+		</move>
+		<move>
+			<id>2</id>
+			<name>in rage 3+4</name>
+			<command>in rage 3+4</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>55</damage>
+			<StartUp>20 pc8~17 js8~</StartUp>
+			<BlockFrame>-22</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-22</Punishable>
+				<RageArt/>
+			</tags>
+		</move>
+		<move>
+			<id>3</id>
+			<name>in rage d/f+3+4, 3</name>
+			<command>in rage d/f+3+4, 5, +3</command>
+			<hitLevel>m, h</hitLevel>
+			<damage>14,26</damage>
+			<StartUp>20 8~17 8~</StartUp>
+			<BlockFrame>+9~+10</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<RageArt/>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>4</id>
+			<name>1</name>
+			<command>+1</command>
+			<hitLevel>h</hitLevel>
+			<damage>7</damage>
+			<StartUp>10</StartUp>
+			<BlockFrame>+1</BlockFrame>
+			<HitFrame>+8</HitFrame>
+			<CounterHitFrame>+8</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>5</id>
+			<name>1, 2</name>
+			<command>+1, 5, +2</command>
+			<hitLevel>h, h</hitLevel>
+			<damage>7,12</damage>
+			<StartUp>10</StartUp>
+			<BlockFrame>-1</BlockFrame>
+			<HitFrame>+8</HitFrame>
+			<CounterHitFrame>+8</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>6</id>
+			<name>1, 2, 3</name>
+			<command>+1, 5, +2, 5, +3</command>
+			<hitLevel>h, h, l (TC)</hitLevel>
+			<damage>7,12,10</damage>
+			<StartUp>cs10~</StartUp>
+			<BlockFrame>-13</BlockFrame>
+			<HitFrame>-2</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-13</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>7</id>
+			<name>1, 2, 4</name>
+			<command>+1, 5, +2, 5, +4</command>
+			<hitLevel>h, h, m (TJ)</hitLevel>
+			<damage>7,12,20</damage>
+			<StartUp>js21~</StartUp>
+			<BlockFrame>-9~-4</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>8</id>
+			<name>2</name>
+			<command>+2</command>
+			<hitLevel>h</hitLevel>
+			<damage>8</damage>
+			<StartUp>10</StartUp>
+			<BlockFrame>0</BlockFrame>
+			<HitFrame>+8</HitFrame>
+			<CounterHitFrame>+8</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>9</id>
+			<name>2, 3</name>
+			<command>+2, 5, +3</command>
+			<hitLevel>h, l (TC)</hitLevel>
+			<damage>8,10</damage>
+			<StartUp>cs10~</StartUp>
+			<BlockFrame>-13</BlockFrame>
+			<HitFrame>-2</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-13</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>10</id>
+			<name>2, 4</name>
+			<command>+2, 5, +4</command>
+			<hitLevel>h, h</hitLevel>
+			<damage>8,20</damage>
+			<StartUp>10~</StartUp>
+			<BlockFrame>-2~+2</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>11</id>
+			<name>3</name>
+			<command>+3</command>
+			<hitLevel>m</hitLevel>
+			<damage>12</damage>
+			<StartUp>15~16b</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>-3~-2</HitFrame>
+			<CounterHitFrame>-3~-2</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>12</id>
+			<name>3, 1</name>
+			<command>+3, 5, +1</command>
+			<hitLevel>m, m</hitLevel>
+			<damage>12,20</damage>
+			<StartUp>15~16</StartUp>
+			<BlockFrame>-13~-12</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-12</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>13</id>
+			<name>3, 2</name>
+			<command>+3, 5, +2</command>
+			<hitLevel>m, h</hitLevel>
+			<damage>12,8</damage>
+			<StartUp>15~16</StartUp>
+			<BlockFrame>-5</BlockFrame>
+			<HitFrame>+2</HitFrame>
+			<CounterHitFrame>+6</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>14</id>
+			<name>3, 2, 3</name>
+			<command>+3, 5, +2, 5, +3</command>
+			<hitLevel>m, h, h (TJ)</hitLevel>
+			<damage>12,8,22</damage>
+			<StartUp>js13~</StartUp>
+			<BlockFrame>-9~-6</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>15</id>
+			<name>4</name>
+			<command>+4</command>
+			<hitLevel>h</hitLevel>
+			<damage>16</damage>
+			<StartUp>12</StartUp>
+			<BlockFrame>-4</BlockFrame>
+			<HitFrame>+7</HitFrame>
+			<CounterHitFrame>+7</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>16</id>
+			<name>4, 1</name>
+			<command>+4, 5, +1</command>
+			<hitLevel>h, h</hitLevel>
+			<damage>16,7</damage>
+			<StartUp>12</StartUp>
+			<BlockFrame>-1</BlockFrame>
+			<HitFrame>0</HitFrame>
+			<CounterHitFrame>+2</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>17</id>
+			<name>4, 1, 3</name>
+			<command>+4, 5, +1, 5, +3</command>
+			<hitLevel>h, h, m</hitLevel>
+			<damage>16,7,10</damage>
+			<StartUp>12</StartUp>
+			<BlockFrame>-11~-9</BlockFrame>
+			<HitFrame>0~+2s</HitFrame>
+			<CounterHitFrame>+8~+10s</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>18</id>
+			<name>1+2</name>
+			<command>+1+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>26</damage>
+			<StartUp>12</StartUp>
+			<BlockFrame>-12</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-12</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>19</id>
+			<name>f+2</name>
+			<command>f+2</command>
+			<hitLevel>h</hitLevel>
+			<damage>12</damage>
+			<StartUp>13~14</StartUp>
+			<BlockFrame>-9~-8</BlockFrame>
+			<HitFrame>-1~0</HitFrame>
+			<CounterHitFrame>-1~0</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>20</id>
+			<name>f+2, 3</name>
+			<command>f+2, 5, +3</command>
+			<hitLevel>h, m</hitLevel>
+			<damage>12,20</damage>
+			<StartUp>13~14</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>21</id>
+			<name>f+3</name>
+			<command>f+3</command>
+			<hitLevel>m</hitLevel>
+			<damage>26</damage>
+			<StartUp>20~22</StartUp>
+			<BlockFrame>-6~-4</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Homing/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>22</id>
+			<name>f+4</name>
+			<command>f+4</command>
+			<hitLevel>m</hitLevel>
+			<damage>23</damage>
+			<StartUp>17</StartUp>
+			<BlockFrame>-9</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>23</id>
+			<name>f+1+2</name>
+			<command>f+1+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>19</damage>
+			<StartUp>14~15</StartUp>
+			<BlockFrame>-6~-5</BlockFrame>
+			<HitFrame>+3~+4s</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>24</id>
+			<name>f+3+4</name>
+			<command>f+3+4</command>
+			<hitLevel>mm (TJ)</hitLevel>
+			<damage>8,22</damage>
+			<StartUp>18~20, 35~37 js12~24</StartUp>
+			<BlockFrame>-4~-2</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>25</id>
+			<name>f+3+4 (First hit only)</name>
+			<command>f+3+4 (First hit only)</command>
+			<hitLevel>m</hitLevel>
+			<damage>8</damage>
+			<StartUp>18~20 js12~24</StartUp>
+			<BlockFrame>-25~-23</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-23</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>26</id>
+			<name>f+3+4 (Second hit only)</name>
+			<command>f+3+4 (Second hit only)</command>
+			<hitLevel>m</hitLevel>
+			<damage>22</damage>
+			<StartUp>35~37</StartUp>
+			<BlockFrame>-4~-2</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>27</id>
+			<name>f+3+4~3</name>
+			<command>f+3+4~3</command>
+			<hitLevel>m (TJ), m</hitLevel>
+			<damage>8,20</damage>
+			<StartUp>18~20, 54~57 (12js~)</StartUp>
+			<BlockFrame>-8~-5</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>28</id>
+			<name>f+3+4~3, 4</name>
+			<command>f+3+4~3, 5, +4</command>
+			<hitLevel>m (TJ), m, m</hitLevel>
+			<damage>8,20,20</damage>
+			<StartUp>js18~</StartUp>
+			<BlockFrame>-20~-16</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-16</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>29</id>
+			<name>d/f+1</name>
+			<command>d/f+1</command>
+			<hitLevel>m</hitLevel>
+			<damage>12</damage>
+			<StartUp>13</StartUp>
+			<BlockFrame>-1</BlockFrame>
+			<HitFrame>+7</HitFrame>
+			<CounterHitFrame>+7</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>30</id>
+			<name>d/f+2</name>
+			<command>d/f+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>16</damage>
+			<StartUp>16~17</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>31</id>
+			<name>d/f+2, B</name>
+			<command>d/f+2, 5, B</command>
+			<hitLevel>m(BT)</hitLevel>
+			<damage>16</damage>
+			<StartUp>16~17b</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>32</id>
+			<name>d/f+3</name>
+			<command>d/f+3</command>
+			<hitLevel>m</hitLevel>
+			<damage>23</damage>
+			<StartUp>20~22</StartUp>
+			<BlockFrame>+3~+5s</BlockFrame>
+			<HitFrame>+8~+10g</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>33</id>
+			<name>d/f+4</name>
+			<command>d/f+4</command>
+			<hitLevel>m</hitLevel>
+			<damage>14</damage>
+			<StartUp>15~16</StartUp>
+			<BlockFrame>-8~-7</BlockFrame>
+			<HitFrame>-2~-1</HitFrame>
+			<CounterHitFrame>+5~+6</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>34</id>
+			<name>d/f+4, 4</name>
+			<command>d/f+4, 5, +4</command>
+			<hitLevel>m, l</hitLevel>
+			<damage>14,21</damage>
+			<StartUp>15~16</StartUp>
+			<BlockFrame>-15~-14</BlockFrame>
+			<HitFrame>+1~+2</HitFrame>
+			<CounterHitFrame>+6~+7</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-14</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>35</id>
+			<name>d/f+3+4</name>
+			<command>d/f+3+4</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>14</damage>
+			<StartUp>24~29b js12~</StartUp>
+			<BlockFrame>-4~+1</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>36</id>
+			<name>d/f+3+4, 3+4</name>
+			<command>d/f+3+4, 5, +3+4</command>
+			<hitLevel>m (TJ), mm (TJ)</hitLevel>
+			<damage>14,5,20</damage>
+			<StartUp>b js14~</StartUp>
+			<BlockFrame>-7~-6</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>37</id>
+			<name>d/f+3+4, 3+4 (Third hit miss)</name>
+			<command>d/f+3+4, 5, 3+4 (Third hit miss)</command>
+			<hitLevel>m (TJ), m</hitLevel>
+			<damage>14,5</damage>
+			<StartUp>b js14~</StartUp>
+			<BlockFrame>-18~-16</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-16</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>38</id>
+			<name>d+1</name>
+			<command>d+1</command>
+			<hitLevel>l (TC)</hitLevel>
+			<damage>10</damage>
+			<StartUp>18~19 cs11~</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>0~+1</HitFrame>
+			<CounterHitFrame>0~+1</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>39</id>
+			<name>d+1, D</name>
+			<command>d+1, 5, D</command>
+			<hitLevel>l (TC)</hitLevel>
+			<damage>10</damage>
+			<StartUp>18~19s cs11~</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>0~+1</HitFrame>
+			<CounterHitFrame>0~+1</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>40</id>
+			<name>d+1, 2</name>
+			<command>d+1, 5, +2</command>
+			<hitLevel>l (TC), h</hitLevel>
+			<damage>10,8</damage>
+			<StartUp>18~19 11~</StartUp>
+			<BlockFrame>-8~-7</BlockFrame>
+			<HitFrame>+3~+4</HitFrame>
+			<CounterHitFrame>+5~+6</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>41</id>
+			<name>d+1, 2, B</name>
+			<command>d+1, 5, +2, 5, B</command>
+			<hitLevel>l (TC), h, (BT)</hitLevel>
+			<damage>10,8</damage>
+			<StartUp>18~19 11~b</StartUp>
+			<BlockFrame>-8~-7</BlockFrame>
+			<HitFrame>+3~+4</HitFrame>
+			<CounterHitFrame>+5~+6</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>42</id>
+			<name>d+1, 2, 4</name>
+			<command>d+1, 5, +2, 5, +4</command>
+			<hitLevel>l (TC), h, m</hitLevel>
+			<damage>10,8,24</damage>
+			<StartUp>18~19 11~</StartUp>
+			<BlockFrame>-9~-7</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>43</id>
+			<name>d+2</name>
+			<command>d+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>16</damage>
+			<StartUp>16~17</StartUp>
+			<BlockFrame>-7~-6</BlockFrame>
+			<HitFrame>-1~0</HitFrame>
+			<CounterHitFrame>-1~0</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>44</id>
+			<name>d+2, 2</name>
+			<command>d+2, 5, +2</command>
+			<hitLevel>m, h</hitLevel>
+			<damage>16,10</damage>
+			<StartUp>16~17</StartUp>
+			<BlockFrame>-10~-9</BlockFrame>
+			<HitFrame>-4~-3</HitFrame>
+			<CounterHitFrame>-2~-1</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>45</id>
+			<name>d+2, 2, 3</name>
+			<command>d+2, 5, +2, 5, +3</command>
+			<hitLevel>m, h, h</hitLevel>
+			<damage>16,10,24</damage>
+			<StartUp>16~17</StartUp>
+			<BlockFrame>-3~-1</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>46</id>
+			<name>d+2, 2, 4</name>
+			<command>d+2, 5, +2, 5, +4</command>
+			<hitLevel>m, h, m</hitLevel>
+			<damage>16,10,24</damage>
+			<StartUp>16~17</StartUp>
+			<BlockFrame>-17</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-17</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>47</id>
+			<name>d+3</name>
+			<command>d+3</command>
+			<hitLevel>l</hitLevel>
+			<damage>14</damage>
+			<StartUp>19~20</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>+1~+2</HitFrame>
+			<CounterHitFrame>+1~+2</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>48</id>
+			<name>d+3+4</name>
+			<command>d+3+4</command>
+			<hitLevel>m?</hitLevel>
+			<damage>23</damage>
+			<StartUp>17~21a</StartUp>
+			<BlockFrame>-21~-17</BlockFrame>
+			<HitFrame>Launch(JG?)</HitFrame>
+			<CounterHitFrame>Launch(JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-17</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>49</id>
+			<name>d/b+3</name>
+			<command>d/b+3</command>
+			<hitLevel>h</hitLevel>
+			<damage>20</damage>
+			<StartUp>19~22 cs6~16</StartUp>
+			<BlockFrame>-9~-6</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>50</id>
+			<name>d/b+4</name>
+			<command>d/b+4</command>
+			<hitLevel>l (TC)</hitLevel>
+			<damage>20</damage>
+			<StartUp>30~31 cs5~</StartUp>
+			<BlockFrame>-24</BlockFrame>
+			<HitFrame>YKU</HitFrame>
+			<CounterHitFrame>YKU</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-24</Punishable>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>51</id>
+			<name>d/b+3+4</name>
+			<command>d/b+3+4</command>
+			<hitLevel>l</hitLevel>
+			<damage>20</damage>
+			<StartUp>24~25s cs6~</StartUp>
+			<BlockFrame>-18~-17</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-17</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>52</id>
+			<name>b+1</name>
+			<command>b+1</command>
+			<hitLevel>m?</hitLevel>
+			<damage>16</damage>
+			<StartUp>17~18</StartUp>
+			<BlockFrame>-6~-5</BlockFrame>
+			<HitFrame>+2~+3</HitFrame>
+			<CounterHitFrame>+2~+3</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>53</id>
+			<name>b+1, F</name>
+			<command>b+1, 5, F</command>
+			<hitLevel>m, (Special)</hitLevel>
+			<damage>16</damage>
+			<StartUp>17~18</StartUp>
+			<BlockFrame>+1~+2</BlockFrame>
+			<HitFrame>+9~+10</HitFrame>
+			<CounterHitFrame>+9~+10</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>54</id>
+			<name>b+1, 4</name>
+			<command>b+1, 5, +4</command>
+			<hitLevel>m, m</hitLevel>
+			<damage>16,22</damage>
+			<StartUp>17~18</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>55</id>
+			<name>b+2</name>
+			<command>b+2</command>
+			<hitLevel>h</hitLevel>
+			<damage>15</damage>
+			<StartUp>13</StartUp>
+			<BlockFrame>-11</BlockFrame>
+			<HitFrame>0</HitFrame>
+			<CounterHitFrame>0</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>56</id>
+			<name>b+2, 1</name>
+			<command>b+2, 5, +1</command>
+			<hitLevel>h, m</hitLevel>
+			<damage>15,13</damage>
+			<StartUp>13</StartUp>
+			<BlockFrame>-4~-3</BlockFrame>
+			<HitFrame>+7~+8</HitFrame>
+			<CounterHitFrame>+7~+8</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>57</id>
+			<name>b+2, 1, B</name>
+			<command>b+2, 5, +1, 5, B</command>
+			<hitLevel>h, m(BT)</hitLevel>
+			<damage>15,13</damage>
+			<StartUp>13b</StartUp>
+			<BlockFrame>-4~-3</BlockFrame>
+			<HitFrame>+7~+8</HitFrame>
+			<CounterHitFrame>+7~+8</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>58</id>
+			<name>b+2, 1, 1+2</name>
+			<command>b+2, 5, +1, 5, +1+2</command>
+			<hitLevel>h, m, m</hitLevel>
+			<damage>15,13,27</damage>
+			<StartUp>13</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>59</id>
+			<name>b+3 or BT b+3</name>
+			<command>b+3 or BT b+3</command>
+			<hitLevel>(Special) (TJ)</hitLevel>
+			<damage/>
+			<StartUp>13</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>60</id>
+			<name>b+4 or BT b+4</name>
+			<command>b+4 or BT b+4</command>
+			<hitLevel>(Special) (TJ)</hitLevel>
+			<damage/>
+			<StartUp>13</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>61</id>
+			<name>b+3 or 4, f</name>
+			<command>b+3 or 4, 5, f</command>
+			<hitLevel>(Special) (TJ)</hitLevel>
+			<damage/>
+			<StartUp> RC</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>62</id>
+			<name>b+3, 3 or b+4, 3</name>
+			<command>b+3, 5, 3 or b+4, 5, +3</command>
+			<hitLevel>(Special) (TJ), l (TC)</hitLevel>
+			<damage>25</damage>
+			<StartUp>24~25s (49~)</StartUp>
+			<BlockFrame>-18~-17</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-17</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>63</id>
+			<name>b+3, 4 or b+4, 4</name>
+			<command>b+3, 5, 4 or b+4, 5, +4</command>
+			<hitLevel>(Special) (TJ), m (TJ)</hitLevel>
+			<damage>27</damage>
+			<StartUp>23~29 (48~)</StartUp>
+			<BlockFrame>-6~0</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>64</id>
+			<name>b+1+2</name>
+			<command>b+1+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>24</damage>
+			<StartUp>23~24</StartUp>
+			<BlockFrame>-14~-13</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-13</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>65</id>
+			<name>b+1+4</name>
+			<command>b+1+4</command>
+			<hitLevel>! (TJ)</hitLevel>
+			<damage>50</damage>
+			<StartUp>63~65 js56~</StartUp>
+			<BlockFrame>KND</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>66</id>
+			<name>u/b or u or u/f+2</name>
+			<command>u/b or u or u/f+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>21</damage>
+			<StartUp>20~21</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>67</id>
+			<name>u/b or u+3</name>
+			<command>u/b or u+3</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>25</damage>
+			<StartUp>22~23 js16~</StartUp>
+			<BlockFrame>-16~-15</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-15</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>68</id>
+			<name>u/b or u+3, f</name>
+			<command>u/b or u+3, 5, f</command>
+			<hitLevel>m (TJ), (Special)</hitLevel>
+			<damage>25</damage>
+			<StartUp>22~23 js16~</StartUp>
+			<BlockFrame>-13~-12</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-12</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>69</id>
+			<name>u/b or u+3, 3</name>
+			<command>u/b or u+3, 5, +3</command>
+			<hitLevel>m (TJ), m (TJ)</hitLevel>
+			<damage>25,15</damage>
+			<StartUp>js9~</StartUp>
+			<BlockFrame>-12</BlockFrame>
+			<HitFrame>0</HitFrame>
+			<CounterHitFrame>0</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-12</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>70</id>
+			<name>u+3+4</name>
+			<command>u+3+4</command>
+			<hitLevel>m (TJ), (Throw)</hitLevel>
+			<damage>18(,5,5)</damage>
+			<StartUp>36~39 js5~</StartUp>
+			<BlockFrame>-8~-5</BlockFrame>
+			<HitFrame>Launch (JG?)(Throw)</HitFrame>
+			<CounterHitFrame>Launch (JG?)(Throw)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>71</id>
+			<name>u+3+4 (Far)</name>
+			<command>u+3+4 (Far)</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>18</damage>
+			<StartUp>36~39 js5~</StartUp>
+			<BlockFrame>-8~-5</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>72</id>
+			<name>u/f+3</name>
+			<command>u/f+3</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>13</damage>
+			<StartUp>15~17 js9~</StartUp>
+			<BlockFrame>-13~-11</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>73</id>
+			<name>u/f+4</name>
+			<command>u/f+4</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>18</damage>
+			<StartUp>28~32 js12~</StartUp>
+			<BlockFrame>-12~-8</BlockFrame>
+			<HitFrame>+1~+5s</HitFrame>
+			<CounterHitFrame>+1~+5s</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>74</id>
+			<name>u/f+4, 3</name>
+			<command>u/f+4, 5, +3</command>
+			<hitLevel>m (TJ), m</hitLevel>
+			<damage>18,23</damage>
+			<StartUp>28~32 12~</StartUp>
+			<BlockFrame>-9</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>75</id>
+			<name>u/f+3+4</name>
+			<command>u/f+3+4</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>15</damage>
+			<StartUp>15~18 js9~</StartUp>
+			<BlockFrame>-9~-6</BlockFrame>
+			<HitFrame>+2~+5</HitFrame>
+			<CounterHitFrame>+2~+5</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>76</id>
+			<name>u/f+3+4, 3</name>
+			<command>u/f+3+4, 5, +3</command>
+			<hitLevel>m (TJ), h</hitLevel>
+			<damage>15,18</damage>
+			<StartUp>15~18 9~</StartUp>
+			<BlockFrame>-9</BlockFrame>
+			<HitFrame>0</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>77</id>
+			<name>u/f+3+4, 3+4</name>
+			<command>u/f+3+4, 5, +3+4</command>
+			<hitLevel>m (TJ), m?</hitLevel>
+			<damage>15,22</damage>
+			<StartUp>15~18 9~a</StartUp>
+			<BlockFrame>-21~-17</BlockFrame>
+			<HitFrame>Launch(JG?)</HitFrame>
+			<CounterHitFrame>Launch(JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-17</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>78</id>
+			<name>f, F+2</name>
+			<command>f, 5, F+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>20</damage>
+			<StartUp>18(19~) pc6~17</StartUp>
+			<BlockFrame>-17</BlockFrame>
+			<HitFrame>CS</HitFrame>
+			<CounterHitFrame>CS</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-17</Punishable>
+				<PowerCrush/>
+			</tags>
+		</move>
+		<move>
+			<id>79</id>
+			<name>f, F+3</name>
+			<command>f, 5, F+3</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>15</damage>
+			<StartUp>22a(23~) js7~</StartUp>
+			<BlockFrame>-12</BlockFrame>
+			<HitFrame>0</HitFrame>
+			<CounterHitFrame>0</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-12</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>80</id>
+			<name>f, F+3, F</name>
+			<command>f, 5, F+3, 5, F</command>
+			<hitLevel>m (TJ), (Special)</hitLevel>
+			<damage>15</damage>
+			<StartUp>js7~</StartUp>
+			<BlockFrame>-3</BlockFrame>
+			<HitFrame>+9</HitFrame>
+			<CounterHitFrame>+9</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>81</id>
+			<name>f, F+3, 3+4</name>
+			<command>f, 5, F+3, 5, +3+4</command>
+			<hitLevel>m (TJ), mm</hitLevel>
+			<damage>15,5,20</damage>
+			<StartUp>js1~31</StartUp>
+			<BlockFrame>-8~-7</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>82</id>
+			<name>f, F+3, 3+4 (Only two first hits)</name>
+			<command>f, 5, F+3, 5, 3+4 (Only two first hits)</command>
+			<hitLevel>m (TJ), m</hitLevel>
+			<damage>15,5</damage>
+			<StartUp>js1~31</StartUp>
+			<BlockFrame>-20~-19</BlockFrame>
+			<HitFrame>-9~-8</HitFrame>
+			<CounterHitFrame>-9~-8</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-19</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>83</id>
+			<name>f, F+4</name>
+			<command>f, 5, F+4</command>
+			<hitLevel>l</hitLevel>
+			<damage>23</damage>
+			<StartUp>22~23 (23~)</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>+4~+5</HitFrame>
+			<CounterHitFrame>+9~+10</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>84</id>
+			<name>f, F+4, B</name>
+			<command>f, 5, F+4, 5, B</command>
+			<hitLevel>l(BT)</hitLevel>
+			<damage>23</damage>
+			<StartUp>22~23b (23~)</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>+4~+5</HitFrame>
+			<CounterHitFrame>+9~+10</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>85</id>
+			<name>f, F+1+2 (one spin)</name>
+			<command>f, 5, F+1+2 (one spin)</command>
+			<hitLevel>m</hitLevel>
+			<damage>28</damage>
+			<StartUp>18~19 (29~30)</StartUp>
+			<BlockFrame>-9~-8</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>86</id>
+			<name>f, F+1+2* (two spins)</name>
+			<command>f, 5, F+1+2* (two spins)</command>
+			<hitLevel>m</hitLevel>
+			<damage>38</damage>
+			<StartUp>18~19 (52~53)</StartUp>
+			<BlockFrame>+5~+6</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>87</id>
+			<name>f, F+1+2* (Very long hold)</name>
+			<command>f, 5, F+1+2* (Very long hold)</command>
+			<hitLevel>!</hitLevel>
+			<damage>50</damage>
+			<StartUp>18~19 (75~76)</StartUp>
+			<BlockFrame>KND</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>88</id>
+			<name>f, F+3+4</name>
+			<command>f, 5, F+3+4</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>30</damage>
+			<StartUp>19~25a (20~) js11~</StartUp>
+			<BlockFrame>-6~0</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>89</id>
+			<name>f, f, f+3</name>
+			<command>f, 5, f, 5, f+3</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>30</damage>
+			<StartUp>23~30 (26~) js3~</StartUp>
+			<BlockFrame>0~+7</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>90</id>
+			<name>WS+1</name>
+			<command>WS+1</command>
+			<hitLevel>m</hitLevel>
+			<damage>15</damage>
+			<StartUp>13~14</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>0~+1</HitFrame>
+			<CounterHitFrame>0~+1</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>91</id>
+			<name>WS+1, 2</name>
+			<command>WS+1, 5, +2</command>
+			<hitLevel>m, h</hitLevel>
+			<damage>15,16</damage>
+			<StartUp>13~14</StartUp>
+			<BlockFrame>-3~-2</BlockFrame>
+			<HitFrame>+8~+9</HitFrame>
+			<CounterHitFrame>+8~+9</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>92</id>
+			<name>WS+1, 2, 4</name>
+			<command>WS+1, 5, +2, 5, +4</command>
+			<hitLevel>m, h, l</hitLevel>
+			<damage>15,16,20</damage>
+			<StartUp>cs12~</StartUp>
+			<BlockFrame>-14~-13</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-13</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>93</id>
+			<name>WS+2</name>
+			<command>WS+2</command>
+			<hitLevel>m?</hitLevel>
+			<damage>17</damage>
+			<StartUp>16~18</StartUp>
+			<BlockFrame>-12~-10</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>94</id>
+			<name>WS+2, B</name>
+			<command>WS+2, 5, B</command>
+			<hitLevel>m?(BT)</hitLevel>
+			<damage>17</damage>
+			<StartUp>16~18b</StartUp>
+			<BlockFrame>-12~-10</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>95</id>
+			<name>WS+3</name>
+			<command>WS+3</command>
+			<hitLevel>m</hitLevel>
+			<damage>20</damage>
+			<StartUp>16~17 ar13~</StartUp>
+			<BlockFrame>-21~-20</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-20</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>96</id>
+			<name>WS+3, 4</name>
+			<command>WS+3, 5, +4</command>
+			<hitLevel>m, m</hitLevel>
+			<damage>20,25</damage>
+			<StartUp>js27~43</StartUp>
+			<BlockFrame>+4~+7s</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>97</id>
+			<name>WS+4</name>
+			<command>WS+4</command>
+			<hitLevel>m</hitLevel>
+			<damage>18</damage>
+			<StartUp>11~12</StartUp>
+			<BlockFrame>-8~-7</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>98</id>
+			<name>FC+d/f+1</name>
+			<command>FC+d/f+1</command>
+			<hitLevel>m?</hitLevel>
+			<damage>25</damage>
+			<StartUp>14~15</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>SH</HitFrame>
+			<CounterHitFrame>SH</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>99</id>
+			<name>FC+d/f+3 or d, D/F+3</name>
+			<command>FC+d/f+3 or d, 5, D/F+3</command>
+			<hitLevel>l (TJ),  (TC)</hitLevel>
+			<damage>19</damage>
+			<StartUp>23~32 cs18~</StartUp>
+			<BlockFrame>-18~-9</BlockFrame>
+			<HitFrame>-2~+7</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>100</id>
+			<name>SS+3</name>
+			<command>SS+3</command>
+			<hitLevel>m</hitLevel>
+			<damage>20</damage>
+			<StartUp>18~19 (27~)</StartUp>
+			<BlockFrame>-9~-8</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>101</id>
+			<name>SS+1+2</name>
+			<command>SS+1+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>21</damage>
+			<StartUp>19~20 (28~)</StartUp>
+			<BlockFrame>-2~-1</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>CS</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>102</id>
+			<name>qcf or From certain moves</name>
+			<command>qcf or From certain moves</command>
+			<hitLevel>(Special)</hitLevel>
+			<damage/>
+			<StartUp> RC</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>103</id>
+			<name>qcf+1</name>
+			<command>qcf+1</command>
+			<hitLevel>m</hitLevel>
+			<damage>16</damage>
+			<StartUp>15~16 (17~)</StartUp>
+			<BlockFrame>-12~-11</BlockFrame>
+			<HitFrame>-1~0</HitFrame>
+			<CounterHitFrame>-1~0</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>104</id>
+			<name>qcf+1, 2</name>
+			<command>qcf+1, 5, +2</command>
+			<hitLevel>m, m</hitLevel>
+			<damage>16,20</damage>
+			<StartUp>15~16 (17~)</StartUp>
+			<BlockFrame>-14~-13</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>CS</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-13</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>105</id>
+			<name>qcf+1, 2, B (Cancel)</name>
+			<command>qcf+1, 5, +2, 5, B (Cancel)</command>
+			<hitLevel>m(BT)</hitLevel>
+			<damage>16</damage>
+			<StartUp>15~16 (17~)b</StartUp>
+			<BlockFrame>-19~-18</BlockFrame>
+			<HitFrame>-8~-7</HitFrame>
+			<CounterHitFrame>-8~-7</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-18</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>106</id>
+			<name>qcf+2</name>
+			<command>qcf+2</command>
+			<hitLevel>m</hitLevel>
+			<damage>13</damage>
+			<StartUp>16~17 (18~)</StartUp>
+			<BlockFrame>-10~-9</BlockFrame>
+			<HitFrame>-2~-1</HitFrame>
+			<CounterHitFrame>-2~-1</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>107</id>
+			<name>qcf+2, 1</name>
+			<command>qcf+2, 5, +1</command>
+			<hitLevel>m, m</hitLevel>
+			<damage>13,20</damage>
+			<StartUp>16~17 (18~)</StartUp>
+			<BlockFrame>-7~-6</BlockFrame>
+			<HitFrame>+2~+3s</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>108</id>
+			<name>qcf+3</name>
+			<command>qcf+3</command>
+			<hitLevel>m</hitLevel>
+			<damage>20</damage>
+			<StartUp>16~17 (18~)</StartUp>
+			<BlockFrame>-21~-20</BlockFrame>
+			<HitFrame>Launch (JG?)</HitFrame>
+			<CounterHitFrame>Launch (JG?)</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-20</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>109</id>
+			<name>qcf+3, 4</name>
+			<command>qcf+3, 5, +4</command>
+			<hitLevel>m, m</hitLevel>
+			<damage>20,25</damage>
+			<StartUp>16~17 (18~)a</StartUp>
+			<BlockFrame>+4~+7s</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>110</id>
+			<name>qcf+4</name>
+			<command>qcf+4</command>
+			<hitLevel>m</hitLevel>
+			<damage>18</damage>
+			<StartUp>11~12 (13~)</StartUp>
+			<BlockFrame>-8~-7</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>111</id>
+			<name>qcf+3+4</name>
+			<command>qcf+3+4</command>
+			<hitLevel>hh</hitLevel>
+			<damage>6,20</damage>
+			<StartUp>12~14, 22~23 (14~) js12~</StartUp>
+			<BlockFrame>+6~+7</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>112</id>
+			<name>b+3+4 (to BT)</name>
+			<command>b+3+4 (to BT)</command>
+			<hitLevel>(BT)</hitLevel>
+			<damage/>
+			<StartUp>b</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>113</id>
+			<name>BT 1</name>
+			<command>BT 1</command>
+			<hitLevel>h</hitLevel>
+			<damage>8</damage>
+			<StartUp>8</StartUp>
+			<BlockFrame>-8</BlockFrame>
+			<HitFrame>+3</HitFrame>
+			<CounterHitFrame>+3</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>114</id>
+			<name>BT 1, 2</name>
+			<command>BT 1, 5, +2</command>
+			<hitLevel>h, h</hitLevel>
+			<damage>8,13</damage>
+			<StartUp>8</StartUp>
+			<BlockFrame>-3</BlockFrame>
+			<HitFrame>+5</HitFrame>
+			<CounterHitFrame>+5</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>115</id>
+			<name>BT 2</name>
+			<command>BT 2</command>
+			<hitLevel>m</hitLevel>
+			<damage>17</damage>
+			<StartUp>14~16</StartUp>
+			<BlockFrame>-5~-3</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>116</id>
+			<name>BT 3</name>
+			<command>BT 3</command>
+			<hitLevel>h</hitLevel>
+			<damage>25</damage>
+			<StartUp>10</StartUp>
+			<BlockFrame>-8</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Safe/>
+			</tags>
+		</move>
+		<move>
+			<id>117</id>
+			<name>BT 4</name>
+			<command>BT 4</command>
+			<hitLevel>mm (TC)</hitLevel>
+			<damage>10,20</damage>
+			<StartUp>26~28, 55~56b 1js13~ 2js1~14</StartUp>
+			<BlockFrame>-11~-10</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>118</id>
+			<name>BT 4, 3+4</name>
+			<command>BT 4, 5, +3+4</command>
+			<hitLevel>mm (TC), mm (TJ)</hitLevel>
+			<damage>10,20,10,20</damage>
+			<StartUp>b js14~31</StartUp>
+			<BlockFrame>-10~-8</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>119</id>
+			<name>BT 1+2</name>
+			<command>BT 1+2</command>
+			<hitLevel>mm</hitLevel>
+			<damage>5,20</damage>
+			<StartUp>13~14, 19~20</StartUp>
+			<BlockFrame>-10~-9s</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>120</id>
+			<name>BT 3+4</name>
+			<command>BT 3+4</command>
+			<hitLevel>m (TJ)</hitLevel>
+			<damage>18</damage>
+			<StartUp>29~32 js5~</StartUp>
+			<BlockFrame>-4~-1</BlockFrame>
+			<HitFrame>+5~+8s</HitFrame>
+			<CounterHitFrame>+5~+8s</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>121</id>
+			<name>BT 3+4, 2</name>
+			<command>BT 3+4, 5, +2</command>
+			<hitLevel>m (TJ), m</hitLevel>
+			<damage>18,21</damage>
+			<StartUp>29~32 5~</StartUp>
+			<BlockFrame>-11~-9</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<TailSpin/>
+			</tags>
+		</move>
+		<move>
+			<id>122</id>
+			<name>BT d+3</name>
+			<command>BT d+3</command>
+			<hitLevel>l (TC)</hitLevel>
+			<damage>16</damage>
+			<StartUp>17~19 cs4~</StartUp>
+			<BlockFrame>-17~-15</BlockFrame>
+			<HitFrame>-1~+1</HitFrame>
+			<CounterHitFrame>+2~+4s</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-15</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>123</id>
+			<name>BT d+3, 4</name>
+			<command>BT d+3, 5, +4</command>
+			<hitLevel>l (TC), m</hitLevel>
+			<damage>16,24</damage>
+			<StartUp>17~19 4~</StartUp>
+			<BlockFrame>-13~-11</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>124</id>
+			<name>BT d+4</name>
+			<command>BT d+4</command>
+			<hitLevel>l</hitLevel>
+			<damage>12</damage>
+			<StartUp>10s cs1~</StartUp>
+			<BlockFrame>-11</BlockFrame>
+			<HitFrame>+3</HitFrame>
+			<CounterHitFrame>+3</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-11</Punishable>
+			</tags>
+		</move>
+		<move>
+			<id>125</id>
+			<name>BT d+3+4</name>
+			<command>BT d+3+4</command>
+			<hitLevel>l (TC)(BT)</hitLevel>
+			<damage>25</damage>
+			<StartUp>22~25b cs4~</StartUp>
+			<BlockFrame>-26</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-26</Punishable>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>126</id>
+			<name>BT d+3+4, F</name>
+			<command>BT d+3+4, 5, F</command>
+			<hitLevel>l (TC)</hitLevel>
+			<damage>25</damage>
+			<StartUp>22~25 cs4~</StartUp>
+			<BlockFrame>-26</BlockFrame>
+			<HitFrame>KND</HitFrame>
+			<CounterHitFrame>KND</CounterHitFrame>
+			<tags>
+				<NeedsWork/>
+				<Punishable>-26</Punishable>
+				<Homing/>
+			</tags>
+		</move>
+		<move>
+			<id>127</id>
+			<name>BT b+3</name>
+			<command>BT b+3</command>
+			<hitLevel>(Special) (TJ)</hitLevel>
+			<damage/>
+			<StartUp>22~25 4~</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+		<move>
+			<id>128</id>
+			<name>BT b+4</name>
+			<command>BT b+4</command>
+			<hitLevel>(Special) (TJ)</hitLevel>
+			<damage/>
+			<StartUp>22~25 4~</StartUp>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
+			<tags>
+				<NeedsWork/>
+			</tags>
+		</move>
+	</moves>
+	<gameplans>
+		<gameplan>
+			<id>1</id>
+			<name/>
+			<moves>
+				<id>2</id>
+				<id>6</id>
+				<id>9</id>
+				<id>12</id>
+				<id>18</id>
+				<id>20</id>
+				<id>25</id>
+				<id>28</id>
+				<id>34</id>
+				<id>37</id>
+				<id>46</id>
+				<id>47</id>
+				<id>48</id>
+				<id>50</id>
+				<id>51</id>
+				<id>55</id>
+				<id>58</id>
+				<id>62</id>
+				<id>64</id>
+				<id>66</id>
+				<id>67</id>
+				<id>68</id>
+				<id>69</id>
+				<id>72</id>
+				<id>77</id>
+				<id>78</id>
+				<id>79</id>
+				<id>82</id>
+				<id>83</id>
+				<id>84</id>
+				<id>92</id>
+				<id>95</id>
+				<id>98</id>
+				<id>103</id>
+				<id>104</id>
+				<id>105</id>
+				<id>108</id>
+				<id>122</id>
+				<id>123</id>
+				<id>124</id>
+				<id>125</id>
+				<id>126</id>
+				<id>1</id>
+			</moves>
+		</gameplan>
+	</gameplans>
+</character>

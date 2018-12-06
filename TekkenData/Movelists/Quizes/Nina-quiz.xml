@@ -1,0 +1,2957 @@
+<?xml version="1.0" ?>
+<quiz description="A quiz of the character's punishable moves" name="Punishable" type="FrameQuiz">
+	<moves>
+		<move>
+			<id>1</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 1~</Value>
+					<Value>11</Value>
+					<Value>24~25</Value>
+					<Value>s cs1~</Value>
+					<Value>19(28~)</Value>
+					<Value>13~14</Value>
+					<Value>18~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-11~-10</Value>
+					<Value>-17</Value>
+					<Value>-6~-5</Value>
+					<Value>-6</Value>
+					<Value>-17~-16</Value>
+					<Value>-6~-4</Value>
+					<Value>-14~-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>+6~+7</Value>
+					<Value>-6</Value>
+					<Value>+5</Value>
+					<Value>-3</Value>
+					<Value>-6~-5a</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+1~+3</Value>
+					<Value>CS</Value>
+					<Value>+1</Value>
+					<Value>KND</Value>
+					<Value>-2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+12</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>8</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14s</Value>
+					<Value>19~20 (21~) cs1~3</Value>
+					<Value> 10~</Value>
+					<Value>a js20~</Value>
+					<Value>14~15 (23~)</Value>
+					<Value>10</Value>
+					<Value> 1~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>0</Value>
+					<Value>0~+1</Value>
+					<Value>-3</Value>
+					<Value>-8~-7</Value>
+					<Value>-15</Value>
+					<Value>-37</Value>
+					<Value>-6</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>0~+1</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5</Value>
+					<Value>+3s</Value>
+					<Value>0~+7s</Value>
+					<Value>+8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+3</Value>
+					<Value>CS</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>-1</Value>
+					<Value>-3</Value>
+					<Value>+20~+21kg</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>9</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>20~21</Value>
+					<Value>13</Value>
+					<Value>(s)</Value>
+					<Value>18</Value>
+					<Value>13~14 (15~) cs1~3</Value>
+					<Value> 1~</Value>
+					<Value>43 9~ 34~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-9</Value>
+					<Value>-14~-11</Value>
+					<Value>-23</Value>
+					<Value>-14~-13</Value>
+					<Value>-6</Value>
+					<Value>-1</Value>
+					<Value>-17~-16</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+2s</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>-3</Value>
+					<Value>+5</Value>
+					<Value>+7</Value>
+					<Value>Launch (JG?)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>-2</Value>
+					<Value>+12</Value>
+					<Value>KND</Value>
+					<Value>+5</Value>
+					<Value>CS</Value>
+					<Value>+</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>11</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>10,26</Value>
+					<Value>43 js9~ cs34~</Value>
+					<Value>12</Value>
+					<Value>14</Value>
+					<Value>14~15</Value>
+					<Value>14 js6~</Value>
+					<Value>1~9, 28~41</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-18~-17</Value>
+					<Value>-6</Value>
+					<Value>+2~+3s</Value>
+					<Value>-12</Value>
+					<Value>-10</Value>
+					<Value>-13~-12</Value>
+					<Value>-3</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>0~+2</Value>
+					<Value>+2</Value>
+					<Value>-6</Value>
+					<Value>+6s</Value>
+					<Value>+5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>CS</Value>
+					<Value>+1</Value>
+					<Value>+6a</Value>
+					<Value>+6</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-4</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>12</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14,33</Value>
+					<Value>13~14</Value>
+					<Value>9~34 35~36</Value>
+					<Value> 1~</Value>
+					<Value>10,26</Value>
+					<Value>14s</Value>
+					<Value>28a(29~) js5~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5~-4</Value>
+					<Value>-12~-10s</Value>
+					<Value>-11</Value>
+					<Value>-6</Value>
+					<Value>-23</Value>
+					<Value>-5</Value>
+					<Value>-8~-7</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5</Value>
+					<Value>-3</Value>
+					<Value>-7</Value>
+					<Value>+5~+6</Value>
+					<Value>+3~+4</Value>
+					<Value>KND</Value>
+					<Value>-2</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+5</Value>
+					<Value>+7~+8</Value>
+					<Value>+2</Value>
+					<Value>+6s</Value>
+					<Value>KND</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5~+6</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>13</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>12</Value>
+					<Value>20~21</Value>
+					<Value>43 9~ 34~</Value>
+					<Value>22~23 (23~)</Value>
+					<Value>14s</Value>
+					<Value>a js19~</Value>
+					<Value>13</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6~-1</Value>
+					<Value>+4</Value>
+					<Value>-18~-17</Value>
+					<Value>+28~+29?</Value>
+					<Value>-10</Value>
+					<Value>-14~-11</Value>
+					<Value>+10~+11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+4</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>0</Value>
+					<Value>-3</Value>
+					<Value>+5</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+5~+6</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+12</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+9~+10kg</Value>
+					<Value>+5~+6</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>CS</Value>
+					<Value>+5</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>18</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>(s)</Value>
+					<Value>13~14 (15~) cs1~3</Value>
+					<Value> 10~</Value>
+					<Value>10,20</Value>
+					<Value>14~15 (23~)</Value>
+					<Value>14</Value>
+					<Value>12s cs4~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-37</Value>
+					<Value>-17~-16</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>-6~-5</Value>
+					<Value>-17</Value>
+					<Value>-5~-4</Value>
+					<Value>-13~-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+7~+8</Value>
+					<Value>+4</Value>
+					<Value>+6a</Value>
+					<Value>+3s</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>-7</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+5~+6</Value>
+					<Value>+8</Value>
+					<Value>KND</Value>
+					<Value>CS</Value>
+					<Value>+20~+21kg</Value>
+					<Value>+7</Value>
+					<Value>Launch (JG?)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>19</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>18~</Value>
+					<Value>20s cs6~</Value>
+					<Value>14(16~)</Value>
+					<Value>13,30</Value>
+					<Value>js1~9, js28~41</Value>
+					<Value>13</Value>
+					<Value>11</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-9~-8</Value>
+					<Value>-4~-3</Value>
+					<Value>-20~-13</Value>
+					<Value>-13~-12</Value>
+					<Value>-4</Value>
+					<Value>-6</Value>
+					<Value>-10</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5</Value>
+					<Value>KND</Value>
+					<Value>CS</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-2</Value>
+					<Value>-7</Value>
+					<Value>-17</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>CS</Value>
+					<Value>KND</Value>
+					<Value>+6~+7s (+8s)</Value>
+					<Value>+24~+25g</Value>
+					<Value>+8</Value>
+					<Value>+6s</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>21</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14(16~)</Value>
+					<Value>10,26</Value>
+					<Value>14~15 (23~)</Value>
+					<Value>js1~9, js28~41</Value>
+					<Value> 19~</Value>
+					<Value>33~34 (34~)</Value>
+					<Value>19(28~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13~-11</Value>
+					<Value>-13</Value>
+					<Value>-10</Value>
+					<Value>-10~-9</Value>
+					<Value>-15</Value>
+					<Value>+28~+29?</Value>
+					<Value>-9</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6</Value>
+					<Value>+9~+13s</Value>
+					<Value>CS</Value>
+					<Value>+5</Value>
+					<Value>+2~+6s</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+7~+8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+33~+50 (SH)</Value>
+					<Value>-6</Value>
+					<Value>CS</Value>
+					<Value>CS (12~13)</Value>
+					<Value>0~+2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-3</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>22</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>23~28 js7~</Value>
+					<Value>19~20 (21~) cs1~3</Value>
+					<Value>12</Value>
+					<Value>14~15</Value>
+					<Value>17 pc8~16</Value>
+					<Value>13~14 (22~)</Value>
+					<Value>18</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-11</Value>
+					<Value>-13</Value>
+					<Value>+1</Value>
+					<Value>+10~+11</Value>
+					<Value>-6</Value>
+					<Value>-17</Value>
+					<Value>-3</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-16</Value>
+					<Value>+2</Value>
+					<Value>+5</Value>
+					<Value>+4~+5s</Value>
+					<Value>KND</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>+1</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-3</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+7</Value>
+					<Value>-8</Value>
+					<Value>+5</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>23</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>12 1~</Value>
+					<Value>13</Value>
+					<Value>18~</Value>
+					<Value>11 1~</Value>
+					<Value>28a(29~) js5~</Value>
+					<Value>12</Value>
+					<Value> 1~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-14</Value>
+					<Value>-10~-9</Value>
+					<Value>-13</Value>
+					<Value>+1</Value>
+					<Value>-11</Value>
+					<Value>-19</Value>
+					<Value>+10~+11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+6s</Value>
+					<Value>+7</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>+7~+8</Value>
+					<Value>+6</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>+11</Value>
+					<Value>CS</Value>
+					<Value>YKU</Value>
+					<Value>+23~+24g</Value>
+					<Value>-12</Value>
+					<Value>BU</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>24</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>16 4~</Value>
+					<Value>14</Value>
+					<Value>(s)</Value>
+					<Value>s cs10~</Value>
+					<Value>14(16~)</Value>
+					<Value>17~18</Value>
+					<Value>19(28~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5~-4</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>-3~-2</Value>
+					<Value>-6</Value>
+					<Value>-17</Value>
+					<Value>-10~-9</Value>
+					<Value>-8</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>-3~-1</Value>
+					<Value>+5~+6s</Value>
+					<Value>+5</Value>
+					<Value>-3</Value>
+					<Value>+6</Value>
+					<Value>+7</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>+5~+6</Value>
+					<Value>+2</Value>
+					<Value>-16</Value>
+					<Value>CS</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>+7</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>28</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14~15</Value>
+					<Value>43 9~ 34~</Value>
+					<Value>14 js6~</Value>
+					<Value>14,33</Value>
+					<Value>14(16~)</Value>
+					<Value>19~26 (21~) cs16~</Value>
+					<Value>13</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-17~-16</Value>
+					<Value>-7</Value>
+					<Value>-9~-8</Value>
+					<Value>-11~-10</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>-14</Value>
+					<Value>-6</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+1</Value>
+					<Value>-3</Value>
+					<Value>KND</Value>
+					<Value>BU</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>-2</Value>
+					<Value>+7</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+6~+7s (+8s)</Value>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>-2</Value>
+					<Value>CS</Value>
+					<Value>uKZD</Value>
+					<Value>+6</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>29</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 10~</Value>
+					<Value>11~12</Value>
+					<Value>23~28 js7~</Value>
+					<Value>16~17</Value>
+					<Value>18</Value>
+					<Value>14</Value>
+					<Value>14~15 (23~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+11</Value>
+					<Value>-14~-13</Value>
+					<Value>+10~+11</Value>
+					<Value>-10</Value>
+					<Value>-14</Value>
+					<Value>-3</Value>
+					<Value>-9</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+2</Value>
+					<Value>KND</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>CS</Value>
+					<Value>+5</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+9~+13s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+20~+21kg</Value>
+					<Value>+8</Value>
+					<Value>+23~+24g</Value>
+					<Value>+4</Value>
+					<Value>CS</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>30</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>s cs10~</Value>
+					<Value>18,26</Value>
+					<Value>28ad (29~) js5~</Value>
+					<Value>14,33</Value>
+					<Value>15~16, 28~29</Value>
+					<Value>15~16</Value>
+					<Value>18 js9~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-14</Value>
+					<Value>-9</Value>
+					<Value>-3~-1</Value>
+					<Value>-6</Value>
+					<Value>-10</Value>
+					<Value>+2~+3s</Value>
+					<Value>+1</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3~+8s</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>0~+1</Value>
+					<Value>+6s</Value>
+					<Value>+9~+13s</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>-3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>CS</Value>
+					<Value>+6a</Value>
+					<Value>+20~+21kg</Value>
+					<Value>-3</Value>
+					<Value>+2~+3</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>32</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>18</Value>
+					<Value>22~23 (23~)</Value>
+					<Value>a js19~</Value>
+					<Value>17~18</Value>
+					<Value>11</Value>
+					<Value>s cs10~</Value>
+					<Value>43 js9~ cs34~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6~-4</Value>
+					<Value>-3</Value>
+					<Value>+1~+2</Value>
+					<Value>-14</Value>
+					<Value>-20~-13</Value>
+					<Value>+4</Value>
+					<Value>-9</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-13</Value>
+					<Value>-4</Value>
+					<Value>BU</Value>
+					<Value>KND</Value>
+					<Value>+5~+6</Value>
+					<Value>+5~+6s</Value>
+					<Value>+1</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+1</Value>
+					<Value>+7~+8</Value>
+					<Value>-2</Value>
+					<Value>-6</Value>
+					<Value>CS</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>33</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>15~16</Value>
+					<Value>13</Value>
+					<Value>18~</Value>
+					<Value>22~23 (23~)</Value>
+					<Value>10,20</Value>
+					<Value>14,33</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>-14</Value>
+					<Value>-15</Value>
+					<Value>-17~-13</Value>
+					<Value>-11</Value>
+					<Value>0</Value>
+					<Value>-13~-12</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+6s</Value>
+					<Value>+3~+8s</Value>
+					<Value>-6</Value>
+					<Value>+7</Value>
+					<Value>+1~+3</Value>
+					<Value>0~+1</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>YKU</Value>
+					<Value>+5~+6</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>+23~+24g</Value>
+					<Value>KND</Value>
+					<Value>-2</Value>
+					<Value>+8</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>36</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>18~</Value>
+					<Value> 10~</Value>
+					<Value>s cs10~</Value>
+					<Value>13~14</Value>
+					<Value>14~15 (23~)</Value>
+					<Value>9~34 35~36</Value>
+					<Value>14(16~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5~-4</Value>
+					<Value>-6</Value>
+					<Value>+8~+9</Value>
+					<Value>-3~-2</Value>
+					<Value>-9~-8</Value>
+					<Value>-17~-13</Value>
+					<Value>+2~+3s</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5~+6</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>CS</Value>
+					<Value>+5</Value>
+					<Value>KND</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+6</Value>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>Launch</Value>
+					<Value>-2</Value>
+					<Value>CS</Value>
+					<Value>-3~-1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>37</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>10~</Value>
+					<Value>11</Value>
+					<Value>19(28~)</Value>
+					<Value>18</Value>
+					<Value>43 js9~ cs34~</Value>
+					<Value> 10~</Value>
+					<Value>14~15</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-3</Value>
+					<Value>-6</Value>
+					<Value>-13</Value>
+					<Value>-4</Value>
+					<Value>-13~-11</Value>
+					<Value>-6~-5</Value>
+					<Value>-14</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+6</Value>
+					<Value>+5~+6s</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>KND</Value>
+					<Value>+3~+4</Value>
+					<Value>-3</Value>
+					<Value>+1</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7</Value>
+					<Value>+23~+24g</Value>
+					<Value>KND</Value>
+					<Value>+2</Value>
+					<Value>+7~+8</Value>
+					<Value>Launch</Value>
+					<Value>+</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>38</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>12</Value>
+					<Value>15(16~)</Value>
+					<Value>18</Value>
+					<Value>19~20</Value>
+					<Value> 10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+2~+3s</Value>
+					<Value>-6</Value>
+					<Value>-14</Value>
+					<Value>CS</Value>
+					<Value>-6~-4</Value>
+					<Value>-3~-2s</Value>
+					<Value>-5</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+20~+21kg</Value>
+					<Value>+5~+6s</Value>
+					<Value>-2</Value>
+					<Value>-5</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-3</Value>
+					<Value>+6~+7</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>-3</Value>
+					<Value>+8</Value>
+					<Value>+7</Value>
+					<Value>+5</Value>
+					<Value>+7~+8</Value>
+					<Value>+1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>41</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 1~</Value>
+					<Value>12s cs4~</Value>
+					<Value> 10~</Value>
+					<Value>11</Value>
+					<Value>17 pc8~16</Value>
+					<Value>11s</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-11~-10</Value>
+					<Value>-22~-16</Value>
+					<Value>-3~-1</Value>
+					<Value>-37</Value>
+					<Value>+1</Value>
+					<Value>-11</Value>
+					<Value>-6</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+15~+16kg</Value>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>+5</Value>
+					<Value>+7~+8</Value>
+					<Value>+20~+21kg</Value>
+					<Value>+1~+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7~+8</Value>
+					<Value>Throw(KND)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>CS</Value>
+					<Value>+5</Value>
+					<Value>+10</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>47</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14,33</Value>
+					<Value>28a(29~) js5~</Value>
+					<Value>14s</Value>
+					<Value>14(15~)</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>10~</Value>
+					<Value>17~18</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-14~-13</Value>
+					<Value>-9~-8</Value>
+					<Value>-13~-11</Value>
+					<Value>+1</Value>
+					<Value>-13</Value>
+					<Value>-1</Value>
+					<Value>+2~+3s</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>0</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+4~+5s</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>KND</Value>
+					<Value>CS</Value>
+					<Value>+7~+8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-2(-4)</Value>
+					<Value>KND</Value>
+					<Value>+1</Value>
+					<Value>+1~+2</Value>
+					<Value>+4</Value>
+					<Value>+8</Value>
+					<Value>CS (12~13)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>48</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>28a(29~) js5~</Value>
+					<Value>13~14</Value>
+					<Value>20~21a (23~) js5~17</Value>
+					<Value>15~16</Value>
+					<Value> 1~</Value>
+					<Value>14</Value>
+					<Value>23ad(26~) js3~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>-10</Value>
+					<Value>-11</Value>
+					<Value>-14~-13</Value>
+					<Value>-6~-1</Value>
+					<Value>-1</Value>
+					<Value>-5~-4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3~+4</Value>
+					<Value>-2</Value>
+					<Value>KND</Value>
+					<Value>0~+2</Value>
+					<Value>-2(-4)</Value>
+					<Value>+2</Value>
+					<Value>+9s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+12</Value>
+					<Value>KND</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+5</Value>
+					<Value>Launch</Value>
+					<Value>YKU</Value>
+					<Value>CS</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>49</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14~15</Value>
+					<Value>18~</Value>
+					<Value>20~21 (22~)</Value>
+					<Value>14</Value>
+					<Value> 10~</Value>
+					<Value>22~23 (23~)</Value>
+					<Value>16~17</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13~-12</Value>
+					<Value>+1</Value>
+					<Value>-5~-4</Value>
+					<Value>-6</Value>
+					<Value>-14</Value>
+					<Value>-6~-1</Value>
+					<Value>-10</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6s</Value>
+					<Value>+1</Value>
+					<Value>CS</Value>
+					<Value>-2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+6</Value>
+					<Value>-3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>YKU</Value>
+					<Value>+11</Value>
+					<Value>+4</Value>
+					<Value>+2</Value>
+					<Value>CS</Value>
+					<Value>+1</Value>
+					<Value>Launch (JG?)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>51</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>18,26</Value>
+					<Value> 10~</Value>
+					<Value>17~18</Value>
+					<Value>16~17</Value>
+					<Value>15~16</Value>
+					<Value>19~20</Value>
+					<Value>js9~34 cs35~36</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-17~-13</Value>
+					<Value>-7</Value>
+					<Value>-11~-10</Value>
+					<Value>-13~-12</Value>
+					<Value>-13</Value>
+					<Value>-7~-6</Value>
+					<Value>-6~-5</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>Throw(0)</Value>
+					<Value>+4</Value>
+					<Value>+3~+4</Value>
+					<Value>+5</Value>
+					<Value>+2~+6s</Value>
+					<Value>+20~+21kg</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>0~+2</Value>
+					<Value>+6</Value>
+					<Value>+4</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-1</Value>
+					<Value>-2</Value>
+					<Value>+2</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>56</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>js1~9, js28~41</Value>
+					<Value>11~12</Value>
+					<Value>16</Value>
+					<Value>20~21</Value>
+					<Value>20~21 (22~)</Value>
+					<Value>12s cs1~</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-23</Value>
+					<Value>-5~-4</Value>
+					<Value>-6~-4</Value>
+					<Value>-10</Value>
+					<Value>-12</Value>
+					<Value>-14</Value>
+					<Value>-9~-4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-3</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>+6s</Value>
+					<Value>KND</Value>
+					<Value>0~+2</Value>
+					<Value>+11(SH)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>KND</Value>
+					<Value>+7</Value>
+					<Value>+1~+2</Value>
+					<Value>+6</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>58</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>65</Value>
+					<Value>12s cs1~</Value>
+					<Value>13,30</Value>
+					<Value> 10~</Value>
+					<Value>10,20</Value>
+					<Value>16,31~32</Value>
+					<Value>14(15~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>-13~-11</Value>
+					<Value>-11</Value>
+					<Value>-10</Value>
+					<Value>-17~-16</Value>
+					<Value>-6~0</Value>
+					<Value>-5~-4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>0~+7s</Value>
+					<Value>-1</Value>
+					<Value>+7~+8</Value>
+					<Value>-3</Value>
+					<Value>+11(SH)</Value>
+					<Value>+2~+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+3</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>YKU</Value>
+					<Value>-3</Value>
+					<Value>+6</Value>
+					<Value>+11</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>59</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>js1~9, js28~41</Value>
+					<Value>20~21</Value>
+					<Value>14~15</Value>
+					<Value>14 js6~</Value>
+					<Value>43 9~ 34~</Value>
+					<Value>12</Value>
+					<Value>js1~11 cs15~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-18~-17</Value>
+					<Value>+8~+9</Value>
+					<Value>-4</Value>
+					<Value>-4~-3</Value>
+					<Value>-1</Value>
+					<Value>-3</Value>
+					<Value>-13~-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+7~+8</Value>
+					<Value>-3</Value>
+					<Value>+3~+8s</Value>
+					<Value>+8</Value>
+					<Value>Throw(KND)</Value>
+					<Value>KND</Value>
+					<Value>-8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+4</Value>
+					<Value>+6~+7s (+8s)</Value>
+					<Value>0~+2</Value>
+					<Value>+5</Value>
+					<Value>+6a</Value>
+					<Value>KND</Value>
+					<Value>0~+1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>60</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>23ad(26~) js3~</Value>
+					<Value>18</Value>
+					<Value> 10~</Value>
+					<Value>14,33</Value>
+					<Value>js9~34 cs35~36</Value>
+					<Value>11</Value>
+					<Value>s cs1~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-34</Value>
+					<Value>-5~-4</Value>
+					<Value>-9</Value>
+					<Value>-6</Value>
+					<Value>-11</Value>
+					<Value>+28~+29?</Value>
+					<Value>0~+1</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+24~+25g</Value>
+					<Value>-3</Value>
+					<Value>-8~-7s</Value>
+					<Value>-1</Value>
+					<Value>+7</Value>
+					<Value>+6</Value>
+					<Value>+5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+33~+50 (SH)</Value>
+					<Value>+1</Value>
+					<Value>-1</Value>
+					<Value>CS</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5</Value>
+					<Value>-4</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>65</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 19~</Value>
+					<Value>11~12</Value>
+					<Value>16~17, 18~19</Value>
+					<Value>11 1~</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>22~23 (23~)</Value>
+					<Value> 10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>-9</Value>
+					<Value>-3</Value>
+					<Value>-14~-11</Value>
+					<Value>+8~+9</Value>
+					<Value>-5~-4</Value>
+					<Value>-37</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+5</Value>
+					<Value>+7~+8</Value>
+					<Value>+2</Value>
+					<Value>+7</Value>
+					<Value>+6s</Value>
+					<Value>+6a</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7~+8</Value>
+					<Value>+6</Value>
+					<Value>KND</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+1</Value>
+					<Value>+1~+2</Value>
+					<Value>-8~-7s</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>66</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14~15 (23~)</Value>
+					<Value>14,33</Value>
+					<Value>28ad (29~) js5~</Value>
+					<Value>a js19~</Value>
+					<Value>10,20</Value>
+					<Value>js1~11 cs15~</Value>
+					<Value>13~14 (16~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5~-4</Value>
+					<Value>-6</Value>
+					<Value>-3</Value>
+					<Value>-19</Value>
+					<Value>-14</Value>
+					<Value>-12</Value>
+					<Value>-13~-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+2</Value>
+					<Value>+6</Value>
+					<Value>-3</Value>
+					<Value>+2s</Value>
+					<Value>-5</Value>
+					<Value>-13</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>+7</Value>
+					<Value>+9~+10kg</Value>
+					<Value>-3</Value>
+					<Value>+1~+2</Value>
+					<Value>+2~+3</Value>
+					<Value>-7</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>68</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14~15 (23~)</Value>
+					<Value>14~15</Value>
+					<Value>14~15, 25~26</Value>
+					<Value> 10~</Value>
+					<Value>10~</Value>
+					<Value>10</Value>
+					<Value>cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5~-4</Value>
+					<Value>-10</Value>
+					<Value>-7</Value>
+					<Value>+11</Value>
+					<Value>-11</Value>
+					<Value>CS</Value>
+					<Value>-14~-12</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-2(-4)</Value>
+					<Value>+1</Value>
+					<Value>-5</Value>
+					<Value>-8~-7s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>-6</Value>
+					<Value>CS</Value>
+					<Value>YKU</Value>
+					<Value>+3~+4</Value>
+					<Value>+12</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>69</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>10~</Value>
+					<Value>18~</Value>
+					<Value>14 js6~</Value>
+					<Value>12s cs4~</Value>
+					<Value>12</Value>
+					<Value>13~14 (15~) cs1~3</Value>
+					<Value>10s cs4~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-10</Value>
+					<Value>-6</Value>
+					<Value>+1~+2</Value>
+					<Value>-8</Value>
+					<Value>-13</Value>
+					<Value>-15</Value>
+					<Value>-23</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+6</Value>
+					<Value>KND</Value>
+					<Value>-8~-7s</Value>
+					<Value>+6s</Value>
+					<Value>+5</Value>
+					<Value>+11(SH)</Value>
+					<Value>+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>CS</Value>
+					<Value>+18</Value>
+					<Value>uKZD</Value>
+					<Value>KND</Value>
+					<Value>0~+1</Value>
+					<Value>+6a</Value>
+					<Value>-4</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>72</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>15(16~)</Value>
+					<Value>14</Value>
+					<Value>(s)</Value>
+					<Value>13</Value>
+					<Value>a js20~</Value>
+					<Value>14~15, 25~26</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-9~-4</Value>
+					<Value>-10~-8</Value>
+					<Value>-14~-11</Value>
+					<Value>-9~-8</Value>
+					<Value>-30</Value>
+					<Value>-24s</Value>
+					<Value>-17</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>+2</Value>
+					<Value>0~+7s</Value>
+					<Value>+5</Value>
+					<Value>+2~+3</Value>
+					<Value>KND(KND)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7~+8</Value>
+					<Value>+6</Value>
+					<Value>KND</Value>
+					<Value>+8</Value>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+18</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>73</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14~15 (23~)</Value>
+					<Value>16~17</Value>
+					<Value>18</Value>
+					<Value>18,26</Value>
+					<Value>11s</Value>
+					<Value>14</Value>
+					<Value>14~15</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-9</Value>
+					<Value>-6</Value>
+					<Value>-3</Value>
+					<Value>-9~-8</Value>
+					<Value>-13~-11</Value>
+					<Value>-12</Value>
+					<Value>-7</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+4</Value>
+					<Value>+3~+8s</Value>
+					<Value>+5</Value>
+					<Value>-12</Value>
+					<Value>CS</Value>
+					<Value>+4~+6s (KND)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+3</Value>
+					<Value>0~+1</Value>
+					<Value>+4</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+1</Value>
+					<Value>-2</Value>
+					<Value>KND</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>76</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14(16~)</Value>
+					<Value>14(15~)</Value>
+					<Value>js1~9, js28~41</Value>
+					<Value>12s cs1~</Value>
+					<Value>13</Value>
+					<Value>35~52 (41?~)</Value>
+					<Value>20</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-15~-14</Value>
+					<Value>-13</Value>
+					<Value>-8</Value>
+					<Value>+10~+11</Value>
+					<Value>-6</Value>
+					<Value>-10~-9</Value>
+					<Value>-14</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+4</Value>
+					<Value>+8</Value>
+					<Value>-3</Value>
+					<Value>-6</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-7</Value>
+					<Value>0</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-8~-7s</Value>
+					<Value>+5~+6</Value>
+					<Value>-2</Value>
+					<Value>+9</Value>
+					<Value>+1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>84</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>23~28 js9~</Value>
+					<Value> 10~</Value>
+					<Value>14</Value>
+					<Value>20~21</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>18~</Value>
+					<Value>14~15 (23~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-11</Value>
+					<Value>-15~-14</Value>
+					<Value>+10~+11</Value>
+					<Value>-1</Value>
+					<Value>-16</Value>
+					<Value>+1~+2</Value>
+					<Value>-13</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3</Value>
+					<Value>+5</Value>
+					<Value>+2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+9~+13s</Value>
+					<Value>KND</Value>
+					<Value>0~+2</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>-4</Value>
+					<Value>-2</Value>
+					<Value>-1</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+23~+24g</Value>
+					<Value>+5~+6</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>86</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>16,31~32</Value>
+					<Value> 10~</Value>
+					<Value>18</Value>
+					<Value>js1~9, js28~41</Value>
+					<Value>17~18</Value>
+					<Value>19~20</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-9</Value>
+					<Value>-17</Value>
+					<Value>+1</Value>
+					<Value>-14</Value>
+					<Value>-6~-5</Value>
+					<Value>-15~-14</Value>
+					<Value>+2~+3s</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+20~+21kg</Value>
+					<Value>+15~+16kg</Value>
+					<Value>-3</Value>
+					<Value>+6</Value>
+					<Value>+2</Value>
+					<Value>KND</Value>
+					<Value>+1~+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+6~+7s (+8s)</Value>
+					<Value>CS (12~13)</Value>
+					<Value>+20~+21kg</Value>
+					<Value>+2</Value>
+					<Value>+6a</Value>
+					<Value>+5~+6</Value>
+					<Value>KND</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>88</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14(15~)</Value>
+					<Value>18,26</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>s cs1~</Value>
+					<Value>13</Value>
+					<Value>28ad (29~) js5~</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-14</Value>
+					<Value>-13</Value>
+					<Value>-34</Value>
+					<Value>-13~-11</Value>
+					<Value>-6</Value>
+					<Value>+11</Value>
+					<Value>+10~+11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-17</Value>
+					<Value>+6</Value>
+					<Value>0~+1</Value>
+					<Value>+23~+24g</Value>
+					<Value>+5~+6s</Value>
+					<Value>KND</Value>
+					<Value>+9~+10kg</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>0~+1</Value>
+					<Value>-12</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>CS</Value>
+					<Value>KND</Value>
+					<Value>uKZD</Value>
+					<Value>+11</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>89</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>a js20~</Value>
+					<Value> 10~</Value>
+					<Value>12</Value>
+					<Value>14</Value>
+					<Value>13,30</Value>
+					<Value>20 6~</Value>
+					<Value>14~15</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-37</Value>
+					<Value>-10</Value>
+					<Value>-6</Value>
+					<Value>-17~-16</Value>
+					<Value>-15</Value>
+					<Value>-4~-3</Value>
+					<Value>+8~+9</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6</Value>
+					<Value>-2</Value>
+					<Value>KND</Value>
+					<Value>-3~-1</Value>
+					<Value>+6s</Value>
+					<Value>+7~+8</Value>
+					<Value>+5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+1</Value>
+					<Value>+8</Value>
+					<Value>+6</Value>
+					<Value>KND</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+4</Value>
+					<Value>YKU</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>92</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14 js6~</Value>
+					<Value> 10~</Value>
+					<Value>10,26</Value>
+					<Value>js9~34 cs35~36</Value>
+					<Value>28~32a (29~) js5~</Value>
+					<Value>14(16~)</Value>
+					<Value>16</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-15</Value>
+					<Value>+11</Value>
+					<Value>-23</Value>
+					<Value>-14~-13</Value>
+					<Value>-14~-11</Value>
+					<Value>-10~-6</Value>
+					<Value>-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-3</Value>
+					<Value>+9~+13s</Value>
+					<Value>+11(SH)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5~+6s</Value>
+					<Value>+13kg</Value>
+					<Value>+1~+2</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+3</Value>
+					<Value>YKU</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+6</Value>
+					<Value>0~+2</Value>
+					<Value>CS</Value>
+					<Value>-8</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>93</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>24~28s (26~) cs1~</Value>
+					<Value>16~17ad cs6~</Value>
+					<Value>s cs10~</Value>
+					<Value>14</Value>
+					<Value>20~21 js5~17</Value>
+					<Value>28ad (29~) js5~</Value>
+					<Value>65</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>+9~+10g (wl+15g)</Value>
+					<Value>+2~+3s</Value>
+					<Value>-10~-9</Value>
+					<Value>0~+1</Value>
+					<Value>-1</Value>
+					<Value>+1</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+9~+10kg</Value>
+					<Value>KND</Value>
+					<Value>+5~+6s</Value>
+					<Value>+5</Value>
+					<Value>-3~-1</Value>
+					<Value>CS</Value>
+					<Value>Launch (JG?)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>+7</Value>
+					<Value>+24~+25g</Value>
+					<Value>CS</Value>
+					<Value>-6</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>97</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 10~</Value>
+					<Value>a js19~</Value>
+					<Value>11</Value>
+					<Value>20~21 (22~)</Value>
+					<Value>43 9~ 34~</Value>
+					<Value>14~15 (23~)</Value>
+					<Value>js1~9, js28~41</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>-11</Value>
+					<Value>-13(-15)</Value>
+					<Value>-15</Value>
+					<Value>-4</Value>
+					<Value>-14</Value>
+					<Value>-13~-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+5~+6</Value>
+					<Value>0</Value>
+					<Value>+5</Value>
+					<Value>+4</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+7~+8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-3</Value>
+					<Value>CS</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>CS (12~13)</Value>
+					<Value>-4</Value>
+					<Value>+3~+4</Value>
+					<Value>+2</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>99</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>11</Value>
+					<Value>28~32ad (29~) js5~</Value>
+					<Value>16 4~</Value>
+					<Value> 10~</Value>
+					<Value>23~28 js7~</Value>
+					<Value>12</Value>
+					<Value>14</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5</Value>
+					<Value>-14~-13</Value>
+					<Value>-6~-5</Value>
+					<Value>-13~-11</Value>
+					<Value>-27</Value>
+					<Value>+4</Value>
+					<Value>-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>BU</Value>
+					<Value>0~+7s</Value>
+					<Value>+5</Value>
+					<Value>+7</Value>
+					<Value>+9~+13s</Value>
+					<Value>-3</Value>
+					<Value>-4</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+5</Value>
+					<Value>+7~+8</Value>
+					<Value>+2</Value>
+					<Value>+12</Value>
+					<Value>+6~+7s (+8s)</Value>
+					<Value>+6</Value>
+					<Value>KND</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>101</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>11</Value>
+					<Value>20~24s cs1~</Value>
+					<Value> 10~</Value>
+					<Value>js1~11 cs15~</Value>
+					<Value>14~15</Value>
+					<Value>13~14</Value>
+					<Value>14</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-9~-8</Value>
+					<Value>+1~+2</Value>
+					<Value>-13</Value>
+					<Value>-6~-4</Value>
+					<Value>-18~-17</Value>
+					<Value>0~+1</Value>
+					<Value>-5</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3~+8s</Value>
+					<Value>+4</Value>
+					<Value>+8</Value>
+					<Value>+1</Value>
+					<Value>+7</Value>
+					<Value>+6s</Value>
+					<Value>KND</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>CS</Value>
+					<Value>+11</Value>
+					<Value>+6</Value>
+					<Value>-3~-1</Value>
+					<Value>+</Value>
+					<Value>+1~+2</Value>
+					<Value>KND</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>102</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14(16~)</Value>
+					<Value>28~32a (29~) js5~</Value>
+					<Value>12</Value>
+					<Value>s cs10~</Value>
+					<Value>13~14 (22~)</Value>
+					<Value>js9~34 cs35~36</Value>
+					<Value>14</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-17</Value>
+					<Value>-1</Value>
+					<Value>-5</Value>
+					<Value>-34</Value>
+					<Value>-15</Value>
+					<Value>-6</Value>
+					<Value>-13</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>0~+1</Value>
+					<Value>KND</Value>
+					<Value>-13</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+4</Value>
+					<Value>+5</Value>
+					<Value>-5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+8</Value>
+					<Value>-1</Value>
+					<Value>-3</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+11</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>103</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>11s cs1~</Value>
+					<Value>14 js6~</Value>
+					<Value>14~15, 25~26</Value>
+					<Value>14</Value>
+					<Value> 10~</Value>
+					<Value>18 js9~</Value>
+					<Value>11~12</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13~-11</Value>
+					<Value>+6~+7</Value>
+					<Value>-5~-4</Value>
+					<Value>+4</Value>
+					<Value>-3</Value>
+					<Value>-17</Value>
+					<Value>+8~+9</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-3~-1</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+7</Value>
+					<Value>-2(-4)</Value>
+					<Value>+3~+8s</Value>
+					<Value>KND</Value>
+					<Value>+5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7</Value>
+					<Value>Throw(KND)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+1~+2</Value>
+					<Value>+6s</Value>
+					<Value>+8</Value>
+					<Value>KND</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>111</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>10</Value>
+					<Value>11</Value>
+					<Value>14</Value>
+					<Value>13</Value>
+					<Value>20~21 (22~)</Value>
+					<Value>14 js6~</Value>
+					<Value>a js20~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6</Value>
+					<Value>-15</Value>
+					<Value>CS</Value>
+					<Value>-27</Value>
+					<Value>+8~+9</Value>
+					<Value>+2~+3s</Value>
+					<Value>-17</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3~+4</Value>
+					<Value>KND</Value>
+					<Value>+6s</Value>
+					<Value>-2</Value>
+					<Value>-1</Value>
+					<Value>+1~+2</Value>
+					<Value>-5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>+6s</Value>
+					<Value>+2~+3</Value>
+					<Value>CS</Value>
+					<Value>-2</Value>
+					<Value>+12</Value>
+					<Value>+11</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>113</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>10,20</Value>
+					<Value>13</Value>
+					<Value>14</Value>
+					<Value>10s cs4~</Value>
+					<Value>js1~11 cs15~</Value>
+					<Value>14~15 (23~)</Value>
+					<Value> 10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-14</Value>
+					<Value>-6~-5</Value>
+					<Value>+2~+3s</Value>
+					<Value>-11~-10</Value>
+					<Value>+8~+9</Value>
+					<Value>-13</Value>
+					<Value>-19</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>+6s</Value>
+					<Value>+7~+8</Value>
+					<Value>-2(-4)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-3~-1</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>-3</Value>
+					<Value>+7~+8</Value>
+					<Value>KND</Value>
+					<Value>uKZD</Value>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>YKU</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>114</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>16~17, 18~19</Value>
+					<Value>13~14 (22~)</Value>
+					<Value>10~</Value>
+					<Value> 10~</Value>
+					<Value>16</Value>
+					<Value>14~15 (23~)</Value>
+					<Value>1~9, 28~41</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-14</Value>
+					<Value>-13~-11</Value>
+					<Value>-10~-6</Value>
+					<Value>-20~-13</Value>
+					<Value>-8~-7</Value>
+					<Value>-14~-11</Value>
+					<Value>+1</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>+3~+8s</Value>
+					<Value>+4</Value>
+					<Value>+6</Value>
+					<Value>-8~-7s</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>CS (12~13)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5~+6</Value>
+					<Value>+24~+25g</Value>
+					<Value>+1~+2</Value>
+					<Value>+9~+10kg</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>115</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>16,31~32</Value>
+					<Value> 10~</Value>
+					<Value>14</Value>
+					<Value>10~</Value>
+					<Value>11</Value>
+					<Value>s cs10~</Value>
+					<Value>10s cs4~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13</Value>
+					<Value>-6~-4</Value>
+					<Value>-17</Value>
+					<Value>-3~-1</Value>
+					<Value>-14</Value>
+					<Value>-6</Value>
+					<Value>-4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-2</Value>
+					<Value>+3~+8s</Value>
+					<Value>+5~+6s</Value>
+					<Value>-16</Value>
+					<Value>-5</Value>
+					<Value>-12</Value>
+					<Value>+7~+8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>+7</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>Throw(KND)</Value>
+					<Value>BU</Value>
+					<Value>CS</Value>
+					<Value>+</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>116</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>18~</Value>
+					<Value> 1~</Value>
+					<Value>cs10~</Value>
+					<Value>13,30</Value>
+					<Value>17 pc8~16</Value>
+					<Value>14~15, 25~26</Value>
+					<Value> 10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13</Value>
+					<Value>+1</Value>
+					<Value>-9</Value>
+					<Value>-13~-11</Value>
+					<Value>+2~+3s</Value>
+					<Value>-11</Value>
+					<Value>-4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>-2</Value>
+					<Value>+9~+13s</Value>
+					<Value>-3(Launch (JG?))</Value>
+					<Value>-3</Value>
+					<Value>+4</Value>
+					<Value>+2~+6s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+6~+7s (+8s)</Value>
+					<Value>BU</Value>
+					<Value>CS</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-7</Value>
+					<Value>uKZD</Value>
+					<Value>-2(-4)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>117</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>19~26 (21~) cs16~</Value>
+					<Value>18</Value>
+					<Value>35~52 (41?~)</Value>
+					<Value>14</Value>
+					<Value>20</Value>
+					<Value>10~</Value>
+					<Value> 10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13~-11</Value>
+					<Value>-8~-7</Value>
+					<Value>-37</Value>
+					<Value>-14</Value>
+					<Value>-6</Value>
+					<Value>-11~-10</Value>
+					<Value>-17</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+9~+10kg</Value>
+					<Value>-16</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>BU</Value>
+					<Value>+2~+6s</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>+11(SH)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+9~+10kg</Value>
+					<Value>-3</Value>
+					<Value>+6</Value>
+					<Value>+11</Value>
+					<Value>+6a</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>119</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>20~21a (23~) js5~17</Value>
+					<Value>10,20</Value>
+					<Value>14</Value>
+					<Value>20 6~</Value>
+					<Value> 1~</Value>
+					<Value> 10~</Value>
+					<Value>9~34 35~36</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+28~+29?</Value>
+					<Value>-13~-11</Value>
+					<Value>-6~-5</Value>
+					<Value>-6</Value>
+					<Value>-20~-13</Value>
+					<Value>-10</Value>
+					<Value>-13</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+2</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>-13</Value>
+					<Value>+1~+3</Value>
+					<Value>+3~+4</Value>
+					<Value>+4~+5s</Value>
+					<Value>KND</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>CS</Value>
+					<Value>-8~-7s</Value>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>-1</Value>
+					<Value>-2</Value>
+					<Value>+1</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>125</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>15(16~)</Value>
+					<Value>16~17</Value>
+					<Value>cs10~</Value>
+					<Value>14~15</Value>
+					<Value>24~30ad (27~) js1~</Value>
+					<Value>17 pc8~16</Value>
+					<Value>s cs10~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+1</Value>
+					<Value>-22</Value>
+					<Value>-3</Value>
+					<Value>-6</Value>
+					<Value>-6~-5</Value>
+					<Value>0</Value>
+					<Value>-13~-12</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3~+8s</Value>
+					<Value>+5~+6s</Value>
+					<Value>-13</Value>
+					<Value>-3</Value>
+					<Value>+7~+8</Value>
+					<Value>+5~+6</Value>
+					<Value>+2~+6s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+4</Value>
+					<Value>+9</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>+6a</Value>
+					<Value>-4</Value>
+					<Value>+2</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>126</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>12</Value>
+					<Value>s cs10~</Value>
+					<Value>16</Value>
+					<Value>11 1~</Value>
+					<Value>14</Value>
+					<Value>17 pc8~16</Value>
+					<Value>14(16~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-6~-5</Value>
+					<Value>-6</Value>
+					<Value>-17~-16</Value>
+					<Value>+2~+3s</Value>
+					<Value>+28~+29?</Value>
+					<Value>-6~-4</Value>
+					<Value>+10~+11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>+3~+4</Value>
+					<Value>-13</Value>
+					<Value>+1</Value>
+					<Value>+5</Value>
+					<Value>+2s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>CS</Value>
+					<Value>KND</Value>
+					<Value>+23~+24g</Value>
+					<Value>-3</Value>
+					<Value>+7</Value>
+					<Value>-3~-1</Value>
+					<Value>-7</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>130</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 10~</Value>
+					<Value>20~21 js5~17</Value>
+					<Value>14</Value>
+					<Value>19~20</Value>
+					<Value>a js19~</Value>
+					<Value>11</Value>
+					<Value>28~32ad (29~) js5~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5</Value>
+					<Value>-13~-11</Value>
+					<Value>-13</Value>
+					<Value>-19</Value>
+					<Value>+6~+7</Value>
+					<Value>-15</Value>
+					<Value>-6~-4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>-13</Value>
+					<Value>+1</Value>
+					<Value>BU</Value>
+					<Value>+3</Value>
+					<Value>-3</Value>
+					<Value>-2</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7~+8</Value>
+					<Value>-5</Value>
+					<Value>Throw(KND)</Value>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>+9</Value>
+					<Value>YKU</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>134</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>20~21</Value>
+					<Value>43 9~ 34~</Value>
+					<Value>16</Value>
+					<Value>9~34 35~36</Value>
+					<Value>65</Value>
+					<Value>12s cs1~</Value>
+					<Value>14</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-17</Value>
+					<Value>-10~-6</Value>
+					<Value>-4</Value>
+					<Value>-6</Value>
+					<Value>+1</Value>
+					<Value>-13</Value>
+					<Value>+4</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+8</Value>
+					<Value>-2</Value>
+					<Value>+3~+4</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>-8</Value>
+					<Value>+5</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-3</Value>
+					<Value>BU</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+6s</Value>
+					<Value>CS</Value>
+					<Value>-1</Value>
+					<Value>Launch</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>135</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>11</Value>
+					<Value>js1~11 cs15~</Value>
+					<Value>17~18</Value>
+					<Value>18~</Value>
+					<Value>16s cs4~</Value>
+					<Value> 10~</Value>
+					<Value>20~21</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-13~-12</Value>
+					<Value>-10~-8</Value>
+					<Value>-3</Value>
+					<Value>-13</Value>
+					<Value>-6</Value>
+					<Value>-22</Value>
+					<Value>-9~-8</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+4~+6s (KND)</Value>
+					<Value>+5</Value>
+					<Value>-2(-4)</Value>
+					<Value>+6</Value>
+					<Value>+5~+6s</Value>
+					<Value>+7</Value>
+					<Value>0~+7s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-4</Value>
+					<Value>+6</Value>
+					<Value>CS</Value>
+					<Value>CS (12~13)</Value>
+					<Value>+5</Value>
+					<Value>-3</Value>
+					<Value>-7</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>137</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>19~20</Value>
+					<Value>18~</Value>
+					<Value>12</Value>
+					<Value> 10~</Value>
+					<Value>13~14 (15~) cs1~3</Value>
+					<Value>10</Value>
+					<Value>28~32ad (29~) js5~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-19</Value>
+					<Value>-10~-8</Value>
+					<Value>-8~-7</Value>
+					<Value>-14</Value>
+					<Value>-9</Value>
+					<Value>-6</Value>
+					<Value>+6~+7</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6</Value>
+					<Value>+3~+8s</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+7~+8</Value>
+					<Value>+7</Value>
+					<Value>0~+1</Value>
+					<Value>+1~+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7</Value>
+					<Value>KND</Value>
+					<Value>-2</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>+7~+8</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+5</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>138</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>17~18</Value>
+					<Value>12</Value>
+					<Value>10</Value>
+					<Value> 10~</Value>
+					<Value>20~21 (22~)</Value>
+					<Value>14</Value>
+					<Value>9~34 35~36</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-27</Value>
+					<Value>-6</Value>
+					<Value>-17~-16</Value>
+					<Value>-13~-11</Value>
+					<Value>-3~-2</Value>
+					<Value>-13</Value>
+					<Value>-11</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+7~+8</Value>
+					<Value>Throw(KND)</Value>
+					<Value>+2~+3</Value>
+					<Value>+5</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+8</Value>
+					<Value>+3~+8s</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+8</Value>
+					<Value>+5~+6</Value>
+					<Value>BU</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>+7</Value>
+					<Value>CS</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>140</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value> 10~</Value>
+					<Value>20 6~</Value>
+					<Value>13</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>10~</Value>
+					<Value>23ad(26~) js3~</Value>
+					<Value>35~52 (41?~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-3~-1</Value>
+					<Value>-14</Value>
+					<Value>-15</Value>
+					<Value>-6~0</Value>
+					<Value>-11</Value>
+					<Value>+1</Value>
+					<Value>CS</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>+5</Value>
+					<Value>+5~+6</Value>
+					<Value>-8</Value>
+					<Value>+6s</Value>
+					<Value>+7~+8</Value>
+					<Value>+2~+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-7</Value>
+					<Value>-6</Value>
+					<Value>Throw(KND)</Value>
+					<Value>KND</Value>
+					<Value>YKU</Value>
+					<Value>-3~-1</Value>
+					<Value>-2</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>142</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>s cs10~</Value>
+					<Value>20(29~) cs6~</Value>
+					<Value>13~14 (16~)</Value>
+					<Value> 10~</Value>
+					<Value>13</Value>
+					<Value>20 6~</Value>
+					<Value>16,31~32</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-3</Value>
+					<Value>-6</Value>
+					<Value>-15~-14</Value>
+					<Value>-24s</Value>
+					<Value>-6~0</Value>
+					<Value>-17</Value>
+					<Value>-5</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6</Value>
+					<Value>+7~+8</Value>
+					<Value>+1</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>-6</Value>
+					<Value>+8</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>KND</Value>
+					<Value>-2</Value>
+					<Value>+23~+24g</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+9~+10kg</Value>
+					<Value>-12</Value>
+					<Value>+6</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>143</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>20~21</Value>
+					<Value>9~34 35~36</Value>
+					<Value>16~17, 18~19</Value>
+					<Value>14~15</Value>
+					<Value>s cs10~</Value>
+					<Value>10~</Value>
+					<Value>14,33</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-3</Value>
+					<Value>-10</Value>
+					<Value>-1</Value>
+					<Value>-6</Value>
+					<Value>-6~-1</Value>
+					<Value>-19</Value>
+					<Value>+1</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+1</Value>
+					<Value>CS</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>-3</Value>
+					<Value>+2</Value>
+					<Value>-2</Value>
+					<Value>+2~+3</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Launch (JG?)</Value>
+					<Value>+11</Value>
+					<Value>CS</Value>
+					<Value>+7~+8</Value>
+					<Value>-3</Value>
+					<Value>0~+2</Value>
+					<Value>+2</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>148</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>11~12</Value>
+					<Value>12s cs4~</Value>
+					<Value>11</Value>
+					<Value>17~18</Value>
+					<Value>16s cs4~</Value>
+					<Value>12</Value>
+					<Value>24~30ad (27~) js1~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>0~+1</Value>
+					<Value>-4~-3</Value>
+					<Value>-10</Value>
+					<Value>-24s</Value>
+					<Value>-13</Value>
+					<Value>+2~+3s</Value>
+					<Value>-10~-8</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>+5</Value>
+					<Value>+13kg</Value>
+					<Value>-13</Value>
+					<Value>+8</Value>
+					<Value>+2</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+</Value>
+					<Value>KND</Value>
+					<Value>-8</Value>
+					<Value>uKZD</Value>
+					<Value>CS</Value>
+					<Value>+5~+6</Value>
+					<Value>-12</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>149</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>12</Value>
+					<Value>10s cs4~</Value>
+					<Value>11</Value>
+					<Value>13</Value>
+					<Value>43 9~ 34~</Value>
+					<Value>15(16~)</Value>
+					<Value>10</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>0</Value>
+					<Value>-6</Value>
+					<Value>-11~-10</Value>
+					<Value>-3~-2</Value>
+					<Value>-5</Value>
+					<Value>-6~-4</Value>
+					<Value>-3</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>-8~-7s</Value>
+					<Value>Throw(KND)</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>KND</Value>
+					<Value>+3~+8s</Value>
+					<Value>+3~+4</Value>
+					<Value>+4</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>-7</Value>
+					<Value>+5</Value>
+					<Value>-2</Value>
+					<Value>-3</Value>
+					<Value>+9~+10kg</Value>
+					<Value>+5~+6</Value>
+					<Value>Launch (JG?)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>159</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>24~30ad (27~) js1~</Value>
+					<Value>js1~9, js28~41</Value>
+					<Value>20~21 js5~17</Value>
+					<Value>a js20~</Value>
+					<Value>24~28s (26~) cs1~</Value>
+					<Value>17~18</Value>
+					<Value>14 js6~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+2~+3s</Value>
+					<Value>-27</Value>
+					<Value>-15</Value>
+					<Value>-8</Value>
+					<Value>-17~-13</Value>
+					<Value>-6</Value>
+					<Value>0</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6s</Value>
+					<Value>KND</Value>
+					<Value>+8</Value>
+					<Value>-2(-4)</Value>
+					<Value>+5</Value>
+					<Value>KND(KND)</Value>
+					<Value>+4</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>Throw(KND)</Value>
+					<Value>KND</Value>
+					<Value>+5~+6</Value>
+					<Value>+5</Value>
+					<Value>+6s</Value>
+					<Value>-3</Value>
+					<Value>YKU</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>160</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14,33</Value>
+					<Value>13</Value>
+					<Value>16 4~</Value>
+					<Value>15~16</Value>
+					<Value>16,31~32</Value>
+					<Value>18~</Value>
+					<Value>cs18~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-19</Value>
+					<Value>-13~-11</Value>
+					<Value>-3</Value>
+					<Value>-12</Value>
+					<Value>-17~-16</Value>
+					<Value>-14~-13</Value>
+					<Value>-6~-5</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+3~+8s</Value>
+					<Value>KND</Value>
+					<Value>+7</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+6</Value>
+					<Value>-16</Value>
+					<Value>+23~+24g</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+1</Value>
+					<Value>+4</Value>
+					<Value>Launch</Value>
+					<Value>CS</Value>
+					<Value>KND</Value>
+					<Value>-3</Value>
+					<Value>Launch (JG?)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>161</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>23~28 js7~</Value>
+					<Value>22~23 (23~)</Value>
+					<Value>20(29~) cs6~</Value>
+					<Value>13</Value>
+					<Value>15~16</Value>
+					<Value>20 pc8~17</Value>
+					<Value>js1~9, js28~41</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+2~+3s</Value>
+					<Value>+1</Value>
+					<Value>0~+1</Value>
+					<Value>-16</Value>
+					<Value>-17</Value>
+					<Value>-10</Value>
+					<Value>-9</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>CS</Value>
+					<Value>-3</Value>
+					<Value>+4~+6s (KND)</Value>
+					<Value>+5</Value>
+					<Value>+8</Value>
+					<Value>+2~+6s</Value>
+					<Value>+4</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+3~+4</Value>
+					<Value>Launch (JG?)</Value>
+					<Value>+1</Value>
+					<Value>-3~-1</Value>
+					<Value>+7</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>-3</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>162</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>14(16~)</Value>
+					<Value>20s cs6~</Value>
+					<Value>18,26</Value>
+					<Value>43 js9~ cs34~</Value>
+					<Value>13</Value>
+					<Value>20~21</Value>
+					<Value>20(29~) cs6~</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+1</Value>
+					<Value>-5</Value>
+					<Value>-6~-5</Value>
+					<Value>-34</Value>
+					<Value>-11</Value>
+					<Value>-9</Value>
+					<Value>+2~+3s</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5~+6s</Value>
+					<Value>+1</Value>
+					<Value>+2</Value>
+					<Value>+5</Value>
+					<Value>+8</Value>
+					<Value>+33~+50 (SH)</Value>
+					<Value>0</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+33~+50 (SH)</Value>
+					<Value>+7~+8</Value>
+					<Value>KND</Value>
+					<Value>+6s</Value>
+					<Value>+20~+21kg</Value>
+					<Value>-2</Value>
+					<Value>-8</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>168</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>23~28 js7~</Value>
+					<Value>10~</Value>
+					<Value>13</Value>
+					<Value>13~14 (16~)</Value>
+					<Value>17~18</Value>
+					<Value>24~28s (26~) cs1~</Value>
+					<Value>14(16~)</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>-5</Value>
+					<Value>-9~-8</Value>
+					<Value>-17</Value>
+					<Value>-6~-1</Value>
+					<Value>-3</Value>
+					<Value>-6~-5</Value>
+					<Value>-13~-12</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+6</Value>
+					<Value>+8</Value>
+					<Value>Launch (JG?)(+4a)</Value>
+					<Value>KND</Value>
+					<Value>+6a</Value>
+					<Value>-17</Value>
+					<Value>Launch (JG?)</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+7~+8</Value>
+					<Value>+5</Value>
+					<Value>+2</Value>
+					<Value>+6s</Value>
+					<Value>YKU</Value>
+					<Value>-12</Value>
+					<Value>Throw(KND)</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+		<move>
+			<id>171</id>
+			<WrongAnswers>
+				<StartUp>
+					<Value>10~</Value>
+					<Value>a js20~</Value>
+					<Value>14,33</Value>
+					<Value>28~32ad (29~) js5~</Value>
+					<Value>16 4~</Value>
+					<Value>18~</Value>
+					<Value>13</Value>
+				</StartUp>
+				<BlockFrame>
+					<Value>+8~+9</Value>
+					<Value>0</Value>
+					<Value>-6~0</Value>
+					<Value>-15</Value>
+					<Value>-13</Value>
+					<Value>-13~-11</Value>
+					<Value>-19</Value>
+				</BlockFrame>
+				<HitFrame>
+					<Value>+5</Value>
+					<Value>+9~+10kg</Value>
+					<Value>+7</Value>
+					<Value>+2</Value>
+					<Value>+6s</Value>
+					<Value>-6</Value>
+					<Value>-2</Value>
+				</HitFrame>
+				<CounterHitFrame>
+					<Value>+23~+24g</Value>
+					<Value>+1~+3</Value>
+					<Value>+11</Value>
+					<Value>+18</Value>
+					<Value>+5~+6</Value>
+					<Value>CS</Value>
+					<Value>+5</Value>
+				</CounterHitFrame>
+			</WrongAnswers>
+		</move>
+	</moves>
+</quiz>

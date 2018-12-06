@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<character id="6" name="Jin">
+	<moves>
+		<move>
+			<id>1</id>
+			<name>1</name>
+			<command>
+                <input>>, +1, ></input>
+                <hitLevel>h</hitLevel>
+                <damage>7</damage>
+                <StartUp>10</StartUp>
+                <BlockFrame>+1</BlockFrame>
+                <HitFrame>+8</HitFrame>
+                <CounterHitFrame>+8</CounterHitFrame>
+                <tags>
+                    <safe/>
+                </tags>
+            </command>
+		</move>
+        <move>
+			<id>2</id>
+			<name>1,2</name>
+			<command>
+                <input>>, +1, ></input>
+                <hitLevel>h</hitLevel>
+                <damage>7</damage>
+                <StartUp>10</StartUp>
+                <BlockFrame>+1</BlockFrame>
+                <HitFrame>+8</HitFrame>
+                <CounterHitFrame>+8</CounterHitFrame>
+                <tags>
+                    <safe/>
+                </tags>
+            </command>
+            <command>
+                <input>+2, ></input>
+                <hitLevel>h</hitLevel>
+                <damage>12</damage>
+                <StartUp></StartUp>
+                <BlockFrame>-2</BlockFrame>
+                <HitFrame>+3</HitFrame>
+                <CounterHitFrame>+7</CounterHitFrame>
+                <tags>
+                    <safe/>
+                </tags>
+            </command>
+		</move>
+        <move>
+            <id>15</id>
+            <command>
+                <input>>, +1+2, ></input>
+                <hitLevel>m,m,h</hitLevel>
+                <damage>5,5,20</damage>
+                <StartUp>12,20,32</StartUp>
+                <BlockFrame>-14</BlockFrame>
+                <HitFrame>KND</HitFrame>
+                <CounterHitFrame>KND</CounterHitFrame>
+                <tags>
+                    <Punishable/>
+                </tags>
+            </command>
+        </move>
+    </moves>
+</character>

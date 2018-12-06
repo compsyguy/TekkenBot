@@ -1,14 +1,15 @@
-import requests
-from multiprocessing import queues #pyinstaller workaround  https://stackoverflow.com/questions/40768570/importerror-no-module-named-queue-while-running-my-app-freezed-with-cx-freeze
+#import requests
+#from multiprocessing import queues #pyinstaller workaround  https://stackoverflow.com/questions/40768570/importerror-no-module-named-queue-while-running-my-app-freezed-with-cx-freeze
 import json
 
-CURRENT_VERSION = 'v0.8.0'
+CURRENT_VERSION = 'v0.12.0'
 
 
 def check_version(force_print=False):
-    if 'dev' in CURRENT_VERSION:
+#    if 'dev' in CURRENT_VERSION:
+    if 'v0.12.0' in CURRENT_VERSION:
         print("Tekken Bot version check disabled.")
-        print("DEVELOPER NOTE: Remember to update VersionChecker.CURRENT_VERSION before publishing a release.")
+#        print("DEVELOPER NOTE: Remember to update VersionChecker.CURRENT_VERSION before publishing a release.")
     else:
         try:
             r = requests.get('https://api.github.com/repos/roguelike2d/TekkenBot/releases/latest')

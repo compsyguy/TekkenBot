@@ -1,0 +1,1 @@
+pyinstaller --windowed --clean --icon=TekkenData/tekken_bot_close.ico --add-data TekkenData;TekkenData  --name TekkenAcademy GUI_TekkenAcademy.py

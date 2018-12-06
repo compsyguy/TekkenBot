@@ -2,7 +2,7 @@
 Our abstract overlay class provides shared tools for our overlays
 """
 
-from ConfigReader import ConfigReader
+from ConfigReader import ConfigReader, ReloadableConfig
 from enum import Enum
 import platform
 from tkinter import *
@@ -116,6 +116,8 @@ class Overlay:
             self.overlay_visible = False
 
     def show(self):
+#       print("Reloading configs...")
+        ReloadableConfig.reload()
         self.toplevel.deiconify()
         self.overlay_visible = True
 

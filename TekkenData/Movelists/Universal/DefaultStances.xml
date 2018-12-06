@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<stances>
+    <stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+</stances>

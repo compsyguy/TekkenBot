@@ -191,7 +191,7 @@ class GUI_TekkenBotPrime(Tk):
             self.overlay = cio.GUI_CommandInputOverlay(self, self.launcher)
             self.overlay.hide()
         if self.mode == OverlayMode.PunishCoach:
-            self.overlay = pco.GUI_PunishCoashOverlay(self, self.launcher)
+            self.overlay = pco.GUI_PunishCoachOverlay(self, self.launcher)
             self.overlay.hide()
         if self.mode == OverlayMode.MatchupRecord:
             self.overlay = mso.GUI_MatchStatOverlay(self, self.launcher)

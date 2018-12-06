@@ -10,6 +10,7 @@ from enum import Enum
 import GUI_Overlay
 from GUI_Overlay import CurrentColorScheme, ColorSchemeEnum
 
+from collections import Counter
 
 class DataColumns(Enum):
     XcommX = 0
@@ -67,8 +68,27 @@ class TextRedirector(object):
     def populate_column_names(self, booleans_for_columns):
         column_names = ""
         for i, enum in enumerate(DataColumns):
+            col_name = enum.name.replace('X', '')
+            col_len = len(col_name)
+            global col_max_length
+            col_max_length = 8
             if booleans_for_columns[i]:
-                column_names += "|{}".format(enum.name.replace('X', ' '))
+
+                if col_len < col_max_length:
+                    if col_len % 2 == 0:
+                        needed_spaces = col_max_length - col_len
+                        col_name = (" " * int(needed_spaces / 2)) + col_name + (" " * int(needed_spaces / 2))
+                    else:
+                        needed_spaces = col_max_length - col_len
+                        col_name = (" " * int(needed_spaces / 2)) + col_name + (" " * int(needed_spaces / 2 + 1))
+
+                
+                col_name = '|' + col_name
+
+                        
+                
+                
+                column_names += col_name
         self.set_first_column(column_names)
 
     def set_first_column(self, first_column_string):
@@ -121,8 +141,22 @@ class TextRedirector(object):
                 out = ""
                 for i, col in enumerate(data.split('|')):
                     if self.columns_to_print[i]:
-                        out += '|' + col
+                        col_value = col.replace(' ', '')
+                        col_value_len = len(col_value)
 
+                        if col_value_len < col_max_length:
+                            if col_value_len % 2 == 0:
+                                needed_spaces = col_max_length - col_value_len
+                                col_value = (" " * int(needed_spaces / 2)) + col_value + (" " * int(needed_spaces / 2))
+                            else:
+                                needed_spaces = col_max_length - col_value_len
+                                col_value = (" " * int(needed_spaces / 2 + 1)) + col_value + (" " * int(needed_spaces / 2))
+                        
+                        out += '|' + col_value
+
+                print("\n" + data)
+                    
+                        
                 out += "\n"
                 self.widget.configure(state="normal")
                 self.widget.insert("end", out, text_tag)
@@ -135,7 +169,7 @@ class TextRedirector(object):
 class GUI_FrameDataOverlay(GUI_Overlay.Overlay):
     def __init__(self, master, launcher):
 
-        GUI_Overlay.Overlay.__init__(self, master, (1000, 86), "Tekken Bot: Frame Data Overlay")
+        GUI_Overlay.Overlay.__init__(self, master, (1021, 86), "Tekken Bot: Frame Data Overlay")
 
         self.show_live_framedata = self.tekken_config.get_property(GUI_Overlay.DisplaySettings.config_name(), GUI_Overlay.DisplaySettings.tiny_live_frame_data_numbers.name, True)
 
@@ -208,7 +242,7 @@ class GUI_FrameDataOverlay(GUI_Overlay.Overlay):
         frame_advantage_var = StringVar()
         frame_advantage_var.set('?')
         frame_advantage_label = Label(self.toplevel, textvariable=frame_advantage_var, font=("Consolas", 44), width=4, anchor='c',
-                                        borderwidth=4, relief='ridge')
+                                        borderwidth=1, relief='ridge')
         frame_advantage_label.grid(row=0, column=col)
         return frame_advantage_var, frame_advantage_label
 
@@ -221,7 +255,7 @@ class GUI_FrameDataOverlay(GUI_Overlay.Overlay):
         return attack_type_var
 
     def create_textbox(self, col):
-        textbox = Text(self.toplevel, font=("Consolas", 14), wrap=NONE, highlightthickness=0, pady=0, relief='flat')
+        textbox = Text(self.toplevel, font=("Consolas", 11), wrap=NONE, highlightthickness=0, pady=0, relief='flat')
         textbox.grid(row=0, column=col, rowspan=2, sticky=N + S + W + E)
         textbox.configure(background=self.background_color)
         textbox.configure(foreground=CurrentColorScheme.dict[ColorSchemeEnum.system_text])
@@ -236,6 +270,7 @@ class GUI_FrameDataOverlay(GUI_Overlay.Overlay):
                 r_recovery = str(self.launcher.gameState.GetBotFramesTillNextMove() - self.launcher.gameState.GetOppFramesTillNextMove())
                 if not '-' in l_recovery:
                     l_recovery = '+' + l_recovery
+                
                 if not '-' in r_recovery:
                     r_recovery = '+' + r_recovery
                 self.l_live_recovery.set(l_recovery)

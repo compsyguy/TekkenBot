@@ -1,8 +1,12 @@
 # TekkenBot
 AI and tools for playing and understanding Tekken 7.
 
+Created by roguelike2d. Maintained by the community. MAKE SURE YOU ALWAYS HAVE THE LATEST VERSION OF memory_address.ini
+
 ## Tools
-Available from https://github.com/roguelike2d/TekkenBot/releases
+Download from https://github.com/WAZAAAAA0/TekkenBot/releases
+
+If you're using a compiled release version, run TekkenBotPrime.exe. If you're running from source with Python 3 installed, run GUI_TekkenBotPrime.py
 
 ### FrameDataOverlay
 A window that can go over the game to display real time move information read from memory. Requires the game to be in windowed or borderless to work or can be run as a standalone window on a second screen.
@@ -23,7 +27,7 @@ Tekken Bot bots are programs that plays Tekken 7 on PC by reading the game's mem
 Pushes jab or a user inputted move when getting out of block stun.
 
 ### Punisher Bot
-Attempts to punish negative attacks with the best avaiable punish. Punishes are listed in the character's file in the /TekkenData folder.
+Attempts to punish negative attacks with the best available punish. Punishes are listed in the character's file in the /TekkenData folder.
 
 
 ## Project details
@@ -45,4 +49,3 @@ To find the player data object you can use the following values for player 1 ani
 Alternately, you can search for move damage which is displayed in training mode and active (usually) for the duration of the move.
 
 Whatever you find, there should be 9 values, eight in addresses located close together and one far away. Find the offset to the pointer to the pointer of any of the first 8 and replace the 'player_data_pointer_offset' value in MemoryAddressEnum.py.
-
