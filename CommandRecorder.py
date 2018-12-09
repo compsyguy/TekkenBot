@@ -3,7 +3,7 @@ from MoveInfoEnums import InputAttackCodes
 from TekkenEncyclopedia import TekkenEncyclopedia
 from TekkenGameState import TekkenGameReader
 from TekkenGameState import BotSnapshot
-
+import os
 
 
 class CommandRecorder(object):
@@ -58,7 +58,9 @@ class CommandRecorder(object):
         #if not self.launcher.gameState.stateLog:
         #    print("stateLog is empty")
         #    return
-        
+        if not self.launcher.gameState.stateLog:
+            return False
+            
         self.launcher.gameState.stateLog[-1].is_player_player_one = True #TURN ANALYSE 2P SIDE
 
         if self.launcher.gameState.stateLog[-1].is_player_player_one: #player one player two
@@ -137,7 +139,6 @@ class CommandRecorder(object):
 
         if len(button)>1:
             button=self.double_buttons[button]
-
 
         if ( (direction == 'N')  and (button == '') ) : #Neutral frames : N,''
             self.f = self.f + direction + ' ' + frame + ' ' + fth + "\n"
@@ -284,7 +285,11 @@ class CommandRecorder(object):
 #        f = open('.\\xml_maker\\'+character.capitalize()+'_outputplayback.txt','a') #add # at the end to finish the loop , or you can repeat to first move
         self.f = self.f + "#"
         
-        char = open('xml_maker\\' + character + '_move' + '_commands.txt', 'w')
+        file_name = 'xml_maker\\' + character + '_move' + '_commands.txt'
+        dir_name = os.path.dirname(file_name)
+        if not os.path.exists(dir_name):
+            os.makedirs(dir_name)
+        char = open(file_name, 'w')
         #char.write(self.f)
     #fw = open('shaheenmv.txt','w')
         playbackrecord=[]
@@ -294,7 +299,6 @@ class CommandRecorder(object):
         for line in self.f.splitlines():
             #print(line)
             playbackrecord.append(line.rstrip().split(' '))
-
         playbackrecord=self.parser(playbackrecord)
         y=1
         for i in playbackrecord:

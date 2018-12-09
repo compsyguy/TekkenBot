@@ -2,6 +2,7 @@
 __pycache__/
 /build
 /dist
-
+/TekkenData/Movelists/json-Needs fixing
+/xml_maker/
 TekkenBotPrime.spec
 TekkenAcademy.spec
