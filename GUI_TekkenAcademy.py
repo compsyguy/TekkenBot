@@ -92,7 +92,7 @@ class GUI_TekkenAcademy(Tk):
             successful_update = self.launcher.Update()
         if(self.overlay != None):
             self.overlay.update_location()
-        if(self.recorder != None and successful_update):
+        if(self.recorder != None):
             self.recorder.update_state()
         
     def record(self):
