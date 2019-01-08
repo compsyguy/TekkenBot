@@ -60,7 +60,12 @@ class CommandRecorder(object):
         #    return
         if not self.launcher.gameState.stateLog:
             return False
-            
+
+        #print("Self i: " + str(self.i))
+        #print("Framecount: " + str(self.launcher.gameState.stateLog[-1].frame_count))
+        #print(str(self.launcher.gameState.stateLog[-1].frame_count - self.i))
+        
+        
         self.launcher.gameState.stateLog[-1].is_player_player_one = True #TURN ANALYSE 2P SIDE
 
         if self.launcher.gameState.stateLog[-1].is_player_player_one: #player one player two
@@ -95,7 +100,8 @@ class CommandRecorder(object):
 
 
         if( ( (input[0] != InputDirectionCodes.N) or (input[1] != InputAttackCodes.N) ) and (input[0] != InputDirectionCodes.NULL)):
-            self.i+=1
+            #self.i+=1
+            self.i+= self.launcher.gameState.stateLog[-1].frame_count - self.launcher.gameState.stateLog[-2].frame_count
             if not self.in_move :
                 self.f = self.f + "#\n"
             self.in_move = True
@@ -120,7 +126,8 @@ class CommandRecorder(object):
             #i+=1
 
         elif( (self.in_move== True) and ( (input[0] == InputDirectionCodes.N) and (input[1] == InputAttackCodes.N) ) ):
-            self.i+=1 #Neutrals between inputs (delay)
+            #self.i+=1 #Neutrals between inputs (delay)
+            self.i+= self.launcher.gameState.stateLog[-1].frame_count - self.launcher.gameState.stateLog[-2].frame_count
 
             """ This block gathers neutral inputs (N,'') between two inputs that aren't neutrals during the move """
 

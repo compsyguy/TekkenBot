@@ -20,6 +20,8 @@ from BotTest import BotTest
 from BotBackDashCancelPractice import BotBackDashCancelPractice
 import sys
 from GUI_TestOverlay import GUI_TestOverlay
+import time
+
 #from GUI_CommandInputOverlay2 import GUI_CommandInputOverlay
 from CommandRecorder import CommandRecorder
 
@@ -77,12 +79,22 @@ class GUI_TekkenAcademy(Tk):
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
     def update_launcher(self):
-        try:
-            self.update()
-        finally:
-            self.stopBot
+        time1 = time.time()
+        successful_update = self.update()
+
+        time2 = time.time()
+        elapsed_time = 1000 * (time2 - time1)
+        if self.launcher != None and self.launcher.gameState.gameReader.HasWorkingPID():
+            self.after(max(2, 8 - int(round(elapsed_time))), self.update_launcher)
+        else:
+            self.after(1000, self.update_launcher)
             
-        self.after(5, self.update_launcher)
+#        try:
+#            self.update()
+#        finally:
+#            self.stopBot
+#            
+#        self.after(5, self.update_launcher)
 
     def update(self):
         successful_update = False

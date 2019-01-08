@@ -300,7 +300,8 @@ class TekkenGameReader:
     def PopulateMovelists(self, processHandle, data_type):
         movelist_str = self.c["NonPlayerDataAddresses"][data_type]
         movelist_trail = list(map(to_hex, movelist_str.split()))
-
+        
+        print(data_type)
         movelist_address = self.GetValueFromAddress(processHandle, self.module_address + movelist_trail[0], is64bit=True)
         movelist_block = self.GetBlockOfData(processHandle, movelist_address, self.c["MemoryAddressOffsets"]["movelist_size"])
 
@@ -320,11 +321,11 @@ class BotSnapshot:
         #self.xyz = (d['PlayerDataAddress.x'], d['PlayerDataAddress.y'], d['PlayerDataAddress.z'])
         self.move_id = d['PlayerDataAddress.move_id']
         self.simple_state = SimpleMoveStates(d['PlayerDataAddress.simple_move_state'])
-        self.attack_type = AttackType(d['PlayerDataAddress.attack_type'])
+        self.attack_type = AttackType(d['PlayerDataAddress.attack_type']) ###Found
         self.startup = d['PlayerDataAddress.attack_startup']
         self.startup_end = d['PlayerDataAddress.attack_startup_end']
         self.attack_damage = d['PlayerDataAddress.attack_damage']
-        self.complex_state = ComplexMoveStates(d['PlayerDataAddress.complex_move_state'])
+        self.complex_state = ComplexMoveStates(d['PlayerDataAddress.complex_move_state']) #Needs finding
         self.damage_taken = d['PlayerDataAddress.damage_taken']
         self.move_timer = d['PlayerDataAddress.move_timer']
         self.recovery = d['PlayerDataAddress.recovery']
@@ -332,10 +333,10 @@ class BotSnapshot:
         self.throw_flag = d['PlayerDataAddress.throw_flag']
         self.rage_flag = d['PlayerDataAddress.rage_flag']
         self.input_counter = d['PlayerDataAddress.input_counter']
-        self.input_direction = InputDirectionCodes(d['PlayerDataAddress.input_direction'])
-        self.input_button = InputAttackCodes(d['PlayerDataAddress.input_attack'] % InputAttackCodes.xRAGE.value)
+        self.input_direction = InputDirectionCodes(d['PlayerDataAddress.input_direction']) #Needs finding
+        self.input_button = InputAttackCodes(d['PlayerDataAddress.input_attack'] % InputAttackCodes.xRAGE.value) #Needs finding
         self.rage_button_flag = d['PlayerDataAddress.input_attack'] >= InputAttackCodes.xRAGE.value
-        self.stun_state = StunStates(d['PlayerDataAddress.stun_type'])
+        self.stun_state = StunStates(d['PlayerDataAddress.stun_type']) #Needs finding
         self.power_crush_flag = d['PlayerDataAddress.power_crush'] > 0
 
         cancel_window_bitmask = d['PlayerDataAddress.cancel_window']
@@ -345,7 +346,7 @@ class BotSnapshot:
         self.is_parry_1 = (CancelStatesBitmask.PARRYABLE_1.value & cancel_window_bitmask) == CancelStatesBitmask.PARRYABLE_1.value
         self.is_parry_2 = (CancelStatesBitmask.PARRYABLE_2.value & cancel_window_bitmask) == CancelStatesBitmask.PARRYABLE_2.value
 
-        self.throw_tech = ThrowTechs(d['PlayerDataAddress.throw_tech'])
+        self.throw_tech = ThrowTechs(d['PlayerDataAddress.throw_tech']) #Needs finding
 
         #self.highest_y = max(d['PlayerDataAddress.y'])
         #self.lowest_y = min(d['PlayerDataAddress.y'])
@@ -539,7 +540,7 @@ class TekkenGameState:
 
     def Update(self, buffer = 0):
         gameData = self.gameReader.GetUpdatedState(buffer)
-
+        
         if(gameData != None):
             if len(self.stateLog) == 0 or gameData.frame_count != self.stateLog[-1].frame_count: #we don't run perfectly in sync, if we get back the same frame, throw it away
                 self.duplicateFrameObtained = 0
