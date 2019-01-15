@@ -102,29 +102,10 @@ class GUI_PunishCoachOverlay(GUI_Overlay.Overlay):
 
     def play_sound_by_punish(self):
         if self.current_window.result == PunishWindow.Result.NO_PUNISH:
-            # if self.current_window.get_frame_advantage() > -14:
-            #     SoundPlayer.SoundPlayer.play_no_jab_punish()
-            # else:
-            #     SoundPlayer.SoundPlayer.play_no_launch_punish()
-            if self.current_window.get_frame_advantage() == -10: # No switch in python QQ
-                SoundPlayer.SoundPlayer.play_minus_10()
-            elif self.current_window.get_frame_advantage() == -11:
-                SoundPlayer.SoundPlayer.play_minus_11()
-            elif self.current_window.get_frame_advantage() == -12:
-                SoundPlayer.SoundPlayer.play_minus_12()
-            elif self.current_window.get_frame_advantage() == -13:
-                SoundPlayer.SoundPlayer.play_minus_13()
-            elif self.current_window.get_frame_advantage() == -14:
-                SoundPlayer.SoundPlayer.play_minus_14()
-            elif self.current_window.get_frame_advantage() == -15:
-                SoundPlayer.SoundPlayer.play_minus_15()
-            elif self.current_window.get_frame_advantage() == -16:
-                SoundPlayer.SoundPlayer.play_minus_16()
+            if self.current_window.get_frame_advantage() > -14:
+                SoundPlayer.SoundPlayer.play_no_jab_punish()
             else:
                 SoundPlayer.SoundPlayer.play_no_launch_punish()
-
-
-
         if self.current_window.result in (PunishWindow.Result.JAB_ON_NOT_LAUNCHABLE, PunishWindow.Result.LAUNCH_ON_LAUNCHABLE):
             pass
 

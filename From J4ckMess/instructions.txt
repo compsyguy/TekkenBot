@@ -1,0 +1,10 @@
+1 : Pick your character and launch recorder
+2 : Play moves from playback
+3 : Close recorder
+
+4 : Edit character name and launch notation_parser.py
+
+6 : Replicate movelist order with GUI_cmd_selector.py
+6 bis : You can select again the move name to withdraw is from the list
+
+7 : Launch dic.py to merge both lists

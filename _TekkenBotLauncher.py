@@ -54,6 +54,8 @@ class TekkenBotLauncher:
             if self.frameRate < 31:
                 pass
                 #print("WARNING! FRAME RATE IS LESS THAN 30 FPS (" + str(int(self.frameRate)) + "). TEKKEN BOT MAY BEHAVE ERRATICALLY.")
+                
+        return successfulUpdate
 
     def GetBot(self):
         return self.botBrain

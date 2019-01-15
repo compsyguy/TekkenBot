@@ -3,31 +3,40 @@ AI and tools for playing and understanding Tekken 7.
 
 Created by roguelike2d. Maintained by the community. MAKE SURE YOU ALWAYS HAVE THE LATEST VERSION OF memory_address.ini
 
-This Fork is geared toward creating tools to help players practice and understand the game better
-
 ## Tools
-Download executable from: https://github.com/compsyguy/TekkenBot/issues/1
+Download from https://github.com/WAZAAAAA0/TekkenBot/releases
 
-If you're using a compiled release version, run TekkenAcademy.exe. If you're running from source with Python 3 installed, run GUI_TekkenAcademy.py
+If you're using a compiled release version, run TekkenBotPrime.exe. If you're running from source with Python 3 installed, run GUI_TekkenBotPrime.py
 
-### Punish Practice
-Goes through all the punishbale moves for a character. It will tell you the frames and repeat the move 3 times before moving on. If the CPU ends in stance, it might error out currently.
-To use go to Practice Mode -> CPU Action: Controller.
-Have the CPU use the 2p Keyboard (Hit home on the keyboard).
-Works best in a wallless stage.
-See 
-https://github.com/compsyguy/TekkenBot/issues/2 
-for characters that are currently working.
+### FrameDataOverlay
+A window that can go over the game to display real time move information read from memory. Requires the game to be in windowed or borderless to work or can be run as a standalone window on a second screen.
+![Robot feet and bear paws 1](Screenshots/frame_data.png?raw=true)
 
-### Punish Test
-Like the practice, but it doesn't tell you ahead of time what's coming, and it will only do the move once.
-Once you successfully punish a move, it will remove it from the rotation.
+### CommandInputOverlay
+Display command inputs, similar to the one already in Tekken 7 except it gives frame by frame information and includes cancelable frames.
+![Robot feet and bear paws 2](Screenshots/command_input.png?raw=true)
+
+## Bots
+Currently in progress.
+
+### Details
+Tekken Bot bots are programs that plays Tekken 7 on PC by reading the game's memory, making decisions based on the game state, and then inputting keyboarding commands. Ultimately the goal is to create emergent behavior either through specific coding it or, if possible, a generalized learning algorithm.
+
+
+### Frame Trap Bot
+Pushes jab or a user inputted move when getting out of block stun.
+
+### Punisher Bot
+Attempts to punish negative attacks with the best available punish. Punishes are listed in the character's file in the /TekkenData folder.
 
 
 ## Project details
 
 ### Prerequisites
 Tekken Bot is developed on Python 3.5 and tries to use only core libraries to improve portability, download size, and, someday, optimization. It targets the 64-bit version of Tekken 7 available through Steam on Windows 7/8/10.
+
+### Deployment
+Tekken Bot distributable is built using pyinstaller with Python 3.5. On Windows, use the included build_project.bat file.
 
 ### Updating Memory Addresses with Cheat Engine after patches
 When Tekken 7.exe is patched on Steam, it may change the location in memory of the relevant addresses. To find the new addresses, use Cheat Engine or another memory editor to locate the values, then find the new pointer addresses:

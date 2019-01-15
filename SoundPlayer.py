@@ -21,24 +21,3 @@ class SoundPlayer:
             winsound.PlaySound("TekkenData/Sound/JAB_PUNISH.wav", winsound.SND_ASYNC)
         #else:
             #winsound.Beep(SoundPlayer.noteFreq('A', 3), 250)
-
-    def play_minus_10():
-        winsound.PlaySound("TekkenData/Sound/minus_10.wav", winsound.SND_ASYNC)
-
-    def play_minus_11():
-        winsound.PlaySound("TekkenData/Sound/minus_11.wav", winsound.SND_ASYNC)
-
-    def play_minus_12():
-        winsound.PlaySound("TekkenData/Sound/minus_12.wav", winsound.SND_ASYNC)
-
-    def play_minus_13():
-        winsound.PlaySound("TekkenData/Sound/minus_13.wav", winsound.SND_ASYNC)
-
-    def play_minus_14():
-        winsound.PlaySound("TekkenData/Sound/minus_14.wav", winsound.SND_ASYNC)
-
-    def play_minus_15():
-        winsound.PlaySound("TekkenData/Sound/minus_15.wav", winsound.SND_ASYNC)
-
-    def play_minus_16():
-        winsound.PlaySound("TekkenData/Sound/minus_16.wav", winsound.SND_ASYNC)

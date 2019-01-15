@@ -1,0 +1,1 @@
+in rage f, n, d, d/f+1+4, u/f (Only when hit )

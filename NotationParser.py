@@ -71,6 +71,12 @@ def ConvertNotationToCommands(notation:str, timingOccurances:int):
         commands.append((Command.ReleaseForward, 0))
         commands.append((Command.Wait, 2))
         commands += attackCommands
+    elif 'WS' in notation:
+        commands.append((Command.HoldDown, 0))
+        commands.append((Command.Wait, 8))
+        commands.append((Command.ReleaseDown, 0))
+        commands.append((Command.Wait, 1))
+        commands += attackCommands
     elif ':' in notation:
         waitFrames = int(notation.split('[')[1].split(']')[0])
         commands.append((Command.Wait, waitFrames - INPUT_DELAY))
@@ -88,7 +94,10 @@ def ConvertNotationToCommands(notation:str, timingOccurances:int):
         commands.append((Command.Wait, 1 + waitFrames ))
         commands += attackCommands
         commands.append((Command.ReleaseForward, 1))
-
+    elif 'SSU' in notation:
+        commands.append((Command.TapUp, 0))
+        commands.append((Command.Wait, 5))
+        commands += attackCommands
     elif notation.isdigit() and '+' not in notation:
         commands.append((Command.Wait, int(notation)))
     elif '>' in notation:
@@ -150,7 +159,6 @@ def ConvertNotationToCommands(notation:str, timingOccurances:int):
 
 def GetAttackCommands(notation:str):
     commands = []
-
     if '*' in notation:
         if '+1' in notation:
             commands.append((Command.Hold1, 0))

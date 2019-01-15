@@ -106,10 +106,6 @@ for move in j["moves"]:
                 ET.SubElement(MoveTags, "PowerCrush")
             elif tag.strip() == "Rage art":
                 ET.SubElement(MoveTags, "RageArt")
-            elif tag.strip() == "Rage drive":
-                ET.SubElement(MoveTags, "RageDrive")
-            elif tag.strip() == "Wall bounce":
-                ET.SubElement(MoveTags, "WallBounce")
             else:
                 #print(tag.strip())
                 ET.SubElement(MoveTags, tag.strip())
@@ -197,8 +193,7 @@ for id in PunishableMoves:
 #GPMove.text = "1"
                 
 f = open(sys.argv[3] + ".xml", "w")
-print(ET.tostring(Char))
-#f.write(ET.tostring(Char))
+# print(ET.tostring(Char))
 xmlFile = xml.dom.minidom.parseString(ET.tostring(Char))
 f.write(xmlFile.toprettyxml())
 f.close()
