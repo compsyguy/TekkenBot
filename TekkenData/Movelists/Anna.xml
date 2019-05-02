@@ -80,7 +80,7 @@
 		<move>
 			<id>7</id>
 			<name>1, 2, 1, 4</name>
-			<command>+1, 4, +2*, 5, +2-, 1, +1*, 5, +1-, 7, +4*, 5, +4-</command>
+			<command>+1, 4, +2*, 5, +2-, 5, +1*, 5, +1-, 7, +4*, 5, +4-</command>
 			<hitLevel>h, h, h, h</hitLevel>
 			<damage>7,10,6,18</damage>
 			<StartUp>10</StartUp>
@@ -292,7 +292,7 @@
 		<move>
 			<id>21</id>
 			<name>3, 3</name>
-			<command>+3*, 8, +3-, 12, +3*, 2, +3-</command>
+			<command>+3*, 4, +3-, 6, +3</command>
 			<hitLevel>h, l (TC)</hitLevel>
 			<damage>14,1</damage>
 			<StartUp>14</StartUp>
@@ -307,7 +307,7 @@
 		<move>
 			<id>22</id>
 			<name>3, 3, 2</name>
-			<command>+3*, 8, +3-, 12, +3*, 2, +3-, 33, +2*, 8, +2-</command>
+			<command>+3*, 4, +3-, 6, +3, 17, +2*, 4, +2-</command>
 			<hitLevel>h, l, m</hitLevel>
 			<damage>14,10,10</damage>
 			<StartUp>14</StartUp>
@@ -322,7 +322,7 @@
 		<move>
 			<id>23</id>
 			<name>3, 3, 4</name>
-			<command>+3*, 7, +3-, 12, +3*, 6, +3-, 27, +4*, 6, +4-</command>
+			<command>+3*, 4, +3-, 6, +3*, 3, +3-, 14, +4*, 3, +4-</command>
 			<hitLevel>h, l, h</hitLevel>
 			<damage>14,10,18</damage>
 			<StartUp>14</StartUp>
@@ -337,7 +337,7 @@
 		<move>
 			<id>24</id>
 			<name>3, 3, 4, 1</name>
-			<command>+3*, 7, +3-, 12, +3*, 6, +3-, 27, +4*, 6, +4-, 36, +1*, 2, +1-</command>
+			<command>+3*, 4, +3-, 6, +3*, 3, +3-, 14, +4*, 3, +4-, 18, +1</command>
 			<hitLevel>h, l, h, m</hitLevel>
 			<damage>14,10,18,20</damage>
 			<StartUp>14</StartUp>
@@ -381,7 +381,7 @@
 		<move>
 			<id>27</id>
 			<name>4, 3</name>
-			<command>+4*, 6, +4-, 12, +3*, 4, +3-</command>
+			<command>+4*, 2, +4-, 6, +3*, 2, +3-</command>
 			<hitLevel>h, l (TC)</hitLevel>
 			<damage>15,13</damage>
 			<StartUp>11</StartUp>
@@ -411,7 +411,7 @@
 		<move>
 			<id>29</id>
 			<name>f+2, 3</name>
-			<command>f+2, 19, +3*, 6, +3-</command>
+			<command>f+2, 8, +3*, 3, +3-</command>
 			<hitLevel>h, h</hitLevel>
 			<damage>14,2</damage>
 			<StartUp>14</StartUp>
@@ -442,7 +442,7 @@
 		<move>
 			<id>31</id>
 			<name>f+3, B</name>
-			<command>F+3, 2, -F, 31, B, 34, -B</command>
+			<command>f+3, 5, B, 15, -B</command>
 			<hitLevel>m (CJM)</hitLevel>
 			<damage>14</damage>
 			<StartUp>17</StartUp>
@@ -457,7 +457,7 @@
 		<move>
 			<id>32</id>
 			<name>f+3, 2</name>
-			<command>F+3, 2, -F, 19, +2*, 8, +2-</command>
+			<command>f+3, 9, +2*, 4, +2-</command>
 			<hitLevel>m, m</hitLevel>
 			<damage>14,2</damage>
 			<StartUp>17</StartUp>
@@ -488,7 +488,7 @@
 		<move>
 			<id>34</id>
 			<name>f+1+2 or WS+1+2</name>
-			<command>F+1+2, 2, -F</command>
+			<command>f+1+2</command>
 			<hitLevel>m</hitLevel>
 			<damage>21</damage>
 			<StartUp>18</StartUp>
@@ -503,7 +503,7 @@
 		<move>
 			<id>35</id>
 			<name>f+2+3</name>
-			<command>F+2+3, 2, -F</command>
+			<command>f+2+3</command>
 			<hitLevel>m</hitLevel>
 			<damage>25</damage>
 			<StartUp>14</StartUp>
@@ -548,7 +548,7 @@
 		<move>
 			<id>38</id>
 			<name>d/f+1, 2, 3</name>
-			<command>DF+1, 2, -D, 1, -F, 6, +2*, 4, +2-, 22, +3*, 10, +3-</command>
+			<command>DF+1, 2, -D, 1, -F, 6, +2*, 4, +2-, 15, +3*, 10, +3-</command>
 			<hitLevel>m, h, m (TJ)</hitLevel>
 			<damage>13,10,20</damage>
 			<StartUp>13</StartUp>
@@ -563,7 +563,7 @@
 		<move>
 			<id>39</id>
 			<name>d/f+1, 2, 3, b</name>
-			<command>DF+1, 2, -D, 1, -F, 8, +2*, 4, +2-, 22, +3*, 10, +3-, 47, B, 24, -B</command>
+			<command>DF+1, 2, -D, 1, -F, 8, +2*, 4, +2-, 15, +3*, 10, +3-, 5, B, 24, -B</command>
 			<hitLevel>m, h</hitLevel>
 			<damage>13, 10</damage>
 			<StartUp>13</StartUp>
@@ -578,7 +578,7 @@
 		<move>
 			<id>40</id>
 			<name>d/f+1, 2, 4</name>
-			<command>DF+1, 2, -D, 1, -F, 16, +2*, 6, +2-, 16, +4*, 6, +4-</command>
+			<command>DF+1, 2, -D, 1, -F, 8, +2*, 4, +2-, 15, +4*, 6, +4-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,10,22</damage>
 			<StartUp>13</StartUp>
@@ -594,7 +594,7 @@
 		<move>
 			<id>41</id>
 			<name>d/f+2</name>
-			<command>DF+2, 2, -D, 1, -F</command>
+			<command>df+2</command>
 			<hitLevel>m</hitLevel>
 			<damage>16</damage>
 			<StartUp>16</StartUp>
@@ -624,7 +624,7 @@
 		<move>
 			<id>43</id>
 			<name>d/f+3, 1, u or d</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +1*, 12, +1-, 18, U, 56, -U</command>
+			<command>df+3, 10, +1*, 5, +1-, 7, U, 25, -U</command>
 			<hitLevel>m (SS)</hitLevel>
 			<damage>13</damage>
 			<StartUp>14</StartUp>
@@ -639,7 +639,7 @@
 		<move>
 			<id>44</id>
 			<name>d/f+3, 1, b</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +1*, 12, +1-, 18, B, 56, -B</command>
+			<command>df+3, 10, +1*, 5, +1-, 7, B, 25, -B</command>
 			<hitLevel>m (CJM)</hitLevel>
 			<damage>13</damage>
 			<StartUp>14</StartUp>
@@ -654,7 +654,7 @@
 		<move>
 			<id>45</id>
 			<name>d/f+3, 1</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +1*, 9, +1-</command>
+			<command>df+3, 9, +1*, 5, +1-</command>
 			<hitLevel>m, h</hitLevel>
 			<damage>13,10</damage>
 			<StartUp>14</StartUp>
@@ -669,7 +669,7 @@
 		<move>
 			<id>46</id>
 			<name>d/f+3, 1, 2</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +1*, 9, +1-, 33, +2*, 5, +2-</command>
+			<command>df+3, 9, +1*, 5, +1-, 14, +2*, 3, +2-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,10,6</damage>
 			<StartUp>14</StartUp>
@@ -684,7 +684,7 @@
 		<move>
 			<id>47</id>
 			<name>d/f+3, 1, 4</name>
-			<command>DF+3, 2, -D, 1, -F, 24, +1*, 11, +1-, 33, +4*, 8, +4-</command>
+			<command>df+3, 10, +1*, 5, +1-, 15, +4*, 3, +4-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,10,20</damage>
 			<StartUp> </StartUp>
@@ -699,7 +699,7 @@
 		<move>
 			<id>48</id>
 			<name>d/f+3, 1, 4, 2</name>
-			<command>DF+3, 2, -D, 1, -F, 24, +1*, 11, +1-, 33, +4*, 8, +4-, 24, +2*, 6, +2-</command>
+			<command>df+3, 10, +1*, 5, +1-, 15, +4*, 3, +4-, 11, +2*, 3, +2-</command>
 			<hitLevel>m, h, h, h</hitLevel>
 			<damage>13,10,20,12</damage>
 			<StartUp> </StartUp>
@@ -714,7 +714,7 @@
 		<move>
 			<id>49</id>
 			<name>d/f+3, 1, 4, 2, u or b</name>
-			<command>DF+3, 2, -D, 1, -F, 24, +1*, 11, +1-, 33, +4*, 8, +4-, 24, +2*, 6, +2-, 4, U, 15, -U</command>
+			<command>df+3, 10, +1*, 5, +1-, 15, +4*, 3, +4-, 11, +2*, 3, +2-, 4, U, 15, -U</command>
 			<hitLevel>m, h, h, h (SS)</hitLevel>
 			<damage>13,10,20,12</damage>
 			<StartUp> </StartUp>
@@ -729,7 +729,7 @@
 		<move>
 			<id>50</id>
 			<name>d/f+3, 1, 4, 2, 3</name>
-			<command>DF+3, 2, -D, 1, -F, 32, +1*, 8, +1-, 34, +4*, 8, +4-, 36, +2*, 12, +2-, 30, +3*, 10, +3-</command>
+			<command>df+3, 13, +1*, 4, +1-, 14, +4*, 4, +4-, 14, +2*, 6, +2-, 12, +3*, 4, +3-</command>
 			<hitLevel>m, h, h, h, h</hitLevel>
 			<damage>13,10,20,12,20</damage>
 			<StartUp> </StartUp>
@@ -744,7 +744,7 @@
 		<move>
 			<id>51</id>
 			<name>d/f+3, 1, 4, 2, u/f+3</name>
-			<command>DF+3, 2, -D, 1, -F, 25, +1*, 10, +1-, 29, +4*, 10, +4-, 30, +2*, 13, +2-, 44, UF+3, 14, -U, 1, -F, UF, 20, -U, 1, -F</command>
+			<command>df+3, 11, +1*, 5, +1-, 14, +4*, 4, +4-, 13, +2*, 7, +2-, 20, F, 1, U+3, 5, -U, 1, -F</command>
 			<hitLevel>m, h, h, h, m</hitLevel>
 			<damage>13,10,20,12,22</damage>
 			<StartUp> </StartUp>
@@ -759,7 +759,7 @@
 		<move>
 			<id>52</id>
 			<name>d/f+3, 1, 4, 2, 1+2</name>
-			<command>DF+3, 2, -D, 1, -F, 26, +1*, 12, +1-, 26, +4*, 12, +4-, 37, +2*, 12, +2-, 30, +1+2*, 11, +1+2-</command>
+			<command>df+3, 11, +1*, 6, +1-, 10, +4*, 6, +4-, 17, +2*, 5, +2-, 13, +1+2*, 5, +1+2-</command>
 			<hitLevel>m, h, h, h, m</hitLevel>
 			<damage>13,10,20,12,21</damage>
 			<StartUp> </StartUp>
@@ -774,7 +774,7 @@
 		<move>
 			<id>53</id>
 			<name>d/f+3, 2</name>
-			<command>DF+3, 2, -D, 1, -F, 22, +2*, 16, +2-</command>
+			<command>df+3, 10, +2*, 7, +2-</command>
 			<hitLevel>m, h</hitLevel>
 			<damage>13,12</damage>
 			<StartUp> </StartUp>
@@ -789,7 +789,7 @@
 		<move>
 			<id>54</id>
 			<name>d/f+3, 2, D/F</name>
-			<command>DF+3, 2, -D, 1, -F, 22, +2*, 16, +2-, 16, DF, 17, -D, 1, -F</command>
+			<command>df+3, 10, +2*, 7, +2-, 7, DF, 8, -D, 1, -F</command>
 			<hitLevel>m, h (CD)</hitLevel>
 			<damage>13,12</damage>
 			<StartUp> </StartUp>
@@ -804,7 +804,7 @@
 		<move>
 			<id>55</id>
 			<name>d/f+3, 2, u or b</name>
-			<command>DF+3, 2, -D, 1, -F, 22, +2*, 16, +2-, 16, D, 17, -D</command>
+			<command>df+3, 10, +2*, 5, +2-, 10, D, 15, -D</command>
 			<hitLevel>m, h (SS)</hitLevel>
 			<damage>13,12</damage>
 			<StartUp> </StartUp>
@@ -819,7 +819,7 @@
 		<move>
 			<id>56</id>
 			<name>d/f+3, 2, 1</name>
-			<command>DF+3, 2, -D, 1, -F, 20, +2*, 14, +2-, 15, +1*, 12, +1-</command>
+			<command>df+3, 9, +2*, 6, +2-, 7, +1*, 6, +1-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,12,6</damage>
 			<StartUp> </StartUp>
@@ -833,8 +833,8 @@
 		</move>
 		<move>
 			<id>57</id>
-			<name>DF+3, 2, -D, 1, -F, 20, +2*, 14, +2-, 15, +1*, 12, +1-, 27, +4*, 13, +4-</name>
-			<command>d/f+3, 5, +2, 5, +1, 5, +4</command>
+			<name>d/f+3, 3, 1, 4</name>
+			<command>df+3, 9, +2*, 6, +2-, 7, +1*, 6, +1-, 12, +4*, 5, +4-</command>
 			<hitLevel>m, h, h, h</hitLevel>
 			<damage>13,12,6,18</damage>
 			<StartUp> </StartUp>
@@ -849,7 +849,7 @@
 		<move>
 			<id>58</id>
 			<name>d/f+3, 2, 1, d+4</name>
-			<command>DF+3, 2, -D, 1, -F, 18, +2*, 12, +2-, 12, +1*, 11, +1-, 33, D+4, 12, -D</command>
+			<command>df+3, 8, +2*, 6, +2-, 5, +1*, 5, +1-, 15, D+4, 5, -D</command>
 			<hitLevel>m, h, h, l (TC)</hitLevel>
 			<damage>13,12,6,12</damage>
 			<StartUp> </StartUp>
@@ -864,7 +864,7 @@
 		<move>
 			<id>59</id>
 			<name>d/f+3, 2, 3</name>
-			<command>DF+3, 2, -D, 1, -F, 17, +2*, 11, +2-, 22, +3*, 8, +3-</command>
+			<command>df+3, 7, +2*, 5, +2-, 10, +3*, 4, +3-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,12,15</damage>
 			<StartUp> </StartUp>
@@ -879,7 +879,7 @@
 		<move>
 			<id>60</id>
 			<name>d/f+3, 2, 4</name>
-			<command>DF+3, 2, -D, 1, -F, 20, +2*, 12, +2-, 18, +4*, 12, +4-</command>
+			<command>df+3, 8, +2*, 5, +2-, 8, +4*, 5, +4-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,12,22</damage>
 			<StartUp> </StartUp>
@@ -895,7 +895,7 @@
 		<move>
 			<id>61</id>
 			<name>d/f+3, 2, d+3</name>
-			<command>DF+3, 2, -D, 1, -F, 20, +2*, 8, +2-, 33, D+3, 4, -D</command>
+			<command>df+3, 9, +2*, 4, +2-, 15, D+3, 2, -D</command>
 			<hitLevel>m, h, l (TC)</hitLevel>
 			<damage>13,12,10</damage>
 			<StartUp> </StartUp>
@@ -910,7 +910,7 @@
 		<move>
 			<id>62</id>
 			<name>d/f+3, 3</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +3*, 10, +3-</command>
+			<command>DF+3, 2, -D, 1, -F, 5, +3*, 10, +3-</command>
 			<hitLevel>m, h</hitLevel>
 			<damage>13,6</damage>
 			<StartUp> </StartUp>
@@ -925,7 +925,7 @@
 		<move>
 			<id>63</id>
 			<name>d/f+3, 3, 3</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +3*, 10, +3-, 14, +3*, 14, +3-</command>
+			<command>DF+3, 2, -D, 1, -F, 5, +3*, 10, +3-, 14, +3*, 14, +3-</command>
 			<hitLevel>m, h, h</hitLevel>
 			<damage>13,6,8</damage>
 			<StartUp> </StartUp>
@@ -940,7 +940,7 @@
 		<move>
 			<id>64</id>
 			<name>d/f+3, 3, 3, 1</name>
-			<command>DF+3, 2, -D, 1, -F, 23, +3*, 10, +3-, 14, +3*, 14, +3-, 23, +1*, 12, +1-</command>
+			<command>DF+3, 2, -D, 1, -F, 5, +3*, 10, +3-, 14, +3*, 14, +3-, 12, +1</command>
 			<hitLevel>m, h, h, h</hitLevel>
 			<damage>13,6,8,14</damage>
 			<StartUp> </StartUp>
@@ -955,7 +955,7 @@
 		<move>
 			<id>65</id>
 			<name>d/f+3, 3, 3, 4</name>
-			<command>DF+3, 2, -D, 1, -F, 16, +3*, 9, +3-, 8, +3*, 6, +3-, 40, +4*, 8, +4-</command>
+			<command>DF+3, 2, -D, 1, -F, 5, +3*, 10, +3-, 14, +3*, 14, +3-, +4*, 3, +4-</command>
 			<hitLevel>m, h, h, h</hitLevel>
 			<damage>13,6,8,20</damage>
 			<StartUp> </StartUp>
@@ -971,7 +971,7 @@
 		<move>
 			<id>66</id>
 			<name>d/f+3, 4</name>
-			<command>DF+3, 2, -D, 1, -F, 18, +4*, 12, +4-</command>
+			<command>df+3, 8, +4*, 5, +4-</command>
 			<hitLevel>m, h</hitLevel>
 			<damage>13,20</damage>
 			<StartUp> </StartUp>
@@ -987,7 +987,7 @@
 		<move>
 			<id>67</id>
 			<name>d/f+4</name>
-			<command>DF+4, 2, -D, 1, -F</command>
+			<command>df+4</command>
 			<hitLevel>l</hitLevel>
 			<damage>14</damage>
 			<StartUp>16</StartUp>
@@ -1002,7 +1002,7 @@
 		<move>
 			<id>68</id>
 			<name>d/f+1+2 or CJM d/f+1+2</name>
-			<command>DF+1+2, 2, -D, 1, -F</command>
+			<command>df+1+2</command>
 			<hitLevel>m</hitLevel>
 			<damage>0</damage>
 			<StartUp>16</StartUp>
@@ -1032,7 +1032,7 @@
 		<move>
 			<id>70</id>
 			<name>d+1 or FC+1, 4</name>
-			<command>d+1, 14, +4*, 14, +4-</command>
+			<command>d+1, 5, +4*, 5, +4-</command>
 			<hitLevel>sm, m</hitLevel>
 			<damage>5,10</damage>
 			<StartUp> </StartUp>
@@ -1076,7 +1076,7 @@
 		<move>
 			<id>73</id>
 			<name>d+3 or FC+3, 2</name>
-			<command>D+3, 2, -D, 20, +2*, 12, +2-</command>
+			<command>d+3, 9, +2*, 5, +2-</command>
 			<hitLevel>l, m</hitLevel>
 			<damage>12,10</damage>
 			<StartUp> </StartUp>
@@ -1091,7 +1091,7 @@
 		<move>
 			<id>74</id>
 			<name>d+3 or FC+3, 4</name>
-			<command>D+3, 2, -D, 16, +4*, 8, +4-</command>
+			<command>d+3, 9, +4*, 5, +4-</command>
 			<hitLevel>l, h</hitLevel>
 			<damage>12,18</damage>
 			<StartUp> </StartUp>
@@ -1106,7 +1106,7 @@
 		<move>
 			<id>75</id>
 			<name>d+3 or FC+3, 4, 1</name>
-			<command>D+3, 2, -D, 16, +4*, 8, +4-, 36, +1*, 2, +1-</command>
+			<command>d+3, 9, +4*, 5, +4-, 15, +1*, 2, +1-</command>
 			<hitLevel>l, h, m</hitLevel>
 			<damage>12,18,20</damage>
 			<StartUp> </StartUp>
@@ -1135,7 +1135,7 @@
 		<move>
 			<id>77</id>
 			<name>d+4 or FC+4, 1</name>
-			<command>D+4, 2, -D, 17, +1*, 11, +1-</command>
+			<command>d+4, 7, +1*, 4, +1-</command>
 			<hitLevel>l, h</hitLevel>
 			<damage>7(10),10</damage>
 			<StartUp> </StartUp>
@@ -1150,7 +1150,7 @@
 		<move>
 			<id>78</id>
 			<name>d+4 or FC+4, 1, u or d</name>
-			<command>d+4, 16, +1*, 8, +1-, 4, U, 24, -U</command>
+			<command>d+4, 7, +1*, 4, +1-, 2, U, 20, -U</command>
 			<hitLevel>l (SS)</hitLevel>
 			<damage>7(10)</damage>
 			<StartUp> </StartUp>
@@ -1165,7 +1165,7 @@
 		<move>
 			<id>79</id>
 			<name>d+4 or FC+4, 1, b</name>
-			<command>d+4, 16, +1*, 8, +1-, 4, B, 24, -B</command>
+			<command>d+4, 7, +1*, 4, +1-, 2, B, 20, -B</command>
 			<hitLevel>l (CJM)</hitLevel>
 			<damage>7(10)</damage>
 			<StartUp> </StartUp>
@@ -1180,7 +1180,7 @@
 		<move>
 			<id>80</id>
 			<name>d+1+2</name>
-			<command>D+1+2, 2, -D</command>
+			<command>d+1+2</command>
 			<hitLevel>m!</hitLevel>
 			<damage>50</damage>
 			<StartUp>60</StartUp>
@@ -1209,7 +1209,7 @@
 		<move>
 			<id>82</id>
 			<name>d/b+1, D</name>
-			<command>d/b+1, 5, D, 15, -D</command>
+			<command>d/b+1, 5, D, 20, -D</command>
 			<hitLevel>m</hitLevel>
 			<damage>16</damage>
 			<StartUp> </StartUp>
@@ -1254,7 +1254,7 @@
 		<move>
 			<id>85</id>
 			<name>d/b+2 or FC+d/b+2 or FC+d+2, 4</name>
-			<command>DB+2, 2, -D, 1, -B, 11, +4*, 10, +4-</command>
+			<command>db+2, 6, +4*, 4, +4-</command>
 			<hitLevel>sm, m</hitLevel>
 			<damage>8,10</damage>
 			<StartUp> </StartUp>
@@ -1299,7 +1299,7 @@
 		<move>
 			<id>88</id>
 			<name>d/b+4, 3</name>
-			<command>DB+4, 2, -D, 1, -B, 25, +3*, 15, +3-</command>
+			<command>db+4, 11, +3*, 6, +3-</command>
 			<hitLevel>l (TC), l (TC)</hitLevel>
 			<damage>18,14</damage>
 			<StartUp> </StartUp>
@@ -1314,7 +1314,7 @@
 		<move>
 			<id>89</id>
 			<name>d/b+4, 4</name>
-			<command>DB+4, 2, -D, 1, -B, 26, +4*, 10, +4-</command>
+			<command>db+4, 12, +4*, 4, +4-</command>
 			<hitLevel>l (TC), m (TJ)</hitLevel>
 			<damage>18,15</damage>
 			<StartUp> </StartUp>
@@ -1374,7 +1374,7 @@
 		<move>
 			<id>93</id>
 			<name>d/b+3+4, 3</name>
-			<command>db+3+4, 26, +3*, 14, +3-</command>
+			<command>db+3+4, 13, +3*, 5, +3-</command>
 			<hitLevel>l (TC), h (TJ)</hitLevel>
 			<damage>27(18),23</damage>
 			<StartUp> </StartUp>
@@ -1404,7 +1404,7 @@
 		<move>
 			<id>95</id>
 			<name>b+1, 2</name>
-			<command>B+1, 2, -B, 13, +2*, 8, +2-</command>
+			<command>b+1, 6, +2*, 4, +2-</command>
 			<hitLevel>m, h</hitLevel>
 			<damage>14,12</damage>
 			<StartUp> </StartUp>
@@ -1419,7 +1419,7 @@
 		<move>
 			<id>96</id>
 			<name>b+1, 2, 2</name>
-			<command>B+1, 2, -B, 13, +2*, 8, +2-, 26, +2*, 10, +2-</command>
+			<command>b+1, 6, +2*, 4, +2-, 12, +2*, 4, +2-</command>
 			<hitLevel>m, h, m (TJ)</hitLevel>
 			<damage>14,12,24</damage>
 			<StartUp> </StartUp>
@@ -1450,7 +1450,7 @@
 		<move>
 			<id>98</id>
 			<name>b+2, 2</name>
-			<command>B+2, 2, -B, 21, +2*, 8, +2-</command>
+			<command>b+2, 10, +2*, 3, +2-</command>
 			<hitLevel>h, h</hitLevel>
 			<damage>10,20</damage>
 			<StartUp> </StartUp>
@@ -1497,7 +1497,7 @@
 		<move>
 			<id>101</id>
 			<name>u/b or u or u/f+1</name>
-			<command>u/f+1</command>
+			<command>u+1</command>
 			<hitLevel>h</hitLevel>
 			<damage>17</damage>
 			<StartUp>15</StartUp>
@@ -1527,7 +1527,7 @@
 		<move>
 			<id>103</id>
 			<name>u/f+1, 3</name>
-			<command>UF+1, 4, -U, 1, -F, 17, +3*, 10, +3-</command>
+			<command>U, 1, F+1, 2, -U, 1, -F, 8, +3*, 5, +3-</command>
 			<hitLevel>h, m</hitLevel>
 			<damage>10,17</damage>
 			<StartUp> </StartUp>
@@ -1542,7 +1542,7 @@
 		<move>
 			<id>104</id>
 			<name>u/f+1, 3, 3+4</name>
-			<command>UF+1, 4, -U, 1, -F, 17, +3*, 10, +3-, 30, +3+4, 2, -4, 1, -3</command>
+			<command>U, 1, F+1, 2, -U, 1, -F, 8, +3*, 5, +3-, 13, +3+4</command>
 			<hitLevel>h, m, mm</hitLevel>
 			<damage>10,17,10,10</damage>
 			<StartUp> </StartUp>
@@ -1617,7 +1617,7 @@
 		<move>
 			<id>109</id>
 			<name>u/f+4, 3</name>
-			<command>U, 1, F+4, 4, -U, 1, -F, 22, +3*, 8, +3-</command>
+			<command>U, ,1, F+4, 2, -U, 1, -F, 10, +3*, 4, +3-</command>
 			<hitLevel>h (TJ), l</hitLevel>
 			<damage>20, 10</damage>
 			<StartUp> </StartUp>
@@ -1632,7 +1632,7 @@
 		<move>
 			<id>110</id>
 			<name>u/f+4, 3, 4</name>
-			<command>UF+4, 4, -U, 1, -F, 22, +3*, 8, +3-, 18, +4*, 10, +4-</command>
+			<command>U, 1, F+4, 2, -U, 1, -F, 10, +3*, 4, +3-, 8, +4*, 5, +4-</command>
 			<hitLevel>h (TJ), l, h</hitLevel>
 			<damage>20,10,14</damage>
 			<StartUp> </StartUp>
@@ -1647,7 +1647,7 @@
 		<move>
 			<id>111</id>
 			<name>u/f+4, 3, 4, u or b</name>
-			<command>U, 1, F+4, 4, -U, 1, -F, 22, +3*, 8, +3-, 18, U, 10, -U</command>
+			<command>U, 1, F+4, 2, -U, 1, -F, 10, +3*, 4, +3-, 8, +4*, 5, +4-, 8, U, 5, -U</command>
 			<hitLevel>h (TJ), l, h (SS)</hitLevel>
 			<damage>20, 10</damage>
 			<StartUp> </StartUp>
@@ -1662,7 +1662,7 @@
 		<move>
 			<id>112</id>
 			<name>U/B+4</name>
-			<command>U/B+4</command>
+			<command>U, 1, B+4, 10, -U, 1, -B</command>
 			<hitLevel>m</hitLevel>
 			<damage>15</damage>
 			<StartUp>18</StartUp>
@@ -1677,7 +1677,7 @@
 		<move>
 			<id>113</id>
 			<name>U/B+4, D</name>
-			<command>U/B+4, 5, D</command>
+			<command>U, 1, B+4, 10, -U, 1, -B, 5, D, 40, -D</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>15</damage>
 			<StartUp> </StartUp>
@@ -1692,7 +1692,7 @@
 		<move>
 			<id>114</id>
 			<name>U+4</name>
-			<command>U+4</command>
+			<command>U+4, 40, -U</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>18</damage>
 			<StartUp>18</StartUp>
@@ -1707,7 +1707,7 @@
 		<move>
 			<id>115</id>
 			<name>U+4, D</name>
-			<command>U+4, 5, D</command>
+			<command>U+4, 40, -U, 5, D, 40 -D</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>18</damage>
 			<StartUp> </StartUp>
@@ -1722,7 +1722,7 @@
 		<move>
 			<id>116</id>
 			<name>U/F+4</name>
-			<command>U/F+4</command>
+			<command>U, 1, F+4, 10, -U, 1, -F</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>21</damage>
 			<StartUp>18 js13</StartUp>
@@ -1737,7 +1737,7 @@
 		<move>
 			<id>117</id>
 			<name>U/F+4, D</name>
-			<command>U/F+4, 5, D</command>
+			<command>U, 1, F+4, 10, -U, 1, -F, D, 20, -D</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>21</damage>
 			<StartUp>18 js13</StartUp>
@@ -1781,7 +1781,7 @@
 		<move>
 			<id>120</id>
 			<name>U/B,b</name>
-			<command>U/B, 5, b</command>
+			<command>U, 1, B, 3, -U, 2, -B</command>
 			<hitLevel>(TJ)</hitLevel>
 			<damage> </damage>
 			<StartUp>js</StartUp>
@@ -1795,7 +1795,7 @@
 		<move>
 			<id>121</id>
 			<name>f, F+2</name>
-			<command>F, 9, -F, 10, F, 10, -F, F+2, 2, -F</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+2, 2, -F</command>
 			<hitLevel>h</hitLevel>
 			<damage>21</damage>
 			<StartUp>16</StartUp>
@@ -1812,7 +1812,7 @@
 		<move>
 			<id>122</id>
 			<name>f, F+3</name>
-			<command>F, 9, -F, 10, F, 10, -F, F+3, 2, -F</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+3, 2, -F</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>14</damage>
 			<StartUp>15 js13</StartUp>
@@ -1827,7 +1827,7 @@
 		<move>
 			<id>123</id>
 			<name>f, F+3, 4</name>
-			<command>F, 9, -F, 10, F, 10, -F, F+3, 2, -F, 10, +4*, 4, +4-</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+3, 2, -F, 10, +4*, 4, +4-</command>
 			<hitLevel>m (TJ), m</hitLevel>
 			<damage>14,12</damage>
 			<StartUp> </StartUp>
@@ -1842,7 +1842,7 @@
 		<move>
 			<id>124</id>
 			<name>f, F+3, 4, 3</name>
-			<command>F, 9, -F, 10, F, 10, -F, F+3, 2, -F, 10, +4*, 4, +4-, 22, +3*, 11, +3-</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+3, 2, -F, 5, +4*, 4, +4-, 3, +3*, 2, +3-</command>
 			<hitLevel>m (TJ), m, m</hitLevel>
 			<damage>14,12,9</damage>
 			<StartUp> </StartUp>
@@ -1857,7 +1857,7 @@
 		<move>
 			<id>125</id>
 			<name>f, F+3, 4, b+3</name>
-			<command>F, 10, -F, 10, F, 9, -F, F+3, 2, -F, 12, +4*, 4, +4-, 28, B+3, 8, -B</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+3, 2, -F, 5, +4*, 4, +4-, 3, B+3*, 2, +3-, 10, -B</command>
 			<hitLevel>m (TJ), m, m (CJM)</hitLevel>
 			<damage>14,12,9</damage>
 			<StartUp> </StartUp>
@@ -1872,7 +1872,7 @@
 		<move>
 			<id>126</id>
 			<name>f, F+3, 4, b+3, 4, 1+2</name>
-			<command>F, 10, -F, 10, F, 9, -F, F+3, 2, -F, 12, +4*, 4, +4-, 28, B+3, 8, -B, 5, +1+2</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+3, 2, -F, 5, +4*, 4, +4-, 3, B+3*, 2, +3-, 10, -B, 5, +1+2</command>
 			<hitLevel>m (TJ), m, m, m! (CJM)</hitLevel>
 			<damage>14,12,9,45</damage>
 			<StartUp> </StartUp>
@@ -1886,7 +1886,7 @@
 		<move>
 			<id>127</id>
 			<name>f, F+4</name>
-			<command>F, 10, -F, 10, F, 10, -F, F+4, 2, -F</command>
+			<command>F, 2, -F, 2, F, 2, -F, -F, F+4, 2, -F</command>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>20</damage>
 			<StartUp>31 js10</StartUp>
@@ -1901,7 +1901,7 @@
 		<move>
 			<id>128</id>
 			<name>f, F+4, B</name>
-			<command>F, 10, -F, 10, F, 10, -F, F+4, 2, -F, 51, B, 28, -B</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+4, 2, -F, 51, B, 28, -B</command>
 			<hitLevel>m (TJ) (CJM)</hitLevel>
 			<damage>20</damage>
 			<StartUp> </StartUp>
@@ -1916,7 +1916,7 @@
 		<move>
 			<id>129</id>
 			<name>f, F+1+2</name>
-			<command>F, 10, -F, 10, F, 10, -F, F+1+2, 2, -F</command>
+			<command>F, 2, -F, 2, F, 2, -F, F+1+2, 2, -F</command>
 			<hitLevel>m</hitLevel>
 			<damage>25</damage>
 			<StartUp>18</StartUp>
@@ -2875,115 +2875,8 @@
 			<id>1</id>
 			<name>All Moves</name>
 			<moves>
-				<id>7</id>
-				<id>8</id>
-				<id>11</id>
-				<id>14</id>
-				<id>15</id>
-				<id>17</id>
-				<id>21</id>
-				<id>22</id>
-				<id>23</id>
-				<id>24</id>
-				<id>27</id>
-				<id>28</id>
-				<id>29</id>
-				<id>30</id>
-				<id>31</id>
-				<id>32</id>
-				<id>33</id>
-				<id>34</id>
-				<id>35</id>
-				<id>36</id>
-				<id>37</id>
-				<id>38</id>
-				<id>39</id>
-				<id>40</id>
-				<id>41</id>
-				<id>42</id>
-				<id>43</id>
-				<id>44</id>
-				<id>45</id>
-				<id>46</id>
-				<id>47</id>
-				<id>48</id>
-				<id>49</id>
-				<id>50</id>
-				<id>51</id>
-				<id>52</id>
-				<id>53</id>
-				<id>54</id>
-				<id>55</id>
-				<id>56</id>
-				<id>57</id>
-				<id>58</id>
-				<id>59</id>
-				<id>60</id>
-				<id>61</id>
-				<id>62</id>
-				<id>63</id>
-				<id>64</id>
-				<id>65</id>
-				<id>66</id>
-				<id>67</id>
-				<id>68</id>
-				<id>69</id>
-				<id>70</id>
-				<id>71</id>
-				<id>72</id>
-				<id>73</id>
-				<id>74</id>
-				<id>75</id>
-				<id>76</id>
-				<id>77</id>
-				<id>78</id>
-				<id>79</id>
-				<id>80</id>
-				<id>81</id>
-				<id>82</id>
-				<id>83</id>
-				<id>84</id>
-				<id>85</id>
-				<id>86</id>
-				<id>87</id>
-				<id>88</id>
-				<id>89</id>
-				<id>90</id>
-				<id>91</id>
-				<id>92</id>
-				<id>93</id>
-				<id>94</id>
-				<id>95</id>
-				<id>96</id>
-				<id>97</id>
-				<id>98</id>
-				<id>99</id>
-				<id>100</id>
-				<id>101</id>
-				<id>102</id>
-				<id>103</id>
-				<id>104</id>
-				<id>105</id>
-				<id>106</id>
-				<id>107</id>
-				<id>108</id>
-				<id>109</id>
-				<id>110</id>
-				<id>111</id>
-				<id>112</id>
-				<id>113</id>
-				<id>114</id>
-				<id>115</id>
-				<id>116</id>
-				<id>117</id>
-				<id>118</id>
-				<id>119</id>
-				<id>120</id>
-				<id>121</id>
-				<id>122</id>
-				<id>123</id>
-				<id>124</id>
-				<id>125</id>
+                <id>0</id>
+				<id>125</id>                
 				<id>126</id>
 				<id>127</id>
 				<id>128</id>

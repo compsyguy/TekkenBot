@@ -18,6 +18,7 @@ from BotPunishTest import BotPunishTest
 from BotTestCommand import BotTestCommand
 from BotTest import BotTest
 from BotBackDashCancelPractice import BotBackDashCancelPractice
+from GUI_CommandRecorder import GUI_CommandRecorder
 import sys
 from GUI_TestOverlay import GUI_TestOverlay
 #from GUI_CommandInputOverlay2 import GUI_CommandInputOverlay
@@ -44,6 +45,7 @@ class GUI_TekkenAcademy(Tk):
         self.tekken_bot_menu.add_command(label="Test Movelist", command=self.testMoveList)
         self.tekken_bot_menu.add_command(label="Clear History", command=self.clearHistory)
         self.tekken_bot_menu.add_command(label="Record", command=self.record)
+        self.tekken_bot_menu.add_command(label="GUI Record", command=self.gui_record)
         self.tekken_bot_menu.add_command(label="Print Record", command=self.printrecord)
         self.menu.add_cascade(label="Tekken Bot", menu=self.tekken_bot_menu)
 
@@ -98,6 +100,10 @@ class GUI_TekkenAcademy(Tk):
     def record(self):
         self.launcher = TekkenBotLauncher(BotTest, True)
         self.recorder = CommandRecorder(self.launcher)
+        
+    def gui_record(self):
+        self.launcher = TekkenBotLauncher(GUI_CommandRecorder, True)
+        self.launcher.botBrain.gameState = self.launcher.gameState
     
     def printrecord(self):
         #self.recorder.print_f()
