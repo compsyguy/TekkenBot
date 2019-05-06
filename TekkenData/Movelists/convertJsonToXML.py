@@ -37,19 +37,21 @@ for move in j["moves"]:
     MoveName.text = move["notation"]
     #print(MoveName.text)
     MoveCommand = ET.SubElement(CharMove, "command")
-    commands = move["notation"].split(",")
-    commandString = ''
-    buttons = ["1", "2", "3", "4", "1+2", "1+3", "1+4", "2+3", "2+4", "3+4"]
-    
-    for i in range(len(commands)):
-        commands[i] = commands[i].strip()
-        if commands[i] in buttons:
-            commands[i] = '+' + commands[i]
-        else:
-            commands[i] = commands[i]
-
-
-    MoveCommand.text = ", 5, ".join(commands)
+    #Not trying to guess the move command anymore, but leaving in for reference
+    #commands = move["notation"].split(",")
+    #commandString = ''
+    #buttons = ["1", "2", "3", "4", "1+2", "1+3", "1+4", "2+3", "2+4", "3+4"]
+    #
+    #for i in range(len(commands)):
+    #    commands[i] = commands[i].strip()
+    #    if commands[i] in buttons:
+    #        commands[i] = '+' + commands[i]
+    #    else:
+    #        commands[i] = commands[i]
+    #
+    #
+    #MoveCommand.text = ", 5, ".join(commands)
+    MoveCommand.text = " "
     MoveHitLevel = ET.SubElement(CharMove, "hitLevel")
     MoveHitLevel.text = move["hit_level"]
     MoveDamage = ET.SubElement(CharMove, "damage")
@@ -106,6 +108,12 @@ for move in j["moves"]:
                 ET.SubElement(MoveTags, "PowerCrush")
             elif tag.strip() == "Rage art":
                 ET.SubElement(MoveTags, "RageArt")
+            elif tag.strip() == "Rage drive":
+                ET.SubElement(MoveTags, "RageDrive")
+            elif tag.strip() == "Wall bounce":
+                ET.SubElement(MoveTags, "WallBounce")
+            elif tag.strip() == "":
+                pass
             else:
                 #print(tag.strip())
                 ET.SubElement(MoveTags, tag.strip())
@@ -194,7 +202,10 @@ for id in PunishableMoves:
                 
 f = open(sys.argv[3] + ".xml", "w")
 # print(ET.tostring(Char))
-xmlFile = xml.dom.minidom.parseString(ET.tostring(Char))
+xmlString = ET.tostring(Char)
+#print(xmlString[37300:37400])
+xmlFile = xml.dom.minidom.parseString(xmlString)
+
 f.write(xmlFile.toprettyxml())
 f.close()
 

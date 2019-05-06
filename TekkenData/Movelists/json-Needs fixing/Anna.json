@@ -1,16 +1,6 @@
 {
     "moves": [
         {
-            "notation": "Command",
-            "hit_level": "Hit level",
-            "damage": "Damage",
-            "speed": "Start up frame",
-            "on_block": "Block frame",
-            "on_hit": "Hit frame",
-            "on_ch": "Counter hit frame",
-            "notes": "Notes"
-        },
-        {
             "notation": "in rage b+1+2",
             "hit_level": "h",
             "damage": "55",
@@ -22,7 +12,7 @@
         },
         {
             "notation": "in rage qcf+2+3",
-            "hit_level": "m, m)",
+            "hit_level": "m, m",
             "damage": "17,2",
             "speed": "15",
             "on_block": "+5s",

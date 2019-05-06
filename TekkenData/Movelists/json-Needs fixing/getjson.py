@@ -19,6 +19,8 @@ soup = BeautifulSoup(r.text, 'html.parser')
 
 t = soup.find_all('table')
 r = t[0].find_all('tr')
+r.pop(0) #remove the header row
+
 moves = []
 for row in r:
     move = {}
