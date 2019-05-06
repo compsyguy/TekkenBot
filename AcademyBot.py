@@ -38,8 +38,9 @@ class AcademyBot(Bot):
             #print(gameState.GetCurrentBotMoveName())
 			#debugging
 
-        if not self.recorder == None:
-            self.recorder.Update(gameState)
+        #Commented out since recording is implemented elsewhere
+        #if not self.recorder == None:
+        #    self.recorder.Update(gameState)
 
         BotBehaviors.Basic(gameState, self.botCommands)
         if self.gameplan == None :
