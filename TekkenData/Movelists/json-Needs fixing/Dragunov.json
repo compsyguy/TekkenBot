@@ -1,0 +1,1231 @@
+{
+    "moves": [
+        {
+            "notation": "in rage d+1+2",
+            "hit_level": "m",
+            "damage": "55",
+            "speed": "20 pc8~17",
+            "on_block": "-22",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Rage art"
+        },
+        {
+            "notation": "in rage f, f, f+1+2",
+            "hit_level": "m",
+            "damage": "30",
+            "speed": "15~16 (18~)",
+            "on_block": "+5s",
+            "on_hit": "Launch",
+            "on_ch": "Launch",
+            "notes": "Rage art"
+        },
+        {
+            "notation": "in rage f, f, f+1+2 , d/b+1+2",
+            "hit_level": "m, m(Throw)",
+            "damage": "30,5",
+            "speed": "15~16 (18~)",
+            "on_block": "Throw(KND)",
+            "on_hit": "Throw(KND)",
+            "on_ch": "Throw(KND)",
+            "notes": "Rage art"
+        },
+        {
+            "notation": "1",
+            "hit_level": "h",
+            "damage": "7",
+            "speed": "10",
+            "on_block": "+1",
+            "on_hit": "+8",
+            "on_ch": "+8",
+            "notes": ""
+        },
+        {
+            "notation": "1, 1",
+            "hit_level": "h, h",
+            "damage": "7,8",
+            "speed": "10",
+            "on_block": "-4",
+            "on_hit": "+7",
+            "on_ch": "+7",
+            "notes": ""
+        },
+        {
+            "notation": "1, 1, 3",
+            "hit_level": "h, h, m",
+            "damage": "7,8,22",
+            "speed": "10",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "1, 2",
+            "hit_level": "h, m",
+            "damage": "7,8",
+            "speed": "10",
+            "on_block": "-9",
+            "on_hit": "+2",
+            "on_ch": "+2",
+            "notes": ""
+        },
+        {
+            "notation": "1, 2, 1",
+            "hit_level": "h, m, m",
+            "damage": "7,8,20",
+            "speed": "10",
+            "on_block": "-14~-13",
+            "on_hit": "KND",
+            "on_ch": "uKZD",
+            "notes": ""
+        },
+        {
+            "notation": "1, 3",
+            "hit_level": "h, h",
+            "damage": "7,14",
+            "speed": "10",
+            "on_block": "-7~-6",
+            "on_hit": "+1~+2",
+            "on_ch": "+9~+10",
+            "notes": ""
+        },
+        {
+            "notation": "1, 3, 2",
+            "hit_level": "h, h, m",
+            "damage": "7,14,20",
+            "speed": "10",
+            "on_block": "-12~-11",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "1, 3, 2~1+2",
+            "hit_level": "h, h, h(Throw)",
+            "damage": "7,14,35",
+            "speed": "10",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "1, 3, 2~1+2 B (Cancel)",
+            "hit_level": "h, h, (Special)",
+            "damage": "7,14",
+            "speed": "10",
+            "on_block": "-32~-31",
+            "on_hit": "-24~-23",
+            "on_ch": "-16~-15",
+            "notes": ""
+        },
+        {
+            "notation": "2",
+            "hit_level": "h",
+            "damage": "10",
+            "speed": "10",
+            "on_block": "0",
+            "on_hit": "+9",
+            "on_ch": "+9",
+            "notes": ""
+        },
+        {
+            "notation": "2, 1",
+            "hit_level": "h, h",
+            "damage": "10,8",
+            "speed": "10",
+            "on_block": "-2",
+            "on_hit": "+6",
+            "on_ch": "+6",
+            "notes": ""
+        },
+        {
+            "notation": "2, 1, 3",
+            "hit_level": "h, h, h",
+            "damage": "10,8,24",
+            "speed": "10",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "2, 1, 4",
+            "hit_level": "h, h, l",
+            "damage": "10,8,14",
+            "speed": "10",
+            "on_block": "-12",
+            "on_hit": "+3s",
+            "on_ch": "+3s",
+            "notes": ""
+        },
+        {
+            "notation": "3",
+            "hit_level": "m",
+            "damage": "10",
+            "speed": "15~16",
+            "on_block": "-9~-8",
+            "on_hit": "+2~+3",
+            "on_ch": "+2~+3",
+            "notes": ""
+        },
+        {
+            "notation": "3, 1",
+            "hit_level": "m, h",
+            "damage": "10,8",
+            "speed": "15~16",
+            "on_block": "-2~-1",
+            "on_hit": "+7~+8",
+            "on_ch": "+7~+8",
+            "notes": ""
+        },
+        {
+            "notation": "3, 1, 2",
+            "hit_level": "m, h, m",
+            "damage": "10,8,24",
+            "speed": "15~16",
+            "on_block": "-12~-10",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "4",
+            "hit_level": "h",
+            "damage": "15",
+            "speed": "12",
+            "on_block": "-9",
+            "on_hit": "-1",
+            "on_ch": "+7",
+            "notes": ""
+        },
+        {
+            "notation": "4, 1",
+            "hit_level": "h, h",
+            "damage": "15,12",
+            "speed": "12",
+            "on_block": "-6~-5",
+            "on_hit": "+8~+9",
+            "on_ch": "+8~+9",
+            "notes": ""
+        },
+        {
+            "notation": "4, 3",
+            "hit_level": "h, m",
+            "damage": "15,20",
+            "speed": "12",
+            "on_block": "-12~-11",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "4, 4",
+            "hit_level": "h, m (TJ)",
+            "damage": "15,25",
+            "speed": "s js22~",
+            "on_block": "+3~+4",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Tail spin"
+        },
+        {
+            "notation": "1+2",
+            "hit_level": "m",
+            "damage": "25",
+            "speed": "21~22 pc8~20",
+            "on_block": "-14",
+            "on_hit": "KND",
+            "on_ch": "TUKD",
+            "notes": "Power crush"
+        },
+        {
+            "notation": "3+4",
+            "hit_level": "h (TJ)",
+            "damage": "25",
+            "speed": "25~26d js13~",
+            "on_block": "-14~-13",
+            "on_hit": "CS",
+            "on_ch": "CS",
+            "notes": ""
+        },
+        {
+            "notation": "3+4, Any button",
+            "hit_level": "h (TJ), (Special)",
+            "damage": "25",
+            "speed": "25~26s js13~",
+            "on_block": "-24~-23g",
+            "on_hit": "CS",
+            "on_ch": "CS",
+            "notes": ""
+        },
+        {
+            "notation": "f+2",
+            "hit_level": "h",
+            "damage": "16",
+            "speed": "19~20",
+            "on_block": "-8~-7",
+            "on_hit": "+3~+4",
+            "on_ch": "+8~+9",
+            "notes": ""
+        },
+        {
+            "notation": "f+2, 4",
+            "hit_level": "h, m",
+            "damage": "16,24",
+            "speed": "19~20",
+            "on_block": "-7~-6",
+            "on_hit": "KND",
+            "on_ch": "uKZD",
+            "notes": ""
+        },
+        {
+            "notation": "f+3",
+            "hit_level": "m",
+            "damage": "11",
+            "speed": "20",
+            "on_block": "-6",
+            "on_hit": "+2",
+            "on_ch": "+2",
+            "notes": ""
+        },
+        {
+            "notation": "f+3, D/F",
+            "hit_level": "m, (Special)",
+            "damage": "11",
+            "speed": "20",
+            "on_block": "-1",
+            "on_hit": "+7",
+            "on_ch": "+7",
+            "notes": ""
+        },
+        {
+            "notation": "f+3, 2",
+            "hit_level": "m, h",
+            "damage": "11,20",
+            "speed": "20",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Tail spin"
+        },
+        {
+            "notation": "f+3, 3",
+            "hit_level": "m, m(, (throw))",
+            "damage": "11,14(,20)",
+            "speed": "20",
+            "on_block": "-12",
+            "on_hit": "Throw(KND)",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "f+3, 3 ",
+            "hit_level": "m, m",
+            "damage": "11,14",
+            "speed": "20",
+            "on_block": "-12~-9",
+            "on_hit": "-1~+2s",
+            "on_ch": "+4~+7s",
+            "notes": ""
+        },
+        {
+            "notation": "f+4",
+            "hit_level": "h",
+            "damage": "16",
+            "speed": "14~15",
+            "on_block": "-7~-6",
+            "on_hit": "+4~+5",
+            "on_ch": "+4~+5",
+            "notes": ""
+        },
+        {
+            "notation": "f+4, 4",
+            "hit_level": "h, h",
+            "damage": "16,14",
+            "speed": "14~15",
+            "on_block": "-11~-10",
+            "on_hit": "0~+1",
+            "on_ch": "Launch (JG?)",
+            "notes": ""
+        },
+        {
+            "notation": "f+4, 4, 3",
+            "hit_level": "h, h, h",
+            "damage": "16,14,20",
+            "speed": "14~15",
+            "on_block": "-5~-4",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "f+4, d+4",
+            "hit_level": "h, l",
+            "damage": "16,12",
+            "speed": "14~15",
+            "on_block": "-12",
+            "on_hit": "+3s",
+            "on_ch": "+3s",
+            "notes": ""
+        },
+        {
+            "notation": "f+1+2",
+            "hit_level": "h",
+            "damage": "20",
+            "speed": "17~18",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Tail spin"
+        },
+        {
+            "notation": "d/f+1",
+            "hit_level": "m",
+            "damage": "13",
+            "speed": "13",
+            "on_block": "-2",
+            "on_hit": "+7",
+            "on_ch": "+7",
+            "notes": ""
+        },
+        {
+            "notation": "d/f+1, 4",
+            "hit_level": "m, h",
+            "damage": "13,23",
+            "speed": "13",
+            "on_block": "-7~-6",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "d/f+2",
+            "hit_level": "m",
+            "damage": "14",
+            "speed": "15~16",
+            "on_block": "-12~-11",
+            "on_hit": "Launch (JG?)",
+            "on_ch": "Launch (JG?)",
+            "notes": ""
+        },
+        {
+            "notation": "d/f+3 (Close)",
+            "hit_level": "m(, (throw))",
+            "damage": "16(,20)",
+            "speed": "17",
+            "on_block": "-6",
+            "on_hit": "Throw(KND)",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "d/f+3",
+            "hit_level": "m",
+            "damage": "16",
+            "speed": "17~20",
+            "on_block": "-6~-3",
+            "on_hit": "+5~+8s",
+            "on_ch": "+10~+13s",
+            "notes": ""
+        },
+        {
+            "notation": "d/f+4",
+            "hit_level": "m",
+            "damage": "14",
+            "speed": "12",
+            "on_block": "-9",
+            "on_hit": "+2",
+            "on_ch": "+2",
+            "notes": ""
+        },
+        {
+            "notation": "d/f+1+2 or FC+d/f+1+2",
+            "hit_level": "(Special)(lReturns move)",
+            "damage": "20",
+            "speed": "12(s)",
+            "on_block": "",
+            "on_hit": " Attack returned(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "d+1",
+            "hit_level": "m",
+            "damage": "18",
+            "speed": "18~19",
+            "on_block": "0~+1s",
+            "on_hit": "+7~+8s",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "d+2",
+            "hit_level": "l (TC)",
+            "damage": "17",
+            "speed": "18~19s cs6~",
+            "on_block": "-13~-12",
+            "on_hit": "-1",
+            "on_ch": "+13~+14g",
+            "notes": ""
+        },
+        {
+            "notation": "d+3",
+            "hit_level": "l",
+            "damage": "13",
+            "speed": "17~18",
+            "on_block": "-16~-15",
+            "on_hit": "-4~-3",
+            "on_ch": "0~+1s",
+            "notes": ""
+        },
+        {
+            "notation": "d+3, 4",
+            "hit_level": "l, m",
+            "damage": "13,18",
+            "speed": "17~18",
+            "on_block": "-11",
+            "on_hit": "+5",
+            "on_ch": "+23g(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "d+4",
+            "hit_level": "l",
+            "damage": "12",
+            "speed": "15~16",
+            "on_block": "-15~-14",
+            "on_hit": "-9~-8",
+            "on_ch": "-4~-3",
+            "notes": ""
+        },
+        {
+            "notation": "d+4, 1",
+            "hit_level": "l, h",
+            "damage": "12,8",
+            "speed": "15~16",
+            "on_block": "-11~-10",
+            "on_hit": "+5~+6",
+            "on_ch": "+5~+6",
+            "notes": ""
+        },
+        {
+            "notation": "d+4, 1, 3",
+            "hit_level": "l, h, h",
+            "damage": "12,8,21",
+            "speed": "15~16",
+            "on_block": "-16~-15",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "d+4, 4",
+            "hit_level": "l, h",
+            "damage": "12,23",
+            "speed": "15~16",
+            "on_block": "-15~-14",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "d/b+2",
+            "hit_level": "m",
+            "damage": "12",
+            "speed": "14~15",
+            "on_block": "-7~-6",
+            "on_hit": "+4~+5",
+            "on_ch": "+4~+5",
+            "notes": ""
+        },
+        {
+            "notation": "d/b+2, 1",
+            "hit_level": "m, m",
+            "damage": "12,10",
+            "speed": "14~15",
+            "on_block": "-10~-9",
+            "on_hit": "+1~+2",
+            "on_ch": "+3~+4",
+            "notes": ""
+        },
+        {
+            "notation": "d/b+2, 1, 2",
+            "hit_level": "m, m, m",
+            "damage": "12,10,20",
+            "speed": "14~15",
+            "on_block": "-14",
+            "on_hit": "uKZD",
+            "on_ch": "uKZD",
+            "notes": ""
+        },
+        {
+            "notation": "d/b+3 (Close)",
+            "hit_level": "l (TC)",
+            "damage": "21",
+            "speed": "27 cs6~",
+            "on_block": "-26?",
+            "on_hit": "KND",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "d/b+3",
+            "hit_level": "l (TC)",
+            "damage": "14",
+            "speed": "27 cs6~",
+            "on_block": "-26?",
+            "on_hit": "-5?",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "d/b+3~1+2",
+            "hit_level": "l(Throw)",
+            "damage": "45",
+            "speed": "38",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "b+1",
+            "hit_level": "m",
+            "damage": "14",
+            "speed": "17",
+            "on_block": "-10",
+            "on_hit": "+1",
+            "on_ch": "+1",
+            "notes": ""
+        },
+        {
+            "notation": "b+1, 2",
+            "hit_level": "m, m",
+            "damage": "14,18",
+            "speed": "17",
+            "on_block": "-13~-12",
+            "on_hit": "+9~+10k",
+            "on_ch": "KND",
+            "notes": "Tail spin"
+        },
+        {
+            "notation": "b+2",
+            "hit_level": "m",
+            "damage": "14",
+            "speed": "15s",
+            "on_block": "-3",
+            "on_hit": "+8",
+            "on_ch": "+8",
+            "notes": ""
+        },
+        {
+            "notation": "b+2, 1",
+            "hit_level": "m, h",
+            "damage": "14,11",
+            "speed": "15",
+            "on_block": "-5~-3",
+            "on_hit": "+6~+8",
+            "on_ch": "+6~+8",
+            "notes": ""
+        },
+        {
+            "notation": "b+2, 1, 3",
+            "hit_level": "m, h, l (TC)",
+            "damage": "14,11,24(,30)",
+            "speed": "cs15~",
+            "on_block": "-26",
+            "on_hit": "KND",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "b+2, 1, 3 (Far)",
+            "hit_level": "m, h, l (TC)",
+            "damage": "14,11,16",
+            "speed": "cs15~",
+            "on_block": "-26",
+            "on_hit": "-7~-5",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "b+2, 1, 3~1+2 (Cancel)",
+            "hit_level": "m, h, l(Throw)",
+            "damage": "14,11,45",
+            "speed": "15~",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "b+2, 1, 3~1+2, d (Cancel)",
+            "hit_level": "m, h, (Special)",
+            "damage": "14,11",
+            "speed": "15~s",
+            "on_block": "-36~-34",
+            "on_hit": "-25~-23",
+            "on_ch": "-25~-23",
+            "notes": ""
+        },
+        {
+            "notation": "b+3",
+            "hit_level": "h",
+            "damage": "17",
+            "speed": "14~15",
+            "on_block": "-9~-8",
+            "on_hit": "+11~+12kg",
+            "on_ch": "+11~+12kg",
+            "notes": "Homing, Tail spin"
+        },
+        {
+            "notation": "b+4",
+            "hit_level": "m",
+            "damage": "15",
+            "speed": "15",
+            "on_block": "-4",
+            "on_hit": "+7",
+            "on_ch": "+7",
+            "notes": ""
+        },
+        {
+            "notation": "b+4, 2",
+            "hit_level": "m, m",
+            "damage": "15,15",
+            "speed": "15",
+            "on_block": "-7",
+            "on_hit": "+4s",
+            "on_ch": "+5s",
+            "notes": ""
+        },
+        {
+            "notation": "b+4, 2, D",
+            "hit_level": "m, m",
+            "damage": "15,15",
+            "speed": "15s",
+            "on_block": "-7",
+            "on_hit": "+4s",
+            "on_ch": "+5s",
+            "notes": ""
+        },
+        {
+            "notation": "b+4, 2, 1",
+            "hit_level": "m, m, h",
+            "damage": "15,15,17",
+            "speed": "15",
+            "on_block": "+1~+2",
+            "on_hit": "+5~+6",
+            "on_ch": "+5~+6",
+            "notes": ""
+        },
+        {
+            "notation": "b+4, 2, 1+2",
+            "hit_level": "m, m, m(Throw)",
+            "damage": "15,15,5",
+            "speed": "15",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "b+4, 2, 1+2, 1 or 2 or 3 or 4 (Cancel)",
+            "hit_level": "m, m, (Special)",
+            "damage": "15,15",
+            "speed": "15a",
+            "on_block": "-50",
+            "on_hit": "-39s",
+            "on_ch": "-38s",
+            "notes": ""
+        },
+        {
+            "notation": "b+4, 3",
+            "hit_level": "m, h",
+            "damage": "15,22",
+            "speed": "15",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Tail spin"
+        },
+        {
+            "notation": "b+1+2",
+            "hit_level": "m",
+            "damage": "26",
+            "speed": "22~23",
+            "on_block": "+6~+7",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "b+3+4",
+            "hit_level": "h(Absorbs 1 h/m hit)",
+            "damage": "22",
+            "speed": "28~29 (7~15)",
+            "on_block": "-2~-1",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "b+2+3",
+            "hit_level": "!",
+            "damage": "60",
+            "speed": "63~64",
+            "on_block": "KND",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u/b+2",
+            "hit_level": "h",
+            "damage": "18",
+            "speed": "20",
+            "on_block": "-5",
+            "on_hit": "+9",
+            "on_ch": "CS",
+            "notes": ""
+        },
+        {
+            "notation": "u/f+1",
+            "hit_level": "h",
+            "damage": "20",
+            "speed": "15",
+            "on_block": "-9",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u or u/f+2",
+            "hit_level": "m (TJ)",
+            "damage": "20",
+            "speed": "30~31 js9~29",
+            "on_block": "-5~-4",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u/f+3",
+            "hit_level": "m (TJ)",
+            "damage": "16",
+            "speed": "17~21",
+            "on_block": "-7~-3",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u/b+4",
+            "hit_level": "m (TJ)",
+            "damage": "21",
+            "speed": "22~23 js9~",
+            "on_block": "-17~-16",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u+4",
+            "hit_level": "m (TJ)",
+            "damage": "21",
+            "speed": "22~23 js9~",
+            "on_block": "-13~-12",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u/f+4",
+            "hit_level": "m (TJ)",
+            "damage": "21",
+            "speed": "22~23 js9~",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "u/f+3+4",
+            "hit_level": "h(Throw)?,  (TJ)",
+            "damage": "42",
+            "speed": "38~42(d)~js20~",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "f, F+2",
+            "hit_level": "m",
+            "damage": "20",
+            "speed": "15~16 (16~)",
+            "on_block": "-12~-11",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "f, F+2~1+2",
+            "hit_level": "h(Throw)",
+            "damage": "35",
+            "speed": "43~44",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "f, F+3",
+            "hit_level": "h",
+            "damage": "35",
+            "speed": "21~23 (22~)",
+            "on_block": "+3~+5",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Homing, Tail spin"
+        },
+        {
+            "notation": "f, F+4",
+            "hit_level": "m",
+            "damage": "21",
+            "speed": "26~28as (27~)",
+            "on_block": "-1~+1",
+            "on_hit": "+3~+5s",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "qcb+2",
+            "hit_level": "m",
+            "damage": "23",
+            "speed": "26~27 (26~)",
+            "on_block": "-15~-14",
+            "on_hit": "Launch (JG?)",
+            "on_ch": "Launch (JG?)",
+            "notes": ""
+        },
+        {
+            "notation": "f, f, f+2",
+            "hit_level": "m",
+            "damage": "25",
+            "speed": "15~17 (18~)",
+            "on_block": "+5~+7",
+            "on_hit": "KND",
+            "on_ch": "TFU",
+            "notes": ""
+        },
+        {
+            "notation": "f, f, f+4",
+            "hit_level": "m(, (throw))",
+            "damage": "25(,25)",
+            "speed": "20~21 (23~)",
+            "on_block": "-7~-6",
+            "on_hit": "Throw(KND)",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "WR+3",
+            "hit_level": "l(, (throw))",
+            "damage": "20(,20)",
+            "speed": "17 cs12~ ar10~",
+            "on_block": "-15",
+            "on_hit": "Throw(KND)",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "WR+3 (Far)",
+            "hit_level": "l",
+            "damage": "20",
+            "speed": "17~18 cs12~ ar10~",
+            "on_block": "-15~-14",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "WS+1",
+            "hit_level": "m",
+            "damage": "12",
+            "speed": "12~13",
+            "on_block": "-3~-2",
+            "on_hit": "+4~+5",
+            "on_ch": "+4~+5",
+            "notes": ""
+        },
+        {
+            "notation": "WS+1, 2",
+            "hit_level": "m, h",
+            "damage": "12,18",
+            "speed": "12~13",
+            "on_block": "-7~-6",
+            "on_hit": "+10~+11kg",
+            "on_ch": "KND",
+            "notes": "Tail spin"
+        },
+        {
+            "notation": "WS+1, 3",
+            "hit_level": "m, m",
+            "damage": "12,20",
+            "speed": "12~13",
+            "on_block": "-12~-11",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "WS+2",
+            "hit_level": "m",
+            "damage": "15",
+            "speed": "15~16",
+            "on_block": "-12~-11",
+            "on_hit": "Launch (JG?)",
+            "on_ch": "Launch (JG?)",
+            "notes": ""
+        },
+        {
+            "notation": "WS+3",
+            "hit_level": "m",
+            "damage": "21",
+            "speed": "16~17",
+            "on_block": "-9~-8",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": "Wall bounce"
+        },
+        {
+            "notation": "WS+4",
+            "hit_level": "m",
+            "damage": "15",
+            "speed": "11~12",
+            "on_block": "-5~-4",
+            "on_hit": "+6~+7",
+            "on_ch": "+6~+7",
+            "notes": ""
+        },
+        {
+            "notation": "WS+1+2",
+            "hit_level": "m",
+            "damage": "28",
+            "speed": "12~13",
+            "on_block": "-15~-14",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "SS+2",
+            "hit_level": "m",
+            "damage": "16",
+            "speed": "20~21 (29~)",
+            "on_block": "-10~-9",
+            "on_hit": "-4~-3",
+            "on_ch": "+1~+2",
+            "notes": ""
+        },
+        {
+            "notation": "SS+2, 3",
+            "hit_level": "m, h(, (throw))",
+            "damage": "16,17(,20)",
+            "speed": "20~21 (29~)",
+            "on_block": "-9",
+            "on_hit": "+5",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "SS+2, 1+2",
+            "hit_level": "m, hm",
+            "damage": "16,8,12",
+            "speed": "20~21 (29~)",
+            "on_block": "-4~-3",
+            "on_hit": "+2~+3s",
+            "on_ch": "+2~+3s (+8~+9s)",
+            "notes": ""
+        },
+        {
+            "notation": "SS+2, 1+2, 4",
+            "hit_level": "m, hm, h",
+            "damage": "16,8,12,28",
+            "speed": "20~21 (29~)",
+            "on_block": "-10~-9",
+            "on_hit": "CS",
+            "on_ch": "CS",
+            "notes": ""
+        },
+        {
+            "notation": "SS+2, 1+2, 1+2",
+            "hit_level": "m, hm, m(Throw)",
+            "damage": "16,8,12,5",
+            "speed": "20~21 (29~)",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "SS+2, 1+2, 1+2, 1 or 2 or 3 or 4 (Cancel)",
+            "hit_level": "m, hm, (Special)",
+            "damage": "16,8,12",
+            "speed": "20~21 (29~) Air",
+            "on_block": "-51~-50",
+            "on_hit": "-45~-44s",
+            "on_ch": "-45~-44s (-39~-38s)",
+            "notes": ""
+        },
+        {
+            "notation": "SS+3+4",
+            "hit_level": "(Special) (TC)",
+            "damage": "",
+            "speed": "s",
+            "on_block": "",
+            "on_hit": "",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "BT d+3",
+            "hit_level": "m",
+            "damage": "20",
+            "speed": "16",
+            "on_block": "-11",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "Face down Grounded 1+2",
+            "hit_level": "(Special)",
+            "damage": "",
+            "speed": "s(b)",
+            "on_block": "",
+            "on_hit": "",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "Face down Grounded 1+2, 1+2",
+            "hit_level": "(Special), m(Throw)",
+            "damage": "5",
+            "speed": "30",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "Opponent Down d+3+4",
+            "hit_level": "On grounded opponent(l)",
+            "damage": "19",
+            "speed": "24",
+            "on_block": "-11",
+            "on_hit": "0",
+            "on_ch": "0",
+            "notes": ""
+        },
+        {
+            "notation": "qcf",
+            "hit_level": "(Special)",
+            "damage": "",
+            "speed": "24",
+            "on_block": "",
+            "on_hit": "",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+1",
+            "hit_level": "h",
+            "damage": "20",
+            "speed": "15~16 (17~)",
+            "on_block": "-3~-2",
+            "on_hit": "CS",
+            "on_ch": "CS",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+2",
+            "hit_level": "m",
+            "damage": "25",
+            "speed": "18~19 (20~)",
+            "on_block": "-14",
+            "on_hit": "Launch (JG?)",
+            "on_ch": "Launch (JG?)",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+3",
+            "hit_level": "l (TC)",
+            "damage": "17(,20)",
+            "speed": "17s(19~) cs12~ ar10~",
+            "on_block": "-15",
+            "on_hit": "-6",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+3 (Far)",
+            "hit_level": "l (TC)",
+            "damage": "17",
+            "speed": "17~18s (19~) cs12~ ar10~",
+            "on_block": "-14~-13",
+            "on_hit": "-5~-4",
+            "on_ch": "KND",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+4",
+            "hit_level": "m",
+            "damage": "25,(10)",
+            "speed": "17~18 (19~)",
+            "on_block": "-10~-9",
+            "on_hit": "Throw(KND)",
+            "on_ch": "Throw(KND)",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+4 When hit 1, 3, 4, 2",
+            "hit_level": "Chained",
+            "damage": "25,10,20",
+            "speed": "17~18 (19~)",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+4 When hit 2, 4, 3, 1",
+            "hit_level": "Chained",
+            "damage": "25,10,20",
+            "speed": "17~18 (19~)",
+            "on_block": "",
+            "on_hit": "Throw(KND)",
+            "on_ch": "",
+            "notes": ""
+        },
+        {
+            "notation": "qcf+1+2",
+            "hit_level": "m",
+            "damage": "28",
+            "speed": "12~13 (14~)",
+            "on_block": "-15~-14",
+            "on_hit": "KND",
+            "on_ch": "KND",
+            "notes": ""
+        }
+    ],
+    "metadata": {
+        "ver": "0.4",
+        "game": "t7",
+        "character": "Dragunov",
+        "name": "Dragunov",
+        "type": "normal"
+    }
+}

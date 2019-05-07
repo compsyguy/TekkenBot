@@ -1,6 +1,6 @@
 {
-	"name": "Yoshimitsu",
-	"char_id":"3",
+	"name": "Dragunov",
+	"char_id":"16",
 	"st_punishes": {
 		"10":">, +1, >, +1, >",
 		"13":">, d/f+1, >, +4, >",

@@ -97,26 +97,26 @@ for move in j["moves"]:
     if move["notes"]:
         tags = move["notes"].split(",")
         for tag in tags:
-            if tag.strip() == "Tail spin":
+            if tag.strip() == "Tail spin" or tag.strip() == "Tail Spin":
                 #print("TS")
                 ET.SubElement(MoveTags, "TailSpin")
-            elif tag.strip() == "Power crush":
+            elif tag.strip() == "Power crush" or tag.strip() == "Power Crush":
                 #print("PC")
                 ET.SubElement(MoveTags, "PowerCrush")
-            elif tag.strip() == "Power Crush":
-                #print("PC")
-                ET.SubElement(MoveTags, "PowerCrush")
-            elif tag.strip() == "Rage art":
+            elif tag.strip() == "Rage art" or tag.strip() == "Rage Art":
                 ET.SubElement(MoveTags, "RageArt")
-            elif tag.strip() == "Rage drive":
+            elif tag.strip() == "Rage drive" or tag.strip() == "Rage Drive":
                 ET.SubElement(MoveTags, "RageDrive")
-            elif tag.strip() == "Wall bounce":
+            elif tag.strip() == "Wall bounce" or tag.strip() == "Wall Bounce":
                 ET.SubElement(MoveTags, "WallBounce")
+            elif tag.strip() == "Homing" or tag.strip() == "homing":
+                ET.SubElement(MoveTags, "Homing")
             elif tag.strip() == "":
                 pass
             else:
                 #print(tag.strip())
-                ET.SubElement(MoveTags, tag.strip())
+                note = ET.SubElement(MoveTags, "Notes")
+                note.text = tag.strip()
 
 
 GamePlans = ET.SubElement(Char, "gameplans")
@@ -203,10 +203,11 @@ for id in PunishableMoves:
 f = open(sys.argv[3] + ".xml", "w")
 # print(ET.tostring(Char))
 xmlString = ET.tostring(Char)
-#print(xmlString[37300:37400])
+print(xmlString[5900:6000])
 xmlFile = xml.dom.minidom.parseString(xmlString)
-
+#print("Error range: " + xmlFile.toxml()[27200:27300])
 f.write(xmlFile.toprettyxml())
+#f.write(xmlFile.toxml())
 f.close()
 
 #f = open(sys.argv[3] + "-quiz.xml", "w")
