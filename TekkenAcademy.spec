@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['GUI_TekkenAcademy.py'],
-             pathex=['C:\\Users\\Evan\\Dropbox\\Tekken\\TekkenAcademy\\TekkenBot'],
+             pathex=['C:\\Users\\Evan\\Documents\\TekkenAcademy\\TekkenBot'],
              binaries=[],
              datas=[('TekkenData', 'TekkenData')],
              hiddenimports=[],
