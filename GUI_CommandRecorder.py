@@ -61,17 +61,21 @@ class GUI_CommandRecorder(AcademyBot):
                 playbackrecord.append(line.rstrip().split(' '))
                 
             playbackrecord.append("#")
-            playbackrecord = self.recorder.parser(playbackrecord)
-            
-            move = ""
+            #playbackrecord = self.recorder.parser(playbackrecord)
             #print(playbackrecord)
-            for i in playbackrecord:
-                if i != None :
-                    for j in i :
-                        move += str(j[0]) + ', '
-                    move += '\n'
-                
-            self.InputBox.insert(END, move)
+            move = self.recorder.move_process(playbackrecord)
+            
+            #move = playbackrecord
+            #print(playbackrecord)
+            #for i in playbackrecord:
+            #    if i != None :
+            #        for j in i :
+            #            move += str(j[0]) + ', '
+            #        move += '\n'
+            
+            
+            if(move != None):
+                self.InputBox.insert(END, move)
     
     def testCommand(self):
         #print(ParseMoveList(self.InputBox.get("1.0", 'end-1c')))

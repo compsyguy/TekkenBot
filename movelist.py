@@ -165,7 +165,7 @@ class MoveList:
         
         for filename in os.listdir(self.directory):
             if filename.endswith(".xml"):
-                print(os.path.join(self.directory, filename))
+                #print(os.path.join(self.directory, filename))
                 data_file = ET.parse(os.path.join(self.directory, filename))
                 char_root = data_file.getroot()
                 if int(char_id) == int(char_root.attrib['id']):

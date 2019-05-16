@@ -4,11 +4,72 @@ from TekkenEncyclopedia import TekkenEncyclopedia
 from TekkenGameState import TekkenGameReader
 from TekkenGameState import BotSnapshot
 
+class ControllerFrame(object):
+    def __init__(self, inputs):
+        self.Controller = {'f': False, 
+                      'd': False, 
+                      'u': False,
+                      'b': False, 
+                      '1': False, 
+                      '2': False, 
+                      '3': False, 
+                      '4': False}
+    
+        for input in inputs:
+            if(input in self.Controller):
+                self.Controller[input] = True
+        
+    def compare(self, c):
+        diff = {}
+        Found = False
+        for input in self.Controller:
+            if(self.Controller[input] == c.Controller[input]):
+                #input was unchanged
+                diff[input] = "same"
+            elif(self.Controller[input] and not c.Controller[input]):
+                #input was released
+                #print("Released")
+                diff[input] = "released"
+                Found = True
+            elif(not self.Controller[input] and c.Controller[input]):
+                #input was pressed
+                diff[input] = "pressed"
+                #print("Pressed")
+                Found = True
+        
+        return {"Found": Found, "Differences": diff}
 
+    def getHeldInput(self, input):
+        if(input.isalpha()):
+            return input.upper()
+        if(input.isnumeric()):
+            return "+" + input + "*"
+
+    def getReleaseInput(self, input):
+        if(input.isalpha()):
+            return "-" + input.upper()
+        if(input.isnumeric()):
+            return "+" + input + "-"
+    
+    def getInput(self, input):
+        if(input.isalpha()):
+            return input
+        if(input.isnumeric()):
+            return "+" + input
+            
+    def getCommand(self):
+        directions = ""
+        buttons = ""
+        for input in self.Controller:
+            if(input.isalpha()):
+                directions = directions + input
+            if(input.isdigit()):
+                if(len(buttons) == 0):
+                    buttons = buttons + "+" + input
+        return directions + buttons
+                    
 
 class CommandRecorder(object):
-    
-
     
     def __init__(self, launcher):
         self.launcher = launcher
@@ -158,7 +219,7 @@ class CommandRecorder(object):
         pass
         
     def translate_input(self, i): #list of 3 elements
-        print(i)
+        #print(i)
         command=[]
         #print(i)
         i[1]=str(i[1])
@@ -196,18 +257,20 @@ class CommandRecorder(object):
 
     def command_translator(self, command):
             inputs=[]
+            #print(command)
             for input in command:
                 #print(input)
                 cmd=self.translate_input(input)
                 inputs.append(cmd)
             #inputs.append(cmd)
-            print('\n')
+            #print('\n')
             return inputs
             #print(inputs)
 
 
     def calculate_delay(self, move):
         frames=[]
+        
         for frame_value in move :
             frames.append(frame_value[1])
         #print(frames)
@@ -241,7 +304,7 @@ class CommandRecorder(object):
 
     def frames_to_int(self, list):
         #print(list)
-        print("\n\n\n")
+        #print("\n\n\n")
         for i in list:
             #print(i)
             i[1]=int(i[1])
@@ -252,14 +315,146 @@ class CommandRecorder(object):
 
     def move_process(self, movelist):
         if len(movelist)>1:
-            movelist=self.frames_to_int(movelist)
-            movelist=self.process(movelist)
             #print(movelist)
-            movelist.pop()# Last neutral input between two moves. Transition neutral garbage
-            #print(movelist)
-            movelist=self.calculate_delay(movelist)
-            #print('\n',movelist)
-            movelist=self.command_translator(movelist)
+            
+            count = 0
+            for frame in reversed(movelist):
+                if(frame[0] == 'N'):
+                    count = count + 1
+                else:
+                    break
+            
+            for i in range(count):
+                movelist.pop()
+            
+            #HoldFrames = 0
+            Command = ""
+            NextFrame = 0
+            LastActionFrame = 0
+            #diff = False
+            for i in range(len(movelist)):
+                #print(str(i) + ": " + str(movelist[i]))
+                    
+                if(i > 0): #Previous Frame
+                    PreviousFrame = ControllerFrame(movelist[i-1][0])
+                else:
+                    PreviousFrame = ControllerFrame("")
+                    
+                CurrentFrame = ControllerFrame(movelist[i][0]) #Current Frame
+                
+                if(i+2 > len(movelist)): #Next Frame
+                    NextFrame = ControllerFrame("")
+                else:
+                    NextFrame = ControllerFrame(movelist[i+1][0])
+
+                FoundDifferencePrevious = PreviousFrame.compare(CurrentFrame)
+                FoundDifferenceNext = CurrentFrame.compare(NextFrame)
+
+                
+                
+                #diff = False
+                if(FoundDifferencePrevious['Found']):
+                    for input in CurrentFrame.Controller:
+                        if(FoundDifferencePrevious["Differences"][input] == "released"):
+                            Command = Command + CurrentFrame.getReleaseInput(input)  + ", "
+                            #diff = True
+                
+                for input in CurrentFrame.Controller:
+                    if(not PreviousFrame.Controller[input] and CurrentFrame.Controller[input]): 
+                        #Input was not pressed last frame, but is this frame. We need to press it.
+                        if(not NextFrame.Controller[input]):
+                            #Input will only be pressed for one frame
+                            print("One Frame")
+                            Command = Command + CurrentFrame.getInput(input)
+                            #diff = True
+                        else:
+                            #Input will be held for more then one frame, get the held input
+                            Command = Command + CurrentFrame.getHeldInput(input)
+                            #diff = True
+                
+                    #HoldFrames = 0
+                #else:
+                    #HoldFrames = HoldFrames + 1
+                    
+                if(FoundDifferenceNext['Found']):
+                    if(i - LastActionFrame != 0):
+                        Command = Command + ", " + str(i - LastActionFrame) + ", "
+                        LastActionFrame = i
+                        
+                """if(not FoundDifferenceNext['Found']): #no difference found, increment frame counter
+                    HoldFrames = HoldFrames + 1
+                else: #difference found, find out what it is and make the changes
+                    for input in CurrentFrame.Controller:
+                        #print(str(i) + ": " + input)
+                        if(CurrentFrame.Controller[input]): #This input was pressed, we need to see if we need to hold it
+                            if(HoldFrames == 1 and FoundDifferenceNext["Differences"][input] == "released"): #Input only held for 1 frame
+                                Command = Command + CurrentFrame.getInput(input)
+                            elif(FoundDifferencePrevious["Differences"][input] == "pressed"): #Must be no difference in this input, hold input
+                                #print("Held")
+                                Command = Command + CurrentFrame.getHeldInput(input)
+                                
+                    if(HoldFrames > 0):
+                        Command = Command + ", " + str(HoldFrames) + ", "
+                        HoldFrames = 0
+                #print(str(i) + ": " + Command)
+                """
+                        
+                #find how long to hold each input
+                """for j in range(i+1, len(movelist)):
+                    if(j == len(movelist)-1):
+                        c2 = ControllerFrame('')
+                    else:
+                        c2 = ControllerFrame(movelist[j][0])
+                    diff = c1.compare(c2)
+                    
+                    if(diff['Found']): #Found a difference, check to see if anything was released
+                        HoldFrames = j - i
+                        if(HoldFrames > 1): #we need to change the inputs to hold
+                            #print("Frames > 1")
+                            directions = ""
+                            buttons = ""
+                            for input in c1.Controller:
+                                if(c1.Controller[input]):
+                                    if(input.isalpha()):
+                                        directions = directions + input.upper()
+                                    if(input.isnumeric()):
+                                        buttons = buttons + "+" + input
+                            Command = Command + directions + buttons + "*, " + str(HoldFrames) + ", "
+                        else: 
+                            #print("Frames = 1")
+                            directions = ""
+                            buttons = ""
+                            for input in c1.Controller:
+                                if(c1.Controller[input]):
+                                    if(diff["Differences"][input] == "released"): #input was 1 frame, don't need to do anything
+                                        pass #directions = directions + input
+                                    elif(diff["Differences"][input] == "pressed"): #input was at least 2 frames, set to hold
+                                        if(input.isalpha()):
+                                            directions = directions + input.upper()
+                                        if(input.isnumeric()):
+                                            buttons = buttons + "+" + input + "*"
+                            #print("D: " + directions + " B: " + buttons)
+                            if(len(directions) > 0 or len(buttons) > 1):
+                                Command = Command + directions + buttons + ", 1, "
+                        for input in c1.Controller:
+                            if(diff["Differences"][input] == "released"):
+                                if(input.isalpha()):
+                                    Command = Command + "-" + input.upper() + ", "
+                                if(input.isnumeric()):
+                                    Command = Command + "+" + input + "-, "
+                        NextFrame = j        
+                        break"""
+                
+            #print(Command)
+            return Command
+            #movelist=self.frames_to_int(movelist)
+            #movelist=self.process(movelist)
+            ##print(movelist)
+            #movelist.pop()# Last neutral input between two moves. Transition neutral garbage
+            ##print(movelist)
+            #movelist=self.calculate_delay(movelist)
+            ##print('\n',movelist)
+            #movelist=self.command_translator(movelist)
 
             """for i in range(len(movelist)) :
                 if i==0:
@@ -267,7 +462,7 @@ class CommandRecorder(object):
                 else :
                     print(",",movelist[i][0], end='')"""
 
-            return movelist
+            #return movelist
 
     def parser(self, playback):
         move=[]

@@ -4,7 +4,7 @@
 * The Overlay requires Tekken 7 to be in windowed or windowed borderless mode (switch first to windowed, THEN to borderless).
 * Tekken Academy is still very early in development and is prone to breaking.
 * Current useful funcationality: 
-	Characters that are ready for the following: Law
+	Characters that are ready for the following: Akuma,
 *   Punish Practice: 
       Need to be in practice mode, wall-less stage, CPU set to controller 2 keyboard.
       Displays a punishable move - how negative it is, then executes the move.
