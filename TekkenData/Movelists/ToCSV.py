@@ -17,10 +17,10 @@ OutputFile = "csv/" + root.attrib['name'] + ".csv"
 
 with open(OutputFile, 'w', newline='') as csvfile:
     MoveWriter = csv.writer(csvfile, delimiter=',')
-    MoveWriter.writerow(["Move ID", "Move", "Command", "BlockFrame", "Punishable"])
+    MoveWriter.writerow(["Move ID", "Move", "Command", "hitLevel", "BlockFrame", "Punishable"])
     for move in root.findall('moves/move'):
         if(len(move.findall("tags/Punishable")) > 0):
             Punishable = True
         else:
             Punishable = False
-        MoveWriter.writerow([move.findall("id")[0].text, move.findall("name")[0].text, move.findall("command")[0].text, move.findall("BlockFrame")[0].text, Punishable])
+        MoveWriter.writerow([move.findall("id")[0].text, move.findall("name")[0].text, move.findall("command")[0].text, move.findall("hitLevel")[0].text, move.findall("BlockFrame")[0].text, Punishable])

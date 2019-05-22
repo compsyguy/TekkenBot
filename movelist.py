@@ -86,14 +86,15 @@ class MoveList:
             random.shuffle(self.gameplan)
             
     def getNextGameplanMove(self):
-        if self.gameplanIndex >= len(self.gameplan) - 1:
+        if self.gameplanIndex >= len(self.gameplan):
             self.gameplanIndex = 0
-        else:
-            self.gameplanIndex = self.gameplanIndex + 1
         if self.gameplan:
             move = self.gameplan[self.gameplanIndex]
         else:
             move = None
+        
+        self.gameplanIndex = self.gameplanIndex + 1
+        
         return move
         
     def getMoveById(self, id):
