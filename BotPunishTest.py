@@ -70,7 +70,8 @@ class BotPunishTest(Bot):
         if self.botCommands.IsAvailable():
             #if gameState.DidBotStartGettingPunishedXFramesAgo(30):
             #gameState.IsOppAbleToAct()
-            if gameState.stateLog[-1].bot.IsPunish() or gameState.stateLog[-1].bot.IsBeingJuggled():
+            #if gameState.stateLog[-1].bot.IsPunish() or gameState.stateLog[-1].bot.IsBeingJuggled():
+            if gameState.stateLog[-1].bot.hit_outcome in self.HitList():
             #if gameState.GetFramesSinceBotTookDamage() < 30:
                 if self.lastMove:
                     print("Punished")
@@ -117,6 +118,10 @@ class BotPunishTest(Bot):
             self.FrameLastAction = self.frameCounter
             return True
         return False
+        
+    def HitList(self):
+        return (HitOutcome.COUNTER_HIT_STANDING, HitOutcome.COUNTER_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING, HitOutcome.NORMAL_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING_LEFT, HitOutcome.NORMAL_HIT_CROUCHING_LEFT, HitOutcome.NORMAL_HIT_STANDING_BACK, HitOutcome.NORMAL_HIT_CROUCHING_BACK, HitOutcome.NORMAL_HIT_STANDING_RIGHT, HitOutcome.NORMAL_HIT_CROUCHING_RIGHT)
+        
     def SetFrameTrapCommandFromNotationString(self, notation: str):
 				
         try:
