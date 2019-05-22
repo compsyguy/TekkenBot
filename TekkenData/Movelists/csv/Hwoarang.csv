@@ -1,193 +1,193 @@
-Move ID,Move,Command,BlockFrame,Punishable
-1,in rage LFS or RFS d+3+4,,-7,False
-2,in rage d+3+4,,-4~-3,False
-3,"in rage d+3+4, 4",,+6s~+8s,False
-4,"in rage u/f+3, 4, 3+4",,+4~+5,False
-5,"in rage LFS u/f+3, 4, 3+4",,+4~+5,False
-6,1,,+1,False
-7,"1, 1",,-2,False
-8,"1, 1, 3","1*, 2, +1-, , 7, +1*, 5, +1-, , 3, +3*, 6, +3-,",-12,True
-9,"1, 1, 3, 3","+1*, 2, +1-, , 6, +1*, 5, +1-, , 1, +3*, 5, +3-, , 8, +3*, 5, +3-, ",-14,True
-10,"1, 2",,-1,False
-11,"1, 2, 3",,+3,False
-12,"1, 2, 4",,+3,False
-13,"1, 2, f+3",,-8,False
-14,"1, 2, f+4",,0,False
-15,2,,0,False
-16,"2, 3",,+3,False
-17,"2, 4",,+3,False
-18,"2, f+3",,-8,False
-19,"2, f+4",,0,False
-20,3,,-7,False
-21,"3, 3","+3*, 3, +3-, , 5, +3*, 3, +3-, ",-13,True
-22,"3, 3, F",,+2,False
-23,"3, 3, 3","+3*, 4, +3-, , 7, +3*, 2, +3-, , 6, +3*, 3, +3-, ",-14,True
-24,"3, 3, 4",,+8~+12,False
-25,"3, 3, d/f or f+4",,-4~+2y,False
-26,3~4,,-3,False
-27,4,,-6~-5,False
-28,"4, 3",,-6,False
-29,"4, 3, f (Cancel)",,-6~-5,False
-30,"4, 4",,-1,False
-31,"4, f+4",,-5,False
-32,"4, 4, 3",,-15~-9s,False
-33,"4, 4, 4",,-1,False
-34,"4, 4, f+4",,-6,False
-35,"4, 4, 4, 4",,+2~+5,False
-36,"4, 4, 4, 3",,-15~-9s,False
-37,1+2,,,False
-38,3+4,,,False
-39,f+2,,-2,False
-40,f+3,,,False
-41,f+3~n+3,"F, 2, +3*, 3, -F, +3-, , 6, +3*, 3, +3-, ",-16,True
-42,"f, n+4",,,False
-43,f+4,,+8~+12,False
-44,f+1+2,,-9,False
-45,d/f+1,,0~+1,False
-46,d/f+2,,-7~-6,False
-47,d/f+3,df+3,-14~-13,True
-48,"d/f+3, 4","FD, 2, +3*, 3, -F, , 1, -D, +3-, , 3, +4*, 3, +4-",-14~-13,True
-49,"d/f+3, f (Cancel)",,,False
-50,d/f+4,,-8~-7,False
-51,d/f+1+2,,-3~-2,False
-52,d/f+3+4,,-11~-10,False
-53,d+3,d+3,-13,True
-54,"d+3, 4",,+8~+12,False
-55,d+4,d+4,-17,True
-56,"d+4, 4",,-8,False
-57,d/b+3,db+3,-13,True
-58,d/b+4,db+4,-12,True
-59,"d/b+4, f",,-1,False
-60,"d/b+4, 4",,-3~-1,False
-61,d/b+3+4,,KND,False
-62,"d/b+3+4, b, b (Cancel)",,,False
-63,b+1,b+1,-13,True
-64,b+2,,-9~-7,False
-65,b+3,b+3,-19~-17,True
-66,b+4,,-9~-8,False
-67,u/b+3,ub+3,-14~-13,True
-68,"u/b+3, 3",,+3~+5,False
-69,"u/b+3, 4",,-4,False
-70,u/b+4,,-8~-5,False
-71,u+3,,+3,False
-72,u+4,,0~+2,False
-73,u+3+4,,-7~-6,False
-74,u/f+2,,+5s,False
-75,u/f+3,,-6~-5,False
-76,"u/f+3, 4",,-8,False
-77,"u/f+3, 4 (when second hit inputted)","U, 1, B, 2, +3*, 1, -B, , 2, +3-, , 1, -U, , 3, +4*, 4, +4-, ",-13~-12,True
-78,"u/f+3, 4, 3",,,False
-79,u/f+4,,-2~-1,False
-80,"u/f+4, 4",,0~+1,False
-81,"u/f+4, 4, 4",,+1~+2,False
-82,u/f+3+4,uf+3+4,-10,True
-83,"u/f+3+4, 4","FU, 3, +3*+4*, 3, +3-, +4-, , 1, -F, -U, , 7, +4*, 2, +4-, ",-13~-12,True
-84,"f, F+3",,+6~+10,False
-85,"f, F+4",,-7~-6,False
-86,"f, n, d, d/f+3",,+3,False
-87,"f, n, d, d/f+4",ewgf+4,-18,True
-88,"f, n, d/f+4",pewgf+4,-10,True
-89,"f, f, f+3",,+6~+8,False
-90,"f, f, f+4",,+5~+6,False
-91,WS+3,,-7~-3,False
-92,WS+4,,-3~-2,False
-93,"WS+4, 4",,-5~-1,False
-94,WS+3+4,,-9~-8,False
-95,"WS+3+4, 3",,-5~0,False
-96,SS+3,SSU+3,-12~-11,True
-97,"SS+3, 3",,+3~+4,False
-98,SS+4,SSU+4,-13~-12,True
-99,LFF BT 4,"+1*+2*, 3, +1-, +2-, , 12, +4*, 4, +4-, ",-13~-11,True
-100,RFF 1+2,,,False
-101,RFF 3+4,,,False
-102,RFF 1,,0,False
-103,"RFF 1, 1",,-9,False
-104,RFF 2,,+2,False
-105,"RFF 2, 1",,0,False
-106,"RFF 2, 1, 1",,-9,False
-107,"RFF 2, 3",,-9~-7,False
-108,"RFF 2, 4",,-8,False
-109,"RFF 2, 4, b or f",,+7,False
-110,"RFF 2, 4, d or u",,+6,False
-111,"RFF 2, 4, 3",,-15~-9s,False
-112,"RFF 2, 4, 4",,-5~-4,False
-113,"RFF 2, b+4",,-9~-8,False
-114,RFF 3,,-4,False
-115,"RFF 3, 4",,+9~+10g,False
-116,"RFF 3, F+4",,-7~-6,False
-117,RFF 3~4,,+4~+7y,False
-118,RFF 4,,-8,False
-119,"RFF 4, b or f",,+7,False
-120,"RFF 4, d or u",,+6,False
-121,"RFF 4, 3",,-15~-9 OC,False
-122,"RFF 4, 4",,-5~-4,False
-123,RFF f+4,,,False
-124,RFF f+4~4,,-12~-10,False
-125,RFF f+3,,+12~+15g,False
-126,"RFF f+3, B",,-11~-8,False
-127,RFF d/f+3,,-11~-10,False
-128,RFF d/f+4,,-7,False
-129,"RFF d/f+4, b or f",,+7,False
-130,"RFF d/f+4, d or u",,+6,False
-131,RFF d+4,"+3*+4*, 5, +3-, +4-, , 12, D, 2, +4*, 4, +4-, , 2, -D, ",-11,True
-132,RFF d/b+3,"+3*+4*, 3, +3-, , 1, +4-, , 12, DB, 2, +3*, 4, +3-, , 3, -D, -B, ",-11,True
-133,"RFF d/b+3, 3",,-2~0y,False
-134,RFF b+2,,+2~+3,False
-135,RFF b+3,,-9~-8,False
-136,RFF b+4,,-9~-8,False
-137,"RFF f, F+3",,-6~-3s,False
-138,"RFF f, F+4","+3*+4*, 5, +3-, +4-, , 13, F, 5, -F, , 3, F, 2, +4*, 5, -F, +4-, ",-17,True
-139,"RFF f, F+4, 3",,+14~+17,False
-140,RFF BT 3,"+3*+4*, 4, +3-, , 1, +4-, , 12, +1*+2*, 3, +1-, , 1, +2-, , 12, +4*, 4, +4-, ",-13~-11,True
-141,RFF BT 4,,-9~-8,False
-142,"RFF BT 4, 3",,-5~0,False
-143,RFF BT d+3,"+3*+4*, 5, +4-, , 1, +3-, , 16, +1*+2*, 8, +1-, , 1, +2-, , 11, D, 2, +3*, 5, -D, +3-, ",-13~-12,True
-144,f+3,,,False
-145,LFS 3+4,,,False
-146,LFS 1,,+5,False
-147,LFS 2,,-2,False
-148,LFS 3,"F, 4, +3*, 3, +3-, , 1, -F, , 13, +3*, 4, +3-, ",-13,True
-149,"LFS 3, 3","F, 3, +3*, 4, -F, +3-, , 20, +3*, 3, +3-, , 6, +3*, 5, +3-, ",-14,True
-150,"LFS 3, F",,+2,False
-151,"LFS 3, 4",,+8~+12,False
-152,"LFS 3, d/f or f+4",,-4~+2y,False
-153,LFS 4,,+2~+4,False
-154,LFS 1+4,,KND,False
-155,"LFS 1+4 , b, b (Cancel)",,,False
-156,LFS f+3,,+3~+4,False
-157,LFS f+4,,-7~-5,False
-158,"LFS f+4, 3",,+3~+5,False
-159,LFS d/f+3,"F, 3, +3*, 3, +3-, , 1, -F, , 20, F, 1, D, 1, +3*, 4, -F, +3-, , 1, -D, ",-12~-11,True
-160,"LFS d/f+3, 4","F, 3, +3*, 3, +3-, , 1, -F, , 9, FD, 2, +3*, 3, +3-, , 1, -F, , 1, -D, , 5, +4*, 4, +4-, ",-14~-13,True
-161,"LFS d/f+3, f (Cancel)",,,False
-162,LFS d+3,"F, 3, +3*, 4, -F, +3-, , 14, D, 3, +3*, 2, +3-, , 2, -D, ",-17,True
-163,"LFS d+3, 4",,+8~+12g,False
-164,LFS d or d/f+4,"F, 3, +3*, 3, +3-, , 1, -F, , 15, D, 2, +4*, 3, +4-, , 2, -D, ",-23,True
-165,LFS d/b+4,"F, 2, +3*, 3, +3-, , 2, -F, , 14, DB, 1, +4*, 3, +4-, , 3, -D, , 1, -B, ",-12~-11,True
-166,LFS b+1,"F, 2, +3*, 3, +3-, , 3, -F, , 10, B, 2, +1*, 3, +1-, , 2, -B, ",-13,True
-167,LFS b+3,,-12~-10,False
-168,LFS b+4,,-8~-7,False
-169,LFS u/f+3,,-6~-5,False
-170,"LFS u/f+3, 4",,-8~-7,False
-171,"LFS u/f+3, 4, 3",,,False
-172,LFS u/f+4,"F, 2, +3*, 3, +3-, , 3, -F, , 5, F, 2, U, 1, +4*, 3, +4-, , 2, -F, -U,",-14~-13,True
-173,LFS u/f+3+4,"F, 2, +3*, 3, +3-, , 3, -F, , 5, F, 3, U, 1, +3*+4, 1, +4-, , 1, +3-, , 2, -F, -U, ",-10,True
-174,"LFS u/f+3+4, 4","F, 2, +3*, 4, +3-, , 2, -F, , 6, F, 3, U, 1, +3*+4*, 3, +3-, +4-, , 1, -F, -U, , 8, +4*, 3, +4-,",-13~-12,True
-175,LFS f or b or u or d,,,False
-176,"f, n+4 ",,,False
-177,RFS 3+4,,,False
-178,RFS 1,,-2,False
-179,RFS 2,,+5,False
-180,RFS 3,,+2~-4,False
-181,RFS 4,"+3*+4*, 4, +3-, +4-, , 14, F, 1, +4*, 6, +4-, , 2, -F, , 13, +4*, 6, +4-, ",-14,True
-182,RFS f+3,,-7~-5,False
-183,"RFS f+3, 4",,+3~+5,False
-184,RFS f+4,,+1,False
-185,"RFS f+4, 4",,-6,False
-186,RFS d/f+4,,+1~+3,False
-187,RFS d/b or d or d/f+3,"+3*+4*, 4, +3-, +4-, , 11, F, 2, +4*, 5, +4-, , 2, -F, , 12, FD, 2, +3*, 1, -F, , 2, +3-, , 3, -D,",-23,True
-188,RFS d+4,"+3*+4*, 5, +3-, +4-, , 13, F, 2, +4*, 6, +4-, , 1, -F, , 11, D, 2, +4*, 4, +4-, , 1, -D, ",-31,True
-189,"RFS d+4, 3","+3*+4*, 3, +3-, , 1, +4-, , 10, F, 3, +4*, 5, +4-, , 1, -F, , 11, D, 2, +4*, 5, +4-, , 1, -D, , 6, +3*, 6, +3-, ",-14,True
-190,RFS b+3,,-10~-9,False
-191,RFS b+4,,-12~-10,False
-192,RFS f or b or u or d,,,False
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage LFS or RFS d+3+4,,m,-7,False,False
+2,in rage d+3+4,,lm,-4~-3,False,False
+3,"in rage d+3+4, 4",,"lm, m (TJ)(RFF)",+6s~+8s,False,False
+4,"in rage u/f+3, 4, 3+4",,"m (TJ), m, hh",+4~+5,False,False
+5,"in rage LFS u/f+3, 4, 3+4",,"m (TJ), m, hh",+4~+5,False,False
+6,1,,h,+1,False,False
+7,"1, 1",,"h, h",-2,False,False
+8,"1, 1, 3","+1*, 2, +1-, , 6, +1*, 5, +1-, , 1, +3*, 5, +3-","h, h, l",-12,True,False
+9,"1, 1, 3, 3","+1*, 2, +1-, , 6, +1*, 5, +1-, , 1, +3*, 5, +3-, , 8, +3*, 5, +3-, ","h, h, l, h",-14,True,False
+10,"1, 2",,"h, h",-1,False,False
+11,"1, 2, 3",,"h, h, (Special)",+3,False,False
+12,"1, 2, 4",,"h, h, (Special)",+3,False,False
+13,"1, 2, f+3",,"h, h, m",-8,False,False
+14,"1, 2, f+4",,"h, h, h (TJ)",0,False,True
+15,2,,h,0,False,False
+16,"2, 3",,"h, (LFS)",+3,False,False
+17,"2, 4",,"h, (RFS)",+3,False,False
+18,"2, f+3",,"h, m",-8,False,False
+19,"2, f+4",,"h, h (TJ)",0,False,True
+20,3,,h,-7,False,False
+21,"3, 3","+3*, 3, +3-, , 5, +3*, 3, +3-, ","h, m",-13,True,False
+22,"3, 3, F",,"h, m, (LFS)",+2,False,False
+23,"3, 3, 3","+3*, 4, +3-, , 7, +3*, 2, +3-, , 6, +3*, 3, +3-, ","h, m, m",-14,True,False
+24,"3, 3, 4",,"h, m, h, (RFS)",+8~+12,False,True
+25,"3, 3, d/f or f+4",,"h, m, h",-4~+2y,False,True
+26,3~4,,mm (TJ),-3,False,False
+27,4,,h,-6~-5,False,False
+28,"4, 3",,"h, m(LFF)",-6,False,False
+29,"4, 3, f (Cancel)",,"h, (LFS)",-6~-5,False,False
+30,"4, 4",,"h, h, (RFS)",-1,False,True
+31,"4, f+4",,"h, h(RFF)",-5,False,True
+32,"4, 4, 3",,"h, h, m(RFF)",-15~-9s,True,False
+33,"4, 4, 4",,"h, h, h, (RFS)",-1,False,True
+34,"4, 4, f+4",,"h, h, h(RFF)",-6,False,True
+35,"4, 4, 4, 4",,"h, h, h, h(RFF)",+2~+5,False,True
+36,"4, 4, 4, 3",,"h, h, h, m(RFF)",-15~-9s,True,False
+37,1+2,,(RFF),,False,False
+38,3+4,,(RFF),,False,False
+39,f+2,,m(RFF),-2,False,False
+40,f+3,,(Special),,False,False
+41,f+3~n+3,"F, 2, +3*, 3, -F, +3-, , 6, +3*, 3, +3-, ",m,-16,True,False
+42,"f, n+4",,(Special),,False,False
+43,f+4,,"h, (RFS)",+8~+12,False,False
+44,f+1+2,,m,-9,False,False
+45,d/f+1,,m,0~+1,False,False
+46,d/f+2,,m,-7~-6,False,False
+47,d/f+3,df+3,m,-14~-13,True,False
+48,"d/f+3, 4","FD, 2, +3*, 3, -F, , 1, -D, +3-, , 3, +4*, 3, +4-","m, m",-14~-13,True,False
+49,"d/f+3, f (Cancel)",,(LFS),,False,False
+50,d/f+4,,m(RFF),-8~-7,False,False
+51,d/f+1+2,,m,-3~-2,False,False
+52,d/f+3+4,,"m(,  (Sky)(throw))",-11~-10,True,False
+53,d+3,d+3,l,-13,True,False
+54,"d+3, 4",,"l, h, (RFS)",+8~+12,False,False
+55,d+4,d+4,l (TC),-17,True,False
+56,"d+4, 4",,"l (TC), h",-8,False,True
+57,d/b+3,db+3,l (TC),-13,True,False
+58,d/b+4,db+4,l,-12,True,False
+59,"d/b+4, f",,"l, (RFS)",-1,False,False
+60,"d/b+4, 4",,"l, h",-3~-1,False,True
+61,d/b+3+4,,!,KND,False,False
+62,"d/b+3+4, b, b (Cancel)",,(LFS),,False,False
+63,b+1,b+1,m,-13,True,False
+64,b+2,,h,-9~-7,False,False
+65,b+3,b+3,m,-19~-17,True,False
+66,b+4,,h(RFF),-9~-8,False,False
+67,u/b+3,ub+3,m,-14~-13,True,False
+68,"u/b+3, 3",,"m, h (TJ), (LFS)",+3~+5,False,True
+69,"u/b+3, 4",,"m, m, (RFS)",-4,False,False
+70,u/b+4,,m (TJ),-8~-5,False,False
+71,u+3,,"h (TJ), (LFS)",+3,False,False
+72,u+4,,"m (TJ), (RFS)",0~+2,False,False
+73,u+3+4,,m (TJ),-7~-6,False,False
+74,u/f+2,,m (TJ),+5s,False,False
+75,u/f+3,,m (TJ),-6~-5,False,False
+76,"u/f+3, 4",,"m (TJ), m",-8,False,False
+77,"u/f+3, 4 (when second hit inputted)",,m (TJ),-13~-12,True,False
+78,"u/f+3, 4, 3",,"m (TJ), m, h",,False,False
+79,u/f+4,,"h (TJ), (RFS)",-2~-1,False,False
+80,"u/f+4, 4",,"h (TJ), m (TJ), (RFS)",0~+1,False,False
+81,"u/f+4, 4, 4",,"h (TJ), m (TJ), l, (RFS)",+1~+2,False,False
+82,u/f+3+4,uf+3+4,mh (TJ),-10,True,False
+83,"u/f+3+4, 4","FU, 3, +3*+4*, 3, +3-, +4-, , 1, -F, -U, , 7, +4*, 2, +4-, ","mh (TJ), m (TJ)",-13~-12,True,False
+84,"f, F+3",,m(RFF),+6~+10,False,False
+85,"f, F+4",,m(RFF),-7~-6,False,False
+86,"f, n, d, d/f+3",,"m, (LFS)",+3,False,False
+87,"f, n, d, d/f+4",ewgf+4,m,-18,True,False
+88,"f, n, d/f+4",pewgf+4,m,-10,True,False
+89,"f, f, f+3",,m (TJ),+6~+8,False,False
+90,"f, f, f+4",,h,+5~+6,False,False
+91,WS+3,,m,-7~-3,False,False
+92,WS+4,,m,-3~-2,False,False
+93,"WS+4, 4",,"m, m(RFF)",-5~-1,False,False
+94,WS+3+4,,m(RFF),-9~-8,False,False
+95,"WS+3+4, 3",,"m, m",-5~0,False,False
+96,SS+3,SSU+3,m,-12~-11,True,False
+97,"SS+3, 3",,"m, h(LFS)",+3~+4,False,True
+98,SS+4,SSU+4,l(RFF),-13~-12,True,False
+99,LFF BT 4,"+1*+2*, 3, +1-, +2-, , 12, +4*, 4, +4-, ",m(RFF),-13~-11,True,False
+100,RFF 1+2,,(LFF),,False,False
+101,RFF 3+4,,(LFF),,False,False
+102,RFF 1,,h,0,False,False
+103,"RFF 1, 1",,"h, m(LFF)",-9,False,False
+104,RFF 2,,h,+2,False,False
+105,"RFF 2, 1",,"h, h",0,False,False
+106,"RFF 2, 1, 1",,"h, h, m(LFF)",-9,False,False
+107,"RFF 2, 3",,"h, h(LFF)",-9~-7,False,False
+108,"RFF 2, 4",,"h, h(RFF)",-8,False,False
+109,"RFF 2, 4, b or f",,"h, h, (RFS)",+7,False,False
+110,"RFF 2, 4, d or u",,"h, h, (RFS)",+6,False,False
+111,"RFF 2, 4, 3",,"h, h, m",-15~-9s,True,False
+112,"RFF 2, 4, 4",,"h, h, h(LFF)",-5~-4,False,True
+113,"RFF 2, b+4",,"h, h (TC)(LFF)",-9~-8,False,False
+114,RFF 3,,m(LFF),-4,False,False
+115,"RFF 3, 4",,"m, h, (RFS)",+9~+10g,False,True
+116,"RFF 3, F+4",,"m, h, (RFF)",-7~-6,False,True
+117,RFF 3~4,,h(LFF),+4~+7y,False,False
+118,RFF 4,,h(RFF),-8,False,False
+119,"RFF 4, b or f",,"h, (RFS)",+7,False,False
+120,"RFF 4, d or u",,"h, (RFS)",+6,False,False
+121,"RFF 4, 3",,"h, m, (Special)",-15~-9 OC,False,False
+122,"RFF 4, 4",,"h, h(LFF)",-5~-4,False,True
+123,RFF f+4,,(Special),,False,False
+124,RFF f+4~4,,m,-12~-10,False,False
+125,RFF f+3,,"h, (LFS)",+12~+15g,False,False
+126,"RFF f+3, B",,h(RFF),-11~-8,False,False
+127,RFF d/f+3,,m(LFF),-11~-10,True,False
+128,RFF d/f+4,,m,-7,False,False
+129,"RFF d/f+4, b or f",,"m, (RFS)",+7,False,False
+130,"RFF d/f+4, d or u",,"m, (RFS)",+6,False,False
+131,RFF d+4,"+3*+4*, 5, +3-, +4-, , 12, D, 2, +4*, 4, +4-, , 2, -D, ",l,-11,True,False
+132,RFF d/b+3,"+3*+4*, 3, +3-, , 1, +4-, , 12, DB, 2, +3*, 4, +3-, , 3, -D, -B, ",l (TC),-11,True,False
+133,"RFF d/b+3, 3",,"l, h(LFF)",-2~0y,False,True
+134,RFF b+2,,m,+2~+3,False,False
+135,RFF b+3,,h(LFF),-9~-8,False,False
+136,RFF b+4,,h (TC)(LFF),-9~-8,False,False
+137,"RFF f, F+3",,m (TJ)(LFF),-6~-3s,False,False
+138,"RFF f, F+4","+3*+4*, 5, +3-, +4-, , 13, F, 5, -F, , 3, F, 2, +4*, 5, -F, +4-, ",m(LFF),-17,True,False
+139,"RFF f, F+4, 3",,"m, h (TJ)",+14~+17,False,True
+140,RFF BT 3,"+3*+4*, 4, +3-, , 1, +4-, , 12, +1*+2*, 3, +1-, , 1, +2-, , 12, +4*, 4, +4-, ",m(LFF),-13~-11,True,False
+141,RFF BT 4,,m(RFF),-9~-8,False,False
+142,"RFF BT 4, 3",,"m, m",-5~0,False,False
+143,RFF BT d+3,"+3*+4*, 5, +4-, , 1, +3-, , 16, +1*+2*, 8, +1-, , 1, +2-, , 11, D, 2, +3*, 5, -D, +3-, ",l (TC)(LFF),-13~-12,True,False
+144,f+3 ,,(Special),,False,False
+145,LFS 3+4,,(RFS),,False,False
+146,LFS 1,,h(LFF),+5,False,False
+147,LFS 2,,m(RFF),-2,False,False
+148,LFS 3,"F, 4, +3*, 3, +3-, , 1, -F, , 13, +3*, 4, +3-, ",m(LFF),-13,True,False
+149,"LFS 3, 3","F, 3, +3*, 4, -F, +3-, , 20, +3*, 3, +3-, , 6, +3*, 5, +3-, ","m, m(LFF)",-14,True,False
+150,"LFS 3, F",,"m, (LFS)",+2,False,False
+151,"LFS 3, 4",,"m, h, (RFS)",+8~+12,False,True
+152,"LFS 3, d/f or f+4",,"m, h(LFF)",-4~+2y,False,True
+153,LFS 4,,"h (TJ), (RFS)",+2~+4,False,False
+154,LFS 1+4,,! (TJ)(LFF),KND,False,False
+155,"LFS 1+4 , b, b (Cancel)",,(LFF),,False,False
+156,LFS f+3,,"m, (LFS)",+3~+4,False,False
+157,LFS f+4,,m(RFF),-7~-5,False,False
+158,"LFS f+4, 3",,"m, h (TJ)(RFF)",+3~+5,False,True
+159,LFS d/f+3,"F, 3, +3*, 3, +3-, , 1, -F, , 20, F, 1, D, 1, +3*, 4, -F, +3-, , 1, -D, ",m(LFF),-13~-14,True,False
+160,"LFS d/f+3, 4","F, 3, +3*, 3, +3-, , 1, -F, , 9, FD, 2, +3*, 3, +3-, , 1, -F, , 1, -D, , 5, +4*, 4, +4-, ","m, m(LFF)",-14~-13,True,False
+161,"LFS d/f+3, f (Cancel)",,(LFS),,False,False
+162,LFS d+3,"F, 3, +3*, 4, -F, +3-, , 14, D, 3, +3*, 2, +3-, , 2, -D, ",l(LFF),-17,True,False
+163,"LFS d+3, 4",,"l, h, (RFS)",+8~+12g,False,False
+164,LFS d or d/f+4,"F, 3, +3*, 3, +3-, , 1, -F, , 15, D, 2, +4*, 3, +4-, , 2, -D, ",l (TC)(LFF),-23,True,False
+165,LFS d/b+4,"F, 2, +3*, 3, +3-, , 2, -F, , 14, DB, 1, +4*, 3, +4-, , 3, -D, , 1, -B, ",l(RFF),-12~-11,True,False
+166,LFS b+1,"F, 2, +3*, 3, +3-, , 3, -F, , 10, B, 2, +1*, 3, +1-, , 2, -B, ",m,-13,True,False
+167,LFS b+3,,m (TJ)(RFF),-12~-10,True,False
+168,LFS b+4,,m(RFF),-8~-7,False,False
+169,LFS u/f+3,,m (TJ)(LFF),-6~-5,False,False
+170,"LFS u/f+3, 4",,"m (TJ), m(LFF)",-8~-7,False,False
+171,"LFS u/f+3, 4, 3",,"m (TJ), m, h(LFF)",,False,False
+172,LFS u/f+4,"F, 2, +3*, 3, +3-, , 3, -F, , 5, F, 2, U, 1, +4*, 3, +4-, , 2, -F, -U,",m (TJ)(LFF),-14~-13,True,False
+173,LFS u/f+3+4,"F, 2, +3*, 3, +3-, , 3, -F, , 5, F, 3, U, 1, +3*+4, 1, +4-, , 1, +3-, , 2, -F, -U, ",mh (TJ)(LFF),-10,True,False
+174,"LFS u/f+3+4, 4","F, 2, +3*, 4, +3-, , 2, -F, , 6, F, 3, U, 1, +3*+4*, 3, +3-, +4-, , 1, -F, -U, , 8, +4*, 3, +4-,","mh (TJ), m (TJ)(LFF)",-13~-12,True,False
+175,LFS f or b or u or d,,(Special),,False,False
+176,"f, n+4 ",,(Special),,False,False
+177,RFS 3+4,,(LFS),,False,False
+178,RFS 1,,m(LFF),-2,False,False
+179,RFS 2,,h(RFF),+5,False,False
+180,RFS 3,,"h (TJ), (LFS)",+2~-4,False,False
+181,RFS 4,"+3*+4*, 4, +3-, +4-, , 14, F, 1, +4*, 6, +4-, , 2, -F, , 13, +4*, 6, +4-, ",m(RFF),-14,True,False
+182,RFS f+3,,m(LFF),-7~-5,False,False
+183,"RFS f+3, 4",,"m, h (TJ)(LFF)",+3~+5,False,True
+184,RFS f+4,,"hh, (RFS)",+1,False,False
+185,"RFS f+4, 4",,"hh, h(RFF)",-6,False,True
+186,RFS d/f+4,,m(LFF),+1~+3,False,False
+187,RFS d/b or d or d/f+3,"+3*+4*, 4, +3-, +4-, , 11, F, 2, +4*, 5, +4-, , 2, -F, , 12, FD, 2, +3*, 1, -F, , 2, +3-, , 3, -D,",l (TC)(LFF),-23,True,False
+188,RFS d+4,"+3*+4*, 5, +3-, +4-, , 13, F, 2, +4*, 6, +4-, , 1, -F, , 11, D, 2, +4*, 4, +4-, , 1, -D, ",l(LFF),-31,True,False
+189,"RFS d+4, 3","+3*+4*, 3, +3-, , 1, +4-, , 10, F, 3, +4*, 5, +4-, , 1, -F, , 11, D, 2, +4*, 5, +4-, , 1, -D, , 6, +3*, 6, +3-, ","l, m(LFF)",-14,True,False
+190,RFS b+3,,m(LFF),-10~-9,False,False
+191,RFS b+4,,m (TJ)(LFF),-12~-10,True,False
+192,RFS f or b or u or d,,(Special),,False,False
