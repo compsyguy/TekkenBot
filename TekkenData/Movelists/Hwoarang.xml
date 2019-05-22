@@ -210,6 +210,7 @@
 				<NeedsWork/>
 				<Safe/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -286,6 +287,7 @@
 				<NeedsWork/>
 				<Safe/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -360,6 +362,7 @@
 			<CounterHitFrame>+19~+23g</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -374,6 +377,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -447,6 +451,7 @@
 			<tags>
 				<NeedsWork/>
 				<Safe/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -462,6 +467,7 @@
 			<tags>
 				<NeedsWork/>
 				<Safe/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -476,6 +482,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<Punishable>-15</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -491,6 +498,7 @@
 			<tags>
 				<NeedsWork/>
 				<Safe/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -506,6 +514,7 @@
 			<tags>
 				<NeedsWork/>
 				<Safe/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -520,6 +529,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -534,6 +544,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<Punishable>-15</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -691,7 +702,7 @@
 			<CounterHitFrame>-4~-3</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
-				<Punishable>-13</Punishable>
+				<Punishable>-14</Punishable>
 				<PowerCrush/>
 			</tags>
 		</move>
@@ -707,7 +718,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
-				<Punishable>-13</Punishable>
+				<Punishable>-14</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -766,6 +777,7 @@
 			<CounterHitFrame>0~+1</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<Punishable>-10</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -825,6 +837,7 @@
 			<tags>
 				<NeedsWork/>
 				<Safe/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -885,6 +898,7 @@
 			<tags>
 				<NeedsWork/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1001,6 +1015,7 @@
 			<tags>
 				<NeedsWork/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1418,6 +1433,7 @@
 			<CounterHitFrame>+14~+15</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1624,6 +1640,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<Punishable>-15</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -1639,6 +1656,7 @@
 			<tags>
 				<NeedsWork/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1683,6 +1701,7 @@
 			<CounterHitFrame>+10~+11</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1697,6 +1716,7 @@
 			<CounterHitFrame>-6~-5</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1788,6 +1808,7 @@
 			<tags>
 				<NeedsWork/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -1860,6 +1881,7 @@
 				<NeedsWork/>
 				<Homing/>
 				<TailSpin/>
+				<Punishable>-10</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -1950,6 +1972,7 @@
 			<tags>
 				<NeedsWork/>
 				<TailSpin/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -2035,6 +2058,7 @@
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
+				<DuckableString/>
 				<NeedsWork/>
 			</tags>
 		</move>
@@ -2211,6 +2235,7 @@
 			<CounterHitFrame>+19~+23g</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -2225,6 +2250,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -2309,6 +2335,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -2318,12 +2345,12 @@
 			<hitLevel>m(LFF)</hitLevel>
 			<damage>17</damage>
 			<StartUp>22~23</StartUp>
-			<BlockFrame>-12~-11</BlockFrame>
+			<BlockFrame>-13~-14</BlockFrame>
 			<HitFrame>+1~+2</HitFrame>
 			<CounterHitFrame>CS</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
-				<Punishable>-11</Punishable>
+				<Punishable>-14</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -2338,7 +2365,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
-				<Punishable>-13</Punishable>
+				<Punishable>-14</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -2444,6 +2471,7 @@
 				<Homing/>
 				<TailSpin/>
 				<PowerCrush/>
+				<Punishable>-12</Punishable>
 			</tags>
 		</move>
 		<move>
@@ -2674,6 +2702,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -2704,6 +2733,7 @@
 			<tags>
 				<NeedsWork/>
 				<Safe/>
+				<DuckableString/>
 			</tags>
 		</move>
 		<move>
@@ -2794,6 +2824,7 @@
 				<Homing/>
 				<TailSpin/>
 				<PowerCrush/>
+				<Punishable>-12</Punishable>
 			</tags>
 		</move>
 		<move>
