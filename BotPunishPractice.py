@@ -17,32 +17,34 @@ from MatchRecorder import MatchRecorder
 from CharacterData import *
 from MoveInfoEnums import *
 from movelist import MoveList
+from TekkenEncyclopedia import TekkenEncyclopedia
 
 
 class BotPunishPractice(AcademyBot):
 
     def __init__(self, botCommands):
         super().__init__(botCommands)
-#        self.SetFrameTrapCommandFromNotationString("+4")
         self.recorder = None
-#        self.inputDelay = 0
-#        self.inputDelayCode = None
-#        self.gameState = TekkenGameState()
-#        self.elapsedTime = time.time()
-#        self.punishableMoves = None
-#        self.useMoves = None
         self.queue = []
         self.lastMove = None
         self.NumCorrectPunished = 0
         self.CountOfAttempts = 0
         self.exit = False
-#        self.botSimpleState = None
         self.LastBotMoveName = None
+        
+        self.cyclopedia_p2 = TekkenEncyclopedia(False, False)
+        self.cyclopedia_p1 = TekkenEncyclopedia(True, False)
         
         
     def Update(self, gameState: TekkenGameState):
         super().Update(gameState)
-        
+
+        self.cyclopedia_p1.Update(gameState)
+        self.cyclopedia_p2.Update(gameState)
+            
+        print(self.cyclopedia_p1.FrameData)
+        #print(gameState.GetOppMoveId())
+            
         if self.botCommands.IsAvailable() and gameState.IsForegroundPID():
 #            BotMove = gameState.GetCurrentBotMoveName()
 #            if BotMove != self.LastBotMoveName:

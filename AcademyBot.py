@@ -29,19 +29,6 @@ class AcademyBot(Bot):
         self.BotMove = None
 
     def Update(self, gameState: TekkenGameState):
-        successfulUpdate = gameState.Update()
-        
-        #if successfulUpdate:
-        #    self.cyclopedia_p1.Update(self.gameState)
-        #    self.cyclopedia_p2.Update(self.gameState)
-            
-            #print(gameState.GetCurrentBotMoveName())
-			#debugging
-
-        #Commented out since recording is implemented elsewhere
-        #if not self.recorder == None:
-        #    self.recorder.Update(gameState)
-
         BotBehaviors.Basic(gameState, self.botCommands)
         if self.gameplan == None :
             char_id = gameState.GetBotCharId()
@@ -64,7 +51,3 @@ class AcademyBot(Bot):
             if(Stance != None):
                 self.Stance = Stance            
         
-#        if self.botCommands.IsAvailable():
-                
-        
-        return successfulUpdate
