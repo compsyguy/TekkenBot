@@ -41,8 +41,10 @@ class BotPunishPractice(AcademyBot):
 
         self.cyclopedia_p1.Update(gameState)
         self.cyclopedia_p2.Update(gameState)
-            
-        print(self.cyclopedia_p1.FrameData)
+        
+        #self.cyclopedia_p1.DetermineCoachingTips(gameState)
+        
+        #print(self.cyclopedia_p1.FrameData)
         #print(gameState.GetOppMoveId())
             
         if self.botCommands.IsAvailable() and gameState.IsForegroundPID():
