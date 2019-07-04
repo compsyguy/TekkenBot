@@ -51,3 +51,6 @@ class AcademyBot(Bot):
             if(Stance != None):
                 self.Stance = Stance            
         
+
+    def HitList(self):
+        return (HitOutcome.COUNTER_HIT_STANDING, HitOutcome.COUNTER_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING, HitOutcome.NORMAL_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING_LEFT, HitOutcome.NORMAL_HIT_CROUCHING_LEFT, HitOutcome.NORMAL_HIT_STANDING_BACK, HitOutcome.NORMAL_HIT_CROUCHING_BACK, HitOutcome.NORMAL_HIT_STANDING_RIGHT, HitOutcome.NORMAL_HIT_CROUCHING_RIGHT)

@@ -24,7 +24,6 @@ class BotPunishPractice(AcademyBot):
 
     def __init__(self, botCommands):
         super().__init__(botCommands)
-        self.recorder = None
         self.queue = []
         self.lastMove = None
         self.NumCorrectPunished = 0
@@ -42,45 +41,21 @@ class BotPunishPractice(AcademyBot):
         self.cyclopedia_p1.Update(gameState)
         self.cyclopedia_p2.Update(gameState)
         
-        #self.cyclopedia_p1.DetermineCoachingTips(gameState)
-        
-        #print(self.cyclopedia_p1.FrameData)
-        #print(gameState.GetOppMoveId())
-            
         if self.botCommands.IsAvailable() and gameState.IsForegroundPID():
-#            BotMove = gameState.GetCurrentBotMoveName()
-#            if BotMove != self.LastBotMoveName:
-#                self.LastBotMoveName = BotMove
-#                print("Bot Move:" + BotMove)
-            
-            #if gameState.DidBotStartGettingPunishedXFramesAgo(30):
-            #print(gameState.stateLog[-1].bot.hit_outcome)
-            #if gameState.GetFramesSinceBotTookDamage() < 15:
             
             if gameState.stateLog[-1].bot.hit_outcome in self.HitList():
                 if self.lastMove:
                     print("Punished")
-#                    self.NumCorrectPunished = self.NumCorrectPunished + 1
-#                    self.Movelist.removeMoveFromGameplan(self.lastMove)
                 self.lastMove = None
-#                if not self.Movelist.gameplan:
-#                    self.exit = True
-#                    print("Percentage of punishes: " + str((float(self.NumCorrectPunished) / float(self.CountOfAttempts)) * 100) + "%")
-#                    print("Total Punished: " + str(self.NumCorrectPunished))
-#                    print("Total Attempts: " + str(self.CountOfAttempts))
             
             BotBehaviors.BlockAllAttacks(gameState, self.botCommands)
             #Check to see if the bot is standing
             if gameState.stateLog[-1].bot.simple_state != (SimpleMoveStates.STANDING):
                 self.FrameLastAction = self.frameCounter
-                #print(gameState.stateLog[-1].bot.simple_state)
             else:
                 if  self.distance > 1500:
                     self.botCommands.AddCommand(self.botCommands.ForwarddashSmall())
                 elif self.DetermineIfAction():
-                    #print(self.distance)
-                    #self.botCommands.AddCommand(random.choice(self.punishableMoves))
-                    #print(random.choice(self.punishableMoves))
                     if len(self.queue) == 0:
                         
                         self.lastMove = self.Movelist.getNextGameplanMove()
@@ -93,25 +68,22 @@ class BotPunishPractice(AcademyBot):
                         self.queue.append(self.lastMove)
                     else:
                         self.lastMove = self.queue.pop(0)
-                        #move = self.Movelist[-1]
-                        #command = move.getMoveCommand
                         command = self.Movelist.getMoveCommand(self.lastMove)
                         print("Move: " + self.Movelist.getMoveName(self.lastMove) + "\nID: " + self.Movelist.getMoveId(self.lastMove) + "\n") 
-                        #print(ParseMoveList(command))
                         if command is not None:
                             self.botCommands.AddCommand(ParseMoveList(command))
                             self.CountOfAttempts = self.CountOfAttempts + 1
 
 
                         
-    def HitList(self):
-        return (HitOutcome.COUNTER_HIT_STANDING, HitOutcome.COUNTER_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING, HitOutcome.NORMAL_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING_LEFT, HitOutcome.NORMAL_HIT_CROUCHING_LEFT, HitOutcome.NORMAL_HIT_STANDING_BACK, HitOutcome.NORMAL_HIT_CROUCHING_BACK, HitOutcome.NORMAL_HIT_STANDING_RIGHT, HitOutcome.NORMAL_HIT_CROUCHING_RIGHT)
+
         
     def DetermineIfAction(self):
         if self.frameCounter - self.FrameLastAction > (1*60):
             self.FrameLastAction = self.frameCounter
             return True
         return False
+        
     def SetFrameTrapCommandFromNotationString(self, notation: str):
 				
         try:
