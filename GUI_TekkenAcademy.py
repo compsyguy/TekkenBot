@@ -27,7 +27,7 @@ from CommandRecorder import CommandRecorder
 class GUI_TekkenAcademy(Tk):
     def __init__(self):
         Tk.__init__(self)
-        self.wm_title("Tekken Bot")
+        self.wm_title("Tekken Academy")
         self.geometry(str(720) + 'x' + str(720))
 
         Style().theme_use('alt')
@@ -40,14 +40,12 @@ class GUI_TekkenAcademy(Tk):
 #        self.tekken_bot_menu.add_command(label="Back Dash Cancel", command=self.switchToBDCBot)
 #        self.tekken_bot_menu.add_command(label="Test Bot", command=self.switchToTest)
         self.tekken_bot_menu.add_command(label="Stop Bots", command=self.stopBot)
-#        self.tekken_bot_menu.add_command(label="Update Movelists", command=self.updateMovelists)
-#        self.tekken_bot_menu.add_command(label="Edit Movelists", command=self.editMovelists)
-        self.tekken_bot_menu.add_command(label="Test Movelist", command=self.testMoveList)
-        self.tekken_bot_menu.add_command(label="Clear History", command=self.clearHistory)
-        self.tekken_bot_menu.add_command(label="Record", command=self.record)
+#        self.tekken_bot_menu.add_command(label="Test Movelist", command=self.testMoveList)
+#        self.tekken_bot_menu.add_command(label="Clear History", command=self.clearHistory)
+#        self.tekken_bot_menu.add_command(label="Record", command=self.record)
         self.tekken_bot_menu.add_command(label="GUI Record", command=self.gui_record)
-        self.tekken_bot_menu.add_command(label="Print Record", command=self.printrecord)
-        self.menu.add_cascade(label="Tekken Bot", menu=self.tekken_bot_menu)
+#        self.tekken_bot_menu.add_command(label="Print Record", command=self.printrecord)
+        self.menu.add_cascade(label="Tekken Academy", menu=self.tekken_bot_menu)
 
         #self.launcher = TekkenBotLauncher(BotPunishTest , False)
         self.launcher = None

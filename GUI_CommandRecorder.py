@@ -12,8 +12,8 @@ class GUI_CommandRecorder(AcademyBot):
     def __init__(self, bot_commands):
         super().__init__(bot_commands)
         self.GUI_Recorder = Toplevel()
-        self.GUI_Recorder.wm_title("Tekken Bot")
-        self.GUI_Recorder.geometry(str(720) + 'x' + str(300))
+        self.GUI_Recorder.wm_title("Command Recorder")
+        self.GUI_Recorder.geometry(str(500) + 'x' + str(100))
         self.recorder = None
         
         self.recording = False
@@ -23,15 +23,21 @@ class GUI_CommandRecorder(AcademyBot):
         self.gameState = None
         
         self.InputLabel = Label(self.GUI_Recorder, text="Command")
-        self.InputLabel.grid(row=0, column=0)
+        self.InputLabel.grid(row=0, column=0, padx=5, pady=5)
+        
         self.InputBox = Text(self.GUI_Recorder, height=3, width=50)
-        self.InputBox.grid(row=0, column=1, columnspan=2)
-        self.RecordBtn = Button(self.GUI_Recorder, text="Record", command=self.record)
-        self.RecordBtn.grid(row=1, column=0)
-        self.StopRecBtn = Button(self.GUI_Recorder, text="Stop Recording", command=self.stopRecording)
-        self.StopRecBtn.grid(row=1, column=1)
+        self.InputBox.grid(row=0, column=1, columnspan=2, padx=5, pady=5)
+        
+        self.RecordButtonText = StringVar()
+        self.RecordButtonText.set("Record")
+        self.RecordBtn = Button(self.GUI_Recorder, textvariable=self.RecordButtonText, command=self.recordCallback)
+        self.RecordBtn.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
+        
+        #self.StopRecBtn = Button(self.GUI_Recorder, text="Stop Recording", command=self.stopRecording)
+        #self.StopRecBtn.grid(row=1, column=1, padx=5, pady=5)
+        
         self.TestBtn = Button(self.GUI_Recorder, text="Test Command", command=self.testCommand)
-        self.TestBtn.grid(row=1, column=2)
+        self.TestBtn.grid(row=1, column=2, padx=5, pady=5)
         
         self.TestCommand = ""
         
@@ -47,10 +53,17 @@ class GUI_CommandRecorder(AcademyBot):
             self.botCommands.AddCommand(ParseMoveList(self.testCommand))
             self.testCommand = ""
             self.playback = False
+
+    def recordCallback(self):
+        if not self.recording:
+            self.record()
+        else:
+            self.stopRecording()
             
     def record(self):
         self.recording = True
         self.InputBox.delete("1.0", END)
+        self.RecordButtonText.set("Stop Recording")
         self.recorder = CommandRecorder(self)
         
     def stopRecording(self):
@@ -76,6 +89,8 @@ class GUI_CommandRecorder(AcademyBot):
             
             if(move != None):
                 self.InputBox.insert(END, move)
+        self.RecordButtonText.set("Record")
+        
     
     def testCommand(self):
         #print(ParseMoveList(self.InputBox.get("1.0", 'end-1c')))
