@@ -1,101 +1,101 @@
-Move ID,Move,Command,BlockFrame
-1,in rage d+1+2, ,-22
-2,"in rage b+2, 1+2", ,+9~+10s
-3,"in rage 1, b+2, 1+2", ,+9~+10s
-4,1, ,+1
-5,"1, 1", ,-1
-6,"1, 1, 2", ,-17
-7,"1, 2", ,-1
-8,"1, 2, 2", ,-12
-9,"1, 2, 2~1+2", ,-6~-5
-10,"1, 2, 2~1+2 u or d", ,-16
-11,"1, 2, 4", ,-9
-12,"1, b+2", ,-2
-13,"1, b+2, 1", ,-15~-11
-14,"1, b+2, 4", ,+5
-15,2, ,0
-16,"2, 2", ,-13
-17,"2, 2~1+2", ,-6~-5
-18,"2, 2~1+2 u or d", ,-14
-19,3, ,-10
-20,"3, 4", ,-14~-13
-21,4, ,-9
-22,4~3 WS+4~3, ,-11~-9
-23,1+2, ,-12~-11
-24,f+2, ,-9~-8
-25,"f+2, 3", ,-3~-1
-26,f+2~1+2, ,-6~-5
-27,f+2~1+2 u or d, ,
-28,f+3, ,-3~-1
-29,f+4, ,+4~+5s
-30,f+1+2, ,-14~-13
-31,d/f+1, ,-1~0
-32,"d/f+1, 1", ,-2
-33,"d/f+1, 2", ,-13~-12s
-34,d/f+2, ,-7~-6
-35,d/f+4, ,-6
-36,d/f+1+2, ,-14~-13
-37,d+1, ,-9~-8
-38,"d+1, D", ,-9~-8
-39,"d+1, 2", ,-9~-8
-40,d+3 or d/f+3+4, ,-7~-6s
-41,d+1+4, ,KND
-42,d+2+3, ,-3
-43,d/b+2, ,-18~-16
-44,d/b+1+2, ,-13~-12
-45,b+1, ,-11~-10
-46,"b+1, 2", ,-9
-47,"b+1, 2~1+2", ,-6~-5
-48,"b+1, 2~1+2 u or d", ,-19~-18
-49,b+2, ,-2~-1
-50,b+3, ,-4~-2
-51,"b+3, 3", ,-12~-8s
-52,b+4, ,-9~-7
-53,b+1+2, ,-9~-8
-54,"b+1+2, 1+2", ,-13
-55,u/f+3, ,-10~-9
-56,"u/f+3, 4", ,+3~+4
-57,u/f+4, ,-5~-2
-58,"f, F+2", ,-16~-15
-59,"f, F+3", ,-3~-1s
-60,"b, f+2", ,-7~-6
-61,"b, f+2, 1", ,-9
-62,"b, f+2, 2", ,-12s
-63,"b, f+2, 3", ,-9~-8
-64,"b, B+1+2", ,+8~+9
-65,"b, B+3+4", ,
-66,qcf+2, ,-17~-16
-67,"f, f, f+3", ,+9~+12g
-68,WS+1, ,-14~-13
-69,WS+2, ,-6
-70,WS+4, ,-3~-2
-71,"WS+4, 4", ,-15~-14
-72,FC+d/f+4, ,-23
-73,SS+2, ,-9
-74,"SS+2, 1", ,-14~-13
-75,"Opponent Down, d+4", ,-14
-76,2+3+4, ,
-77,1+2+3+4, ,
-78,"When ki-charged d, u, u or u/f+3", ,-10~-9
-79,"When ki-charged d, u, u or u/f+3, 4", ,+1~+2
-80,f+3+4, ,
-81,"f+3+4, u or d", ,
-82,RAI 1, ,-2~-1
-83,RAI 2, ,-13~-12
-84,"RAI 2, 1", ,-17~-16s
-85,RAI 1+2, ,CS
-86,"f, n, d, D/F", ,
-87,"f, n, d, d/f+1", ,-15~-13
-88,"f, n, d/f+1", ,-10~-8
-89,"f, n, d, D/F+2", ,-10~-9
-90,"f, n, d, d/f+2", ,+5~+6
-91,"f, n, d, d/f+3", ,+7~+8
-92,"f, n, d, D/F+3", ,-23~-22
-93,"f, n, d, d/f+4", ,-23
-94,"f, n, d, d/f+4, 4", ,-11
-95,"f, n, d, d/f+4, 4 (Single hit)", ,-11
-96,"f, n, d, d/f+4, 4, 4", ,-11
-97,"f, n, d, d/f+4, 4, 4 (Single hit)", ,-11
-98,"HS n, 1", ,-15~-12
-99,"HS n, 4", ,-3~-2
-100,"HS n, 4, 4", ,-16~-15
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage d+1+2, ,m,-22,True,False
+2,"in rage b+2, 1+2", ,"m, h",+9~+10s,False,False
+3,"in rage 1, b+2, 1+2", ,"h, m, h",+9~+10s,False,False
+4,1, ,h,+1,False,False
+5,"1, 1", ,"h, h",-1,False,False
+6,"1, 1, 2", ,"h, h, m",-17,True,False
+7,"1, 2", ,"h, h",-1,False,False
+8,"1, 2, 2", ,"h, h, h",-12,True,False
+9,"1, 2, 2~1+2", ,"h, h, m",-6~-5,False,False
+10,"1, 2, 2~1+2 u or d", ,"h, h, (Special)",-16,True,False
+11,"1, 2, 4", ,"h, h, h",-9,False,False
+12,"1, b+2", ,"h, m",-2,False,False
+13,"1, b+2, 1", ,"h, m, m",-15~-11,True,False
+14,"1, b+2, 4", ,"h, m, m (TJ)",+5,False,False
+15,2, ,h,0,False,False
+16,"2, 2", ,"h, h",-13,True,False
+17,"2, 2~1+2", ,"h, m",-6~-5,False,False
+18,"2, 2~1+2 u or d", ,"h, (Special)",-14,True,False
+19,3, ,h,-10,True,False
+20,"3, 4", ,"h, m",-14~-13,True,False
+21,4, ,h,-9,False,False
+22,4~3 WS+4~3, ,m (TJ),-11~-9,False,False
+23,1+2, ,m,-12~-11,True,False
+24,f+2, ,h,-9~-8,False,False
+25,"f+2, 3", ,"h, m",-3~-1,False,False
+26,f+2~1+2, ,m,-6~-5,False,False
+27,f+2~1+2 u or d, ,(Special),,False,False
+28,f+3, ,m,-3~-1,False,False
+29,f+4, ,m,+4~+5s,False,False
+30,f+1+2, ,h,-14~-13,True,False
+31,d/f+1, ,m,-1~0,False,False
+32,"d/f+1, 1", ,"m, h",-2,False,False
+33,"d/f+1, 2", ,"m, m",-13~-12s,False,False
+34,d/f+2, ,m,-7~-6,False,False
+35,d/f+4, ,m,-6,False,False
+36,d/f+1+2, ,m,-14~-13,True,False
+37,d+1, ,m,-9~-8,False,False
+38,"d+1, D", ,m,-9~-8,False,False
+39,"d+1, 2", ,"m, m",-9~-8,False,False
+40,d+3 or d/f+3+4, ,m,-7~-6s,False,False
+41,d+1+4, ,!,KND,False,False
+42,d+2+3, ,(Special)!,-3,False,False
+43,d/b+2, ,l (TC),-18~-16,True,False
+44,d/b+1+2, ,mm?,-13~-12,True,False
+45,b+1, ,h,-11~-10,False,False
+46,"b+1, 2", ,"h, h",-9,False,False
+47,"b+1, 2~1+2", ,"h, m",-6~-5,False,False
+48,"b+1, 2~1+2 u or d", ,"h, (Special)",-19~-18,True,False
+49,b+2, ,m,-2~-1,False,False
+50,b+3, ,h,-4~-2,False,False
+51,"b+3, 3", ,"h, m",-12~-8s,False,False
+52,b+4, ,m,-9~-7,False,False
+53,b+1+2, ,m,-9~-8,False,False
+54,"b+1+2, 1+2", ,"m, m",-13,True,False
+55,u/f+3, ,m (TJ),-10~-9,False,False
+56,"u/f+3, 4", ,"m (TJ), m (TJ)",+3~+4,False,False
+57,u/f+4, ,m (TJ),-5~-2,False,False
+58,"f, F+2", ,m,-16~-15,True,False
+59,"f, F+3", ,m,-3~-1s,False,False
+60,"b, f+2", ,m,-7~-6,False,False
+61,"b, f+2, 1", ,"m, h",-9,False,False
+62,"b, f+2, 2", ,"m, m",-12s,False,False
+63,"b, f+2, 3", ,"m, h",-9~-8,False,False
+64,"b, B+1+2", ,m,+8~+9,False,False
+65,"b, B+3+4", ,(Special),,False,False
+66,qcf+2, ,m,-17~-16,True,False
+67,"f, f, f+3", ,m,+9~+12g,False,False
+68,WS+1, ,m,-14~-13,True,False
+69,WS+2, ,m (TC),-6,False,False
+70,WS+4, ,m,-3~-2,False,False
+71,"WS+4, 4", ,"m, m",-15~-14,True,False
+72,FC+d/f+4, ,l (TC),-23,True,False
+73,SS+2, ,m,-9,False,False
+74,"SS+2, 1", ,"m, m",-14~-13,True,False
+75,"Opponent Down, d+4", ,l(On grounded opponent),-14,True,False
+76,2+3+4, ,(Special),,False,False
+77,1+2+3+4, ,(Special),,False,False
+78,"When ki-charged d, u, u or u/f+3", ,"(Special), m (TJ)",-10~-9,False,False
+79,"When ki-charged d, u, u or u/f+3, 4", ,"(Special), m (TJ), m (TJ)",+1~+2,False,False
+80,f+3+4, ,(Special)(h or m punch parry)(RAI),,False,False
+81,"f+3+4, u or d", ,(Special),,False,False
+82,RAI 1, ,h,-2~-1,False,False
+83,RAI 2, ,m,-13~-12,True,False
+84,"RAI 2, 1", ,"m, m",-17~-16s,False,False
+85,RAI 1+2, ,h!,CS,False,False
+86,"f, n, d, D/F", ,(Special),,False,False
+87,"f, n, d, d/f+1", ,m,-15~-13,True,False
+88,"f, n, d/f+1", ,m (TJ),-10~-8,False,False
+89,"f, n, d, D/F+2", ,h,-10~-9,False,False
+90,"f, n, d, d/f+2", ,h,+5~+6,False,False
+91,"f, n, d, d/f+3", ,m,+7~+8,False,False
+92,"f, n, d, D/F+3", ,l?,-23~-22,True,False
+93,"f, n, d, d/f+4", ,l(HS),-23,True,False
+94,"f, n, d, d/f+4, 4", ,"l, l(HS)",-11,True,False
+95,"f, n, d, d/f+4, 4 (Single hit)", ,"l, l(HS)",-11,True,False
+96,"f, n, d, d/f+4, 4, 4", ,"l, l, l(HS)",-11,True,False
+97,"f, n, d, d/f+4, 4, 4 (Single hit)", ,"l, l, l(HS)",-11,True,False
+98,"HS n, 1", ,m(HS),-15~-12,True,False
+99,"HS n, 4", ,m(HS),-3~-2,False,False
+100,"HS n, 4, 4", ,"m, m(HS)",-16~-15,True,False

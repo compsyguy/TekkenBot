@@ -1,103 +1,103 @@
-Move ID,Move,Command,BlockFrame
-1,in rage d/b+1+2 or FC+d/b+1+2, ,KND
-2,"in rage hcb, f+3+4", ,-22~-18
-3,When first part hits 1, ,
-4,"When first part hits 1, 2", ,
-5,"When first part hits 1, 2, 4", ,
-6,"When first part hits 1, 2, 4, 1", ,
-7,"When first part hits 1, 2, 4, 1, 4", ,
-8,"When first part hits 1, 2, 4, 1, 4 , 1", ,
-9,"When first part hits 1, 2, 4, 1, 4 , 1, 3", ,
-10,"When first part hits 1, 2, 4, 1, 4 , 1, 3, 2", ,
-11,"When first part hits 1, 2, 4, 1, 4 , 1, 3, 2, 1+2", ,
-12,1 or BT 1 or 2, ,+1
-13,"1, 1+2", ,-2
-14,"1, 1", ,-1
-15,"1, 1, 2", ,-12
-16,"1, 2", ,-7
-17,"1, 2, 1", ,-19~-18
-18,"1, 2, 1, 1", ,-15
-19,"1, 2, 3", ,+1~+3
-20,"1, 2, 3, 1+2", ,+5~+7
-21,2, ,-13
-22,"2, 1+2", ,+2
-23,3, ,-8~-7
-24,"3, 3", ,-13~-12
-25,4 or BT 3 or 4, ,-3~-2
-26,1+2, ,-14
-27,f+1, ,-17~-16
-28,"f+1, 1+2", ,+2~+3
-29,f+2, ,-14~-13
-30,f+2 (Second hit only), ,-14~-13
-31,"f+2, 1+2", ,+2~+3
-32,"f+2When con, nects1", ,-9
-33,f+3, ,+1~+3
-34,"f+3, 1+2", ,+5~+7
-35,f+4, ,-13
-36,f+1+2, ,-9~-8
-37,d/f+1, ,-1~0
-38,"d/f+1, 1", ,-2
-39,"d/f+1, 4", ,-13
-40,d/f+2, ,-5~-4
-41,d/f+3, ,-13
-42,"d/f+3, 4", ,-13
-43,"d/f+3, 4~2", ,+2
-44,"d/f+3, 4~3", ,+1~+3
-45,"d/f+3, 4~3, 1+2", ,+5~+7
-46,d/f+4, ,-7
-47,d/b or d+1 or FC+d/b or d+1 BT d+1 or 2, ,-5
-48,"d/b or d+1, 1+2", ,-1
-49,d/b or d+2 or FC+2, ,-14
-50,d/b or d+3 or FC+3, ,-12
-51,"d+3, 1", ,-9
-52,"d+3, 1, 1+2", ,-1
-53,d/b or d+4 or FC+4 BT d+3 or 4, ,-31
-54,"d/b or d+4, 1+2", ,
-55,d+1+2, ,-18~-17
-56,b+1, ,-7~-6
-57,"b+1, 2", ,-7
-58,b+2, ,+2
-59,b+3, ,-9~-8
-60,"b+3, 2", ,-15~-14
-61,"b+3, 2, 1+2", ,+2~+3
-62,b+4, ,-13
-63,"b+4, 4", ,-3~-2
-64,"f, f, f+1", ,-8~-7
-65,WS+1, ,-8~-7
-66,"WS+1, 1+2", ,-3~-2
-67,WS+2, ,-14
-68,WS+2 When hit F+2, ,
-69,WS+3, ,-8~-7
-70,WS+4, ,-5
-71,FC+d/f+1, ,-14
-72,SS+3, ,-12
-73,Jump 1, ,-21~+2
-74,Jump 2, ,-12~
-75,Jump 2 (Second hit miss), ,-17~+7
-76,Jump 3, ,-23~+2
-77,Jump 4, ,-14~+7
-78,"Back to wall b, b, u/b", ,-12~+4
-79,1+3+4, ,
-80,qcf+1, ,-13~
-81,qcf+2, ,-19~
-82,qcb+1, ,-15
-83,qcb+2, ,-15
-84,"qcb+2, 1", ,-15
-85,"qcb+2, 3", ,-8~-6s
-86,"qcb+2, 4", ,-18~-17
-87,hcb+3, ,-9
-88,hcb+4, ,-14
-89,Jump qcb+1 or 2, ,-34~
-90,"f+1+2, qcb+1 or 2", ,-27~
-91,1+2+3, ,
-92,MAX qcf+1+2, ,+1~
-93,MAX qcb+1+2, ,-12
-94,"MAX qcb+1+2, 1", ,-2
-95,"MAX qcb+1+2, 3", ,-8~-6s
-96,"MAX qcb+1+2, 4", ,-18~-17
-97,MAX hcb+3+4, ,-2
-98,MAX Jump qcb+1+2, ,-34~
-99,"MAX f+1+2, qcb+1+2", ,+4~
-100,"qcf, qcf+1+2", ,+1~
-101,"d/b, hcb, d/f+1+2", ,-18
-102,"1, 2, 1, 2", ,+1~
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage d/b+1+2 or FC+d/b+1+2, ,h!,KND,False,False
+2,"in rage hcb, f+3+4", ,m,-22~-18,True,False
+3,When first part hits 1, ,"m, h",,False,False
+4,"When first part hits 1, 2", ,"m, h, m",,False,False
+5,"When first part hits 1, 2, 4", ,"m, h, m, m",,False,False
+6,"When first part hits 1, 2, 4, 1", ,"m, h, m, m, m",,False,False
+7,"When first part hits 1, 2, 4, 1, 4", ,"m, h, m, m, m, l",,False,False
+8,"When first part hits 1, 2, 4, 1, 4 , 1", ,"m, h, m, m, m, l, m",,False,False
+9,"When first part hits 1, 2, 4, 1, 4 , 1, 3", ,"m, h, m, m, m, l, m, h",,False,False
+10,"When first part hits 1, 2, 4, 1, 4 , 1, 3, 2", ,"m, h, m, m, m, l, m, h, h",,False,False
+11,"When first part hits 1, 2, 4, 1, 4 , 1, 3, 2, 1+2", ,"m, h, m, m, m, l, m, h, h, !",,False,False
+12,1 or BT 1 or 2, ,h,+1,False,False
+13,"1, 1+2", ,"h, (MAX )",-2,False,False
+14,"1, 1", ,"h, h",-1,False,False
+15,"1, 1, 2", ,"h, h, h",-12,True,False
+16,"1, 2", ,"h, m",-7,False,False
+17,"1, 2, 1", ,"h, m, m",-19~-18,True,False
+18,"1, 2, 1, 1", ,"h, m, m, h",-15,True,False
+19,"1, 2, 3", ,"h, m, h",+1~+3,False,False
+20,"1, 2, 3, 1+2", ,"h, m, h, (MAX )",+5~+7,False,False
+21,2, ,Sm,-13,True,False
+22,"2, 1+2", ,"Sm, (MAX )",+2,False,False
+23,3, ,h,-8~-7,False,False
+24,"3, 3", ,"h, m",-13~-12,True,False
+25,4 or BT 3 or 4, ,h,-3~-2,False,False
+26,1+2, ,m,-14,True,False
+27,f+1, ,m,-17~-16,True,False
+28,"f+1, 1+2", ,"m, (MAX )",+2~+3,False,False
+29,f+2, ,mh,-14~-13,True,False
+30,f+2 (Second hit only), ,h,-14~-13,True,False
+31,"f+2, 1+2", ,"mh, (MAX )",+2~+3,False,False
+32,"f+2When con, nects1", ,"mh, h",-9,False,False
+33,f+3, ,h,+1~+3,False,False
+34,"f+3, 1+2", ,"h, (MAX )",+5~+7,False,False
+35,f+4, ,m,-13,True,False
+36,f+1+2, ,m,-9~-8,False,False
+37,d/f+1, ,m,-1~0,False,False
+38,"d/f+1, 1", ,"m, h",-2,False,False
+39,"d/f+1, 4", ,"m, m",-13,True,False
+40,d/f+2, ,m,-5~-4,False,False
+41,d/f+3, ,l,-13,True,False
+42,"d/f+3, 4", ,"l, m",-13,True,False
+43,"d/f+3, 4~2", ,"l, m",+2,False,False
+44,"d/f+3, 4~3", ,"l, h",+1~+3,False,False
+45,"d/f+3, 4~3, 1+2", ,"l, h, (MAX )",+5~+7,False,False
+46,d/f+4, ,m,-7,False,False
+47,d/b or d+1 or FC+d/b or d+1 BT d+1 or 2, ,Sm,-5,False,False
+48,"d/b or d+1, 1+2", ,"Sm, (MAX )",-1,False,False
+49,d/b or d+2 or FC+2, ,l,-14,True,False
+50,d/b or d+3 or FC+3, ,l,-12,True,False
+51,"d+3, 1", ,"l, Sm",-9,False,False
+52,"d+3, 1, 1+2", ,"l, Sm, (MAX )",-1,False,False
+53,d/b or d+4 or FC+4 BT d+3 or 4, ,"l, (Special)",-31,True,False
+54,"d/b or d+4, 1+2", ,l(MAX ),,False,False
+55,d+1+2, ,l,-18~-17,True,False
+56,b+1, ,h,-7~-6,False,False
+57,"b+1, 2", ,"h, m",-7,False,False
+58,b+2, ,m,+2,False,False
+59,b+3, ,m,-9~-8,False,False
+60,"b+3, 2", ,"m, m",-15~-14,True,False
+61,"b+3, 2, 1+2", ,"m, m, (MAX )",+2~+3,False,False
+62,b+4, ,l,-13,True,False
+63,"b+4, 4", ,"l, h",-3~-2,False,False
+64,"f, f, f+1", ,m,-8~-7,False,False
+65,WS+1, ,m,-8~-7,False,False
+66,"WS+1, 1+2", ,"m, (MAX )",-3~-2,False,False
+67,WS+2, ,m,-14,True,False
+68,WS+2 When hit F+2, ,"m, (throw)",,False,False
+69,WS+3, ,h,-8~-7,False,False
+70,WS+4, ,m,-5,False,False
+71,FC+d/f+1, ,m,-14,True,False
+72,SS+3, ,l,-12,True,False
+73,Jump 1, ,m,-21~+2,False,False
+74,Jump 2, ,mm,-12~,False,False
+75,Jump 2 (Second hit miss), ,m,-17~+7,False,False
+76,Jump 3, ,m,-23~+2,False,False
+77,Jump 4, ,m,-14~+7,False,False
+78,"Back to wall b, b, u/b", ,m,-12~+4,False,False
+79,1+3+4, ,(Special),,False,False
+80,qcf+1, ,Sm,-13~,False,False
+81,qcf+2, ,Sm x 2,-19~,False,False
+82,qcb+1, ,h,-15,True,False
+83,qcb+2, ,h,-15,True,False
+84,"qcb+2, 1", ,"h, m",-15,True,False
+85,"qcb+2, 3", ,"h, m",-8~-6s,False,False
+86,"qcb+2, 4", ,"h, l",-18~-17,True,False
+87,hcb+3, ,Smh,-9,False,False
+88,hcb+4, ,Smmm,-14,True,False
+89,Jump qcb+1 or 2, ,Sm (TJ),-34~,False,False
+90,"f+1+2, qcb+1 or 2", ,"m (TJ), Sm (TJ)",-27~,False,False
+91,1+2+3, ,(MAX),,False,False
+92,MAX qcf+1+2, ,Sm x 2,+1~,False,False
+93,MAX qcb+1+2, ,h,-12,True,False
+94,"MAX qcb+1+2, 1", ,"h, m",-2,False,False
+95,"MAX qcb+1+2, 3", ,"h, m",-8~-6s,False,False
+96,"MAX qcb+1+2, 4", ,"h, l",-18~-17,True,False
+97,MAX hcb+3+4, ,Smmm,-2,False,False
+98,MAX Jump qcb+1+2, ,Sm,-34~,False,False
+99,"MAX f+1+2, qcb+1+2", ,"m (TJ), Sm (TJ)",+4~,False,False
+100,"qcf, qcf+1+2", ,Sm x 5,+1~,False,False
+101,"d/b, hcb, d/f+1+2", ,Sm,-18,True,False
+102,"1, 2, 1, 2", ,"h, m, m, Sm x 5",+1~,False,False

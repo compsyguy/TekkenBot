@@ -1,81 +1,81 @@
-Move ID,Move,Command,BlockFrame
-1,in rage d/f+1+2, ,-22
-2,"in rage b+4, 2, f", ,+7
-3,1, ,+1
-4,"1, 2", ,-1~0
-5,"1, 3", ,-12
-6,2, ,-3
-7,"2, 1", ,-6
-8,"2, 1, 2", ,-13~-11
-9,3, ,-6
-10,4, ,-8
-11,"4, 3", ,-5~-4
-12,1+2, ,-14
-13,1+2 When hit 1+2, ,
-14,"1+2 When hit 1+2 When hit , b or f+2", ,
-15,3+4, ,-10~-8
-16,f+2, ,0
-17,"f+2, 1", ,-10~-9
-18,"f+2, 1, 1+2", ,-18~-17
-19,"f+2, 2", ,-26
-20,f+3, ,-5
-21,f+4, ,+4s
-22,f+1+2, ,-18
-23,"f+1+2, 1+2", ,-14
-24,"d+1, 2", ,-9
-25,f+3+4, ,+2~+3
-26,d/f+1, ,-2~-1
-27,"d/f+1, 2", ,-15~-14
-28,d/f+2, ,-13
-29,d/f+3, ,-7
-30,"d/f+3, 1", ,-12
-31,"d/f+3, 2", ,-2
-32,d/f+4, ,-8
-33,d+1, ,-8~-7
-34,d+2, ,-11
-35,d+1+2 or BT 1+2, ,-18~-17
-36,d/b+2 or FC+d/b or d+2, ,-4
-37,"d/b+2, 1", ,-13(s)
-38,d/b+3, ,-17~-16
-39,d/b+4, ,-13
-40,"d/b+4, 3", ,-13
-41,d/b+1+2, ,-4
-42,b+1, ,-9
-43,b+2, ,-9~-8
-44,b+3, ,-4
-45,b+4, ,-14
-46,"b+4, 1", ,-8
-47,"b+4, 2", ,-12
-48,"b+4, 3", ,-12~-11
-49,"b+4, 3, 2", ,-13~-12
-50,b+1+2, ,-13~-12
-51,b+3+4, ,-14~-13
-52,b+2+3, ,TKMD
-53,u/b or u or u/f+2, ,-9
-54,u/b+3, ,+2~+3s
-55,u+3, ,+2~+3s
-56,u/f+3, ,+2~+3s
-57,u/b or u or u/f+4, ,-13~-11
-58,u/f+3+4, ,-11~-10
-59,"f, F+2 or FC+d/f+2", ,-18~-16
-60,"f, F+2, 2 or FC+d/f+2, 2", ,-2~-1
-61,"f, F+2, 1+2 or FC+d/f+2, 1+2", ,-13~-12
-62,"f, F+4", ,-5~-3
-63,"f, f, f+2", ,+7~+10g
-64,WS+1, ,-4~-3
-65,"WS+1, 1", ,-12
-66,WS+2, ,-14~-13
-67,WS+3, ,-9
-68,WS+4, ,-6~-5
-69,SS+4, ,-12~-11
-70,From special move, ,
-71,STB f+1+2, ,-18
-72,"STB f+1+2, 1+2", ,-9
-73,STB d+1, ,-9~-8
-74,"STB d+1, 2", ,+8~+9
-75,STB d+2, ,-11
-76,"STB d+2, 2", ,-12~-11
-77,STB d/b+1+2, ,CS
-78,STB b+4, ,-14
-79,"STB b+4, 3", ,-15~-14
-80,"STB b+4, 3, 2", ,-1~0
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage d/f+1+2, ,m,-22,True,False
+2,"in rage b+4, 2, f", ,"m, m, (STB)",+7,False,False
+3,1, ,h,+1,False,False
+4,"1, 2", ,"h, h",-1~0,False,False
+5,"1, 3", ,"h, l",-12,True,False
+6,2, ,h,-3,False,False
+7,"2, 1", ,"h, m",-6,False,False
+8,"2, 1, 2", ,"h, m, m",-13~-11,True,False
+9,3, ,h,-6,False,False
+10,4, ,h,-8,False,False
+11,"4, 3", ,"h, h (TJ)",-5~-4,False,False
+12,1+2, ,m,-14,True,False
+13,1+2 When hit 1+2, ,"m, (throw)",,False,False
+14,"1+2 When hit 1+2 When hit , b or f+2", ,"m, (throw), (throw), (STB)",,False,False
+15,3+4, ,"m (TJ), ?",-10~-8,False,False
+16,f+2, ,h,0,False,False
+17,"f+2, 1", ,"h, m",-10~-9,False,False
+18,"f+2, 1, 1+2", ,"h, m, m",-18~-17,True,False
+19,"f+2, 2", ,"h, m(, (Special))(STB)",-26,True,False
+20,f+3, ,h (TJ),-5,False,False
+21,f+4, ,m,+4s,False,False
+22,f+1+2, ,m,-18,True,False
+23,"f+1+2, 1+2", ,"m, m",-14,True,False
+24,"d+1, 2", ,"m, m",-9,False,False
+25,f+3+4, ,h,+2~+3,False,False
+26,d/f+1, ,m,-2~-1,False,False
+27,"d/f+1, 2", ,"m, m",-15~-14,True,False
+28,d/f+2, ,m,-13,True,False
+29,d/f+3, ,m,-7,False,False
+30,"d/f+3, 1", ,"m, m",-12,True,False
+31,"d/f+3, 2", ,"m, h",-2,False,False
+32,d/f+4, ,m,-8,False,False
+33,d+1, ,m,-8~-7,False,False
+34,d+2, ,l (TC),-11,True,False
+35,d+1+2 or BT 1+2, ,m,-18~-17,True,False
+36,d/b+2 or FC+d/b or d+2, ,Sm,-4,False,False
+37,"d/b+2, 1", ,"Sm, m",-13(s),False,False
+38,d/b+3, ,l (TC),-17~-16,True,False
+39,d/b+4, ,l,-13,True,False
+40,"d/b+4, 3", ,"l, h",-13,True,False
+41,d/b+1+2, ,"m, m",-4,False,False
+42,b+1, ,m,-9,False,False
+43,b+2, ,h (STB),-9~-8,False,False
+44,b+3, ,m,-4,False,False
+45,b+4, ,m,-14,True,False
+46,"b+4, 1", ,"m, h",-8,False,False
+47,"b+4, 2", ,"m, m (STB)",-12,True,False
+48,"b+4, 3", ,"m, h",-12~-11,True,False
+49,"b+4, 3, 2", ,"m, h (TJ)",-13~-12,True,False
+50,b+1+2, ,m,-13~-12,True,False
+51,b+3+4, ,m,-14~-13,True,False
+52,b+2+3, ,!,TKMD,False,False
+53,u/b or u or u/f+2, ,m (TJ),-9,False,False
+54,u/b+3, ,m (TJ),+2~+3s,False,False
+55,u+3, ,m (TJ),+2~+3s,False,False
+56,u/f+3, ,m (TJ),+2~+3s,False,False
+57,u/b or u or u/f+4, ,m (TJ),-13~-11,True,False
+58,u/f+3+4, ,mm,-11~-10,False,False
+59,"f, F+2 or FC+d/f+2", ,m,-18~-16,True,False
+60,"f, F+2, 2 or FC+d/f+2, 2", ,"m, h (STB)",-2~-1,False,False
+61,"f, F+2, 1+2 or FC+d/f+2, 1+2", ,"m, m",-13~-12,True,False
+62,"f, F+4", ,m (TJ),-5~-3,False,False
+63,"f, f, f+2", ,h (STB),+7~+10g,False,False
+64,WS+1, ,m,-4~-3,False,False
+65,"WS+1, 1", ,"m, h",-12,True,False
+66,WS+2, ,"m(, (Special))(STB)",-14~-13,True,False
+67,WS+3, ,m,-9,False,False
+68,WS+4, ,m,-6~-5,False,False
+69,SS+4, ,l,-12~-11,True,False
+70,From special move, ,(STB),,False,False
+71,STB f+1+2, ,m,-18,True,False
+72,"STB f+1+2, 1+2", ,"m, m",-9,False,False
+73,STB d+1, ,m,-9~-8,False,False
+74,"STB d+1, 2", ,"m, m",+8~+9,False,False
+75,STB d+2, ,l (TC),-11,True,False
+76,"STB d+2, 2", ,"l, l",-12~-11,True,False
+77,STB d/b+1+2, ,"m, !",CS,False,False
+78,STB b+4, ,m,-14,True,False
+79,"STB b+4, 3", ,"m, h",-15~-14,True,False
+80,"STB b+4, 3, 2", ,"m, h, m (TJ)",-1~0,False,False

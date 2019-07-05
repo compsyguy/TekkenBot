@@ -1,115 +1,115 @@
-Move ID,Move,Command,BlockFrame
-1,in rage d/f+1+2, ,-22
-2,"in rage f, F+1+2", ,+11~+12g
-3,1, ,-2
-4,"1, 1", ,-7
-5,"1, 2", ,-8~-7
-6,"1, 2, 3", ,-2~0
-7,"1, 2, 3, *, n (two spins)", ,+6~+7
-8,"1, 2, 3, * (three spins)", ,KND
-9,"1, 2, 3, B (Cancel)", ,-18~-17
-10,"1, 2, 4", ,-12~-11
-11,"1, 3", ,-11
-12,"1, 4", ,-11~-9
-13,2, ,-11
-14,"2, 1", ,-3~-2
-15,"2, 1, 1+2", ,-9~-8
-16,"2, 3", ,-19~-18
-17,3, ,-7
-18,"3, 1", ,-11~-10
-19,4, ,-7
-20,3~4, ,-26
-21,1+2, ,-9~-8
-22,3+4, ,-6~-4
-23,"3+4, (d/b, d or d/f)", ,-6~-4
-24,1+4 (First hit only), ,-19
-25,1+4, ,-3(-19s)
-26,"1+4, 2", ,-2
-27,"1+4, 2, 1", ,-2
-28,"1+4, 2, 4", ,-9
-29,"1+4, 2, d+4", ,-23
-30,"1+4, 3", ,-2~0
-31,"1+4, 3, b (Cancel)", ,-20(37s)
-32,2+3, ,0~+1
-33,f+2, ,-18~-17
-34,"f+2, d/b or d or D/F (Cancel)", ,
-35,f+3, ,-2~0
-36,"f+3, *, n (two spins)", ,+6~+7
-37,"f+3, * (three spins)", ,KND
-38,f+4, ,+3~+5
-39,f+1+2, ,-9
-40,d/f+1, ,-3~-2
-41,"d/f+1, 2", ,-1
-42,"d/f+1, 4", ,-12~-11
-43,d/f+2, ,-6~-5
-44,d/f+3, ,-8~-7
-45,d/f+4, ,-9
-46,d+2, ,-4s
-47,d+1+2 or FC+d/b or d+1+2, ,-18
-48,d+3+4, ,-6(-25s)
-49,d/b+1, ,-9
-50,"d/b+1, 2", ,-13~-12
-51,d/b+2, ,-13~-12
-52,d/b+3, ,-12
-53,b+1, ,-10~-9
-54,b+2, ,-4s
-55,"b+2, 1", ,-7
-56,"b+2, 4", ,-11~-9
-57,"b+2, 1+2", ,-9
-58,"b+2, 1+2, d (Cancel)", ,-6s
-59,"b+2, 1+2, 4", ,-13~-12
-60,b+3, ,-19~-18
-61,"b+3, 2", ,-20~-19
-62,"b+3, 2, (d/b, d or d/f) (Cancel)", ,-33~-32
-63,"b+3, 4", ,-11~-9
-64,b+4, ,-8~-7
-65,"b+4, 2", ,-12~-11
-66,"b+4, 2, 3", ,-16~-13
-67,b+1+4, ,-8~-7
-68,"b+1+4 (First hit only, Second hit miss)", ,-25
-69,"b+1+4, 3", ,-13~-12
-70,"b+1+4, 4", ,-14~-13
-71,u/f+2, ,-7
-72,u/f+2 (No throw), ,-7
-73,u/b or u or u/f+3, ,-3~-2
-74,u/b+4, ,-15~-14
-75,u or u/f+4, ,-13~-12
-76,"f, F+1", ,+4~+5
-77,"f, F+2", ,-13~-12
-78,"f, F+2, 1", ,-5~-4
-79,"f, F+2, 3", ,-8~-7
-80,"f, F+2, 1+2", ,-13~-12
-81,"f, F+3", ,-9~-8
-82,"f, F+4", ,-3~-2
-83,"u/b, b", ,
-84,"u/b, b, 3 or f, f, f+3", ,0~+4
-85,WS+1, ,-7~-6
-86,"WS+1, 4", ,-12
-87,WS+2, ,-8~-7
-88,"WS+2, 1", ,-2
-89,WS+3, ,-16~-15
-90,WS+4, ,-3~-2
-91,WS+1+2, ,-2
-92,"WS+1+2, D (Cancel)", ,
-93,FC+3+4 WS+3+4, ,-6~-5
-94,"FC+3+4, D", ,-6~-5
-95,"FC+3+4, 3", ,0~+1s
-96,"FC+3+4, 3, D", ,0~+1s
-97,FC+d/f+2, ,-11~-10
-98,FC+d/f+3, ,-9
-99,SS+2, ,-9~-8
-100,SS+4, ,-6~-2
-101,f+1, ,-7
-102,"f+1, 3", ,-5
-103,"f+1, 3, 1", ,-8
-104,"f+1, 4", ,-6(-25s)
-105,"f+1, d+4", ,-26
-106,"f+1, d+4, D/B (Cancel)", ,-26
-107,d/b+4, ,-11~-9
-108,"d/b+4, D", ,-11~-9
-109,"d/b+4, 4", ,-7~-5
-110,"d/b+4, 4, D", ,-11~-9
-111,"d/b+4, 4, 4", ,-7~-5
-112,"d/b+4, 4, 4, D", ,-11~-9
-113,LCT 3, ,-3
-114,LCT 1+4, ,-3(-19s)
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage d/f+1+2, ,m,-22,True,False
+2,"in rage f, F+1+2", ,m,+11~+12g,False,False
+3,1, ,h,-2,False,False
+4,"1, 1", ,"h, m",-7,False,False
+5,"1, 2", ,"h, m",-8~-7,False,False
+6,"1, 2, 3", ,"h, m, m",-2~0,False,False
+7,"1, 2, 3, *, n (two spins)", ,"h, m, m",+6~+7,False,False
+8,"1, 2, 3, * (three spins)", ,"h, m, !",KND,False,False
+9,"1, 2, 3, B (Cancel)", ,"h, m",-18~-17,True,False
+10,"1, 2, 4", ,"h, m, m",-12~-11,True,False
+11,"1, 3", ,"h, l",-11,True,False
+12,"1, 4", ,"h, l (TC)(LCT)",-11~-9,False,False
+13,2, ,h,-11,True,False
+14,"2, 1", ,"h, h",-3~-2,False,False
+15,"2, 1, 1+2", ,"h, h, hh",-9~-8,False,False
+16,"2, 3", ,"h, m (TJ)",-19~-18,True,False
+17,3, ,m,-7,False,False
+18,"3, 1", ,"m, m?",-11~-10,False,False
+19,4, ,h,-7,False,False
+20,3~4, ,l (TC),-26,True,False
+21,1+2, ,m,-9~-8,False,False
+22,3+4, ,mm (TJ),-6~-4,False,False
+23,"3+4, (d/b, d or d/f)", ,mm (TJ),-6~-4,False,False
+24,1+4 (First hit only), ,l,-19,True,False
+25,1+4, ,lh,-3(-19s),False,False
+26,"1+4, 2", ,"lh, h",-2,False,False
+27,"1+4, 2, 1", ,"lh, h, h",-2,False,False
+28,"1+4, 2, 4", ,"lh, h, m",-9,False,False
+29,"1+4, 2, d+4", ,"lh, h, l",-23,True,False
+30,"1+4, 3", ,"lh, m",-2~0,False,False
+31,"1+4, 3, b (Cancel)", ,lh,-20(37s),False,False
+32,2+3, ,h(Absorbs 1 h/m hit),0~+1,False,False
+33,f+2, ,m?,-18~-17,True,False
+34,"f+2, d/b or d or D/F (Cancel)", ,(Special)?,,False,False
+35,f+3, ,m,-2~0,False,False
+36,"f+3, *, n (two spins)", ,m,+6~+7,False,False
+37,"f+3, * (three spins)", ,!,KND,False,False
+38,f+4, ,h,+3~+5,False,False
+39,f+1+2, ,h,-9,False,False
+40,d/f+1, ,m,-3~-2,False,False
+41,"d/f+1, 2", ,"m, h(, (throw))",-1,False,False
+42,"d/f+1, 4", ,"m, m",-12~-11,True,False
+43,d/f+2, ,m,-6~-5,False,False
+44,d/f+3, ,m,-8~-7,False,False
+45,d/f+4, ,m,-9,False,False
+46,d+2, ,m,-4s,False,False
+47,d+1+2 or FC+d/b or d+1+2, ,l (TC),-18,True,False
+48,d+3+4, ,lh (TJ),-6(-25s),False,False
+49,d/b+1, ,m (TC),-9,False,False
+50,"d/b+1, 2", ,"m (TC), l",-13~-12,True,False
+51,d/b+2, ,m,-13~-12,True,False
+52,d/b+3, ,l,-12,True,False
+53,b+1, ,"l (TC)(, (throw))",-10~-9,False,False
+54,b+2, ,m,-4s,False,False
+55,"b+2, 1", ,"m, m",-7,False,False
+56,"b+2, 4", ,"m, l(LCT)",-11~-9,False,False
+57,"b+2, 1+2", ,"m, h",-9,False,False
+58,"b+2, 1+2, d (Cancel)", ,m,-6s,False,False
+59,"b+2, 1+2, 4", ,"m, h, m",-13~-12,True,False
+60,b+3, ,m (TJ),-19~-18,True,False
+61,"b+3, 2", ,"m, m?",-20~-19,True,False
+62,"b+3, 2, (d/b, d or d/f) (Cancel)", ,"m, (Special)?",-33~-32,True,False
+63,"b+3, 4", ,"m (TJ), l (TC)(LCT)",-11~-9,False,False
+64,b+4, ,m,-8~-7,False,False
+65,"b+4, 2", ,"m, m",-12~-11,True,False
+66,"b+4, 2, 3", ,"m, m, m",-16~-13,True,False
+67,b+1+4, ,hl,-8~-7,False,False
+68,"b+1+4 (First hit only, Second hit miss)", ,h,-25,True,False
+69,"b+1+4, 3", ,"hl, l?",-13~-12,True,False
+70,"b+1+4, 4", ,"hl, m",-14~-13,True,False
+71,u/f+2, ,h (throw),-7,False,False
+72,u/f+2 (No throw), ,h,-7,False,False
+73,u/b or u or u/f+3, ,m (TJ),-3~-2,False,False
+74,u/b+4, ,m (TJ),-15~-14,True,False
+75,u or u/f+4, ,m (TJ),-13~-12,True,False
+76,"f, F+1", ,m,+4~+5,False,False
+77,"f, F+2", ,m,-13~-12,True,False
+78,"f, F+2, 1", ,"m, h",-5~-4,False,False
+79,"f, F+2, 3", ,"m, m",-8~-7,False,False
+80,"f, F+2, 1+2", ,"m, m",-13~-12,True,False
+81,"f, F+3", ,m?,-9~-8,False,False
+82,"f, F+4", ,h (TJ),-3~-2,False,False
+83,"u/b, b", ,(Special) (TJ),,False,False
+84,"u/b, b, 3 or f, f, f+3", ,m (TJ),0~+4,False,False
+85,WS+1, ,m,-7~-6,False,False
+86,"WS+1, 4", ,"m, h",-12,True,False
+87,WS+2, ,m,-8~-7,False,False
+88,"WS+2, 1", ,"m, h",-2,False,False
+89,WS+3, ,m,-16~-15,True,False
+90,WS+4, ,m,-3~-2,False,False
+91,WS+1+2, ,m?,-2,False,False
+92,"WS+1+2, D (Cancel)", ,(Special)?,,False,False
+93,FC+3+4 WS+3+4, ,mm (TJ),-6~-5,False,False
+94,"FC+3+4, D", ,mm (TJ),-6~-5,False,False
+95,"FC+3+4, 3", ,"mm (TJ), mm (TJ)",0~+1s,False,False
+96,"FC+3+4, 3, D", ,"mm (TJ), mm (TJ)",0~+1s,False,False
+97,FC+d/f+2, ,l (TC),-11~-10,False,False
+98,FC+d/f+3, ,m,-9,False,False
+99,SS+2, ,m,-9~-8,False,False
+100,SS+4, ,h,-6~-2,False,False
+101,f+1, ,m,-7,False,False
+102,"f+1, 3", ,"m, m",-5,False,False
+103,"f+1, 3, 1", ,"m, m, h",-8,False,False
+104,"f+1, 4", ,"m, lh (TJ)",-6(-25s),False,False
+105,"f+1, d+4", ,"m, l (TC)",-26,True,False
+106,"f+1, d+4, D/B (Cancel)", ,"m, (Special)",-26,True,False
+107,d/b+4, ,l (TC)(LCT),-11~-9,False,False
+108,"d/b+4, D", ,l (TC)(LCT),-11~-9,False,False
+109,"d/b+4, 4", ,"l (TC), l (TC)(LCT)",-7~-5,False,False
+110,"d/b+4, 4, D", ,"l (TC), l (TC)(LCT)",-11~-9,False,False
+111,"d/b+4, 4, 4", ,"l (TC), l (TC), l (TC)(LCT)",-7~-5,False,False
+112,"d/b+4, 4, 4, D", ,"l (TC), l (TC), l (TC)(LCT)",-11~-9,False,False
+113,LCT 3, ,h(LCT),-3,False,False
+114,LCT 1+4, ,lh(LCT),-3(-19s),False,False

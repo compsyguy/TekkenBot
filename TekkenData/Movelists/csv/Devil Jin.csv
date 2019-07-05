@@ -1,118 +1,118 @@
-Move ID,Move,Command,BlockFrame
-1,in rage b+1+2, ,-22~-21
-2,"in rage f, n, d, d/f+4, 3+4", ,-14
-3,1, ,+1
-4,"1, 1", ,-1
-5,"1, 1, 2", ,-17
-6,"1, 2", ,-1
-7,"1, 2, 2", ,-12
-8,"1, 2, 3", ,+4~+6
-9,"1, 2, 3, 4", ,0~+2
-10,"1, 2, 4", ,-10
-11,"1, 2, 4~3", ,-7~-4s
-12,"1, 2, 4~1", ,-4
-13,"1, 2, 4~1 (First hit only)", ,-18~-17
-14,2, ,0
-15,"2, 2", ,-13
-16,3, ,-14
-17,4, ,-9
-18,4~3 or WS+4~3, ,-7~-4s
-19,1+4, ,-4
-20,1+4 (First hit only), ,-18~-17
-21,"1+4, 2", ,-7~-6
-22,"1+4, 2, 4", ,-13~-12
-23,"1+4, 2, d+4", ,-23
-24,f+2, ,-8~-7
-25,"f+2, 4", ,-10
-26,f+3, ,-4~-2
-27,f+4, ,-12~-11
-28,"f+4, 3", ,-33~-32
-29,"f+4, 3, U", ,-14~-13
-30,f+1+2, ,-12~-11
-31,f+3+4, ,-16~-15
-32,d/f+1, ,-3
-33,"d/f+1, 2", ,-8~-7
-34,"d/f+1, 2, f, f", ,-6~-5
-35,d/f+2, ,-7~-6
-36,d/f+3, ,-9~-8
-37,"d/f+3, 2", ,-13
-38,"d/f+3, 2, 4", ,-33~-32
-39,"d/f+3, 2, 4, U", ,-14~-13
-40,d/f+4, ,-9~-8
-41,"d/f+4, 4", ,-15~-14
-42,d/f+1+2, ,-4~-3
-43,d+1, ,-14
-44,d+3, ,-12~-11
-45,d+3+4, ,-15~-14
-46,d/b+2, ,-13~-12
-47,d/b+1+2, ,
-48,d/b*1+2 (Short), ,-6~-4
-49,d/b*1+2 (Long), ,0~+2
-50,d/b*1+2 (Very long), ,+7~+9
-51,b+1, ,-6
-52,"b+1, 2", ,-14
-53,"b+1, 2, B (Cancel)", ,-18
-54,b+2, ,-13~-11
-55,"b+2, 3", ,-15~-13
-56,b+3, ,-16~-15
-57,b+4, ,-8~-7
-58,When opponent attacks b+1+3 or b+2+4, ,-13
-59,b+1+4, ,Launch
-60,B+1+4, ,Launch
-61,u/b+1+2, ,KND
-62,u+4, ,-36~-35
-63,"u+4, U", ,-17~-16
-64,u/b or u or u/f+2, ,-4~-1
-65,u/f+3, ,+3~+4s
-66,u/f+4, ,-8
-67,u or u/f+1+2, ,KND
-68,u/b+2+4, ,+16~+19g
-69,u+2+4, ,+16~+19g
-70,u/f+2+4, ,+16~+19g
-71,"f, F+2", ,-8~-7
-72,"f, F+3", ,-12~-10
-73,"f, F+3, 1", ,+1~+2
-74,"f, F+3, 1, f, f", ,-2~-1
-75,"f, F+3, 1, 2", ,-4~-1
-76,"f, F+3, 1, 3", ,-13
-77,"f, F+3, 1, 4", ,-9~-8
-78,"f, F+3, 1, d/b+1+2", ,+4~+5
-79,"f, F+4", ,+5~+6
-80,"f, F+3+4", ,-13~-12s
-81,"b, f+2", ,-9~-7
-82,"b, f+2, 1", ,-10~-9
-83,"b, f+2, 1, 2", ,-8~-7
-84,"b, f+2, 1, d/b or d or d/f+2", ,-14~-13
-85,"b, f+2, 1, 4", ,-8~-5s
-86,"f, f, f+3 or WR+3 or f, n, d, d/f, U/F+3", ,+9~+12g
-87,WS+1, ,-6~-5
-88,"WS+1, 2", ,-7~-6
-89,"WS+1, 4", ,-5~-4
-90,WS+2, ,-12~-11
-91,WS+4, ,-3~-2
-92,"WS+4, 4", ,-15~-14
-93,SS+2, ,-22~-21
-94,SS+2 U(When hit ), ,
-95,Opponent Down d+1+2, ,-16~-8
-96,Grounded face up u+3+4, ,
-97,1+2+3+4, ,
-98,3+4 or From certain moves (to FLY), ,
-99,FLY 1, ,-3~-2
-100,FLY 2, ,
-101,FLY 3, ,-15~-9
-102,FLY 1+2, ,KND
-103,FLY f+1+2, ,KND
-104,"f, n, d, D/F", ,
-105,"f, n, d, d/f, U/F", ,
-106,"f, n, d, d/f, U/F+3", ,+9~+12g
-107,"f, n, d, d/f+1", ,-16~-14
-108,"f, n, d, d/f+1, U/F", ,
-109,"f, n, d, d/f+1, 3", ,-14
-110,"f, n, d, d/f+1, 4", ,-20~-18
-111,"f, n, d, D/F+2", ,-10~-9
-112,"f, n, d, d/f+2", ,+5~+6
-113,"f, n, d, D/F (Hold as long as possible)2", ,-4~-3
-114,"f, n, d, d/f+3", ,-8~-6s
-115,"f, n, d, D/F+3", ,-23~-22
-116,"f, n, d, d/f+4", ,-23
-117,"f, n, d, d/f+4, 4", ,-16~-15
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage b+1+2, ,m (TJ),-22~-21,True,False
+2,"in rage f, n, d, d/f+4, 3+4", ,"l, mm (TJ), ?",-14,True,False
+3,1, ,h,+1,False,False
+4,"1, 1", ,"h, h",-1,False,False
+5,"1, 1, 2", ,"h, h, m",-17,True,False
+6,"1, 2", ,"h, h",-1,False,False
+7,"1, 2, 2", ,"h, h, h",-12,True,False
+8,"1, 2, 3", ,"h, h, m",+4~+6,False,False
+9,"1, 2, 3, 4", ,"h, h, m, m",0~+2,False,False
+10,"1, 2, 4", ,"h, h, m",-10,True,False
+11,"1, 2, 4~3", ,"h, h, m (TJ)",-7~-4s,False,False
+12,"1, 2, 4~1", ,"h, h, Sm, h",-4,False,False
+13,"1, 2, 4~1 (First hit only)", ,"h, h, Sm",-18~-17,True,False
+14,2, ,h,0,False,False
+15,"2, 2", ,"h, h",-13,True,False
+16,3, ,h,-14,True,False
+17,4, ,h,-9,False,False
+18,4~3 or WS+4~3, ,m (TJ),-7~-4s,False,False
+19,1+4, ,"Sm, h",-4,False,False
+20,1+4 (First hit only), ,Sm,-18~-17,True,False
+21,"1+4, 2", ,"Sm, h, h",-7~-6,False,False
+22,"1+4, 2, 4", ,"Sm, h, h, m",-13~-12,True,False
+23,"1+4, 2, d+4", ,"Sm, h, h, l?",-23,True,False
+24,f+2, ,m,-8~-7,False,False
+25,"f+2, 4", ,"m, m",-10,True,False
+26,f+3, ,h,-4~-2,False,False
+27,f+4, ,m,-12~-11,True,False
+28,"f+4, 3", ,"m, m?",-33~-32,True,False
+29,"f+4, 3, U", ,"m, m?, (Special) (TJ)(FLY)",-14~-13,True,False
+30,f+1+2, ,mm,-12~-11,True,False
+31,f+3+4, ,"mm (TJ), ?",-16~-15,True,False
+32,d/f+1, ,m,-3,False,False
+33,"d/f+1, 2", ,"m, m",-8~-7,False,False
+34,"d/f+1, 2, f, f", ,"m, m, (Special)",-6~-5,False,False
+35,d/f+2, ,m,-7~-6,False,False
+36,d/f+3, ,m,-9~-8,False,False
+37,"d/f+3, 2", ,"m, m",-13,True,False
+38,"d/f+3, 2, 4", ,"m, m, m?",-33~-32,True,False
+39,"d/f+3, 2, 4, U", ,"m, m, m?, (Special) (TJ)(FLY)",-14~-13,True,False
+40,d/f+4, ,m,-9~-8,False,False
+41,"d/f+4, 4", ,"m, m",-15~-14,True,False
+42,d/f+1+2, ,m,-4~-3,False,False
+43,d+1, ,m?,-14,True,False
+44,d+3, ,l,-12~-11,True,False
+45,d+3+4, ,"m, m (TJ)",-15~-14,True,False
+46,d/b+2, ,l (TC),-13~-12,True,False
+47,d/b+1+2, ,(Special),,False,False
+48,d/b*1+2 (Short), ,m,-6~-4,False,False
+49,d/b*1+2 (Long), ,m,0~+2,False,False
+50,d/b*1+2 (Very long), ,m,+7~+9,False,False
+51,b+1, ,h,-6,False,False
+52,"b+1, 2", ,"h, m",-14,True,False
+53,"b+1, 2, B (Cancel)", ,"h, (Special)",-18,True,False
+54,b+2, ,h,-13~-11,True,False
+55,"b+2, 3", ,"h, m",-15~-13,True,False
+56,b+3, ,m,-16~-15,True,False
+57,b+4, ,m,-8~-7,False,False
+58,When opponent attacks b+1+3 or b+2+4, ,"Attack returned(, m)",-13,True,False
+59,b+1+4, ,!,Launch,False,False
+60,B+1+4, ,!,Launch,False,False
+61,u/b+1+2, ,h!,KND,False,False
+62,u+4, ,m (TJ),-36~-35,True,False
+63,"u+4, U", ,"m (TJ), (Special) (TJ)(FLY)",-17~-16,True,False
+64,u/b or u or u/f+2, ,h,-4~-1,False,False
+65,u/f+3, ,m (TJ),+3~+4s,False,False
+66,u/f+4, ,m (TJ),-8,False,False
+67,u or u/f+1+2, , (Sky)!,KND,False,False
+68,u/b+2+4, ,m (TJ),+16~+19g,False,False
+69,u+2+4, ,m (TJ),+16~+19g,False,False
+70,u/f+2+4, ,m (TJ),+16~+19g,False,False
+71,"f, F+2", ,m,-8~-7,False,False
+72,"f, F+3", ,m,-12~-10,False,False
+73,"f, F+3, 1", ,"m, h",+1~+2,False,False
+74,"f, F+3, 1, f, f", ,"m, h, (Special)",-2~-1,False,False
+75,"f, F+3, 1, 2", ,"m, h, h",-4~-1,False,False
+76,"f, F+3, 1, 3", ,"m, h, l",-13,True,False
+77,"f, F+3, 1, 4", ,"m, h, m",-9~-8,False,False
+78,"f, F+3, 1, d/b+1+2", ,"m, h, (Special)",+4~+5,False,False
+79,"f, F+4", ,h,+5~+6,False,False
+80,"f, F+3+4", ,mm (TJ),-13~-12s,False,False
+81,"b, f+2", ,m,-9~-7,False,False
+82,"b, f+2, 1", ,"m, m",-10~-9,False,False
+83,"b, f+2, 1, 2", ,"m, m, m",-8~-7,False,False
+84,"b, f+2, 1, d/b or d or d/f+2", ,"m, m, m",-14~-13,True,False
+85,"b, f+2, 1, 4", ,"m, m, m (TJ)",-8~-5s,False,False
+86,"f, f, f+3 or WR+3 or f, n, d, d/f, U/F+3", ,m (TJ),+9~+12g,False,False
+87,WS+1, ,m,-6~-5,False,False
+88,"WS+1, 2", ,"m, m",-7~-6,False,False
+89,"WS+1, 4", ,"m, h",-5~-4,False,False
+90,WS+2, ,m,-12~-11,True,False
+91,WS+4, ,m,-3~-2,False,False
+92,"WS+4, 4", ,"m, m",-15~-14,True,False
+93,SS+2, ,m,-22~-21,True,False
+94,SS+2 U(When hit ), ,"m, (throw)",,False,False
+95,Opponent Down d+1+2, ,l(On grounded opponent),-16~-8,False,False
+96,Grounded face up u+3+4, ,(Special) (TJ)(FLY),,False,False
+97,1+2+3+4, ,(Special) (TJ),,False,False
+98,3+4 or From certain moves (to FLY), ,(Special) (TJ)(FLY),,False,False
+99,FLY 1, ,h (TJ),-3~-2,False,False
+100,FLY 2, ,"h! (TJ)(, (throw))",,False,False
+101,FLY 3, ,m (TJ),-15~-9,False,False
+102,FLY 1+2, ,! (TJ),KND,False,False
+103,FLY f+1+2, ,! (TJ),KND,False,False
+104,"f, n, d, D/F", ,(Special),,False,False
+105,"f, n, d, d/f, U/F", ,(Special) (TJ),,False,False
+106,"f, n, d, d/f, U/F+3", ,m (TJ),+9~+12g,False,False
+107,"f, n, d, d/f+1", ,m?,-16~-14,True,False
+108,"f, n, d, d/f+1, U/F", ,"m, (throw)",,False,False
+109,"f, n, d, d/f+1, 3", ,"m, m",-14,True,False
+110,"f, n, d, d/f+1, 4", ,"m, l?",-20~-18,True,False
+111,"f, n, d, D/F+2", ,h,-10~-9,False,False
+112,"f, n, d, d/f+2", ,h,+5~+6,False,False
+113,"f, n, d, D/F (Hold as long as possible)2", ,h,-4~-3,False,False
+114,"f, n, d, d/f+3", ,m (TJ),-8~-6s,False,False
+115,"f, n, d, D/F+3", ,l (TC),-23~-22,True,False
+116,"f, n, d, d/f+4", ,l,-23,True,False
+117,"f, n, d, d/f+4, 4", ,"l, m",-16~-15,True,False

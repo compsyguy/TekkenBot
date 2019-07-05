@@ -1,201 +1,201 @@
-Move ID,Move,Command,BlockFrame
-1,in rage b+3+4, ,-23
-2,"in rage f, F+3+4", ,+12~+13
-3,1, ,+1
-4,"1, 2", ,-4
-5,"1, 2, f", ,-4
-6,"1, 2, 4", ,-26(20a)
-7,"1, 3", ,-14~-10
-8,"1, 3, D", ,-12~-10
-9,2, ,0
-10,3, ,-9~-7
-11,"3, 4", ,-4~-2
-12,3~4, ,-24
-13,3~4 (First hit only), ,-24
-14,3~4B, ,
-15,"3~4, 3", ,-14~-13
-16,"3~4, 4", ,-7~-5
-17,"3~4, 3+4", ,-17~-10
-18,4, ,-9
-19,4~3, ,-28~25
-20,"4~3, 3", ,-5~-4
-21,"4~3, 4", ,-2~0
-22,1+2, ,0~+1
-23,1+2~3, ,-23~-20
-24,3+4, ,-9~-5
-25,"3+4, B (Cancel)", ,
-26,"3+4, 3 (Cancel)", ,-1~+1
-27,f+2, ,-9
-28,"f+2, 1", ,-9~-8
-29,"f+2, 1, 4", ,-14~-13
-30,f+3, ,-3~-1
-31,f+4, ,-23~-18
-32,"f+4, B", ,-1~+1
-33,"f+4, 3", ,-11~-8
-34,"f+4, 3, 3+4", ,-14~-13
-35,"f+4, 3+4", ,-24
-36,f+3+4, ,-4~-1
-37,d/f+1, ,-2~-1
-38,"d/f+1, F", ,-8~-7
-39,"d/f+1, 1", ,-4
-40,d/f+2, ,-9~-8
-41,d/f+3, ,-10~-7
-42,"d/f+3, D", ,-12~-9
-43,d/f+4, ,-14
-44,d/f+3+4, ,-23~-20
-45,d+2, ,-9~-8
-46,"d+2, 3", ,-5~-2
-47,"d+3~3 or f, f+3~3", ,-14~-13
-48,d+3~4, ,-13~-11
-49,d+4, ,-16~-15
-50,"d+4, 3", ,-13~-12s
-51,d/b+2, ,-18
-52,"d/b+2, 3", ,-23~-22
-53,d/b+3, ,-18~-12
-54,"d/b+3, B", ,-18~-12
-55,"d/b+3, 3", ,-15~-8
-56,"d/b+3, n+3", ,-5~-4
-57,"d/b+3, 4", ,-3~+1
-58,"d/b+3, d/b+4", ,-7~-5
-59,"d/b+3, d/b+4, B", ,-9~-7
-60,"d/b+3, d/b+4~3", ,-14~-13
-61,"d/b+3, d/b+4, 4", ,-14~-12
-62,"d/b+3, d/b+4, 4, B", ,-20~-18
-63,"d/b+3, d/b+4, 1+2", ,-14~-12
-64,d/b+4, ,-17
-65,"d/b+4, 4, ,", ,-15
-66,"d/b+4, 4, 4, 4, ,", ,-13
-67,"d/b+4, b+4", ,-14
-68,d/b+1+2, ,-7~-6
-69,d/b+3+4, ,-10
-70,"d/b+3+4, B", ,-33
-71,"d/b+3+4, D", ,-13
-72,"d/b+3+4, 4", ,-6
-73,"d/b+3+4, 4, 3", ,-7
-74,b+1, ,-8~-7
-75,"b+1, 4", ,-23~-18
-76,b+2, ,-11
-77,"b+2, 4", ,-9~-8
-78,b+3, ,-8
-79,"b+3, 3", ,-14~-13
-80,"b+3, f", ,-14
-81,b+4, ,-6~-3
-82,"b+4, 3", ,-21~-15
-83,"b+4, 4", ,-9~-5
-84,"b+4, 4, D", ,-16
-85,"b+4, 4, 3+4", ,-13~-10
-86,b+1+2, ,-8
-87,u/b+3, ,+-2~+2s
-88,u+3, ,-24~-20
-89,u+4, ,
-90,"u+4, 3", ,+4
-91,"u+4, 4", ,-3
-92,u/b+3+4, ,-9~-8
-93,u+3+4, ,-1~+2
-94,"u/b+3+4, D", ,?
-95,"u+3+4, D", ,?
-96,u/f+3, ,-11~-9s
-97,"u/f+3, D", ,-14~-13s
-98,"u/f+3, 3", ,-23~-20
-99,"u/f+3, 3+4", ,-14
-100,u/f+4, ,-8~-5
-101,u/b or u+1+2, ,-3~-1s
-102,u/f+1+2, ,-3~-1s
-103,u/f+3+4, ,-10
-104,"f, F+2", ,-4~-3
-105,"f, F+2, 3", ,-15~-11
-106,"f, F+3", ,-15~-14
-107,"f, F+3, B", ,-32~-31
-108,"f, F+3, D", ,-3~-2
-109,"f, F+3, B+3+4", ,-9
-110,"f, F+4", ,-7~-6
-111,"b, B+2+3", ,KND
-112,"b, B+2+3 (First hit only)", ,-68~-64
-113,"f, f, f+3 or WR+3", ,-24~-18
-114,WS+1, ,-6
-115,"WS+1, 3", ,-15~-14
-116,"WS+1, 4", ,-9
-117,WS+2, ,-12~-11
-118,"WS+3 or d, f+3", ,-13~-8
-119,WS+4, ,-3~0
-120,FC+d/b or d+1+2, ,-14~-12
-121,"FC+d/b or d+1+2, 1+2", ,-14~-12
-122,WS+3+4 FC+3+4, ,-17~-12
-123,WS+3+4B FC+3+4B, ,-21~-16
-124,WS+3+4D FC+3+4D, ,-8~-3
-125,FC+d/f+4, ,-26(16a)
-126,FC+d/b+4, ,-10
-127,BT 3+4, ,+1~+4
-128,1+2+3+4, ,
-129,SS 2, ,0~+1s
-130,SS 3, ,-5~-4
-131,"SS 3, D (Cancel)", ,
-132,"SS 3, B (Cancel)", ,
-133,"SS 3n, B", ,-21~-20
-134,"SS 3n, B, 3+4", ,-9
-135,SS 4, ,-1~0
-136,SS 4 (First hit only), ,-12~-9
-137,SS 4 (Second hit only), ,-4~+2
-138,"SS 4, B", ,?
-139,"SS 4, 3", ,-45
-140,"SS 4, 3+4", ,-17~-12
-141,SS 4~3, ,-12
-142,SS 4~3B, ,-23
-143,SS 3+4, ,-12
-144,"SS 3+4, D", ,-12
-145,SS 3+4 (First hit only), ,-18~-16
-146,"SS 3+4, D (First hit only)", ,-18~-16
-147,"SS 3+4, 3+4", ,-34~-28s
-148,"SS 3+4, 3+4, 3+4", ,-13~-8
-149,"SS 3+4, 3+4, 3+4, B (Cancel)", ,-30~-24
-150,"SS 3+4, 3+4, 3+4, u/f+3+4", ,-6~-5
-151,"SS 3+4, 3+4, 3+4, u/f+3+4, D", ,-26~-25
-152,SS 1+4, ,-29~-22
-153,f+1+2 or From certain moves (to HSP), ,
-154,FC+d/f+1+2, ,
-155,Grounded face up 1+2, ,
-156,After HSP Wait and dont do anything, ,
-157,HSP f+1+2, ,
-158,"HSP F+1+2 or f, f+1+2", ,+2~+4
-159,HSP 1, ,-12s
-160,HSP 2, ,-2
-161,"HSP 2, 4", ,-1~0 (-12)
-162,HSP 3, ,-5
-163,HSP 3~4, ,-24
-164,HSP 4, ,-6~-4
-165,"HSP 4, 3+4", ,-24
-166,HSP 3+4, ,
-167,HSP f+1, ,+1
-168,HSP f+3+4, ,-12~-2
-169,HSP D, ,
-170,"HSP D, 3+4", ,-9
-171,HSP b+3, ,-14
-172,HSP u or d, ,
-173,HSP u or d 3 or 4, ,-45
-174,HSP u or d+3 or u or d+4, ,-13~-12
-175,"HSP u or d+3, D or u or d+4, D", ,-2~-1
-176,d+3+4 or From certain moves (to RLX), ,
-177,RLX u or d, ,
-178,RLX b or f, ,
-179,RLX 1, ,-12
-180,"RLX 1, 3", ,-14~-12
-181,"RLX 1, 3, D", ,-12~-10
-182,"RLX 1, 4", ,-6~-5
-183,RLX 2, ,-6~-5
-184,"RLX 2, 3", ,-13~-12
-185,"RLX 2, f+3", ,-14
-186,"RLX 2, 4", ,-23~-22
-187,RLX 3, ,-15~-14
-188,"RLX 3, n+4", ,-6~-5
-189,RLX 3~4, ,-24~-23
-190,RLX 4, ,-13
-191,"RLX 4, 3+4", ,-7~-2
-192,RLX 4~3, ,-37~-35
-193,RLX 4~3 (Second hit only), ,-4~-2
-194,RLX 1+2, ,-14~-12
-195,RLX 3+4, ,-7~-6
-196,"RLX 3+4, B (Cancel)", ,
-197,"RLX 3+4, 3 (Cancel)", ,-2~-1
-198,RLX f+3+4, ,-12~-2
-199,RLX d/b+3j, ,-12
-200,RLX b+1+2, ,
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage b+3+4, ,m (TJ),-23,True,False
+2,"in rage f, F+3+4", ,"mm, (RLX)",+12~+13,False,False
+3,1, ,h,+1,False,False
+4,"1, 2", ,"h, h",-4,False,False
+5,"1, 2, f", ,"h, h, (HSP)",-4,False,False
+6,"1, 2, 4", ,"h, h, (Special) (TJ)",-26(20a),False,False
+7,"1, 3", ,"h, m, (HSP)",-14~-10,False,False
+8,"1, 3, D", ,"h, m, (RLX)",-12~-10,False,False
+9,2, ,h,0,False,False
+10,3, ,h,-9~-7,False,False
+11,"3, 4", ,"h, m",-4~-2,False,False
+12,3~4, ,"ll (TC), (RLX)",-24,True,False
+13,3~4 (First hit only), ,"l (TC), (RLX)",-24,True,False
+14,3~4B, ,"ll (TC), (HSP)",,False,False
+15,"3~4, 3", ,"ll (TC), m, (RLX)",-14~-13,True,False
+16,"3~4, 4", ,"ll (TC), l (TC)",-7~-5,False,False
+17,"3~4, 3+4", ,"ll (TC), m",-17~-10,False,False
+18,4, ,m,-9,False,False
+19,4~3, ,m,-28~25,False,False
+20,"4~3, 3", ,"m, m, (RLX)",-5~-4,False,False
+21,"4~3, 4", ,"m, m (TJ)",-2~0,False,False
+22,1+2, ,hh,0~+1,False,False
+23,1+2~3, ,"h, m",-23~-20,True,False
+24,3+4, ,m,-9~-5,False,False
+25,"3+4, B (Cancel)", ,(Special) (TC)(HSP),,False,False
+26,"3+4, 3 (Cancel)", ,"m (TC), (Special)",-1~+1,False,False
+27,f+2, ,h,-9,False,False
+28,"f+2, 1", ,"h, h",-9~-8,False,False
+29,"f+2, 1, 4", ,"h, h, m",-14~-13,True,False
+30,f+3, ,"m, (HSP)",-3~-1,False,False
+31,f+4, ,m,-23~-18,True,False
+32,"f+4, B", ,"m, (HSP)",-1~+1,False,False
+33,"f+4, 3", ,"m, m",-11~-8,False,False
+34,"f+4, 3, 3+4", ,"m, m, mm",-14~-13,True,False
+35,"f+4, 3+4", ,"m, ll (TC), (Special)",-24,True,False
+36,f+3+4, ,mm,-4~-1,False,False
+37,d/f+1, ,m,-2~-1,False,False
+38,"d/f+1, F", ,"m, (HSP)",-8~-7,False,False
+39,"d/f+1, 1", ,"m, h",-4,False,False
+40,d/f+2, ,m,-9~-8,False,False
+41,d/f+3, ,"m, (HSP)",-10~-7,False,False
+42,"d/f+3, D", ,"m, (RLX)",-12~-9,False,False
+43,d/f+4, ,l,-14,True,False
+44,d/f+3+4, ,m,-23~-20,True,False
+45,d+2, ,m,-9~-8,False,False
+46,"d+2, 3", ,"m, m, (RLX)",-5~-2,False,False
+47,"d+3~3 or f, f+3~3", ,"m, (RLX)",-14~-13,True,False
+48,d+3~4, ,l (TC),-13~-11,True,False
+49,d+4, ,l (TC),-16~-15,True,False
+50,"d+4, 3", ,"l (TC), m",-13~-12s,False,False
+51,d/b+2, ,l (TC),-18,True,False
+52,"d/b+2, 3", ,"l (TC), m",-23~-22,True,False
+53,d/b+3, ,l (TC),-18~-12,True,False
+54,"d/b+3, B", ,"l (TC), (HSP)",-18~-12,True,False
+55,"d/b+3, 3", ,"l (TC), m",-15~-8,False,False
+56,"d/b+3, n+3", ,"l (TC), m (TC), (RLX)",-5~-4,False,False
+57,"d/b+3, 4", ,"l (TC), h",-3~+1,False,False
+58,"d/b+3, d/b+4", ,"l (TC), l (TC)",-7~-5,False,False
+59,"d/b+3, d/b+4, B", ,"l (TC), l (TC), (HSP)",-9~-7,False,False
+60,"d/b+3, d/b+4~3", ,"l (TC), m, (RLX)",-14~-13,True,False
+61,"d/b+3, d/b+4, 4", ,"l (TC), l (TC), l (TC)",-14~-12,True,False
+62,"d/b+3, d/b+4, 4, B", ,"l (TC), l (TC), l (TC), (HSP)",-20~-18,True,False
+63,"d/b+3, d/b+4, 1+2", ,"l (TC), l (TC), m",-14~-12,True,False
+64,d/b+4, ,m,-17,True,False
+65,"d/b+4, 4, ,", ,"m, m, , ",-15,True,False
+66,"d/b+4, 4, 4, 4, ,", ,"m x 4, , ",-13,True,False
+67,"d/b+4, b+4", ,"m (TC), m, (HSP)",-14,True,False
+68,d/b+1+2, ,m,-7~-6,False,False
+69,d/b+3+4, ,mm?,-10,True,False
+70,"d/b+3+4, B", ,"mm, (HSP)",-33,True,False
+71,"d/b+3+4, D", ,"mm, (RLX)",-13,True,False
+72,"d/b+3+4, 4", ,"mm, h",-6,False,False
+73,"d/b+3+4, 4, 3", ,"mm, h, h",-7,False,False
+74,b+1, ,m,-8~-7,False,False
+75,"b+1, 4", ,"m, m",-23~-18,True,False
+76,b+2, ,m,-11,True,False
+77,"b+2, 4", ,"m, h",-9~-8,False,False
+78,b+3, ,m,-8,False,False
+79,"b+3, 3", ,"m, m, (RLX)",-14~-13,True,False
+80,"b+3, f", ,"m, m",-14,True,False
+81,b+4, ,h,-6~-3,False,False
+82,"b+4, 3", ,"h, l (TC)",-21~-15,True,False
+83,"b+4, 4", ,"h, mm",-9~-5,False,False
+84,"b+4, 4, D", ,"h, mm, (RLX)",-16,True,False
+85,"b+4, 4, 3+4", ,"h, mm, m (TJ)",-13~-10,False,False
+86,b+1+2, ,m,-8,False,False
+87,u/b+3, ,m,+-2~+2s,False,False
+88,u+3, ,m (TJ),-24~-20,True,False
+89,u+4, ,(Special) (TJ),,False,False
+90,"u+4, 3", ,"(Special) (TJ), l (TC), (RLX)",+4,False,False
+91,"u+4, 4", ,"(Special) (TJ), h (TJ), (RLX)",-3,False,False
+92,u/b+3+4, ,m (TJ),-9~-8,False,False
+93,u+3+4, ,m (TJ),-1~+2,False,False
+94,"u/b+3+4, D", ,"m (TJ), (RLX)",?,False,False
+95,"u+3+4, D", ,"m (TJ), (RLX)",?,False,False
+96,u/f+3, ,m (TJ),-11~-9s,False,False
+97,"u/f+3, D", ,"m (TJ), (RLX)",-14~-13s,False,False
+98,"u/f+3, 3", ,"m (TJ), m",-23~-20,True,False
+99,"u/f+3, 3+4", ,"m (TJ), l (TC), (RLX)",-14,True,False
+100,u/f+4, ,m (TJ),-8~-5,False,False
+101,u/b or u+1+2, ,h (TJ),-3~-1s,False,False
+102,u/f+1+2, ,h (TJ),-3~-1s,False,False
+103,u/f+3+4, ,mm (TJ),-10,True,False
+104,"f, F+2", ,m,-4~-3,False,False
+105,"f, F+2, 3", ,"m, l",-15~-11,True,False
+106,"f, F+3", ,m (TJ),-15~-14,True,False
+107,"f, F+3, B", ,"m (TJ), (HSP)",-32~-31,True,False
+108,"f, F+3, D", ,"m (TJ), (RLX)",-3~-2,False,False
+109,"f, F+3, B+3+4", ,"m (TJ), m, (HSP)",-9,False,False
+110,"f, F+4", ,"m, (HSP)",-7~-6,False,False
+111,"b, B+2+3", ,!! (TJ),KND,False,False
+112,"b, B+2+3 (First hit only)", ,! (TJ),-68~-64,True,False
+113,"f, f, f+3 or WR+3", ,"l, (RLX)",-24~-18,True,False
+114,WS+1, ,h,-6,False,False
+115,"WS+1, 3", ,"h, m, (RLX)",-15~-14,True,False
+116,"WS+1, 4", ,"h, h",-9,False,False
+117,WS+2, ,m,-12~-11,True,False
+118,"WS+3 or d, f+3", ,m,-13~-8,False,False
+119,WS+4, ,m,-3~0,False,False
+120,FC+d/b or d+1+2, ,m (TC),-14~-12,True,False
+121,"FC+d/b or d+1+2, 1+2", ,"m (TC), m",-14~-12,True,False
+122,WS+3+4 FC+3+4, ,m (TJ),-17~-12,True,False
+123,WS+3+4B FC+3+4B, ,"m, (HSP)",-21~-16,True,False
+124,WS+3+4D FC+3+4D, ,"m, (RLX)",-8~-3,False,False
+125,FC+d/f+4, ,"l (TC), (RLX)",-26(16a),False,False
+126,FC+d/b+4, ,m (TC),-10,True,False
+127,BT 3+4, ,m (TJ),+1~+4,False,False
+128,1+2+3+4, ,(Special) (TJ),,False,False
+129,SS 2, ,m,0~+1s,False,False
+130,SS 3, ,"m (TC), (RLX)",-5~-4,False,False
+131,"SS 3, D (Cancel)", ,(Special) (TC)(RLX),,False,False
+132,"SS 3, B (Cancel)", ,(Special) (TC)(HSP),,False,False
+133,"SS 3n, B", ,"m (TC), (HSP)",-21~-20,True,False
+134,"SS 3n, B, 3+4", ,"m (TC), m, (HSP)",-9,False,False
+135,SS 4, ,ll (TC),-1~0,False,False
+136,SS 4 (First hit only), ,l (TC),-12~-9,False,False
+137,SS 4 (Second hit only), ,l (TC),-4~+2,False,False
+138,"SS 4, B", ,"l (TC), (HSP)",?,False,False
+139,"SS 4, 3", ,"l (TC), l (TC)",-45,True,False
+140,"SS 4, 3+4", ,"l (TC), m",-17~-12,True,False
+141,SS 4~3, ,h (TJ),-12,True,False
+142,SS 4~3B, ,"h (TJ), (HSP)",-23,True,False
+143,SS 3+4, ,hm (TJ),-12,True,False
+144,"SS 3+4, D", ,hm,-12,True,False
+145,SS 3+4 (First hit only), ,h,-18~-16,True,False
+146,"SS 3+4, D (First hit only)", ,h,-18~-16,True,False
+147,"SS 3+4, 3+4", ,"hm (TJ), m (TJ)",-34~-28s,False,False
+148,"SS 3+4, 3+4, 3+4", ,"hm (TJ), m (TJ), m (TJ)",-13~-8,False,False
+149,"SS 3+4, 3+4, 3+4, B (Cancel)", ,"hm (TJ), m (TJ), (HSP)",-30~-24,True,False
+150,"SS 3+4, 3+4, 3+4, u/f+3+4", ,"hm (TJ), m (TJ), m (TJ), m (TJ)",-6~-5,False,False
+151,"SS 3+4, 3+4, 3+4, u/f+3+4, D", ,"hm (TJ), m (TJ), m (TJ), m (TJ), (RLX)",-26~-25,True,False
+152,SS 1+4, ,l,-29~-22,True,False
+153,f+1+2 or From certain moves (to HSP), ,(HSP),,False,False
+154,FC+d/f+1+2, ,(HSP),,False,False
+155,Grounded face up 1+2, ,(HSP),,False,False
+156,After HSP Wait and dont do anything, ,(RLX),,False,False
+157,HSP f+1+2, ,(HSP),,False,False
+158,"HSP F+1+2 or f, f+1+2", ,"(Special), m(HSP)",+2~+4,False,False
+159,HSP 1, ,m,-12s,False,False
+160,HSP 2, ,m,-2,False,False
+161,"HSP 2, 4", ,"m, ll (TC)",-1~0 (-12),False,False
+162,HSP 3, ,"m (TC), (RLX)",-5,False,False
+163,HSP 3~4, ,"ll (TC), (RLX)",-24,True,False
+164,HSP 4, ,"mh, (HSP)",-6~-4,False,False
+165,"HSP 4, 3+4", ,"mh, ll (TC), (RLX)",-24,True,False
+166,HSP 3+4, ,h(Throw),,False,False
+167,HSP f+1, ,h,+1,False,False
+168,HSP f+3+4, ,m (TJ),-12~-2,False,False
+169,HSP D, ,"(Special) (TC), (HSP)",,False,False
+170,"HSP D, 3+4", ,"(Special) (TC), m, (HSP)",-9,False,False
+171,HSP b+3, ,"l (TC), (RLX)",-14,True,False
+172,HSP u or d, ,(HSP),,False,False
+173,HSP u or d 3 or 4, ,"(Special), l (TC)(HSP)",-45,True,False
+174,HSP u or d+3 or u or d+4, ,"m, (HSP)",-13~-12,True,False
+175,"HSP u or d+3, D or u or d+4, D", ,"m, (RLX)",-2~-1,False,False
+176,d+3+4 or From certain moves (to RLX), ,(RLX),,False,False
+177,RLX u or d, ,(RLX),,False,False
+178,RLX b or f, ,(RLX),,False,False
+179,RLX 1, ,l (TC),-12,True,False
+180,"RLX 1, 3", ,"l (TC), m, (HSP)",-14~-12,True,False
+181,"RLX 1, 3, D", ,"l (TC), m, (RLX)",-12~-10,False,False
+182,"RLX 1, 4", ,"l (TC), h",-6~-5,False,False
+183,RLX 2, ,m (TC),-6~-5,False,False
+184,"RLX 2, 3", ,"m (TC), m",-13~-12,True,False
+185,"RLX 2, f+3", ,"m (TC), m",-14,True,False
+186,"RLX 2, 4", ,"m (TC), m",-23~-22,True,False
+187,RLX 3, ,l (TC),-15~-14,True,False
+188,"RLX 3, n+4", ,"l (TC), m (TJ)",-6~-5,False,False
+189,RLX 3~4, ,m (TC),-24~-23,True,False
+190,RLX 4, ,m,-13,True,False
+191,"RLX 4, 3+4", ,"m, m (TJ)",-7~-2,False,False
+192,RLX 4~3, ,"ll (TC), (HSP)",-37~-35,True,False
+193,RLX 4~3 (Second hit only), ,"l (TC), (HSP)",-4~-2,False,False
+194,RLX 1+2, ,m (TC),-14~-12,True,False
+195,RLX 3+4, ,m (TJ),-7~-6,False,False
+196,"RLX 3+4, B (Cancel)", ,"(Special) (TJ), (HSP)",,False,False
+197,"RLX 3+4, 3 (Cancel)", ,"m, (HSP)",-2~-1,False,False
+198,RLX f+3+4, ,m (TJ),-12~-2,False,False
+199,RLX d/b+3j, ,l,-12,True,False
+200,RLX b+1+2, ,(HSP),,False,False

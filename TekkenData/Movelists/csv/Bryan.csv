@@ -1,152 +1,152 @@
-Move ID,Move,Command,BlockFrame
-1,in rage d/f+1+2 or FC+d/f+1+2, ,-22
-2,in rage b+1+2, ,+6~+7s
-3,1, ,+1
-4,"1, 2", ,-2
-5,"1, 2, 1", ,-6
-6,"1, 2, 3", ,-12
-7,"1, 2, 4", ,-3
-8,"1, 4", ,-7
-9,"1, 4, 2", ,-7
-10,"1, 4, 2, 1", ,0
-11,"1, 4, 2, 1, 2", ,-9
-12,"1, 4, 2, 1, u or d (Cancel)", ,-10
-13,"1, 4, 2, 4", ,-5~-4
-14,"1, 4, 2, 1, 4", ,-5~-4
-15,"1, 4, 3", ,-10
-16,"1, 4, 3, 3", ,-7
-17,2, ,+1
-18,"2, 3", ,-10
-19,3, ,-4
-20,"3, 2", ,-10
-21,"3, 2, 1", ,-9
-22,"3, 2, 1, 2", ,-10
-23,"3, 2, 1, 4", ,-11
-24,"3, 3", ,-6
-25,"3, 3, 2", ,-7~-6
-26,"3, 3, 4", ,-12
-27,4, ,-7
-28,"4, 3", ,-10~-9
-29,"4, 3, 4", ,-12
-30,"4, 3, 4* (Very long hold)", ,-9~-8
-31,"4, 3, f+4", ,-5~-4
-32,1+2, ,-7~-6
-33,"1+2, 2", ,-14
-34,3+4, ,-13
-35,f+2, ,-10
-36,"f+2, 1", ,-10
-37,"f+2, 1, 4", ,-13~-12
-38,f+3, ,0~+2
-39,f+4, ,-9
-40,"f+4, 1", ,-13~-12s
-41,f+1+2, ,+8~+9
-42,f+1+4, ,-12
-43,d/f+1, ,-5
-44,"D/F+1, 1", ,-10
-45,"D/F+1, 1, 1", ,-10
-46,"D/F+1, 1, 1, 1", ,-10
-47,"d/f+1, 2", ,-15
-48,d/f+2, ,-6
-49,"d/f+2, 1", ,-4
-50,"d/f+2, 3", ,-13
-51,d/f+3, ,-26
-52,d/f+4, ,-6~-4
-53,d+2, ,-2~-1
-54,"d+2, 3", ,-10
-55,d+3, ,-11
-56,"d+3, 2", ,-7
-57,d+4, ,-11
-58,d+1+2 FC+1+2, ,-10
-59,d+1+2 FC+1+2 (Second hit miss), ,-28
-60,"d+1+2, 3", ,-13~-12
-61,"d+1+2, F", ,-1
-62,"d+1+2, B", ,-8
-63,d+1+2~2, ,+2
-64,d+3+4, ,-12
-65,"d+3+4, 2", ,-12
-66,"d+3+4, 2, d/b (Cancel)", ,-23
-67,d/b+2, ,-6~-4
-68,d/b+3, ,-12~-11
-69,d/b+1+2, ,-13
-70,b+1, ,+3
-71,b+2, ,-7
-72,"b+2, 1", ,0
-73,"b+2, 1, 2", ,-9
-74,"b+2, 1, u or d (Cancel)", ,-10
-75,"b+2, 4", ,-5
-76,"b+2, 1, 4", ,-5~-4
-77,b+3, ,-7
-78,"b+3, F or d/F", ,+1
-79,"b+3, 2", ,-4
-80,"b+3, 2, 1", ,-9
-81,"b+3, 2, 1, 2", ,-10
-82,"b+3, 2, 1, 4", ,-11
-83,"b+3, 4", ,-12
-84,"b+3, 1+2", ,-6
-85,"b+3, 1+2, D", ,-6
-86,b+4, ,-10
-87,b+1+3 or b+2+4, ,
-88,1 When parrying 2, ,-10~-9
-89,2 When parrying 2, ,-5
-90,b+1+4, ,KND
-91,u/b+1+2, ,-16
-92,u/b+1+2 (Second hit miss), ,-18
-93,"u/b+1+2, 1", ,-13
-94,"u/b+1+2, 1, 2", ,-16
-95,"u/b+1+2, 1, 2, 1", ,-13
-96,"u/b+1+2, 1, 2, 1, 2", ,-16
-97,"u/b+1+2, 1, 2, 1, 2, 1", ,-13
-98,"u/b+1+2, 1, 2, 1, 2, 1, 2", ,-16
-99,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1", ,-13
-100,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2", ,-16
-101,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1", ,-32
-102,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 4", ,-35
-103,u or u/f+3, ,0~+1
-104,u+4, ,-5~-3
-105,u/f+4, ,-5~-3
-106,"f, F+2", ,-10
-107,"f, F+3", ,-13~-12
-108,"f, F+3* (Very long hold)", ,+8~+9
-109,"f, F+4", ,-10~-7s
-110,"f, b+2", ,-7~-6
-111,"b, d/f+4", ,-13
-112,"b, B+4", ,-19~-7
-113,"f, f, f+3", ,+9~+12g
-114,WS+1, ,-16~-15
-115,WS+2 (to GUP), ,-10
-116,GUP When hit b or F+2, ,-10
-117,WS+3, ,-10
-118,"WS+3, 4", ,-10
-119,WS+4, ,-6~-5
-120,WS+1+2, ,-5~-4
-121,FC+d/f+4, ,-10~-9
-122,SS+1, ,-5~-4
-123,SS+2, ,-6~-5
-124,"SS+2, 3", ,-13~-12
-125,qcf or In certain strings F (to CD), ,
-126,qcf+1, ,-16~-15
-127,qcf+2, ,-6
-128,"qcf+2, 1", ,-11
-129,qcf+1+2, ,-12~-11
-130,qcf+3, ,-10
-131,"qcf+3, 4", ,-10
-132,qcf+4, ,-5
-133,"qcf+4, 1", ,0
-134,"qcf+4, 1, d or u (Cancel)", ,-11
-135,"qcf+4, 1, 2", ,-9
-136,"qcf+4, 1, 4", ,-5~-4
-137,qcb (to SWAY), ,
-138,qcb+2, ,-9~-8
-139,"qcb+2, 4", ,-10~-7s
-140,qcb+3, ,-13~-12
-141,qcb+4, ,-12~-11
-142,1+3+4 (to TNT), ,+16~+19
-143,After TNT f+2, ,-10
-144,"After TNT f+2, 1", ,-10
-145,"After TNT f+2, 1, 4", ,-161~-160
-146,"After TNT f+2, 1, 4, 2", ,-140
-147,"After TNT f+2, 1, 4, 2, 1", ,-134
-148,"After TNT f+2, 1, 4, 2, 1, 4", ,-136~-137
-149,"After TNT f+2, 1, 4, 2, 1, 4, 2", ,+4
-150,"After TNT f, F+2", ,+4
-151,"After TNT u/b+1+2, ,", ,?
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,in rage d/f+1+2 or FC+d/f+1+2, ,m,-22,True,False
+2,in rage b+1+2, ,m,+6~+7s,False,False
+3,1, ,h,+1,False,False
+4,"1, 2", ,"h, h",-2,False,False
+5,"1, 2, 1", ,"h, h, m",-6,False,False
+6,"1, 2, 3", ,"h, h, l",-12,True,False
+7,"1, 2, 4", ,"h, h, h",-3,False,False
+8,"1, 4", ,"h, h",-7,False,False
+9,"1, 4, 2", ,"h, h, h",-7,False,False
+10,"1, 4, 2, 1", ,"h, h, h, h",0,False,False
+11,"1, 4, 2, 1, 2", ,"h, h, h, h, h",-9,False,False
+12,"1, 4, 2, 1, u or d (Cancel)", ,"h, h, h",-10,True,False
+13,"1, 4, 2, 4", ,"h, h, h, m (TJ)",-5~-4,False,False
+14,"1, 4, 2, 1, 4", ,"h, h, h, h, m (TJ)",-5~-4,False,False
+15,"1, 4, 3", ,"h, h, m",-10,True,False
+16,"1, 4, 3, 3", ,"h, h, m, h",-7,False,False
+17,2, ,h,+1,False,False
+18,"2, 3", ,"h, m",-10,True,False
+19,3, ,m,-4,False,False
+20,"3, 2", ,"m, m",-10,True,False
+21,"3, 2, 1", ,"m, m, m",-9,False,False
+22,"3, 2, 1, 2", ,"m, m, m, m",-10,True,False
+23,"3, 2, 1, 4", ,"m, m, m, l",-11,True,False
+24,"3, 3", ,"m, h",-6,False,False
+25,"3, 3, 2", ,"m, h, h",-7~-6,False,False
+26,"3, 3, 4", ,"m, h, m",-12,True,False
+27,4, ,h,-7,False,False
+28,"4, 3", ,"h, m",-10~-9,False,False
+29,"4, 3, 4", ,"h, m, m",-12,True,False
+30,"4, 3, 4* (Very long hold)", ,"h, m, m",-9~-8,False,False
+31,"4, 3, f+4", ,"h, m, h",-5~-4,False,False
+32,1+2, ,m,-7~-6,False,False
+33,"1+2, 2", ,"m, m",-14,True,False
+34,3+4, ,m,-13,True,False
+35,f+2, ,m,-10,True,False
+36,"f+2, 1", ,"m, m",-10,True,False
+37,"f+2, 1, 4", ,"m, m, m",-13~-12,True,False
+38,f+3, ,m,0~+2,False,False
+39,f+4, ,m,-9,False,False
+40,"f+4, 1", ,"m, m",-13~-12s,False,False
+41,f+1+2, ,h,+8~+9,False,False
+42,f+1+4, ,!,-12,True,False
+43,d/f+1, ,m,-5,False,False
+44,"D/F+1, 1", ,"m, m",-10,True,False
+45,"D/F+1, 1, 1", ,"m, m, m",-10,True,False
+46,"D/F+1, 1, 1, 1", ,"m, m, m, m",-10,True,False
+47,"d/f+1, 2", ,"m, m",-15,True,False
+48,d/f+2, ,m,-6,False,False
+49,"d/f+2, 1", ,"m, h",-4,False,False
+50,"d/f+2, 3", ,"m, m",-13,True,False
+51,d/f+3, ,l (TC),-26,True,False
+52,d/f+4, ,m,-6~-4,False,False
+53,d+2, ,m,-2~-1,False,False
+54,"d+2, 3", ,"m, m",-10,True,False
+55,d+3, ,l,-11,True,False
+56,"d+3, 2", ,"l, h",-7,False,False
+57,d+4, ,l,-11,True,False
+58,d+1+2 FC+1+2, ,mm (TC),-10,True,False
+59,d+1+2 FC+1+2 (Second hit miss), ,m,-28,True,False
+60,"d+1+2, 3", ,"mm, l",-13~-12,True,False
+61,"d+1+2, F", ,"m, (CD)",-1,False,False
+62,"d+1+2, B", ,"m, (SWAY)",-8,False,False
+63,d+1+2~2, ,m,+2,False,False
+64,d+3+4, ,l,-12,True,False
+65,"d+3+4, 2", ,"l, m?",-12,True,False
+66,"d+3+4, 2, d/b (Cancel)", ,"l, (Special)",-23,True,False
+67,d/b+2, ,m?,-6~-4,False,False
+68,d/b+3, ,l (TC),-12~-11,True,False
+69,d/b+1+2, ,mh,-13,True,False
+70,b+1, ,m,+3,False,False
+71,b+2, ,h,-7,False,False
+72,"b+2, 1", ,"h, h",0,False,False
+73,"b+2, 1, 2", ,"h, h, h",-9,False,False
+74,"b+2, 1, u or d (Cancel)", ,h,-10,True,False
+75,"b+2, 4", ,"h, m (TJ)",-5,False,False
+76,"b+2, 1, 4", ,"h, h, m (TJ)",-5~-4,False,False
+77,b+3, ,m,-7,False,False
+78,"b+3, F or d/F", ,"m, (Special) (TC)(CD)",+1,False,False
+79,"b+3, 2", ,"m, h",-4,False,False
+80,"b+3, 2, 1", ,"m, h, m",-9,False,False
+81,"b+3, 2, 1, 2", ,"m, h, m, m",-10,True,False
+82,"b+3, 2, 1, 4", ,"m, h, m, l",-11,True,False
+83,"b+3, 4", ,"m, m",-12,True,False
+84,"b+3, 1+2", ,"m, m",-6,False,False
+85,"b+3, 1+2, D", ,"m, m",-6,False,False
+86,b+4, ,m,-10,True,False
+87,b+1+3 or b+2+4, ,Absorbs 1 h/m hit,,False,False
+88,1 When parrying 2, ,h,-10~-9,False,False
+89,2 When parrying 2, ,m,-5,False,False
+90,b+1+4, ,!,KND,False,False
+91,u/b+1+2, ,mm,-16,True,False
+92,u/b+1+2 (Second hit miss), ,m,-18,True,False
+93,"u/b+1+2, 1", ,"mm, m",-13,True,False
+94,"u/b+1+2, 1, 2", ,"mm, m, m",-16,True,False
+95,"u/b+1+2, 1, 2, 1", ,"mm, m, m, m",-13,True,False
+96,"u/b+1+2, 1, 2, 1, 2", ,"mm, m, m, m, m",-16,True,False
+97,"u/b+1+2, 1, 2, 1, 2, 1", ,"mm, m, m, m, m, m",-13,True,False
+98,"u/b+1+2, 1, 2, 1, 2, 1, 2", ,"mm, m, m, m, m, m, m",-16,True,False
+99,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1", ,"mm, m, m, m, m, m, m, m",-13,True,False
+100,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2", ,"mm, m, m, m, m, m, m, m, m",-16,True,False
+101,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1", ,"mm, m, m, m, m, m, m, m, m, m",-32,True,False
+102,"u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 4", ,"mm, m, m, m, m, m, m, m, m, m, m",-35,True,False
+103,u or u/f+3, ,m (TJ),0~+1,False,False
+104,u+4, ,m (TJ),-5~-3,False,False
+105,u/f+4, ,m (TJ),-5~-3,False,False
+106,"f, F+2", ,h,-10,True,False
+107,"f, F+3", ,m,-13~-12,True,False
+108,"f, F+3* (Very long hold)", ,m,+8~+9,False,False
+109,"f, F+4", ,h,-10~-7s,False,False
+110,"f, b+2", ,h,-7~-6,False,False
+111,"b, d/f+4", ,l,-13,True,False
+112,"b, B+4", ,m(h),-19~-7,False,False
+113,"f, f, f+3", ,m,+9~+12g,False,False
+114,WS+1, ,m,-16~-15,True,False
+115,WS+2 (to GUP), ,m(GUP),-10,True,False
+116,GUP When hit b or F+2, ,"m, (throw)",-10,True,False
+117,WS+3, ,m,-10,True,False
+118,"WS+3, 4", ,"m, m",-10,True,False
+119,WS+4, ,m,-6~-5,False,False
+120,WS+1+2, ,m,-5~-4,False,False
+121,FC+d/f+4, ,m,-10~-9,False,False
+122,SS+1, ,h,-5~-4,False,False
+123,SS+2, ,m,-6~-5,False,False
+124,"SS+2, 3", ,"m, l",-13~-12,True,False
+125,qcf or In certain strings F (to CD), ,(Special) (TC)(CD),,False,False
+126,qcf+1, ,m,-16~-15,True,False
+127,qcf+2, ,h,-6,False,False
+128,"qcf+2, 1", ,"h, m",-11,True,False
+129,qcf+1+2, ,m?,-12~-11,True,False
+130,qcf+3, ,m,-10,True,False
+131,"qcf+3, 4", ,"m, m",-10,True,False
+132,qcf+4, ,m,-5,False,False
+133,"qcf+4, 1", ,"m, h",0,False,False
+134,"qcf+4, 1, d or u (Cancel)", ,"m, (Special)",-11,True,False
+135,"qcf+4, 1, 2", ,"m, h, h",-9,False,False
+136,"qcf+4, 1, 4", ,"m, h, m (TJ)",-5~-4,False,False
+137,qcb (to SWAY), ,(SWAY),,False,False
+138,qcb+2, ,m,-9~-8,False,False
+139,"qcb+2, 4", ,"m, h",-10~-7s,False,False
+140,qcb+3, ,l,-13~-12,True,False
+141,qcb+4, ,m,-12~-11,True,False
+142,1+3+4 (to TNT), ,!,+16~+19,False,False
+143,After TNT f+2, ,m,-10,True,False
+144,"After TNT f+2, 1", ,"m, m",-10,True,False
+145,"After TNT f+2, 1, 4", ,"m, m, m",-161~-160,True,False
+146,"After TNT f+2, 1, 4, 2", ,"m, m, m, h",-140,True,False
+147,"After TNT f+2, 1, 4, 2, 1", ,"m, m, m, h, h",-134,True,False
+148,"After TNT f+2, 1, 4, 2, 1, 4", ,"m, m, m, h, h, m (TJ)",-136~-137,True,False
+149,"After TNT f+2, 1, 4, 2, 1, 4, 2", ,"m, m, m, h, h, m (TJ), h",+4,False,False
+150,"After TNT f, F+2", ,h,+4,False,False
+151,"After TNT u/b+1+2, ,", ,mm,?,False,False

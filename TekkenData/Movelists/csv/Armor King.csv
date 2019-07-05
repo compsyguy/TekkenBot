@@ -1,123 +1,123 @@
-Move ID,Move,Command,BlockFrame,Punishable
-1,In rage b+3+4,,-22,True
-2,"In rage f, N, d, d/f+1+2",,+24g,False
-3,1,,+1,False
-4,"1,2",,-1,False
-5,"1, 2, 1",,-5,False
-6,2,,+1,False
-7,"2, 1",,-2,False
-8,3,+3,-14,True
-9,4,,-5,False
-10,1+2,+1+2,-10,True
-11,"1+2, B","+1*+2*, 3, +1-, , 1, +2-, B, 31, -B, ",-10,True
-12,"1+2, 2",,-3,False
-13,"1+2, 3","+1*+2*, 4, +1-, , 2, +2-, , 8, +4*, 7, +4-, ",-13,True
-14,3+4,,-7,False
-15,"3+4, 1",,0,False
-16,"3+4, 1",,0,False
-17,"3+4, 2","+3*+4*, 4, +3-, +4-, , 9, +2*, 4, +2-, ",-18,True
-18,1+4,,KND,False
-19,f+2,f+2,-11,True
-20,"f+2, 1",,-9,False
-21,f+3,,-3,False
-22,"f+3, 4",,-7,False
-23,"f+3, 4, 3",,-7,False
-24,f+4,,+2s,False
-25,f+1+2,f+1+2,-13,True
-26,f+1+4 or f+1~4,f+1+4,-20,True
-27,d/f+1,,-1,False
-28,d/f+2,df+2,-12,True
-29,"d/f+2, 1",,-12g,False
-30,d/f+3,,-5,False
-31,d/f+4,,-4,False
-32,d/f+1+2,,-7,False
-33,d/f+3+4,df+3+4,-18,True
-34,d/b or d+1,,-5,False
-35,"d+1, 4 or FC+1, 4","D, 2, +1*, 3, +1-, , 2, -D, , 3, +4*, 3, +4-, ",-10,True
-36,d+2,,-2,False
-37,"d+2, 4","D, 3, +2*, 4, -D, +2-, , 1, +4*, 5, +4-, ",-14,True
-38,"d+2, 4, 3",,-11s,False
-39,d+3,d+3,-12,True
-40,d+4,d+4,-13,True
-41,d+1+2,,-8,False
-42,d+3+4 or FC+3+4 or FC+d/f+4,d+3+4,-16,True
-43,"d+3+4, 1",,-9,False
-44,"d+3+4, 3","D, 2, +3*+4*, 3, +3-, +4-, , 2, -D, , 5, +3*, 5, +3-, ",-16,True
-45,d+1+4 or d+2+3,,,False
-46,"d+1+4 or d+2+3, 1+2",,-19s,False
-47,d/b+2,db+2,-11,True
-48,"d/b+2, 3","DB, 4, +2*, 4, +2-, +3*, 1, -D, -B, , 4, +3-, ",-16,True
-49,"d/b+2, 4",,-9,False
-50,d/b+3,db+3,-26,True
-51,d/b+4,db+4,-20,True
-52,d/b+1+2,,+3,False
-53,"d/b+1+2, D",,,False
-54,b+1,,-7,False
-55,"b+1, 2","B, 2, +1*, 2, +1-, , 4, -B, , 4, +2*, 3, +2-, ",-12,True
-56,b+2,,-9,False
-57,"b+2, 1","B, 4, +2*, 4, +2-, , 1, -B, , 2, +1*, 10, +1-,",-12,True
-58,"b+2, 1, 2",,-7,False
-59,b+3,b+3 ,-10,True
-60,b+4,b+4,-11,True
-61,b+4 (when hit) 1+2,,,False
-62,b+1+2,,+1,False
-63,b+1+4,b+1+4,-13,True
-64,b+2+3,,JG,False
-65,u/b+1,,-6,False
-66,u or u/f+1,,-12,True
-67,u/b or u or u/f+2,,-18s,False
-68,u/b+3,ub+3,-19,True
-69,u or u/f+3,,-8,False
-70,u/b+4,ub+4,-19,True
-71,u+4,u+4,-13,True
-72,u/f+4,uf+4,-13,True
-73,u/f+1+2,,+2s,False
-74,u/f+1+2 (hold),,KND,False
-75,u/f+3+4,,-7,False
-76,"u/f, N, 4","FU, 8, -F, -U, , 3, +4*, 2, +4-, ",-11,True
-77,"u/f, N, 1+2",,+2s,False
-78,"u/f, N, 1+2 (hold)",,KND,False
-79,"u/f, N, 3+4","FU, 7, -F, -U, 1, +3*+4*, 3, +3-, , 1, +4-, ",-16,True
-80,"u/f, N, 1+4",,KND,False
-81,"f, F+2","F, 4, -F, , 4, F, 3, +2*, 3, -F, , 1, +2-,",-11,True
-82,"f, f, N, 2","F, 5, -F, , 4, F, 4, -F, , 4, +2*, 3, +2-, ",-18,True
-83,"f, F+3",,0,False
-84,"f, F+3, D",,+8,False
-85,"f, F+4","F, 5, -F, , 3, F, 3, +4*, 7, -F, +4-, ",-14,True
-86,"f, F+1+2","F, 5, -F, , 4, F, 3, +1*+2*, 4, -F, +1-, +2-, ",-18,True
-87,"f, F+3+4","F, 5, -F, , 4, F, 3, +3*+4*, 4, -F, +3-, +4-, ",-10,True
-88,"f, f, f+3",,+10g,False
-89,"f, f, f+3+4",,+17g,False
-90,WR+4,,-24,True
-91,FC+1,,-5,False
-92,FC+2,,-4,False
-93,FC+3,"D, 8, +3*, 5, +3-, , 15, -D, ",-16,True
-94,FC+4,"D, 8, +4*, 5, +4-, , 15, -D, ",-15,True
-95,WS+1,WS+1,-10,True
-96,WS+2,WS+2,-10,True
-97,WS+3,,0,False
-98,WS+4,,-6,False
-99,FC+d/f+2,,+1,False
-100,SS+2,"D, 5, -D, , 5, +2*, 3, +2-, ",-12,True
-101,"SS+2, 1",,-13s,False
-102,SS+4,"D, 5, -D, , 4, +4*, 3, +4-, ",-12,True
-103,SS+3+4,,-6,False
-104,"SS+3+4, Any button",,-26g,False
-105,1+2+3+4,,,False
-106,"charge f, N, d, d/f+2",,0,False
-107,charge qcf+1+2,,0g,False
-108,opponent grounded d+4,,-16,True
-109,"opponent grounded d+4, 4",,-16,True
-110,"opponent grounded d+4, 4, 4",,-16,True
-111,BT 1 or 2,,-8,False
-112,BT 3,,-20,True
-113,BT 4,,-10,True
-114,BT 1+4,,KND,False
-115,BT d+1 or d+2,,-2,False
-116,BT d+3 or d+4,,-11,True
-117,"f, N, d, d/f ",,,False
-118,"f, N, d, d/f+1",,+6,False
-119,"f, N, d, d/f+2",ewgf+2,-10,True
-120,"f, N, d, d/f+3",,KND,False
-121,"f, N, d, d/f+4",,-9,False
-122,"f, N, d, d/f+1+2",,+7g~+17g,False
+Move ID,Move,Command,hitLevel,BlockFrame,Punishable,Duckable
+1,In rage b+3+4,,m (throw),-22,True,False
+2,"In rage f, N, d, d/f+1+2",,h!,+24g,False,False
+3,1,,h,+1,False,False
+4,"1,2",,"h, h",-1,False,False
+5,"1, 2, 1",,"h, h, m",-5,False,False
+6,2,,l,+1,False,False
+7,"2, 1",,"l, m",-2,False,False
+8,3,+3,h,-14,True,False
+9,4,,h,-5,False,False
+10,1+2,+1+2,m,-10,True,False
+11,"1+2, B","+1*+2*, 3, +1-, , 1, +2-, B, 31, -B, ",m (BT),-10,True,False
+12,"1+2, 2",,"m, h",-3,False,False
+13,"1+2, 3","+1*+2*, 4, +1-, , 2, +2-, , 8, +4*, 7, +4-, ","m, m",-13,True,False
+14,3+4,,m (TJ),-7,False,False
+15,"3+4, 1",,"m, m (TJ) (throw)",0,False,False
+16,"3+4, 1",,"m, m (TJ)",0,False,False
+17,"3+4, 2","+3*+4*, 4, +3-, +4-, , 9, +2*, 4, +2-, ","m, m (TJ)",-18,True,False
+18,1+4,,m!,KND,False,False
+19,f+2,f+2,m,-11,True,False
+20,"f+2, 1",,"m, h",-9,False,False
+21,f+3,,m,-3,False,False
+22,"f+3, 4",,"m, m ",-7,False,False
+23,"f+3, 4, 3",,"m, m, h",-7,False,False
+24,f+4,,m,+2s,False,False
+25,f+1+2,f+1+2,m,-13,True,False
+26,f+1+4 or f+1~4,f+1+4,m,-20,True,False
+27,d/f+1,,m  ,-1,False,False
+28,d/f+2,df+2,m,-12,True,False
+29,"d/f+2, 1",,"m, h",-12g,False,False
+30,d/f+3,,m,-5,False,False
+31,d/f+4,,m,-4,False,False
+32,d/f+1+2,,m,-7,False,False
+33,d/f+3+4,df+3+4,m (TC) (throw),-18,True,False
+34,d/b or d+1,,sm (TC),-5,False,False
+35,"d+1, 4 or FC+1, 4","D, 2, +1*, 3, +1-, , 2, -D, , 3, +4*, 3, +4-, ","sm, m",-10,True,False
+36,d+2,,m,-2,False,False
+37,"d+2, 4","D, 3, +2*, 4, -D, +2-, , 1, +4*, 5, +4-, ","m, m",-14,True,False
+38,"d+2, 4, 3",,"m, m, m",-11s,False,False
+39,d+3,d+3,l,-12,True,False
+40,d+4,d+4,l (TC),-13,True,False
+41,d+1+2,,m (TJ),-8,False,False
+42,d+3+4 or FC+3+4 or FC+d/f+4,d+3+4,l (TC),-16,True,False
+43,"d+3+4, 1",,"l, h",-9,False,False
+44,"d+3+4, 3","D, 2, +3*+4*, 3, +3-, +4-, , 2, -D, , 5, +3*, 5, +3-, ","l, m",-16,True,False
+45,d+1+4 or d+2+3,,l (special), ,False,False
+46,"d+1+4 or d+2+3, 1+2",,m (TC) (throw),-19s,False,False
+47,d/b+2,db+2,m,-11,True,False
+48,"d/b+2, 3","DB, 4, +2*, 4, +2-, +3*, 1, -D, -B, , 4, +3-, ","m, m",-16,True,False
+49,"d/b+2, 4",,"m, h",-9,False,False
+50,d/b+3,db+3,l (TC),-26,True,False
+51,d/b+4,db+4,"l (TC, TJ)",-20,True,False
+52,d/b+1+2,,m,+3,False,False
+53,"d/b+1+2, D",,(special), ,False,False
+54,b+1,,h,-7,False,False
+55,"b+1, 2","B, 2, +1*, 2, +1-, , 4, -B, , 4, +2*, 3, +2-, ","h, m",-12,True,False
+56,b+2,,m,-9,False,False
+57,"b+2, 1","B, 4, +2*, 4, +2-, , 1, -B, , 2, +1*, 10, +1-,","m, m",-12,True,False
+58,"b+2, 1, 2",,"m, m, h",-7,False,False
+59,b+3,b+3 ,h,-10,True,False
+60,b+4,b+4,m,-11,True,False
+61,b+4 (when hit) 1+2,,m (throw), ,False,False
+62,b+1+2,,m,+1,False,False
+63,b+1+4,b+1+4,m,-13,True,False
+64,b+2+3,,m!,JG,False,False
+65,u/b+1,,h,-6,False,False
+66,u or u/f+1,,m (TJ),-12,True,False
+67,u/b or u or u/f+2,,m (TJ),-18s,False,False
+68,u/b+3,ub+3,m (TJ),-19,True,False
+69,u or u/f+3,,m (TJ),-8,False,False
+70,u/b+4,ub+4,m (TJ),-19,True,False
+71,u+4,u+4,m (TJ),-13,True,False
+72,u/f+4,uf+4,m (TJ),-13,True,False
+73,u/f+1+2,,m (TJ),+2s,False,False
+74,u/f+1+2 (hold),,m! (TJ),KND,False,False
+75,u/f+3+4,,m (TJ),-7,False,False
+76,"u/f, N, 4","FU, 8, -F, -U, , 3, +4*, 2, +4-, ",m (TJ),-11,True,False
+77,"u/f, N, 1+2",,m (TJ),+2s,False,False
+78,"u/f, N, 1+2 (hold)",,m! (TJ),KND,False,False
+79,"u/f, N, 3+4","FU, 7, -F, -U, 1, +3*+4*, 3, +3-, , 1, +4-, ",l (TJ),-16,True,False
+80,"u/f, N, 1+4",,m! (TJ),KND,False,False
+81,"f, F+2","F, 4, -F, , 4, F, 3, +2*, 3, -F, , 1, +2-,",m,-11,True,False
+82,"f, f, N, 2","F, 5, -F, , 4, F, 4, -F, , 4, +2*, 3, +2-, ",l (TC),-18,True,False
+83,"f, F+3",,h,0,False,False
+84,"f, F+3, D",,h (special),+8,False,False
+85,"f, F+4","F, 5, -F, , 3, F, 3, +4*, 7, -F, +4-, ",m,-14,True,False
+86,"f, F+1+2","F, 5, -F, , 4, F, 3, +1*+2*, 4, -F, +1-, +2-, ",m (TJ),-18,True,False
+87,"f, F+3+4","F, 5, -F, , 4, F, 3, +3*+4*, 4, -F, +3-, +4-, ",h (TJ),-10,True,False
+88,"f, f, f+3",,m (TJ),+10g,False,False
+89,"f, f, f+3+4",,m (TJ),+17g,False,False
+90,WR+4,,l (TJ),-24,True,False
+91,FC+1,,sm (TC),-5,False,False
+92,FC+2,,sm (TC),-4,False,False
+93,FC+3,"D, 8, +3*, 5, +3-, , 15, -D, ",l (TC),-16,True,False
+94,FC+4,"D, 8, +4*, 5, +4-, , 15, -D, ",l (TC),-15,True,False
+95,WS+1,WS+1,m,-10,True,False
+96,WS+2,WS+2,m,-10,True,False
+97,WS+3,,h,0,False,False
+98,WS+4,,m,-6,False,False
+99,FC+d/f+2,,m,+1,False,False
+100,SS+2,"D, 5, -D, , 5, +2*, 3, +2-, ",m,-12,True,False
+101,"SS+2, 1",,"m, m",-13s,False,False
+102,SS+4,"D, 5, -D, , 4, +4*, 3, +4-, ",m,-12,True,False
+103,SS+3+4,,m (TC),-6,False,False
+104,"SS+3+4, Any button",,m (TC) (special),-26g,False,False
+105,1+2+3+4,,h! (charge), ,False,False
+106,"charge f, N, d, d/f+2",,m,0,False,False
+107,charge qcf+1+2,,h!,0g,False,False
+108,opponent grounded d+4,,l,-16,True,False
+109,"opponent grounded d+4, 4",,"l, l",-16,True,False
+110,"opponent grounded d+4, 4, 4",,"l, l, l",-16,True,False
+111,BT 1 or 2,,h,-8,False,False
+112,BT 3,,m,-20,True,False
+113,BT 4,,m,-10,True,False
+114,BT 1+4,,m!,KND,False,False
+115,BT d+1 or d+2,,sm,-2,False,False
+116,BT d+3 or d+4,,l,-11,True,False
+117,"f, N, d, d/f ",, , ,False,False
+118,"f, N, d, d/f+1",,h,+6,False,False
+119,"f, N, d, d/f+2",ewgf+2,h,-10,True,False
+120,"f, N, d, d/f+3",,h!,KND,False,False
+121,"f, N, d, d/f+4",,m (TJ),-9,False,False
+122,"f, N, d, d/f+1+2",,h!,+7g~+17g,False,False
