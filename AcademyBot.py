@@ -41,7 +41,7 @@ class AcademyBot(Bot):
 
         if gameState.WasFightReset():
             self.botCommands.ClearCommands()
-            self.gameplan = None
+            
 
         if gameState.IsGameHappening():
             self.frameCounter += 1
