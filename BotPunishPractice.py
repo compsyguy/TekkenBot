@@ -30,6 +30,7 @@ class BotPunishPractice(AcademyBot):
         self.CountOfAttempts = 0
         self.exit = False
         self.LastBotMoveName = None
+        self.LastPlayerMoveName = None
         
         self.cyclopedia_p2 = TekkenEncyclopedia(False, False)
         self.cyclopedia_p1 = TekkenEncyclopedia(True, False)
@@ -38,14 +39,21 @@ class BotPunishPractice(AcademyBot):
     def Update(self, gameState: TekkenGameState):
         super().Update(gameState)
 
-        self.cyclopedia_p1.Update(gameState)
-        self.cyclopedia_p2.Update(gameState)
+        #self.cyclopedia_p1.Update(gameState)
+        #self.cyclopedia_p2.Update(gameState)
+        
+        currentPlayerMoveName = gameState.GetCurrentOppMoveName()
+        if(currentPlayerMoveName != self.LastPlayerMoveName):
+            self.LastPlayerMoveName = currentPlayerMoveName
+            print(self.LastPlayerMoveName)
         
         if self.botCommands.IsAvailable() and gameState.IsForegroundPID():
             
             if gameState.stateLog[-1].bot.hit_outcome in self.HitList():
                 if self.lastMove:
                     print("Punished")
+                #get player character's correct punishes
+                #if player used correct punish count as punished
                 self.lastMove = None
             
             BotBehaviors.BlockAllAttacks(gameState, self.botCommands)

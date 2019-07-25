@@ -76,6 +76,10 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+            <gameIds>
+                <gameId>Ni_lp00</gameId>
+                <gameId>Ni_lprpF</gameId>
+            </gameIds>
 		</move>
 		<move>
 			<id>6</id>

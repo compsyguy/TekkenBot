@@ -151,6 +151,24 @@ class MoveList:
         for move in moves:
             moveList.append(self.getMoveId(move) + ": " + self.getMoveName(move))
         return moveList
+    
+    def GetPunishers(self, frames, standing):
+        if(standing):
+            punishers = self.CharXml.findall(".//punishers/punish/standing/..")
+        else:
+            punishers = self.CharXml.findall(".//punishers/punish/whilerising/..")
+        
+        moves = []
+        maxFrames = 0
+        for punisher in punishers:
+            pframes = int(punisher[0].text)
+            if(pframes <= frames):
+                if(pframes > maxFrames):
+                    moves = [self.getMoveById(punisher[1].text)]
+                    maxFrames = pframes
+                elif(pframes == maxFrames):
+                    moves.append(self.getMoveById(punisher[1].text))
+        return moves
 
     def Save(self):
         filename = os.path.join(self.directory, self.CharName + ".xml")
