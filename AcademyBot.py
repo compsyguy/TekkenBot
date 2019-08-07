@@ -23,10 +23,12 @@ class AcademyBot(Bot):
         self.distance = 0
         self.gameplan = None
         self.Movelist = None
+        self.OppMovelist = None
         self.Stance = None
         self.overlay = None
         self.recorder = None
         self.BotMove = None
+        self.BotMoveHistory = []
 
     def Update(self, gameState: TekkenGameState):
         BotBehaviors.Basic(gameState, self.botCommands)
@@ -38,6 +40,7 @@ class AcademyBot(Bot):
                 self.Movelist = MoveList(char_id)
                 self.useMoves = self.Movelist.allMoves
                 self.Movelist.getGameplan(1)
+                self.OppMovelist = MoveList(gameState.stateLog[-1].opp.char_id)
 
         if gameState.WasFightReset():
             self.botCommands.ClearCommands()
@@ -46,11 +49,18 @@ class AcademyBot(Bot):
         if gameState.IsGameHappening():
             self.frameCounter += 1
             self.distance = gameState.GetDist()
-            self.BotMove = gameState.GetCurrentBotMoveName()            
+            self.BotMove = gameState.GetCurrentBotMoveName()        
+            self.AppendBotMove(gameState.GetCurrentOppMoveName())
             Stance = self.Movelist.GetStanceFromGameMove(self.BotMove)
             if(Stance != None):
                 self.Stance = Stance            
         
+    def AppendBotMove(self, Move):
+        if(len(self.BotMoveHistory) > 600):
+            self.BotMoveHistory.pop()
+        if((not self.BotMoveHistory) or (self.BotMoveHistory[-1] != Move)):
+            self.BotMoveHistory.append(Move)
+            
 
     def HitList(self):
         return (HitOutcome.COUNTER_HIT_STANDING, HitOutcome.COUNTER_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING, HitOutcome.NORMAL_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING_LEFT, HitOutcome.NORMAL_HIT_CROUCHING_LEFT, HitOutcome.NORMAL_HIT_STANDING_BACK, HitOutcome.NORMAL_HIT_CROUCHING_BACK, HitOutcome.NORMAL_HIT_STANDING_RIGHT, HitOutcome.NORMAL_HIT_CROUCHING_RIGHT)

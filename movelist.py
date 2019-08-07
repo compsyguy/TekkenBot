@@ -170,6 +170,23 @@ class MoveList:
                     moves.append(self.getMoveById(punisher[1].text))
         return moves
 
+    def DidMoveJustHappen(self, MoveHistory, Move):
+        found = False
+        if not MoveHistory:
+            print("Empty MoveHistory")
+            return False
+
+        gameIds = Move.findall(".//gameIds/gameId")
+
+        MoveHistory.reverse()
+        gameIds.reverse()
+        for i in range(len(gameIds)):
+            print(MoveHistory[i])
+            if(MoveHistory[i] and (gameIds[i].text != MoveHistory[i])):
+                return False
+                
+        return True
+
     def Save(self):
         filename = os.path.join(self.directory, self.CharName + ".xml")
         copyfile(filename, os.path.join(self.directory, "xml backups", self.CharName + "-" + self.CharXml.getroot().attrib['version'] + ".xml"))

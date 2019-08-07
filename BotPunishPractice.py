@@ -45,7 +45,14 @@ class BotPunishPractice(AcademyBot):
         currentPlayerMoveName = gameState.GetCurrentOppMoveName()
         if(currentPlayerMoveName != self.LastPlayerMoveName):
             self.LastPlayerMoveName = currentPlayerMoveName
-            print(self.LastPlayerMoveName)
+            #print(self.LastPlayerMoveName)
+        
+        ###Testing
+        #test = self.OppMovelist.getMoveById(5)
+        #print(self.OppMovelist.DidMoveJustHappen(self.BotMoveHistory, test))
+        
+        
+        ###End Testing
         
         if self.botCommands.IsAvailable() and gameState.IsForegroundPID():
             
