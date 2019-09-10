@@ -182,7 +182,18 @@ class TekkenGameReader:
         if self.module_address != None:
             processHandle = OpenProcess(0x10, False, self.pid)
             try:
-                player_data_base_address = self.GetValueFromAddress(processHandle, self.module_address + self.player_data_pointer_offset, is64bit = True)
+                addresses = list(map(to_hex, self.player_data_pointer_offset.split()))
+                value = self.module_address
+                for i, offset in enumerate(addresses):
+                    if i + 1 < len(addresses):
+                        value = self.GetValueFromAddress(processHandle, value + offset, is64bit=True)
+                    else:
+                        value = self.GetValueFromAddress(processHandle, value + offset, isString=False)
+                
+                player_data_base_address = value
+
+
+                #player_data_base_address = self.GetValueFromAddress(processHandle, self.module_address + self.player_data_pointer_offset, is64bit = True)
                 if player_data_base_address == 0:
                     if not self.needReaquireGameState:
                         print("No fight detected. Gamestate not updated.")
