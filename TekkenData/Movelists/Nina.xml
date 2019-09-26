@@ -212,6 +212,10 @@
 			<BlockFrame>-4</BlockFrame>
 			<HitFrame>+1</HitFrame>
 			<CounterHitFrame>CS</CounterHitFrame>
+            <gameIds>
+                <gameId>Ni_lp00</gameId>
+                <gameId>Ni_lprk</gameId>
+            </gameIds>
 			<tags>
 				<NeedsWork/>
 				<Safe/>
@@ -412,6 +416,10 @@
 				<Safe/>
 				<TailSpin/>
 			</tags>
+            <gameIds>
+                <gameId>Ni_lk00</gameId>
+                <gameId>Ni_talkrk</gameId>
+            </gameIds>
 		</move>
 		<move>
 			<id>28</id>

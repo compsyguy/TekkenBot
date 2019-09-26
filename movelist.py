@@ -181,7 +181,8 @@ class MoveList:
         MoveHistory.reverse()
         gameIds.reverse()
         for i in range(len(gameIds)):
-            print(MoveHistory[i])
+            #print(gameIds[i].text)
+            #print(MoveHistory[i])
             if(MoveHistory[i] and (gameIds[i].text != MoveHistory[i])):
                 return False
                 

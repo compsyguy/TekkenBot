@@ -38,18 +38,18 @@ class BotPunishPractice(AcademyBot):
         
     def Update(self, gameState: TekkenGameState):
         super().Update(gameState)
-
         #self.cyclopedia_p1.Update(gameState)
         #self.cyclopedia_p2.Update(gameState)
         
         currentPlayerMoveName = gameState.GetCurrentOppMoveName()
         if(currentPlayerMoveName != self.LastPlayerMoveName):
             self.LastPlayerMoveName = currentPlayerMoveName
-            #print(self.LastPlayerMoveName)
+            print(self.LastPlayerMoveName)
         
         ###Testing
-        #test = self.OppMovelist.getMoveById(5)
-        #print(self.OppMovelist.DidMoveJustHappen(self.BotMoveHistory, test))
+        test = self.OppMovelist.getMoveById(5)
+        if(self.OppMovelist.DidMoveJustHappen(self.BotMoveHistory, test)):
+            print("Move happened")
         
         
         ###End Testing
@@ -84,7 +84,7 @@ class BotPunishPractice(AcademyBot):
                     else:
                         self.lastMove = self.queue.pop(0)
                         command = self.Movelist.getMoveCommand(self.lastMove)
-                        print("Move: " + self.Movelist.getMoveName(self.lastMove) + "\nID: " + self.Movelist.getMoveId(self.lastMove) + "\n") 
+                        #print("Move: " + self.Movelist.getMoveName(self.lastMove) + "\nID: " + self.Movelist.getMoveId(self.lastMove) + "\n") 
                         if command is not None:
                             self.botCommands.AddCommand(ParseMoveList(command))
                             self.CountOfAttempts = self.CountOfAttempts + 1

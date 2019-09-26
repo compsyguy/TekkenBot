@@ -24,6 +24,10 @@ from GUI_TestOverlay import GUI_TestOverlay
 #from GUI_CommandInputOverlay2 import GUI_CommandInputOverlay
 from CommandRecorder import CommandRecorder
 
+
+#TEST
+import struct
+#END TEST
 class GUI_TekkenAcademy(Tk):
     def __init__(self):
         Tk.__init__(self)
@@ -46,6 +50,10 @@ class GUI_TekkenAcademy(Tk):
         self.tekken_bot_menu.add_command(label="GUI Record", command=self.gui_record)
 #        self.tekken_bot_menu.add_command(label="Print Record", command=self.printrecord)
         self.menu.add_cascade(label="Tekken Academy", menu=self.tekken_bot_menu)
+
+        self.test_menu = Menu(self.menu)
+        self.test_menu.add_command(label="Test Command", command=self.test_menu_command)
+        self.menu.add_cascade(label="Test", menu=self.test_menu)
 
         #self.launcher = TekkenBotLauncher(BotPunishTest , False)
         self.launcher = None
@@ -75,6 +83,26 @@ class GUI_TekkenAcademy(Tk):
             print("Error reading readme file.")
         #self.overlay.hide()
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
+
+    def test_menu_command(self):
+        if(self.launcher != None):
+            parser = self.launcher.gameState.gameReader.p1_movelist_parser
+            for i in range(42, 54, 2):
+                print(parser.header_line(i))
+            
+            #print(parser.names)
+            #print(hex(len(parser.bytes)))
+            #parser.header_length = 0x2e8
+            #parser.header_bytes = parser.bytes[0:parser.header_length]
+            #print(parser.bytes[parser.header_line(1):parser.header_line(2)].strip(b'\00').decode('utf-8'))
+            #for i in range(100):
+            #    print(str(i) + "\t: " + str(parser.header_line(i)))
+            
+            #ids = ["Ni_lp00", "Ni_lprpF"]
+            #for movenode in self.launcher.gameState.gameReader.p1_movelist_parser.move_nodes:
+            #    if(movenode.name in ids):
+            #        print(movenode)
+            #print(self.launcher.gameState.gameReader.p1_movelist_parser.linked_nodes)
 
     def update_launcher(self):
         try:
