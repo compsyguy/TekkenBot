@@ -1386,21 +1386,17 @@
 				<id>4</id>
 				<id>7</id>
 				<id>9</id>
-				<id>11</id>
-				<id>12</id>
 				<id>28</id>
 				<id>29</id>
 				<id>30</id>
 				<id>32</id>
 				<id>34</id>
-				<id>36</id>
 				<id>37</id>
 				<id>38</id>
 				<id>39</id>
 				<id>41</id>
 				<id>42</id>
 				<id>43</id>
-				<id>47</id>
 				<id>49</id>
 				<id>52</id>
 				<id>66</id>
@@ -1410,8 +1406,6 @@
 				<id>85</id>
 				<id>87</id>
 				<id>91</id>
-				<id>92</id>
-				<id>93</id>
 				<id>1</id>
 			</moves>
 		</gameplan>
