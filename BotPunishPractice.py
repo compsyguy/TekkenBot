@@ -32,8 +32,8 @@ class BotPunishPractice(AcademyBot):
         self.LastBotMoveName = None
         self.LastPlayerMoveName = None
         
-        self.cyclopedia_p2 = TekkenEncyclopedia(False, False)
-        self.cyclopedia_p1 = TekkenEncyclopedia(True, False)
+        #self.cyclopedia_p2 = TekkenEncyclopedia(False, False)
+        #self.cyclopedia_p1 = TekkenEncyclopedia(True, False)
         
         
     def Update(self, gameState: TekkenGameState):
@@ -44,12 +44,14 @@ class BotPunishPractice(AcademyBot):
         currentPlayerMoveName = gameState.GetCurrentOppMoveName()
         if(currentPlayerMoveName != self.LastPlayerMoveName):
             self.LastPlayerMoveName = currentPlayerMoveName
-            print(self.LastPlayerMoveName)
+            #print(self.LastPlayerMoveName)
         
         ###Testing
+        #test = self.OppMovelist.getMoveById(43)
         test = self.OppMovelist.getMoveById(5)
         if(self.OppMovelist.DidMoveJustHappen(self.BotMoveHistory, test)):
             print("Move happened")
+            self.BotMoveHistory.clear()
         
         
         ###End Testing

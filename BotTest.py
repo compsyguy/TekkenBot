@@ -28,15 +28,28 @@ class BotTest(AcademyBot):
         self.LastMoveName = None
 #        self.FrameLastAction = 0
 #        self.frameCounter = 0
+        self.LastBotMoveName = None
+        self.LastPlayerMoveName = None
         
     def Update(self, gameState: TekkenGameState):
         successfulUpdate = super().Update(gameState)
         if(self.overlay != None):
             self.overlay.WriteToOverlay("Stance: " + str(self.Stance))
 #        print("Botmove: " + self.BotMove)
-        if self.LastMoveName != self.BotMove:
-            self.LastMoveName = self.BotMove
-            
+#        if self.LastMoveName != self.BotMove:
+#            self.LastMoveName = self.BotMove
+        #self.botCommands.AddCommand(self.botCommands.ForwarddashSmall())
+        BotBehaviors.BlockAllAttacks(gameState, self.botCommands)
+        currentPlayerMoveName = gameState.GetCurrentOppMoveName()
+        if(currentPlayerMoveName != self.LastPlayerMoveName):
+            char_id = gameState.stateLog[-1].opp.char_id
+            self.LastPlayerMoveName = currentPlayerMoveName
+            print(str(char_id) + ": " + self.LastPlayerMoveName)
+        
+        ###Testing
+        test = self.OppMovelist.getMoveById(5)
+        if(self.OppMovelist.DidMoveJustHappen(self.BotMoveHistory, test)):
+            print("Move happened")
         return successfulUpdate
             
         #if self.botCommands.IsAvailable():

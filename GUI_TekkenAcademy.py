@@ -42,7 +42,7 @@ class GUI_TekkenAcademy(Tk):
         self.tekken_bot_menu.add_command(label="Punish Practice Bot", command=self.switchToPractice)
         self.tekken_bot_menu.add_command(label="Punish Test Bot", command=self.switchToPunishTestBot)
 #        self.tekken_bot_menu.add_command(label="Back Dash Cancel", command=self.switchToBDCBot)
-#        self.tekken_bot_menu.add_command(label="Test Bot", command=self.switchToTest)
+        self.tekken_bot_menu.add_command(label="Test Bot", command=self.switchToTest)
         self.tekken_bot_menu.add_command(label="Stop Bots", command=self.stopBot)
 #        self.tekken_bot_menu.add_command(label="Test Movelist", command=self.testMoveList)
 #        self.tekken_bot_menu.add_command(label="Clear History", command=self.clearHistory)
@@ -86,9 +86,13 @@ class GUI_TekkenAcademy(Tk):
 
     def test_menu_command(self):
         if(self.launcher != None):
-            parser = self.launcher.gameState.gameReader.p1_movelist_parser
-            for i in range(42, 54, 2):
-                print(parser.header_line(i))
+            test = self.launcher.botBrain.OppMovelist.getMoveById(5)
+            if(self.launcher.botBrain.OppMovelist.DidMoveJustHappen(self.launcher.botBrain.BotMoveHistory, test)):
+                print("Move happened")
+                self.launcher.botBrain.BotMoveHistory.clear()
+            #parser = self.launcher.gameState.gameReader.p1_movelist_parser
+            #for i in range(42, 54, 2):
+            #    print(parser.header_line(i))
             
             #print(parser.names)
             #print(hex(len(parser.bytes)))
