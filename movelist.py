@@ -189,7 +189,7 @@ class MoveList:
         for m in MoveHistory:
             if(m == gameIds[MoveState].text):
                 MoveState += 1
-                if(MoveState == len(gameIds) - 1):
+                if(MoveState == len(gameIds)):
                     return True
                 
         return False

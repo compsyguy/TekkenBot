@@ -52,6 +52,7 @@ class BotPunishPractice(AcademyBot):
         if(self.OppMovelist.DidMoveJustHappen(self.BotMoveHistory, test)):
             print("Move happened")
             self.BotMoveHistory.clear()
+            
         
         
         ###End Testing
