@@ -349,7 +349,8 @@ class BotSnapshot:
         self.rage_button_flag = d['PlayerDataAddress.input_attack'] >= InputAttackCodes.xRAGE.value
         self.stun_state = StunStates(d['PlayerDataAddress.stun_type']) #Needs finding
         self.power_crush_flag = d['PlayerDataAddress.power_crush'] > 0
-
+        self.current_side = d['PlayerDataAddress.current_side']
+        
         cancel_window_bitmask = d['PlayerDataAddress.cancel_window']
 
         self.is_cancelable = (CancelStatesBitmask.CANCELABLE.value & cancel_window_bitmask) == CancelStatesBitmask.CANCELABLE.value

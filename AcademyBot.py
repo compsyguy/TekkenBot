@@ -45,6 +45,7 @@ class AcademyBot(Bot):
         if gameState.WasFightReset():
             self.botCommands.ClearCommands()
             
+        #print("Side: " + str(gameState.stateLog[-1].opp.current_side))
 
         if gameState.IsGameHappening():
             self.frameCounter += 1
@@ -57,7 +58,7 @@ class AcademyBot(Bot):
         
     def AppendBotMove(self, Move):
         if(len(self.BotMoveHistory) > 600):
-            self.BotMoveHistory.pop()
+            self.BotMoveHistory.pop(0)
         if((not self.BotMoveHistory) or (self.BotMoveHistory[-1] != Move)):
             self.BotMoveHistory.append(Move)
             

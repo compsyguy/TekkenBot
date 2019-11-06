@@ -653,6 +653,10 @@
 			<BlockFrame>-3~-1</BlockFrame>
 			<HitFrame>KND(KND)</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
+            <gameIds>
+                <gameId>Ni_lk00F</gameId>
+                <gameId>Ni_lk00F_HIT</gameId>
+            </gameIds>
 			<tags>
 				<NeedsWork/>
 				<TailSpin/>

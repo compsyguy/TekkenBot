@@ -178,15 +178,49 @@ class MoveList:
 
         gameIds = Move.findall(".//gameIds/gameId")
 
-        MoveHistory.reverse()
-        gameIds.reverse()
-        for i in range(len(gameIds)):
-            #print(gameIds[i].text)
-            #print(MoveHistory[i])
-            if(MoveHistory[i] and (gameIds[i].text != MoveHistory[i])):
-                return False
+        #MoveHistory.reverse()
+        #gameIds.reverse()
+        Found = False
+        index = -1
+        newIndex = -1
+        
+        MoveState = 0
+        
+        for m in MoveHistory:
+            if(m == gameIds[MoveState].text):
+                MoveState += 1
+                if(MoveState == len(gameIds)):
+                    return True
                 
-        return True
+        return False
+        #print(MoveHistory)
+#        indices = []
+#        for i in range(len(gameIds)):
+            #print(gameIds[i].text)
+            
+#            indices.append([index for index, value in enumerate(MoveHistory) if value == gameIds[i].text])
+            
+            
+            #try:
+            #    newIndex = MoveHistory.index(gameIds[i].text)
+            #except:
+            #    print("index: " + str(index) + "\t new index: " + str(newIndex) + "\t Length: " + str(len(MoveHistory)))
+            #    #print("Move not in history")
+            #    return False
+            #
+            #if (newIndex > index):
+            ##if newIndex > index:
+            #    Found = True
+            #    index = newIndex
+            #else:
+            #    print("index: " + str(index) + "\t new index: " + str(newIndex) + "\t Length: " + str(len(MoveHistory)))
+            #    return False
+         
+                
+            
+        print(indices)
+        #print("Length of History: " + str(len(MoveHistory)))        
+        return Found
 
     def Save(self):
         filename = os.path.join(self.directory, self.CharName + ".xml")
