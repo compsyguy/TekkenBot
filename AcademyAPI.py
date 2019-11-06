@@ -26,6 +26,7 @@ class AcademyAPI():
         self.CookieFile = "auth.cookie"
         self.PostData = {}
         
+        
     def GetLoginCredentials(self):
         self.auth['name'] = input("Enter Your Username: ")
         self.auth['pass'] = getpass()
@@ -73,6 +74,16 @@ class AcademyAPI():
             
         return a
 
+    ##########################
+    # ConvertTagsToProperties(self, tags)
+    #
+    # Converts the tags from the XML movelist to be used in the website move node's properties field.
+    #
+    # Parameters:
+    # tags: the XML node that contains the tags
+    #
+    # Returns: the the data that will go in the properties field
+    #########################
     def ConvertTagsToProperties(self, tags):
         Properties = []
         if(tags.find('RageArt') != None):
@@ -94,6 +105,18 @@ class AcademyAPI():
             Properties.append({'value': 'Homing'})
         return Properties
 
+
+    ########################
+    # DoesMoveExistInSite(self, Character, Move)
+    #
+    # Finds out if a move from the XML movelist exists in the website
+    #
+    # Parameters:
+    # Character: The character name on the website
+    # Move: The XML node that contains the move. 
+    #
+    # Returns: The website move if it exists, otherwise returns None
+    #######################
     def DoesMoveExistInSite(self, Character, Move):
         movelist = self.GetMovesFromAPIForCharacter(Character)
         for move in movelist:
@@ -102,12 +125,33 @@ class AcademyAPI():
         
         return None
         
+        
+    ######################
+    # GetMovesFromAPIForCharacter(self, Character)
+    #
+    # Get Moves from the website for a character by the character name on the website
+    #
+    # Parameters:
+    # Character: The character name on the website
+    #
+    # Returns: a json object of the character moves
+    ######################
     def GetMovesFromAPIForCharacter(self, Character):
         urlCharacter = Character.replace(" ", "-")
         movelistJson = self.session.get(self.BaseURL + 'character/' + urlCharacter + '/movelist/json')
         movelist = json.loads(movelistJson.text)
         return movelist
     
+    
+    ######################
+    # AddMoveForCharacter(self, WebCharID, moveXML)
+    #
+    # Adds a move to the website based on the WebID and the XML of the move from the movelist object
+    #
+    # Parameters:
+    # WebCharID: The NID of the character on the website. 
+    # moveXML: The XML node that contains the move. The new Web NID would be added to the move node. Would need to save the movelist after the fact.
+    #####################
     def AddMoveForCharacter(self, WebCharID, moveXML):
         
         if(moveXML.find('.//APINid') != None):
@@ -147,7 +191,31 @@ class AcademyAPI():
             id.text = str(response['nid'][0]['value'])
             #return response['nid'][0]['value']
 
-
+    ####################
+    # GetWebCharacters(self)
+    #
+    # Returns all the characters as json objects of the website's characters
+    ####################
+    def GetWebCharacters(self):
+        characterJson = self.session.get(self.BaseURL + 'characters/json')
+        #print(characterJson.text)
+        characters = json.loads(characterJson.text)
+        return characters
+    
+    ####################    
+    # GetWebCharacterByID(self, CharID)
+    # 
+    # Returns a json object representative of the website's character for the supplied internal Tekken ID
+    #
+    # Parameters:
+    # CharID: The internal Tekken ID for the character
+    ####################
+    def GetWebCharacterByID(self, CharID):
+        characters = self.GetWebCharacters()
+        for character in characters:
+            if(character['field_tekken_character_id'][0]['value'] == CharID):
+                return character
+        
 if __name__ == "__main__":
 
     a = AcademyAPI()
@@ -155,12 +223,19 @@ if __name__ == "__main__":
         a.GetLoginCredentials()
         if a.login() != True:
             sys.exit("Error: Not logged in.")
-            
+
+    #print(a.GetWebCharacterByID(28))
+     
     m = MoveList(28)
-    move = m.getMoveById(2)
-    print(a.DoesMoveExistInSite("Nina Williams", move))
+    ids = m.GetAllMoveIds()
+    for id in ids:
+        move = m.getMoveById(id)
+        a.AddMoveForCharacter(7, move)
+        
+    #move = m.getMoveById(2)
+    #print(a.DoesMoveExistInSite("Nina Williams", move))
     
     #a.AddMoveForCharacter(7, move)
-    #m.Save()
+    m.Save()
     
     

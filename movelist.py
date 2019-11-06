@@ -19,6 +19,7 @@ class MoveList:
         self.directory = "TekkenData/Movelists/"
         self.CharXml = self.GetMovelistByCharID(char_id)
         self.CharName = self.CharXml.getroot().attrib['name']
+        self.FullName = self.CharXml.getroot().attrib['fullname']
         self.allMoves = self.CharXml.getroot()[0]
 #                    for move in char_root.findall("./moves/move"):
 #                        print(move.findall("command")[0].text)
@@ -224,7 +225,11 @@ class MoveList:
 
     def Save(self):
         filename = os.path.join(self.directory, self.CharName + ".xml")
-        copyfile(filename, os.path.join(self.directory, "xml backups", self.CharName + "-" + self.CharXml.getroot().attrib['version'] + ".xml"))
+        if 'version' in self.CharXml.getroot().attrib.keys():
+            version = self.CharXml.getroot().attrib['version']
+        else:
+            version = '0'
+        copyfile(filename, os.path.join(self.directory, "xml backups", self.CharName + "-" + version + ".xml"))
         self.CharXml.getroot().attrib['version'] = str(int(time.time()))
         f = open(filename, "w")
         # print(ET.tostring(Char))
