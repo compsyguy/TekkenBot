@@ -14,7 +14,7 @@ class AcademyAPI():
     def __init__(self):
         self.BaseURL = "https://tekken.academy/"
         self.TokenRUL = self.BaseURL + "session/token"
-        self.login = {}
+        #self.login = {}
         self.session = requests.session()
         
         self.auth = {}
@@ -26,21 +26,28 @@ class AcademyAPI():
         self.CookieFile = "auth.cookie"
         self.PostData = {}
         
-    def login(self, auth):
-        self.login['name'] = self.auth['name']
-        self.login['pass'] = self.auth['pass']
-        l = json.dumps(self.login)
+    def GetLoginCredentials(self):
+        self.auth['name'] = input("Enter Your Username: ")
+        self.auth['pass'] = getpass()
+    
+    def login(self):
+        login = {}
+        login['name'] = self.auth['name']
+        login['pass'] = self.auth['pass']
+        l = json.dumps(login)
         
-        req = self.session.post(auth['location'], data=l)
+        req = self.session.post(self.auth['location'], data=l)
         
-        auth['head'] = {}
-        auth['cookie'] = {}
+        self.auth['head'] = {}
+        self.auth['cookie'] = {}
+        
         if req.status_code == 200:
             r = json.loads(req.text)
             self.auth['head']['X-CSRF-Token'] = r['csrf_token']
             self.auth['head']['Accept'] = 'application/json'
-            sekf.auth['head']['Content-Type'] = 'application/json'
+            self.auth['head']['Content-Type'] = 'application/json'
             self.auth['cookie'] = req.cookies.get_dict()
+            pickle.dump(self.auth['cookie'], open(self.CookieFile, "wb"))
             return True
         else:
             return False
@@ -66,31 +73,94 @@ class AcademyAPI():
             
         return a
 
+    def ConvertTagsToProperties(self, tags):
+        Properties = []
+        if(tags.find('RageArt') != None):
+            Properties.append({'value': 'Rage Art'})
+        
+        if(tags.find('TailSpin') != None):
+            Properties.append({'value': 'Tail Spin'})
+        
+        if(tags.find('RageDrive') != None):
+            Properties.append({'value': 'Rage Drive'})
+        
+        if(tags.find('PowerCrush') != None):
+            Properties.append({'value': 'Power Crush'})
+
+        if(tags.find('WallBounce') != None):
+            Properties.append({'value': 'Wall Bounce'})
+        
+        if(tags.find('Homing') != None):
+            Properties.append({'value': 'Homing'})
+        return Properties
+
+    def DoesMoveExistInSite(self, Character, Move):
+        movelist = self.GetMovesFromAPIForCharacter(Character)
+        for move in movelist:
+            if(move['field_move_command'][0]['value'] == Move.find('.//name').text):
+                return move
+        
+        return None
+        
+    def GetMovesFromAPIForCharacter(self, Character):
+        urlCharacter = Character.replace(" ", "-")
+        movelistJson = self.session.get(self.BaseURL + 'character/' + urlCharacter + '/movelist/json')
+        movelist = json.loads(movelistJson.text)
+        return movelist
+    
     def AddMoveForCharacter(self, WebCharID, moveXML):
         
-        post_data = {}
-        post_data['title'] = [{"value":moveXML.find(".//name").text}]
-        post_data['type'] = [{'target_id': "move"}]
-        post_data['field_hit_level'] = self.ConvertStringToDrupalArray(moveXML.find(".//hitLevel").text, ",", "value")
-        post_data['field_move_block_frame'] = self.ConvertStringToDrupalArray(moveXML.find(".//BlockFrame").text, "~", "value")
-        post_data['field_move_command'] = [{"value":moveXML.find(".//name").text}]
-        post_data['field_move_counter_hit_frame'] = self.ConvertStringToDrupalArray(moveXML.find(".//CounterHitFrame").text, "~", "value")
-        post_data['field_move_damage'] = self.ConvertStringToDrupalArray(moveXML.find(".//damage").text, ",", "value")
-        post_data['field_move_for_character'] = [{"target_id": WebCharID}]
-        post_data['field_move_hit_frame'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
-        
-        #post_data['field_move_properties'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
-        post_data['field_move_start_up'] = self.ConvertStringToDrupalArray(moveXML.find(".//StartUp").text, "~", "value")
-        #post_data['field_tech_crouch_frames'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
-        #post_data['field_tech_jump_frames'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
-        
-        pd = json.dumps(post_data)
-        #print(pd)
-        pst = self.session.post('https://tekken.academy/node?_format=json', data=pd, headers=self.auth['head'], cookies=self.auth['cookie'])
-        print(pst.text)
+        if(moveXML.find('.//APINid') != None):
+            raise Exception('Move has an API Nid already, it should be in the Website already.')
+        else:
+            
+            post_data = {}
+            post_data['title'] = [{"value":moveXML.find(".//name").text}]
+            post_data['type'] = [{'target_id': "move"}]
+            post_data['field_hit_level'] = [{'value': moveXML.find(".//hitLevel").text}]
+            post_data['field_move_block_frame'] = [{'value': moveXML.find(".//BlockFrame").text}]
+            post_data['field_move_command'] = [{"value":moveXML.find(".//name").text}]
+            post_data['field_move_counter_hit_frame'] = [{"value":moveXML.find(".//CounterHitFrame").text}]
+            post_data['field_move_damage'] = [{"value":moveXML.find(".//damage").text}]
+            post_data['field_move_for_character'] = [{"target_id": WebCharID}]
+            post_data['field_move_hit_frame'] = [{"value":moveXML.find(".//HitFrame").text}]
+            
+            post_data['field_move_properties'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
+            post_data['field_move_start_up'] = [{"value":moveXML.find(".//StartUp").text}]
+            #post_data['field_tech_crouch_frames'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
+            #post_data['field_tech_jump_frames'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
+            post_data['field_move_xml_id'] = [{"value":moveXML.find(".//id").text}]
+            post_data['field_move_bot_command'] = [{"value":moveXML.find(".//command").text}]
+            
+            gameIdsArray = []
+            gameIds = moveXML.findall(".//gameIds/gameId")
+            for id in gameIds:
+                gameIdsArray.append({"value": id.text})
+            post_data['field_move_game_ids'] = gameIdsArray
+            
+            
+            pd = json.dumps(post_data)
+            #print(pd)
+            pst = self.session.post('https://tekken.academy/node?_format=json', data=pd, headers=self.auth['head'], cookies=self.auth['cookie'])
+            response = json.loads(pst.text)
+            id = ET.SubElement(moveXML, "APINid")
+            id.text = str(response['nid'][0]['value'])
+            #return response['nid'][0]['value']
 
-a = AcademyAPI()
-print(a.IsLoggedIn())
 
-m = MoveList(28)
-a.AddMoveForCharacter(7, m.getMoveById(91))
+if __name__ == "__main__":
+
+    a = AcademyAPI()
+    if a.IsLoggedIn() != True:
+        a.GetLoginCredentials()
+        if a.login() != True:
+            sys.exit("Error: Not logged in.")
+            
+    m = MoveList(28)
+    move = m.getMoveById(2)
+    print(a.DoesMoveExistInSite("Nina Williams", move))
+    
+    #a.AddMoveForCharacter(7, move)
+    #m.Save()
+    
+    
