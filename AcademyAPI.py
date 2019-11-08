@@ -215,6 +215,49 @@ class AcademyAPI():
         for character in characters:
             if(character['field_tekken_character_id'][0]['value'] == CharID):
                 return character
+
+    def IsMovePropertyDifferentFromWeb(self, Web, WebField, XML, XMLField):
+        if (XML.find(".//" + XMLField).text != None) and (len(Web[WebField]) == 1): #Both Fields have something in them
+            if XML.find(".//" + XMLField).text == Web[WebField][0]['value']: #Both Fields are the same
+                return False
+            else:
+                return True
+        elif(XML.find(".//" + XMLField).text != None) != (len(Web[WebField]) == 1): #One Field is empty, the other isn't
+            return True
+        #Both fields are empty
+        return False
+
+    def UpdateXMLFromAPI(self, movelist):
+        WebMovelist = self.GetMovesFromAPIForCharacter(movelist.FullName)
+        for WebMove in WebMovelist:
+            Move = movelist.getMoveById(WebMove['field_move_xml_id'][0]['value'])
+            differences = {}
+            if(WebMove['field_move_command'][0]['value'] == Move.find('.//name').text):
+                #print(WebMove['field_move_command'][0]['value'])
+                if self.IsMovePropertyDifferentFromWeb(WebMove, 'field_hit_level', Move, 'hitLevel'):
+                    print(WebMove['field_move_command'][0]['value'] + "hitLevel is Different")
+                if self.IsMovePropertyDifferentFromWeb(WebMove, 'field_move_block_frame', Move, 'BlockFrame'):
+                    print(WebMove['field_move_command'][0]['value'] + "BlockFrame is Different")
+#                WebMove['field_move_block_frame'][0]['value'] = [{'value': moveXML.find(".//BlockFrame").text}]
+#                WebMove['field_move_command'][0]['value'] = [{"value":moveXML.find(".//name").text}]
+#                WebMove['field_move_counter_hit_frame'][0]['value'] = [{"value":moveXML.find(".//CounterHitFrame").text}]
+#                WebMove['field_move_damage'][0]['value'] = [{"value":moveXML.find(".//damage").text}]
+#                WebMove['field_move_for_character'][0]['value'] = [{"target_id": WebCharID}]
+#                WebMove['field_move_hit_frame'][0]['value'] = [{"value":moveXML.find(".//HitFrame").text}]
+                
+#                WebMove['field_move_properties'][0]['value'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
+#                WebMove['field_move_start_up'][0]['value'] = [{"value":moveXML.find(".//StartUp").text}]
+#                WebMove['field_move_xml_id'][0]['value'] = [{"value":moveXML.find(".//id").text}]
+#                WebMove['field_move_bot_command'][0]['value'] = [{"value":moveXML.find(".//command").text}]
+                
+#                gameIdsArray = []
+#                gameIds = moveXML.findall(".//gameIds/gameId")
+#                for id in gameIds:
+#                    gameIdsArray.append({"value": id.text})
+#                WebMove['field_move_game_ids'][0]['value'] = gameIdsArray
+
+            if len(differences) > 0:
+                print(differences)
         
 if __name__ == "__main__":
 
@@ -227,15 +270,16 @@ if __name__ == "__main__":
     #print(a.GetWebCharacterByID(28))
      
     m = MoveList(28)
-    ids = m.GetAllMoveIds()
-    for id in ids:
-        move = m.getMoveById(id)
-        a.AddMoveForCharacter(7, move)
+    a.UpdateXMLFromAPI(m)
+    #ids = m.GetAllMoveIds()
+    #for id in ids:
+    #    move = m.getMoveById(id)
+    #    a.AddMoveForCharacter(7, move)
         
     #move = m.getMoveById(2)
     #print(a.DoesMoveExistInSite("Nina Williams", move))
     
     #a.AddMoveForCharacter(7, move)
-    m.Save()
+    #m.Save()
     
     
