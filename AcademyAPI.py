@@ -230,32 +230,38 @@ class AcademyAPI():
     def UpdateXMLFromAPI(self, movelist):
         WebMovelist = self.GetMovesFromAPIForCharacter(movelist.FullName)
         for WebMove in WebMovelist:
-            Move = movelist.getMoveById(WebMove['field_move_xml_id'][0]['value'])
-            differences = {}
-            if(WebMove['field_move_command'][0]['value'] == Move.find('.//name').text):
-                #print(WebMove['field_move_command'][0]['value'])
-                if self.IsMovePropertyDifferentFromWeb(WebMove, 'field_hit_level', Move, 'hitLevel'):
-                    print(WebMove['field_move_command'][0]['value'] + "hitLevel is Different")
-                if self.IsMovePropertyDifferentFromWeb(WebMove, 'field_move_block_frame', Move, 'BlockFrame'):
-                    print(WebMove['field_move_command'][0]['value'] + "BlockFrame is Different")
-#                WebMove['field_move_block_frame'][0]['value'] = [{'value': moveXML.find(".//BlockFrame").text}]
-#                WebMove['field_move_command'][0]['value'] = [{"value":moveXML.find(".//name").text}]
-#                WebMove['field_move_counter_hit_frame'][0]['value'] = [{"value":moveXML.find(".//CounterHitFrame").text}]
-#                WebMove['field_move_damage'][0]['value'] = [{"value":moveXML.find(".//damage").text}]
-#                WebMove['field_move_for_character'][0]['value'] = [{"target_id": WebCharID}]
-#                WebMove['field_move_hit_frame'][0]['value'] = [{"value":moveXML.find(".//HitFrame").text}]
+            if WebMove['field_move_xml_id']:
+                Move = movelist.getMoveById(WebMove['field_move_xml_id'][0]['value'])
+            
+                differences = {}
                 
-#                WebMove['field_move_properties'][0]['value'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
-#                WebMove['field_move_start_up'][0]['value'] = [{"value":moveXML.find(".//StartUp").text}]
-#                WebMove['field_move_xml_id'][0]['value'] = [{"value":moveXML.find(".//id").text}]
-#                WebMove['field_move_bot_command'][0]['value'] = [{"value":moveXML.find(".//command").text}]
+                TwoFields = [{'xml': 'hitLevel', 'web': 'field_hit_level'}, 
+                             {'xml': 'BlockFrame', 'web': 'field_move_block_frame'},
+                             {'xml': 'name', 'web': 'field_move_command'},
+                             {'xml': 'CounterHitFrame', 'web': 'field_move_counter_hit_frame'},
+                             {'xml': 'damage', 'web': 'field_move_damage'},
+                             {'xml': 'HitFrame', 'web': 'field_move_hit_frame'},
+                             {'xml': 'StartUp', 'web': 'field_move_start_up'},
+                             {'xml': 'command', 'web': 'field_move_bot_command'}
+                            ]
                 
-#                gameIdsArray = []
-#                gameIds = moveXML.findall(".//gameIds/gameId")
-#                for id in gameIds:
-#                    gameIdsArray.append({"value": id.text})
-#                WebMove['field_move_game_ids'][0]['value'] = gameIdsArray
-
+                if(WebMove['field_move_command'][0]['value'] == Move.find('.//name').text):
+                    for field in TwoFields:
+                        if self.IsMovePropertyDifferentFromWeb(WebMove, field['web'], Move, field['xml']):
+                            print(WebMove['field_move_command'][0]['value'] + " " + field['xml'] + " is different.")
+                    
+                    
+                    
+    #                WebMove['field_move_properties'][0]['value'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
+                    
+    #                gameIdsArray = []
+    #                gameIds = moveXML.findall(".//gameIds/gameId")
+    #                for id in gameIds:
+    #                    gameIdsArray.append({"value": id.text})
+    #                WebMove['field_move_game_ids'][0]['value'] = gameIdsArray
+            else:
+                print(WebMove['field_move_command'][0]['value'] + " has no XMLId")
+                
             if len(differences) > 0:
                 print(differences)
         
