@@ -26,6 +26,24 @@ class AcademyAPI():
         self.CookieFile = "auth.cookie"
         self.PostData = {}
         
+        self.TwoFields = [{'xml': 'hitLevel', 'web': 'field_hit_level'}, 
+                     {'xml': 'BlockFrame', 'web': 'field_move_block_frame'},
+                     {'xml': 'name', 'web': 'field_move_command'},
+                     {'xml': 'CounterHitFrame', 'web': 'field_move_counter_hit_frame'},
+                     {'xml': 'damage', 'web': 'field_move_damage'},
+                     {'xml': 'HitFrame', 'web': 'field_move_hit_frame'},
+                     {'xml': 'StartUp', 'web': 'field_move_start_up'},
+                     {'xml': 'command', 'web': 'field_move_bot_command'}
+                    ]
+        
+        self.TagsAndProperties = [{'property': 'Rage Art', 'tag': 'RageArt'},
+                                  {'property': 'Tail Spin', 'tag': 'TailSpin'},
+                                  {'property': 'Rage Drive', 'tag': 'RageDrive'},
+                                  {'property': 'Power Crush', 'tag': 'PowerCrush'},
+                                  {'property': 'Wall Bounce', 'tag': 'WallBounce'},
+                                  {'property': 'Homing', 'tag': 'Homing'}
+                                 ]
+        
         
     def GetLoginCredentials(self):
         self.auth['name'] = input("Enter Your Username: ")
@@ -86,23 +104,28 @@ class AcademyAPI():
     #########################
     def ConvertTagsToProperties(self, tags):
         Properties = []
-        if(tags.find('RageArt') != None):
-            Properties.append({'value': 'Rage Art'})
+        for tag in self.TagsAndProperties:
+            if tags.find(tag['tag']) != None:
+                Properties.append({'value': tag['property']})
         
-        if(tags.find('TailSpin') != None):
-            Properties.append({'value': 'Tail Spin'})
-        
-        if(tags.find('RageDrive') != None):
-            Properties.append({'value': 'Rage Drive'})
-        
-        if(tags.find('PowerCrush') != None):
-            Properties.append({'value': 'Power Crush'})
+#        if(tags.find('RageArt') != None):
+#            Properties.append({'value': 'Rage Art'})
+#        
+#        if(tags.find('TailSpin') != None):
+#            Properties.append({'value': 'Tail Spin'})
+#        
+#        if(tags.find('RageDrive') != None):
+#            Properties.append({'value': 'Rage Drive'})
+#        
+#        if(tags.find('PowerCrush') != None):
+#            Properties.append({'value': 'Power Crush'})
+#
+#        if(tags.find('WallBounce') != None):
+#            Properties.append({'value': 'Wall Bounce'})
+#        
+#        if(tags.find('Homing') != None):
+#            Properties.append({'value': 'Homing'})
 
-        if(tags.find('WallBounce') != None):
-            Properties.append({'value': 'Wall Bounce'})
-        
-        if(tags.find('Homing') != None):
-            Properties.append({'value': 'Homing'})
         return Properties
 
 
@@ -227,31 +250,49 @@ class AcademyAPI():
         #Both fields are empty
         return False
 
+
+    ########################
+    # UpdateXMLFromAPI(self, movelist):
+    #
+    # Updates the local XML movelist. 
+    #
+    # TODO: Check for added/removed moves
+    # Parameters: 
+    # movelist: The movelist should already be loaded with a character's movelist.
+    ########################
     def UpdateXMLFromAPI(self, movelist):
         WebMovelist = self.GetMovesFromAPIForCharacter(movelist.FullName)
+        FoundDifferences = False
         for WebMove in WebMovelist:
             if WebMove['field_move_xml_id']:
                 Move = movelist.getMoveById(WebMove['field_move_xml_id'][0]['value'])
-            
-                differences = {}
-                
-                TwoFields = [{'xml': 'hitLevel', 'web': 'field_hit_level'}, 
-                             {'xml': 'BlockFrame', 'web': 'field_move_block_frame'},
-                             {'xml': 'name', 'web': 'field_move_command'},
-                             {'xml': 'CounterHitFrame', 'web': 'field_move_counter_hit_frame'},
-                             {'xml': 'damage', 'web': 'field_move_damage'},
-                             {'xml': 'HitFrame', 'web': 'field_move_hit_frame'},
-                             {'xml': 'StartUp', 'web': 'field_move_start_up'},
-                             {'xml': 'command', 'web': 'field_move_bot_command'}
-                            ]
                 
                 if(WebMove['field_move_command'][0]['value'] == Move.find('.//name').text):
-                    for field in TwoFields:
+                    for field in self.TwoFields:
                         if self.IsMovePropertyDifferentFromWeb(WebMove, field['web'], Move, field['xml']):
-                            print(WebMove['field_move_command'][0]['value'] + " " + field['xml'] + " is different.")
+                            Move.find('.//' + field['xml']).text = WebMove[field['web']][0]['value']
+                            FoundDifferences = True
+                            
                     
                     
+                    for tag in self.TagsAndProperties:
+                        FoundProperty = False
+                        FoundTag = False
+                        
+                        tags = Move.find('.//tags')
+                        for property in WebMove['field_move_properties']:
+                            if property['value'] == tag['property']: #if property exists in webmove
+                                FoundProperty = True                                
+                        if tags.find('.//' + tag['tag']) != None: #if property exists in xml
+                            FoundTag = True
                     
+                        if FoundProperty and not FoundTag:
+                            ET.SubElement(tags, tag['tag'])
+                            FoundDifferences = True
+                        if not FoundProperty and FoundTag:
+                            tags.remove(tags.find('.//' + tag['tag']))
+                            FoundDifferences = True
+                        
     #                WebMove['field_move_properties'][0]['value'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
                     
     #                gameIdsArray = []
@@ -262,8 +303,9 @@ class AcademyAPI():
             else:
                 print(WebMove['field_move_command'][0]['value'] + " has no XMLId")
                 
-            if len(differences) > 0:
-                print(differences)
+        if FoundDifferences:
+            movelist.Save()
+
         
 if __name__ == "__main__":
 
@@ -274,9 +316,18 @@ if __name__ == "__main__":
             sys.exit("Error: Not logged in.")
 
     #print(a.GetWebCharacterByID(28))
-     
+    
     m = MoveList(28)
+    move = m.getMoveById(10)
+
+       
+    
+    
     a.UpdateXMLFromAPI(m)
+    
+    
+    
+    
     #ids = m.GetAllMoveIds()
     #for id in ids:
     #    move = m.getMoveById(id)

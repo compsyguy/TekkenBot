@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><character fullname="Nina Williams" id="28" name="Nina" version="1573083973">
+<?xml version="1.0" ?><character fullname="Nina Williams" id="28" name="Nina" version="1573518868">
 	<moves>
 		<move>
 			<id>1</id>
@@ -28,8 +28,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
-				<RageArt/>
-			</tags>
+				<RageDrive/></tags>
 		<APINid>480</APINid></move>
 		<move>
 			<id>3</id>
@@ -43,8 +42,7 @@
 			<CounterHitFrame>KND</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
-				<RageArt/>
-			</tags>
+				<RageDrive/></tags>
 		<APINid>481</APINid></move>
 		<move>
 			<id>4</id>
@@ -149,7 +147,7 @@
 			<StartUp> 10~</StartUp>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>KND</HitFrame>
-			<CounterHitFrame>KND</CounterHitFrame>
+			<CounterHitFrame>CS</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
 				<Safe/>
@@ -304,7 +302,7 @@
 			<StartUp> 10~</StartUp>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>KND</HitFrame>
-			<CounterHitFrame>KND</CounterHitFrame>
+			<CounterHitFrame>CS</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
 				<Safe/>
@@ -534,7 +532,7 @@
 			<StartUp>10~</StartUp>
 			<BlockFrame>+2~+3s</BlockFrame>
 			<HitFrame>+5~+6s</HitFrame>
-			<CounterHitFrame>KND</CounterHitFrame>
+			<CounterHitFrame>JG</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
 			</tags>
@@ -1012,7 +1010,7 @@
 			<StartUp> 10~</StartUp>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>KND</HitFrame>
-			<CounterHitFrame>KND</CounterHitFrame>
+			<CounterHitFrame>CS</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
 				<Safe/>
@@ -1558,7 +1556,7 @@
 			<name>b+2, 2</name>
 			<command> </command>
 			<hitLevel>h, h</hitLevel>
-			<damage>12,14</damage>
+			<damage>12,16</damage>
 			<StartUp>12</StartUp>
 			<BlockFrame>-6~-5</BlockFrame>
 			<HitFrame>+5~+6</HitFrame>
@@ -2913,6 +2911,38 @@
         </punish>
     </punishers>
 <stances><stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+<stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+<stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+<stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+<stance>
         <name>Neutral</name>
         <entry>
             <command>N</command>
