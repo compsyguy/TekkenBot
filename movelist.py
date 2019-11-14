@@ -19,7 +19,11 @@ class MoveList:
         self.directory = "TekkenData/Movelists/"
         self.CharXml = self.GetMovelistByCharID(char_id)
         self.CharName = self.CharXml.getroot().attrib['name']
-        self.FullName = self.CharXml.getroot().attrib['fullname']
+        try:
+            self.FullName = self.CharXml.getroot().attrib['fullname']
+        except:
+            self.FullName = ""
+            
         self.allMoves = self.CharXml.getroot()[0]
 #                    for move in char_root.findall("./moves/move"):
 #                        print(move.findall("command")[0].text)

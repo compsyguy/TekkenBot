@@ -6,6 +6,8 @@ from TekkenGameState import TekkenGameState
 from _TekkenBotLauncher import TekkenBotLauncher
 from NotationParser import ParseMoveList
 from BotData import BotBehaviors
+import win32.user32 as user32
+import movelist
 
 class GUI_CommandRecorder(AcademyBot):
         
@@ -13,7 +15,7 @@ class GUI_CommandRecorder(AcademyBot):
         super().__init__(bot_commands)
         self.GUI_Recorder = Toplevel()
         self.GUI_Recorder.wm_title("Command Recorder")
-        self.GUI_Recorder.geometry(str(500) + 'x' + str(100))
+        self.GUI_Recorder.geometry(str(500) + 'x' + str(150))
         self.recorder = None
         
         self.recording = False
@@ -36,15 +38,30 @@ class GUI_CommandRecorder(AcademyBot):
         #self.StopRecBtn = Button(self.GUI_Recorder, text="Stop Recording", command=self.stopRecording)
         #self.StopRecBtn.grid(row=1, column=1, padx=5, pady=5)
         
-        self.TestBtn = Button(self.GUI_Recorder, text="Test Command", command=self.testCommand)
+        self.TestBtn = Button(self.GUI_Recorder, text="Test Command", command=self.testCallback)
         self.TestBtn.grid(row=1, column=2, padx=5, pady=5)
         
-        self.TestCommand = ""
+        self.SaveBtn = Button(self.GUI_Recorder, text="Save Movelist", command=self.saveMovelist)
+        self.SaveBtn.grid(row=2, column=1, padx=5, pady=5)
+        
+        self.testCommand = ""
+        
+        self.movelistIndex = 0
+        
+        self.OverlayPrefix = ""
         
     def Update(self, gameState: TekkenGameState):
         successfulUpdate = super().Update(gameState)
         if(self.recording):
             self.recorder.update_state()
+        
+        self.checkKeyPresses()
+        
+        self.movelistIds = self.Movelist.GetAllMoveIds()
+        self.workingMove = self.Movelist.getMoveById(self.movelistIds[self.movelistIndex])
+        
+        self.overlay.WriteToOverlay(self.OverlayPrefix + ": " + self.Movelist.getMoveName(self.workingMove))
+        
         
         if(self.playback and self.botCommands.IsAvailable() and gameState.IsForegroundPID()):
 #            if  self.distance > 1500:
@@ -53,6 +70,36 @@ class GUI_CommandRecorder(AcademyBot):
             self.botCommands.AddCommand(ParseMoveList(self.testCommand))
             self.testCommand = ""
             self.playback = False
+
+    def checkKeyPresses(self):
+        if self.DidKeyGetPressed(ord('M')):
+            self.testCallback()
+        if self.DidKeyGetPressed(user32.VK_OEM_COMMA):
+            self.previousWorkingMove()
+        if self.DidKeyGetPressed(user32.VK_OEM_PERIOD):
+            self.nextWorkingMove()
+        if self.DidKeyGetPressed(user32.VK_OEM_2):
+            self.recordCallback()
+
+    def previousWorkingMove(self):
+        if self.movelistIndex <= 0:
+            self.movelistIndex = len(self.movelistIds) - 1
+        else:
+            self.movelistIndex -= 1
+            
+        self.workingMove = self.Movelist.getMoveById(self.movelistIds[self.movelistIndex])    
+        self.InputBox.delete("1.0", END)
+        self.InputBox.insert(END, self.workingMove.find('.//command').text)
+
+    def nextWorkingMove(self):
+        if self.movelistIndex >= len(self.movelistIds) - 1:
+            self.movelistIndex = 0
+        else:
+            self.movelistIndex += 1
+        
+        self.workingMove = self.Movelist.getMoveById(self.movelistIds[self.movelistIndex])    
+        self.InputBox.delete("1.0", END)
+        self.InputBox.insert(END, self.workingMove.find('.//command').text)
 
     def recordCallback(self):
         if not self.recording:
@@ -65,6 +112,7 @@ class GUI_CommandRecorder(AcademyBot):
         self.InputBox.delete("1.0", END)
         self.RecordButtonText.set("Stop Recording")
         self.recorder = CommandRecorder(self)
+        self.OverlayPrefix = "Recording"
         
     def stopRecording(self):
         self.recording = False
@@ -90,9 +138,14 @@ class GUI_CommandRecorder(AcademyBot):
             if(move != None):
                 self.InputBox.insert(END, move)
         self.RecordButtonText.set("Record")
-        
+        self.OverlayPrefix = "Stopped Recording"
     
-    def testCommand(self):
+    def testCallback(self):
         #print(ParseMoveList(self.InputBox.get("1.0", 'end-1c')))
         self.playback = True
         self.testCommand = self.InputBox.get("1.0", 'end-1c')
+        self.workingMove.find('.//command').text = self.testCommand
+        self.OverlayPrefix = "Testing Recording"
+
+    def saveMovelist(self):
+        self.Movelist.Save()

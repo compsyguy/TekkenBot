@@ -26,6 +26,8 @@
 # CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
+#
+# Virtual Key Codes: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 
 """
 Wrapper for user32.dll in ctypes.
@@ -84,6 +86,10 @@ VK_RIGHT = 0x27
 VK_DOWN = 0x28
 VK_LWIN = 0x5B
 VK_RWIN = 0x5C
+VK_OEM_COMMA = 0xBC
+VK_OEM_PERIOD = 0xBE
+VK_OEM_2 = 0xBF
+
 
 # --- structures ---------------------------------------------------
 

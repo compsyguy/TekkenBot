@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><character fullname="Nina Williams" id="28" name="Nina" version="1573518868">
+<?xml version="1.0" ?><character fullname="Nina Williams" id="28" name="Nina" version="1573748948">
 	<moves>
 		<move>
 			<id>1</id>
@@ -47,7 +47,7 @@
 		<move>
 			<id>4</id>
 			<name>1</name>
-			<command> </command>
+			<command>+1 </command>
 			<hitLevel>h</hitLevel>
 			<damage>7</damage>
 			<StartUp>10</StartUp>
@@ -62,7 +62,7 @@
 		<move>
 			<id>5</id>
 			<name>1, 2</name>
-			<command> </command>
+			<command>+1*, 4, +1-, , 4, +2*, 3, +2-, </command>
 			<hitLevel>h, h</hitLevel>
 			<damage>7,10</damage>
 			<StartUp>10,20</StartUp>
@@ -2911,6 +2911,14 @@
         </punish>
     </punishers>
 <stances><stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+<stance>
         <name>Neutral</name>
         <entry>
             <command>N</command>

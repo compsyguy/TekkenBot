@@ -133,6 +133,9 @@ class GUI_TekkenAcademy(Tk):
         
     def gui_record(self):
         self.launcher = TekkenBotLauncher(GUI_CommandRecorder, True)
+        self.overlay = GUI_TestOverlay(self, self.launcher, (1000, 35), (450, 170))
+        self.launcher.botBrain.overlay = self.overlay
+        self.overlay.WriteToOverlay("Switching to GUI Record")
         self.launcher.botBrain.gameState = self.launcher.gameState
     
     def printrecord(self):

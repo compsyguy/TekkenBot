@@ -14,6 +14,7 @@ from movelist import MoveList
 from BotData import BotBehaviors
 from CharacterData import *
 from MoveInfoEnums import *
+import win32.user32 as user32
 
 class AcademyBot(Bot):
     def __init__(self, botCommands):
@@ -62,6 +63,8 @@ class AcademyBot(Bot):
         if((not self.BotMoveHistory) or (self.BotMoveHistory[-1] != Move)):
             self.BotMoveHistory.append(Move)
             
+    def DidKeyGetPressed(self, KeyCode):
+        return(user32.get_async_key_state(KeyCode) & 0x1)
 
     def HitList(self):
         return (HitOutcome.COUNTER_HIT_STANDING, HitOutcome.COUNTER_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING, HitOutcome.NORMAL_HIT_CROUCHING, HitOutcome.NORMAL_HIT_STANDING_LEFT, HitOutcome.NORMAL_HIT_CROUCHING_LEFT, HitOutcome.NORMAL_HIT_STANDING_BACK, HitOutcome.NORMAL_HIT_CROUCHING_BACK, HitOutcome.NORMAL_HIT_STANDING_RIGHT, HitOutcome.NORMAL_HIT_CROUCHING_RIGHT)
