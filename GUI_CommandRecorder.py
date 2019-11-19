@@ -81,15 +81,23 @@ class GUI_CommandRecorder(AcademyBot):
         if self.DidKeyGetPressed(user32.VK_OEM_2):
             self.recordCallback()
 
+
+    def updateWorkingMove(self):
+        self.workingMove = self.Movelist.getMoveById(self.movelistIds[self.movelistIndex])    
+        self.InputBox.delete("1.0", END)
+        command = self.workingMove.find('.//command').text
+        if command != None:
+            self.InputBox.insert(END, self.workingMove.find('.//command').text)
+        else:
+            self.InputBox.insert(END, "")
+            
     def previousWorkingMove(self):
         if self.movelistIndex <= 0:
             self.movelistIndex = len(self.movelistIds) - 1
         else:
             self.movelistIndex -= 1
-            
-        self.workingMove = self.Movelist.getMoveById(self.movelistIds[self.movelistIndex])    
-        self.InputBox.delete("1.0", END)
-        self.InputBox.insert(END, self.workingMove.find('.//command').text)
+           
+        self.updateWorkingMove()
 
     def nextWorkingMove(self):
         if self.movelistIndex >= len(self.movelistIds) - 1:
@@ -97,9 +105,7 @@ class GUI_CommandRecorder(AcademyBot):
         else:
             self.movelistIndex += 1
         
-        self.workingMove = self.Movelist.getMoveById(self.movelistIds[self.movelistIndex])    
-        self.InputBox.delete("1.0", END)
-        self.InputBox.insert(END, self.workingMove.find('.//command').text)
+        self.updateWorkingMove()
 
     def recordCallback(self):
         if not self.recording:
