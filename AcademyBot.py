@@ -32,7 +32,7 @@ class AcademyBot(Bot):
         self.BotMoveHistory = []
 
     def Update(self, gameState: TekkenGameState):
-        BotBehaviors.Basic(gameState, self.botCommands)
+        #BotBehaviors.Basic(gameState, self.botCommands)
         if self.gameplan == None :
             char_id = gameState.GetBotCharId()
             print("Testing Char ID: " + str(char_id))
