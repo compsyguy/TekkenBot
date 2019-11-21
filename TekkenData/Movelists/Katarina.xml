@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><character id="21" name="Katarina" version="1574113387">
+<?xml version="1.0" ?><character id="21" name="Katarina" version="1574313206">
 	<moves>
 		<move>
 			<id>1</id>
@@ -963,7 +963,7 @@
 		<move>
 			<id>66</id>
 			<name>u/f+4, 4, 4, 4, F</name>
-			<command>U, 1, +4*, 3, +4-, , 7, -U, +4*, 3, +4-, , 13, +4*, 4, +4-, , 17, +4*, 3, +4-, , 8, F, 19, -F, </command>
+			<command>FU, 4, +4*, 5, +4-, , 1, -U, , 3, -F, , 3, +4*, 6, +4-, , 17, +4*, 6, +4-, , 17, +4*, 8, +4-, , 4, F, 30, -F, </command>
 			<hitLevel>m, m, m (TJ), h, (HAR)</hitLevel>
 			<damage>10,10,10,10</damage>
 			<StartUp>1~21</StartUp>
@@ -977,7 +977,7 @@
 		<move>
 			<id>67</id>
 			<name>u/f+4, 4, 4, 4, 4</name>
-			<command>U, 1, +4*, 2, +4-, , 2, -U, , 4, +4*, 4, +4-, , 17, +4*, 4, +4-, , 16, +4*, 5, +4-, , 7, +4*, 5, +4-, </command>
+			<command>FU, 4, +4*, 5, -F, -U, +4-, , 6, +4*, 7, +4-, , 16, +4*, 8, +4-, , 19, +4*, 6, +4-, , 7, +4*, 6, +4-, </command>
 			<hitLevel>m, m, m (TJ), h, h</hitLevel>
 			<damage>10,10,10,10,21</damage>
 			<StartUp>1~21</StartUp>
@@ -991,7 +991,7 @@
 		<move>
 			<id>68</id>
 			<name>u/f+4, 4, 4, 4, 4, 4</name>
-			<command>U, 2, +4*, 3, +4-, , 1, -U, , 4, +4*, 4, +4-, , 17, +4*, 3, +4-, , 19, +4*, 3, +4-, , 5, +4*, 3, +4-, , 4, +4*, 3, +4-, , 3, +4*, 3, +4-, , 3, +4*, 4, +4-, </command>
+			<command>U, 1, F, 2, +4*, 5, +4-, , 2, -F, -U, , 5, +4*, 5, +4-, , 18, +4*, 5, +4-, , 21, +4*, 6, +4-, , 9, +4*, 5, +4-, , 26, +4*, 7, +4-, </command>
 			<hitLevel>m, m, m (TJ), h, h, m</hitLevel>
 			<damage>10,10,10,10,21,25</damage>
 			<StartUp>1~21</StartUp>
@@ -1124,7 +1124,7 @@
 		<move>
 			<id>77</id>
 			<name>WS+1, 1, f</name>
-			<command>D, 15, -D, +1*, 3, +1-, , 3, +1*, 4, +1-, , 3, F, 17, -F, </command>
+			<command>D, 1, B, 20, -D, -B, , 3, +1*, 5, +1-, , 3, +1*, 7, +1-, F, 22, -F, </command>
 			<hitLevel>m, h, (HAR)</hitLevel>
 			<damage>13,8</damage>
 			<StartUp>13~14</StartUp>
@@ -1462,6 +1462,14 @@
 		</gameplan>
 	</gameplans>
 <stances><stance>
+        <name>Neutral</name>
+        <entry>
+            <command>N</command>
+            <movename>Universal_32769</movename>
+            <entryDelay>0</entryDelay>
+        </entry>
+    </stance>
+<stance>
         <name>Neutral</name>
         <entry>
             <command>N</command>
