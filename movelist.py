@@ -10,6 +10,7 @@ import NotationParser
 import random
 import requests
 from shutil import copyfile
+import re
 
 from NotationParser import ParseMoveList
 
@@ -236,9 +237,9 @@ class MoveList:
         copyfile(filename, os.path.join(self.directory, "xml backups", self.CharName + "-" + version + ".xml"))
         self.CharXml.getroot().attrib['version'] = str(int(time.time()))
         f = open(filename, "w")
-        # print(ET.tostring(Char))
-        xmlFile = xml.dom.minidom.parseString(ET.tostring(self.CharXml.getroot(), 'utf-8'))
-        f.write(xmlFile.toprettyxml(indent="", newl=""))
+        text = ET.tostring(self.CharXml.getroot(), 'utf-8') #Get character encoding of XML
+        xmlFile = xml.dom.minidom.parseString(re.sub('\s+(?=<)', '', text.decode('utf-8'))) #Strip excess whitespace between tags and parse it back to XML
+        f.write(xmlFile.toprettyxml()) #Print a human readable document
         f.close()
 
     def GetMovelistByCharID(self, char_id, version = None):

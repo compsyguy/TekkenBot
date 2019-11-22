@@ -26,14 +26,14 @@ class AcademyAPI():
         self.CookieFile = "auth.cookie"
         self.PostData = {}
         
-        self.TwoFields = [{'xml': 'hitLevel', 'web': 'field_hit_level'}, 
-                     {'xml': 'BlockFrame', 'web': 'field_move_block_frame'},
-                     {'xml': 'name', 'web': 'field_move_command'},
-                     {'xml': 'CounterHitFrame', 'web': 'field_move_counter_hit_frame'},
+        self.TwoFields = [{'xml': 'name', 'web': 'field_move_command'},
+                     {'xml': 'command', 'web': 'field_move_bot_command'},
+                     {'xml': 'hitLevel', 'web': 'field_hit_level'}, 
                      {'xml': 'damage', 'web': 'field_move_damage'},
-                     {'xml': 'HitFrame', 'web': 'field_move_hit_frame'},
                      {'xml': 'StartUp', 'web': 'field_move_start_up'},
-                     {'xml': 'command', 'web': 'field_move_bot_command'}
+                     {'xml': 'BlockFrame', 'web': 'field_move_block_frame'},
+                     {'xml': 'HitFrame', 'web': 'field_move_hit_frame'},
+                     {'xml': 'CounterHitFrame', 'web': 'field_move_counter_hit_frame'}
                     ]
         
         self.TagsAndProperties = [{'property': 'Rage Art', 'tag': 'RageArt'},
@@ -128,6 +128,17 @@ class AcademyAPI():
 
         return Properties
 
+    def ConvertPropertiesToTags(self, Tags, Properties):
+        if len(Properties) != 0:
+            print(Properties)
+            PropertiesList = []
+            for Propertiy in Properties:
+                PropertiesList.append(Propertiy['value'])
+                
+            for tag in self.TagsAndProperties:
+                if tag['property'] in PropertiesList:
+                    MoveTag = ET.SubElement(Tags, tag['tag'])
+                    MoveTag.text = tag['property']
 
     ########################
     # DoesMoveExistInSite(self, Character, Move)
@@ -251,6 +262,29 @@ class AcademyAPI():
         return False
 
 
+    def AddAPIMoveToXML(self, APIMove, movelist):
+        XMLIds = movelist.GetAllMoveIds()   
+        XMLMoves = movelist.CharXml.getroot().find(".//moves")
+        NewMove = ET.SubElement(XMLMoves, 'move')
+        ID = ET.SubElement(NewMove, 'id')
+        
+        for i in range(0, len(XMLIds)):
+            XMLIds[i] = int(XMLIds[i])
+        ID.text = str(max(XMLIds) + 1)
+        
+        for Field in self.TwoFields:
+            print(Field['xml'] + "\t" + Field['web'] + "\t" + str(APIMove[Field['web']]))
+            tag = ET.SubElement(NewMove, Field['xml'])
+            if len(APIMove[Field['web']]) != 0:
+                tag.text = str(APIMove[Field['web']][0]['value'])
+        
+        Tags = ET.SubElement(NewMove, 'tags')
+        self.ConvertPropertiesToTags(Tags, APIMove['field_move_properties'])
+        
+        #print(max(XMLIds))
+
+
+
     ########################
     # UpdateXMLFromAPI(self, movelist):
     #
@@ -301,7 +335,8 @@ class AcademyAPI():
     #                    gameIdsArray.append({"value": id.text})
     #                WebMove['field_move_game_ids'][0]['value'] = gameIdsArray
             else:
-                print(WebMove['field_move_command'][0]['value'] + " has no XMLId")
+                self.AddAPIMoveToXML(WebMove, movelist)
+                #print(WebMove['field_move_command'][0]['value'] + " has no XMLId")
                 
         if FoundDifferences:
             movelist.Save()
@@ -318,7 +353,8 @@ if __name__ == "__main__":
     #print(a.GetWebCharacterByID(28))
     
     m = MoveList(28)
-    move = m.getMoveById(10)
+    #a.AddAPIMoveToXML(None, m)
+    #move = m.getMoveById(10)
 
        
     
