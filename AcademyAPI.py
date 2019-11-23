@@ -205,8 +205,6 @@ class AcademyAPI():
             
             post_data['field_move_properties'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
             post_data['field_move_start_up'] = [{"value":moveXML.find(".//StartUp").text}]
-            #post_data['field_tech_crouch_frames'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
-            #post_data['field_tech_jump_frames'] = self.ConvertStringToDrupalArray(moveXML.find(".//HitFrame").text, "~", "value")
             post_data['field_move_xml_id'] = [{"value":moveXML.find(".//id").text}]
             post_data['field_move_bot_command'] = [{"value":moveXML.find(".//command").text}]
             
@@ -219,12 +217,76 @@ class AcademyAPI():
             
             pd = json.dumps(post_data)
             #print(pd)
+            
+            #pd = self.ConvertXMLMoveToWeb(moveXML)
+            
             pst = self.session.post('https://tekken.academy/node?_format=json', data=pd, headers=self.auth['head'], cookies=self.auth['cookie'])
             response = json.loads(pst.text)
             id = ET.SubElement(moveXML, "APINid")
+            print(response)
             id.text = str(response['nid'][0]['value'])
             #return response['nid'][0]['value']
 
+    ######################
+    # UpdateMoveForCharacter(self, WebCharID, moveXML)
+    #
+    # Updates a move on the website based on the WebID and the XML of the move from the movelist object
+    #
+    # Parameters:
+    # WebCharID: The NID of the character on the website. 
+    # moveXML: The XML node that contains the move. 
+    #####################
+    def UpdateMoveForCharacter(self, WebCharID, moveXML):
+        if(moveXML.find('.//APINid') == None):
+            raise Exception("Move doesn't have an API NID.")
+        else:
+            pd = self.ConvertXMLMoveToWeb(moveXML)
+            
+            pst = self.session.patch(self.BaseURL + 'node/' + moveXML.find('.//APINid').text + '?_format=json', data=pd, headers=self.auth['head'], cookies=self.auth['cookie'])
+            response = json.loads(pst.text)
+            
+            #print(response)
+    ######################
+    # ConvertXMLMoveToWeb(self, moveXML)
+    #
+    # Converts the data from the XML to what the Website API expects
+    #
+    # Parameters:
+    # moveXML: The XML node that contains the move. 
+    #####################       
+    def ConvertXMLMoveToWeb(self, moveXML):
+        post_data = {}
+        post_data['title'] = [{"value":moveXML.find(".//name").text}]
+        post_data['type'] = [{'target_id': "move"}]
+        
+        for type in self.TwoFields:
+            post_data[type['web']] = [{"value": moveXML.find(".//" + type['xml']).text}]
+            
+        post_data['field_move_properties'] = self.ConvertTagsToProperties(moveXML.find(".//tags"))
+        
+        gameIdsArray = []
+        gameIds = moveXML.findall(".//gameIds/gameId")
+        for id in gameIds:
+            gameIdsArray.append({"value": id.text})
+        post_data['field_move_game_ids'] = gameIdsArray
+        
+        return(json.dumps(post_data))
+
+
+    def AddCharacterToWeb(self, movelist):
+        attribs = movelist.CharXml.getroot().attrib
+        
+        post_data = {}
+        post_data['type'] = [{'target_id': "characters"}]
+        
+        post_data['title'] = [{"value": attribs['fullname']}]
+        post_data['body'] = [{"value": "Description goes here"}]
+        post_data['field_tekken_character_id'] = [{"value": attribs['id']}]
+        
+        pd = json.dumps(post_data)
+        pst = self.session.post('https://tekken.academy/node?_format=json', data=pd, headers=self.auth['head'], cookies=self.auth['cookie'])
+        response = json.loads(pst.text)
+        
     ####################
     # GetWebCharacters(self)
     #
@@ -352,14 +414,23 @@ if __name__ == "__main__":
 
     #print(a.GetWebCharacterByID(28))
     
-    m = MoveList(28)
+    CharId = 32
+    m = MoveList(CharId)
+    #a.AddCharacterToWeb(m)
+    ids = m.GetAllMoveIds()
+    for id in ids:
+        move = m.getMoveById(id)
+        a.AddMoveForCharacter(657, move)
+    
+    m.Save()
     #a.AddAPIMoveToXML(None, m)
     #move = m.getMoveById(10)
 
        
     
     
-    a.UpdateXMLFromAPI(m)
+    #a.UpdateXMLFromAPI(m)
+    #move = m.getMoveById(4)
     
     
     
@@ -367,7 +438,7 @@ if __name__ == "__main__":
     #ids = m.GetAllMoveIds()
     #for id in ids:
     #    move = m.getMoveById(id)
-    #    a.AddMoveForCharacter(7, move)
+    #    a.UpdateMoveForCharacter(7, move)
         
     #move = m.getMoveById(2)
     #print(a.DoesMoveExistInSite("Nina Williams", move))
