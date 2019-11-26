@@ -403,6 +403,21 @@ class AcademyAPI():
         if FoundDifferences:
             movelist.Save()
 
+    def AddCharacterAndMovesToWeb(self, TekkenCharID):
+        WebChar = self.GetWebCharacterByID(TekkenCharID)
+        if WebChar == None:
+            m = MoveList(TekkenCharID)
+            self.AddCharacterToWeb(m)
+            WebChar = self.GetWebCharacterByID(TekkenCharID)
+            ids = m.GetAllMoveIds()
+            for id in ids:
+                move = m.getMoveById(id)
+                self.AddMoveForCharacter(WebChar['nid'][0]['value'], move)
+    
+            m.Save()
+        
+        else:
+            print(WebChar['nid'][0]['value'])
         
 if __name__ == "__main__":
 
@@ -414,15 +429,9 @@ if __name__ == "__main__":
 
     #print(a.GetWebCharacterByID(28))
     
-    CharId = 32
-    m = MoveList(CharId)
-    #a.AddCharacterToWeb(m)
-    ids = m.GetAllMoveIds()
-    for id in ids:
-        move = m.getMoveById(id)
-        a.AddMoveForCharacter(657, move)
+    CharID = 19
     
-    m.Save()
+    a.AddCharacterAndMovesToWeb(CharID)
     #a.AddAPIMoveToXML(None, m)
     #move = m.getMoveById(10)
 

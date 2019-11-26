@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<character id="19" name="Alisa">
+<character fullname="Alisa Bosconovitch" id="19" name="Alisa" version="1574728898">
 	<moves>
 		<move>
 			<id>1</id>
@@ -16,6 +16,7 @@
 				<Safe/>
 				<RageArt/>
 			</tags>
+			<APINid>1023</APINid>
 		</move>
 		<move>
 			<id>2</id>
@@ -32,11 +33,12 @@
 				<RageArt/>
 				<TailSpin/>
 			</tags>
+			<APINid>1024</APINid>
 		</move>
 		<move>
 			<id>3</id>
 			<name>in rage f+2+3, 3+4</name>
-			<command>f+2+3, 41, +3+4, 4, -+, 1, -3, </command>
+			<command>f+2+3, 41, +3+4, 4, -+, 1, -3,</command>
 			<hitLevel>m (TJ)m, (SBT)</hitLevel>
 			<damage>12,25</damage>
 			<StartUp>16~17 ,36~37</StartUp>
@@ -48,11 +50,12 @@
 				<RageArt/>
 				<TailSpin/>
 			</tags>
+			<APINid>1025</APINid>
 		</move>
 		<move>
 			<id>4</id>
 			<name>in rage f+2+3, f+3+4</name>
-			<command>f+2+3, 41, f+3+4, 4, -+, 1, -3, </command>
+			<command>f+2+3, 41, f+3+4, 4, -+, 1, -3,</command>
 			<hitLevel>m (TJ)m, (DBT)</hitLevel>
 			<damage>12,25</damage>
 			<StartUp>16~17 ,36~37</StartUp>
@@ -64,6 +67,7 @@
 				<RageArt/>
 				<TailSpin/>
 			</tags>
+			<APINid>1026</APINid>
 		</move>
 		<move>
 			<id>5</id>
@@ -79,11 +83,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1027</APINid>
 		</move>
 		<move>
 			<id>6</id>
 			<name>1, 1</name>
-			<command>+1*, 4, +1-, 5, +1*, 3, +1-, </command>
+			<command>+1*, 4, +1-, 5, +1*, 3, +1-,</command>
 			<hitLevel>h, h</hitLevel>
 			<damage>7,18</damage>
 			<StartUp>10</StartUp>
@@ -94,6 +99,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1028</APINid>
 		</move>
 		<move>
 			<id>7</id>
@@ -109,6 +115,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1029</APINid>
 		</move>
 		<move>
 			<id>8</id>
@@ -124,6 +131,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1030</APINid>
 		</move>
 		<move>
 			<id>9</id>
@@ -138,6 +146,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1031</APINid>
 		</move>
 		<move>
 			<id>10</id>
@@ -152,6 +161,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1032</APINid>
 		</move>
 		<move>
 			<id>11</id>
@@ -167,6 +177,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1033</APINid>
 		</move>
 		<move>
 			<id>12</id>
@@ -182,6 +193,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1034</APINid>
 		</move>
 		<move>
 			<id>13</id>
@@ -196,6 +208,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1035</APINid>
 		</move>
 		<move>
 			<id>14</id>
@@ -211,6 +224,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1036</APINid>
 		</move>
 		<move>
 			<id>15</id>
@@ -226,6 +240,7 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>1037</APINid>
 		</move>
 		<move>
 			<id>16</id>
@@ -241,6 +256,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1038</APINid>
 		</move>
 		<move>
 			<id>17</id>
@@ -256,6 +272,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1039</APINid>
 		</move>
 		<move>
 			<id>18</id>
@@ -271,6 +288,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1040</APINid>
 		</move>
 		<move>
 			<id>19</id>
@@ -287,6 +305,7 @@
 				<TailSpin/>
 				<Homing/>
 			</tags>
+			<APINid>1041</APINid>
 		</move>
 		<move>
 			<id>20</id>
@@ -301,6 +320,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1042</APINid>
 		</move>
 		<move>
 			<id>21</id>
@@ -315,6 +335,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1043</APINid>
 		</move>
 		<move>
 			<id>22</id>
@@ -330,6 +351,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1044</APINid>
 		</move>
 		<move>
 			<id>23</id>
@@ -344,6 +366,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1045</APINid>
 		</move>
 		<move>
 			<id>24</id>
@@ -359,6 +382,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1046</APINid>
 		</move>
 		<move>
 			<id>25</id>
@@ -374,6 +398,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1047</APINid>
 		</move>
 		<move>
 			<id>26</id>
@@ -389,6 +414,7 @@
 				<NeedsWork/>
 				<WallBounce/>
 			</tags>
+			<APINid>1048</APINid>
 		</move>
 		<move>
 			<id>27</id>
@@ -404,6 +430,7 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>1049</APINid>
 		</move>
 		<move>
 			<id>28</id>
@@ -419,6 +446,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1050</APINid>
 		</move>
 		<move>
 			<id>29</id>
@@ -434,6 +462,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1051</APINid>
 		</move>
 		<move>
 			<id>30</id>
@@ -450,6 +479,7 @@
 				<Punishable>-12</Punishable>
 				<Homing/>
 			</tags>
+			<APINid>1052</APINid>
 		</move>
 		<move>
 			<id>31</id>
@@ -464,6 +494,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1053</APINid>
 		</move>
 		<move>
 			<id>32</id>
@@ -478,6 +509,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1054</APINid>
 		</move>
 		<move>
 			<id>33</id>
@@ -493,6 +525,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1055</APINid>
 		</move>
 		<move>
 			<id>34</id>
@@ -508,6 +541,7 @@
 				<NeedsWork/>
 				<Punishable>-15</Punishable>
 			</tags>
+			<APINid>1056</APINid>
 		</move>
 		<move>
 			<id>35</id>
@@ -523,6 +557,7 @@
 				<NeedsWork/>
 				<Punishable>-15</Punishable>
 			</tags>
+			<APINid>1057</APINid>
 		</move>
 		<move>
 			<id>36</id>
@@ -538,6 +573,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1058</APINid>
 		</move>
 		<move>
 			<id>37</id>
@@ -552,6 +588,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1059</APINid>
 		</move>
 		<move>
 			<id>38</id>
@@ -567,6 +604,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1060</APINid>
 		</move>
 		<move>
 			<id>39</id>
@@ -581,6 +619,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1061</APINid>
 		</move>
 		<move>
 			<id>40</id>
@@ -595,6 +634,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1062</APINid>
 		</move>
 		<move>
 			<id>41</id>
@@ -610,6 +650,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1063</APINid>
 		</move>
 		<move>
 			<id>42</id>
@@ -625,6 +666,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1064</APINid>
 		</move>
 		<move>
 			<id>43</id>
@@ -640,6 +682,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1065</APINid>
 		</move>
 		<move>
 			<id>44</id>
@@ -656,6 +699,7 @@
 				<Punishable>-14</Punishable>
 				<PowerCrush/>
 			</tags>
+			<APINid>1066</APINid>
 		</move>
 		<move>
 			<id>45</id>
@@ -671,6 +715,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1067</APINid>
 		</move>
 		<move>
 			<id>46</id>
@@ -685,6 +730,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1068</APINid>
 		</move>
 		<move>
 			<id>47</id>
@@ -699,6 +745,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1069</APINid>
 		</move>
 		<move>
 			<id>48</id>
@@ -713,6 +760,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1070</APINid>
 		</move>
 		<move>
 			<id>49</id>
@@ -727,6 +775,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1071</APINid>
 		</move>
 		<move>
 			<id>50</id>
@@ -742,6 +791,7 @@
 				<NeedsWork/>
 				<Punishable>-15</Punishable>
 			</tags>
+			<APINid>1072</APINid>
 		</move>
 		<move>
 			<id>51</id>
@@ -758,6 +808,7 @@
 				<Safe/>
 				<TailSpin/>
 			</tags>
+			<APINid>1073</APINid>
 		</move>
 		<move>
 			<id>52</id>
@@ -774,6 +825,7 @@
 				<Punishable>-37</Punishable>
 				<Homing/>
 			</tags>
+			<APINid>1074</APINid>
 		</move>
 		<move>
 			<id>53</id>
@@ -789,6 +841,7 @@
 				<NeedsWork/>
 				<Homing/>
 			</tags>
+			<APINid>1075</APINid>
 		</move>
 		<move>
 			<id>54</id>
@@ -804,6 +857,7 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>1076</APINid>
 		</move>
 		<move>
 			<id>55</id>
@@ -818,6 +872,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1077</APINid>
 		</move>
 		<move>
 			<id>56</id>
@@ -832,6 +887,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1078</APINid>
 		</move>
 		<move>
 			<id>57</id>
@@ -847,6 +903,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1079</APINid>
 		</move>
 		<move>
 			<id>58</id>
@@ -862,6 +919,7 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>1080</APINid>
 		</move>
 		<move>
 			<id>59</id>
@@ -876,6 +934,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1081</APINid>
 		</move>
 		<move>
 			<id>60</id>
@@ -891,6 +950,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1082</APINid>
 		</move>
 		<move>
 			<id>61</id>
@@ -906,6 +966,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1083</APINid>
 		</move>
 		<move>
 			<id>62</id>
@@ -921,6 +982,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1084</APINid>
 		</move>
 		<move>
 			<id>63</id>
@@ -936,6 +998,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1085</APINid>
 		</move>
 		<move>
 			<id>64</id>
@@ -951,6 +1014,7 @@
 				<NeedsWork/>
 				<Homing/>
 			</tags>
+			<APINid>1086</APINid>
 		</move>
 		<move>
 			<id>65</id>
@@ -966,6 +1030,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1087</APINid>
 		</move>
 		<move>
 			<id>66</id>
@@ -980,6 +1045,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1088</APINid>
 		</move>
 		<move>
 			<id>67</id>
@@ -994,6 +1060,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1089</APINid>
 		</move>
 		<move>
 			<id>68</id>
@@ -1009,6 +1076,7 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>1090</APINid>
 		</move>
 		<move>
 			<id>69</id>
@@ -1023,6 +1091,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1091</APINid>
 		</move>
 		<move>
 			<id>70</id>
@@ -1037,6 +1106,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1092</APINid>
 		</move>
 		<move>
 			<id>71</id>
@@ -1051,6 +1121,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1093</APINid>
 		</move>
 		<move>
 			<id>72</id>
@@ -1065,6 +1136,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1094</APINid>
 		</move>
 		<move>
 			<id>73</id>
@@ -1080,6 +1152,7 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>1095</APINid>
 		</move>
 		<move>
 			<id>74</id>
@@ -1095,6 +1168,7 @@
 				<NeedsWork/>
 				<Punishable>-51</Punishable>
 			</tags>
+			<APINid>1096</APINid>
 		</move>
 		<move>
 			<id>75</id>
@@ -1109,6 +1183,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1097</APINid>
 		</move>
 		<move>
 			<id>76</id>
@@ -1124,6 +1199,7 @@
 				<NeedsWork/>
 				<Punishable>-28</Punishable>
 			</tags>
+			<APINid>1098</APINid>
 		</move>
 		<move>
 			<id>77</id>
@@ -1139,6 +1215,7 @@
 				<NeedsWork/>
 				<Punishable>-28</Punishable>
 			</tags>
+			<APINid>1099</APINid>
 		</move>
 		<move>
 			<id>78</id>
@@ -1154,6 +1231,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1100</APINid>
 		</move>
 		<move>
 			<id>79</id>
@@ -1168,6 +1246,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1101</APINid>
 		</move>
 		<move>
 			<id>80</id>
@@ -1182,6 +1261,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1102</APINid>
 		</move>
 		<move>
 			<id>81</id>
@@ -1197,6 +1277,7 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>1103</APINid>
 		</move>
 		<move>
 			<id>82</id>
@@ -1212,6 +1293,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1104</APINid>
 		</move>
 		<move>
 			<id>83</id>
@@ -1227,6 +1309,7 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>1105</APINid>
 		</move>
 		<move>
 			<id>84</id>
@@ -1241,6 +1324,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1106</APINid>
 		</move>
 		<move>
 			<id>85</id>
@@ -1255,6 +1339,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1107</APINid>
 		</move>
 		<move>
 			<id>86</id>
@@ -1270,6 +1355,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1108</APINid>
 		</move>
 		<move>
 			<id>87</id>
@@ -1285,6 +1371,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1109</APINid>
 		</move>
 		<move>
 			<id>88</id>
@@ -1299,6 +1386,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1110</APINid>
 		</move>
 		<move>
 			<id>89</id>
@@ -1313,6 +1401,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1111</APINid>
 		</move>
 		<move>
 			<id>90</id>
@@ -1328,6 +1417,7 @@
 				<NeedsWork/>
 				<Punishable>-15</Punishable>
 			</tags>
+			<APINid>1112</APINid>
 		</move>
 		<move>
 			<id>91</id>
@@ -1342,6 +1432,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1113</APINid>
 		</move>
 		<move>
 			<id>92</id>
@@ -1357,6 +1448,7 @@
 				<NeedsWork/>
 				<PowerCrush/>
 			</tags>
+			<APINid>1114</APINid>
 		</move>
 		<move>
 			<id>93</id>
@@ -1371,6 +1463,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1115</APINid>
 		</move>
 		<move>
 			<id>94</id>
@@ -1385,6 +1478,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1116</APINid>
 		</move>
 		<move>
 			<id>95</id>
@@ -1399,6 +1493,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1117</APINid>
 		</move>
 		<move>
 			<id>96</id>
@@ -1414,6 +1509,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1118</APINid>
 		</move>
 		<move>
 			<id>97</id>
@@ -1428,6 +1524,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1119</APINid>
 		</move>
 		<move>
 			<id>98</id>
@@ -1443,6 +1540,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1120</APINid>
 		</move>
 		<move>
 			<id>99</id>
@@ -1457,6 +1555,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1121</APINid>
 		</move>
 		<move>
 			<id>100</id>
@@ -1471,6 +1570,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1122</APINid>
 		</move>
 		<move>
 			<id>101</id>
@@ -1485,6 +1585,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1123</APINid>
 		</move>
 		<move>
 			<id>102</id>
@@ -1500,6 +1601,7 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>1124</APINid>
 		</move>
 		<move>
 			<id>103</id>
@@ -1514,6 +1616,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1125</APINid>
 		</move>
 		<move>
 			<id>104</id>
@@ -1528,6 +1631,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1126</APINid>
 		</move>
 		<move>
 			<id>105</id>
@@ -1543,6 +1647,7 @@
 				<NeedsWork/>
 				<Punishable>-134</Punishable>
 			</tags>
+			<APINid>1127</APINid>
 		</move>
 		<move>
 			<id>106</id>
@@ -1558,6 +1663,7 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>1128</APINid>
 		</move>
 		<move>
 			<id>107</id>
@@ -1573,6 +1679,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1129</APINid>
 		</move>
 		<move>
 			<id>108</id>
@@ -1588,6 +1695,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1130</APINid>
 		</move>
 		<move>
 			<id>109</id>
@@ -1603,6 +1711,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1131</APINid>
 		</move>
 		<move>
 			<id>110</id>
@@ -1617,6 +1726,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1132</APINid>
 		</move>
 		<move>
 			<id>111</id>
@@ -1632,6 +1742,7 @@
 				<NeedsWork/>
 				<Homing/>
 			</tags>
+			<APINid>1133</APINid>
 		</move>
 		<move>
 			<id>112</id>
@@ -1647,6 +1758,7 @@
 				<NeedsWork/>
 				<Homing/>
 			</tags>
+			<APINid>1134</APINid>
 		</move>
 		<move>
 			<id>113</id>
@@ -1662,6 +1774,7 @@
 				<NeedsWork/>
 				<Homing/>
 			</tags>
+			<APINid>1135</APINid>
 		</move>
 		<move>
 			<id>114</id>
@@ -1676,6 +1789,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1136</APINid>
 		</move>
 		<move>
 			<id>115</id>
@@ -1690,6 +1804,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1137</APINid>
 		</move>
 		<move>
 			<id>116</id>
@@ -1705,6 +1820,7 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>1138</APINid>
 		</move>
 		<move>
 			<id>117</id>
@@ -1719,6 +1835,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1139</APINid>
 		</move>
 		<move>
 			<id>118</id>
@@ -1733,6 +1850,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1140</APINid>
 		</move>
 		<move>
 			<id>119</id>
@@ -1748,6 +1866,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1141</APINid>
 		</move>
 		<move>
 			<id>120</id>
@@ -1762,6 +1881,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1142</APINid>
 		</move>
 		<move>
 			<id>121</id>
@@ -1776,6 +1896,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1143</APINid>
 		</move>
 		<move>
 			<id>122</id>
@@ -1790,6 +1911,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1144</APINid>
 		</move>
 		<move>
 			<id>123</id>
@@ -1804,6 +1926,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1145</APINid>
 		</move>
 		<move>
 			<id>124</id>
@@ -1818,6 +1941,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1146</APINid>
 		</move>
 		<move>
 			<id>125</id>
@@ -1832,6 +1956,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1147</APINid>
 		</move>
 		<move>
 			<id>126</id>
@@ -1846,6 +1971,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1148</APINid>
 		</move>
 		<move>
 			<id>127</id>
@@ -1861,6 +1987,7 @@
 				<NeedsWork/>
 				<TailSpin/>
 			</tags>
+			<APINid>1149</APINid>
 		</move>
 		<move>
 			<id>128</id>
@@ -1875,6 +2002,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1150</APINid>
 		</move>
 		<move>
 			<id>129</id>
@@ -1890,6 +2018,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1151</APINid>
 		</move>
 		<move>
 			<id>130</id>
@@ -1904,6 +2033,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1152</APINid>
 		</move>
 		<move>
 			<id>131</id>
@@ -1918,6 +2048,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1153</APINid>
 		</move>
 		<move>
 			<id>132</id>
@@ -1932,6 +2063,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1154</APINid>
 		</move>
 		<move>
 			<id>133</id>
@@ -1946,6 +2078,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1155</APINid>
 		</move>
 		<move>
 			<id>134</id>
@@ -1961,6 +2094,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1156</APINid>
 		</move>
 		<move>
 			<id>135</id>
@@ -1975,6 +2109,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1157</APINid>
 		</move>
 		<move>
 			<id>136</id>
@@ -1990,6 +2125,7 @@
 				<NeedsWork/>
 				<Punishable>-19</Punishable>
 			</tags>
+			<APINid>1158</APINid>
 		</move>
 		<move>
 			<id>137</id>
@@ -2005,6 +2141,7 @@
 				<NeedsWork/>
 				<Punishable>-18</Punishable>
 			</tags>
+			<APINid>1159</APINid>
 		</move>
 		<move>
 			<id>138</id>
@@ -2020,6 +2157,7 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>1160</APINid>
 		</move>
 		<move>
 			<id>139</id>
@@ -2034,6 +2172,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1161</APINid>
 		</move>
 		<move>
 			<id>140</id>
@@ -2048,6 +2187,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1162</APINid>
 		</move>
 		<move>
 			<id>141</id>
@@ -2062,6 +2202,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1163</APINid>
 		</move>
 		<move>
 			<id>142</id>
@@ -2077,6 +2218,7 @@
 				<NeedsWork/>
 				<Punishable>-26</Punishable>
 			</tags>
+			<APINid>1164</APINid>
 		</move>
 		<move>
 			<id>143</id>
@@ -2091,6 +2233,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1165</APINid>
 		</move>
 		<move>
 			<id>144</id>
@@ -2105,6 +2248,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1166</APINid>
 		</move>
 		<move>
 			<id>145</id>
@@ -2119,6 +2263,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1167</APINid>
 		</move>
 		<move>
 			<id>146</id>
@@ -2134,6 +2279,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1168</APINid>
 		</move>
 		<move>
 			<id>147</id>
@@ -2149,6 +2295,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1169</APINid>
 		</move>
 		<move>
 			<id>148</id>
@@ -2163,6 +2310,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1170</APINid>
 		</move>
 		<move>
 			<id>149</id>
@@ -2177,6 +2325,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1171</APINid>
 		</move>
 		<move>
 			<id>150</id>
@@ -2193,6 +2342,7 @@
 				<Safe/>
 				<Homing/>
 			</tags>
+			<APINid>1172</APINid>
 		</move>
 		<move>
 			<id>151</id>
@@ -2208,6 +2358,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1173</APINid>
 		</move>
 		<move>
 			<id>152</id>
@@ -2222,6 +2373,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1174</APINid>
 		</move>
 		<move>
 			<id>153</id>
@@ -2237,6 +2389,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1175</APINid>
 		</move>
 		<move>
 			<id>154</id>
@@ -2252,6 +2405,7 @@
 				<NeedsWork/>
 				<Punishable>-53</Punishable>
 			</tags>
+			<APINid>1176</APINid>
 		</move>
 		<move>
 			<id>155</id>
@@ -2267,6 +2421,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1177</APINid>
 		</move>
 		<move>
 			<id>156</id>
@@ -2282,6 +2437,7 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>1178</APINid>
 		</move>
 		<move>
 			<id>157</id>
@@ -2297,6 +2453,7 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>1179</APINid>
 		</move>
 		<move>
 			<id>158</id>
@@ -2311,6 +2468,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1180</APINid>
 		</move>
 		<move>
 			<id>159</id>
@@ -2325,6 +2483,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1181</APINid>
 		</move>
 		<move>
 			<id>160</id>
@@ -2339,6 +2498,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1182</APINid>
 		</move>
 		<move>
 			<id>161</id>
@@ -2353,6 +2513,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1183</APINid>
 		</move>
 		<move>
 			<id>162</id>
@@ -2368,6 +2529,7 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>1184</APINid>
 		</move>
 		<move>
 			<id>163</id>
@@ -2384,6 +2546,7 @@
 				<Punishable>-14</Punishable>
 				<PowerCrush/>
 			</tags>
+			<APINid>1185</APINid>
 		</move>
 		<move>
 			<id>164</id>
@@ -2398,6 +2561,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1186</APINid>
 		</move>
 		<move>
 			<id>165</id>
@@ -2412,6 +2576,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1187</APINid>
 		</move>
 		<move>
 			<id>166</id>
@@ -2427,6 +2592,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1188</APINid>
 		</move>
 		<move>
 			<id>167</id>
@@ -2441,6 +2607,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1189</APINid>
 		</move>
 		<move>
 			<id>168</id>
@@ -2455,6 +2622,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1190</APINid>
 		</move>
 		<move>
 			<id>169</id>
@@ -2469,6 +2637,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1191</APINid>
 		</move>
 		<move>
 			<id>170</id>
@@ -2484,6 +2653,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1192</APINid>
 		</move>
 		<move>
 			<id>171</id>
@@ -2499,6 +2669,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1193</APINid>
 		</move>
 		<move>
 			<id>172</id>
@@ -2514,6 +2685,7 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>1194</APINid>
 		</move>
 		<move>
 			<id>173</id>
@@ -2528,6 +2700,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1195</APINid>
 		</move>
 		<move>
 			<id>174</id>
@@ -2542,6 +2715,7 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>1196</APINid>
 		</move>
 		<move>
 			<id>175</id>
@@ -2557,6 +2731,7 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>1197</APINid>
 		</move>
 	</moves>
 	<gameplans>
@@ -2618,4 +2793,14 @@
 			</moves>
 		</gameplan>
 	</gameplans>
+	<stances>
+		<stance>
+			<name>Neutral</name>
+			<entry>
+				<command>N</command>
+				<movename>Universal_32769</movename>
+				<entryDelay>0</entryDelay>
+			</entry>
+		</stance>
+	</stances>
 </character>
