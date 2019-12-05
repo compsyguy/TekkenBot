@@ -429,7 +429,7 @@ if __name__ == "__main__":
 
     #print(a.GetWebCharacterByID(19)['menu_link'])
     
-    CharID = 47
+    CharID = 3
     
     a.AddCharacterAndMovesToWeb(CharID)
     
