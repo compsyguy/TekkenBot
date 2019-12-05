@@ -75,8 +75,8 @@ class AcademyAPI():
         if(os.path.exists(self.CookieFile)):
             with open(self.CookieFile, 'rb') as f:
                 self.session.cookies.update(pickle.load(f))
+            
             req = self.session.get("https://tekken.academy/session/token")
-            #print(req.text)
             self.auth['head']['X-CSRF-Token'] = req.text
             self.auth['cookie'] = self.session.cookies.get_dict()
             
@@ -427,11 +427,13 @@ if __name__ == "__main__":
         if a.login() != True:
             sys.exit("Error: Not logged in.")
 
-    #print(a.GetWebCharacterByID(28))
+    #print(a.GetWebCharacterByID(19)['menu_link'])
     
-    CharID = 19
+    CharID = 47
     
     a.AddCharacterAndMovesToWeb(CharID)
+    
+    
     #a.AddAPIMoveToXML(None, m)
     #move = m.getMoveById(10)
 

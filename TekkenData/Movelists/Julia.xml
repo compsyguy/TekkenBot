@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
-<character id="49" name="Julia">
+<character fullname="Julia Chang" id="49" name="Julia" version="1575503700">
 	<moves>
 		<move>
 			<id>1</id>
 			<name>In rage d/f+1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (throw)</hitLevel>
 			<damage>10,45</damage>
 			<StartUp>20</StartUp>
@@ -16,11 +16,12 @@
 				<Punishable>-22</Punishable>
 				<RageArt/>
 			</tags>
+			<APINid>3693</APINid>
 		</move>
 		<move>
 			<id>2</id>
 			<name>In rage f+2+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>20,35</damage>
 			<StartUp>15</StartUp>
@@ -32,11 +33,12 @@
 				<Safe/>
 				<RageDrive/>
 			</tags>
+			<APINid>3694</APINid>
 		</move>
 		<move>
 			<id>3</id>
 			<name>1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>7</damage>
 			<StartUp>10</StartUp>
@@ -47,14 +49,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3695</APINid>
 		</move>
 		<move>
 			<id>4</id>
 			<name>1, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, m</hitLevel>
 			<damage>7,12</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-9</BlockFrame>
 			<HitFrame>+2</HitFrame>
 			<CounterHitFrame>+2s</CounterHitFrame>
@@ -62,14 +65,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3696</APINid>
 		</move>
 		<move>
 			<id>5</id>
 			<name>1, 1, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, m, m</hitLevel>
 			<damage>7,12,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -77,14 +81,15 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3697</APINid>
 		</move>
 		<move>
 			<id>6</id>
 			<name>1, 1, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, m m</hitLevel>
 			<damage>7,12,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-9</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -92,14 +97,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3698</APINid>
 		</move>
 		<move>
 			<id>7</id>
 			<name>1, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h</hitLevel>
 			<damage>7,8</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-1</BlockFrame>
 			<HitFrame>+5</HitFrame>
 			<CounterHitFrame>+5</CounterHitFrame>
@@ -107,14 +113,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3699</APINid>
 		</move>
 		<move>
 			<id>8</id>
 			<name>1, 2, 3 or 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h (CES)</hitLevel>
 			<damage>7,8</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-9</BlockFrame>
 			<HitFrame>-3</HitFrame>
 			<CounterHitFrame>-3</CounterHitFrame>
@@ -122,14 +129,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3700</APINid>
 		</move>
 		<move>
 			<id>9</id>
 			<name>1, 2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h, m</hitLevel>
 			<damage>7,8,10</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>+3</HitFrame>
 			<CounterHitFrame>+3</CounterHitFrame>
@@ -137,14 +145,15 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3701</APINid>
 		</move>
 		<move>
 			<id>10</id>
 			<name>1, 2, 1, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h, m, l</hitLevel>
 			<damage>7,8,10,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -152,11 +161,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3702</APINid>
 		</move>
 		<move>
 			<id>11</id>
 			<name>2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>10</damage>
 			<StartUp>10</StartUp>
@@ -167,11 +177,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3703</APINid>
 		</move>
 		<move>
 			<id>12</id>
 			<name>2, B</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h (special)</hitLevel>
 			<damage>10</damage>
 			<StartUp>12</StartUp>
@@ -182,25 +193,27 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3704</APINid>
 		</move>
 		<move>
 			<id>13</id>
 			<name>(after back spin) 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>20</damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
+			<StartUp/>
+			<BlockFrame/>
 			<HitFrame>+3</HitFrame>
 			<CounterHitFrame>+3</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3705</APINid>
 		</move>
 		<move>
 			<id>14</id>
 			<name>3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>17</damage>
 			<StartUp>14</StartUp>
@@ -211,11 +224,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3706</APINid>
 		</move>
 		<move>
 			<id>15</id>
 			<name>4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>15</damage>
 			<StartUp>11</StartUp>
@@ -226,14 +240,15 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3707</APINid>
 		</move>
 		<move>
 			<id>16</id>
 			<name>4, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, l (TC)</hitLevel>
 			<damage>15,12</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-16</BlockFrame>
 			<HitFrame>-2</HitFrame>
 			<CounterHitFrame>-2</CounterHitFrame>
@@ -241,14 +256,15 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3708</APINid>
 		</move>
 		<move>
 			<id>17</id>
 			<name>4, 4, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, l, m</hitLevel>
 			<damage>15,12,21</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>JG</HitFrame>
 			<CounterHitFrame>JG</CounterHitFrame>
@@ -256,14 +272,15 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3709</APINid>
 		</move>
 		<move>
 			<id>18</id>
 			<name>4, 4, 1~2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, l, m</hitLevel>
 			<damage>15,12,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-9</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -271,14 +288,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3710</APINid>
 		</move>
 		<move>
 			<id>19</id>
 			<name>4, 4, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, l, h</hitLevel>
 			<damage>15,12,23</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -286,14 +304,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3711</APINid>
 		</move>
 		<move>
 			<id>20</id>
 			<name>4, 4, d+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, l, l</hitLevel>
 			<damage>15,12,10</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-19</BlockFrame>
 			<HitFrame>-8</HitFrame>
 			<CounterHitFrame>-8</CounterHitFrame>
@@ -301,11 +320,12 @@
 				<NeedsWork/>
 				<Punishable>-19</Punishable>
 			</tags>
+			<APINid>3712</APINid>
 		</move>
 		<move>
 			<id>21</id>
 			<name>4~2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>lh</hitLevel>
 			<damage>7,5</damage>
 			<StartUp>15</StartUp>
@@ -316,14 +336,15 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3713</APINid>
 		</move>
 		<move>
 			<id>22</id>
 			<name>4~2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>lh, m</hitLevel>
 			<damage>7,5,21</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-16</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -331,11 +352,12 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3714</APINid>
 		</move>
 		<move>
 			<id>23</id>
 			<name>1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>14</damage>
 			<StartUp>18</StartUp>
@@ -346,14 +368,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3715</APINid>
 		</move>
 		<move>
 			<id>24</id>
 			<name>1+2, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h</hitLevel>
 			<damage>14,12</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-12</BlockFrame>
 			<HitFrame>-1</HitFrame>
 			<CounterHitFrame>+4</CounterHitFrame>
@@ -361,14 +384,15 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3716</APINid>
 		</move>
 		<move>
 			<id>25</id>
 			<name>1+2, 4, b,f+1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h, m</hitLevel>
 			<damage>14,12,25</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-10</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -376,14 +400,15 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3717</APINid>
 		</move>
 		<move>
 			<id>26</id>
 			<name>1+2, 4, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h, m</hitLevel>
 			<damage>14,12,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-20</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -391,11 +416,12 @@
 				<NeedsWork/>
 				<Punishable>-20</Punishable>
 			</tags>
+			<APINid>3718</APINid>
 		</move>
 		<move>
 			<id>27</id>
 			<name>1+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, l</hitLevel>
 			<damage>12,21</damage>
 			<StartUp>18</StartUp>
@@ -406,14 +432,15 @@
 				<NeedsWork/>
 				<Punishable>-26</Punishable>
 			</tags>
+			<APINid>3719</APINid>
 		</move>
 		<move>
 			<id>28</id>
 			<name>1+4, D</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>12</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-18</BlockFrame>
 			<HitFrame>-7s</HitFrame>
 			<CounterHitFrame>-7s</CounterHitFrame>
@@ -421,11 +448,12 @@
 				<NeedsWork/>
 				<Punishable>-18</Punishable>
 			</tags>
+			<APINid>3720</APINid>
 		</move>
 		<move>
 			<id>29</id>
 			<name>f+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>10</damage>
 			<StartUp>12</StartUp>
@@ -436,14 +464,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3721</APINid>
 		</move>
 		<move>
 			<id>30</id>
 			<name>f+2, B</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h (special)</hitLevel>
 			<damage>10</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-8</BlockFrame>
 			<HitFrame>+5</HitFrame>
 			<CounterHitFrame>+5</CounterHitFrame>
@@ -451,14 +480,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3722</APINid>
 		</move>
 		<move>
 			<id>31</id>
 			<name>f+2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h</hitLevel>
 			<damage>10,14</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-1</BlockFrame>
 			<HitFrame>+5</HitFrame>
 			<CounterHitFrame>+10</CounterHitFrame>
@@ -466,14 +496,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3723</APINid>
 		</move>
 		<move>
 			<id>32</id>
 			<name>f+2, 1, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h (CES)</hitLevel>
 			<damage>10,14</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>+14</BlockFrame>
 			<HitFrame>+20g</HitFrame>
 			<CounterHitFrame>+25</CounterHitFrame>
@@ -481,14 +512,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3724</APINid>
 		</move>
 		<move>
 			<id>33</id>
 			<name>f+2, 1, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h, m</hitLevel>
 			<damage>10,14,18</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-10</BlockFrame>
 			<HitFrame>+2</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -496,14 +528,15 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3725</APINid>
 		</move>
 		<move>
 			<id>34</id>
 			<name>f+2, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, m</hitLevel>
 			<damage>10,16</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-8</BlockFrame>
 			<HitFrame>+5</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -511,11 +544,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3726</APINid>
 		</move>
 		<move>
 			<id>35</id>
 			<name>f+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>13</damage>
 			<StartUp>15</StartUp>
@@ -526,14 +560,15 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3727</APINid>
 		</move>
 		<move>
 			<id>36</id>
 			<name>f+4, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>13,23</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -541,11 +576,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3728</APINid>
 		</move>
 		<move>
 			<id>37</id>
 			<name>f+1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>25</damage>
 			<StartUp>18 pc8</StartUp>
@@ -558,11 +594,12 @@
 				<WallBounce/>
 				<PowerCrush/>
 			</tags>
+			<APINid>3729</APINid>
 		</move>
 		<move>
 			<id>38</id>
 			<name>f+1+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>40</damage>
 			<StartUp>67</StartUp>
@@ -572,11 +609,12 @@
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3730</APINid>
 		</move>
 		<move>
 			<id>39</id>
 			<name>d/f+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>13</damage>
 			<StartUp>14</StartUp>
@@ -587,25 +625,27 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3731</APINid>
 		</move>
 		<move>
 			<id>40</id>
 			<name>d/f+1 when hit crouching opponent</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>13</damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
+			<StartUp/>
+			<BlockFrame/>
 			<HitFrame>+14</HitFrame>
 			<CounterHitFrame>+14</CounterHitFrame>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3732</APINid>
 		</move>
 		<move>
 			<id>41</id>
 			<name>d/f+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>8</damage>
 			<StartUp>15</StartUp>
@@ -616,14 +656,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3733</APINid>
 		</move>
 		<move>
 			<id>42</id>
 			<name>d/f+2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>8,12</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-18</BlockFrame>
 			<HitFrame>JG</HitFrame>
 			<CounterHitFrame>JG</CounterHitFrame>
@@ -631,14 +672,15 @@
 				<NeedsWork/>
 				<Punishable>-18</Punishable>
 			</tags>
+			<APINid>3734</APINid>
 		</move>
 		<move>
 			<id>43</id>
 			<name>d/f+2, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (special)</hitLevel>
 			<damage>8</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>+16</BlockFrame>
 			<HitFrame>+27</HitFrame>
 			<CounterHitFrame>+27</CounterHitFrame>
@@ -646,14 +688,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3735</APINid>
 		</move>
 		<move>
 			<id>44</id>
 			<name>d/f+2, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h</hitLevel>
 			<damage>8,18</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>+5</HitFrame>
 			<CounterHitFrame>+5</CounterHitFrame>
@@ -661,11 +704,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3736</APINid>
 		</move>
 		<move>
 			<id>45</id>
 			<name>d/f+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>14</damage>
 			<StartUp>13</StartUp>
@@ -676,14 +720,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3737</APINid>
 		</move>
 		<move>
 			<id>46</id>
 			<name>d/f+3, 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>14,27</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -691,11 +736,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3738</APINid>
 		</move>
 		<move>
 			<id>47</id>
 			<name>d/f+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>14</damage>
 			<StartUp>14</StartUp>
@@ -706,14 +752,15 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3739</APINid>
 		</move>
 		<move>
 			<id>48</id>
 			<name>d/f+4, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>14,10</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>-2</HitFrame>
 			<CounterHitFrame>-2</CounterHitFrame>
@@ -721,14 +768,15 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3740</APINid>
 		</move>
 		<move>
 			<id>49</id>
 			<name>d/f+4, 2, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m, h</hitLevel>
 			<damage>14,10,18</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-5</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -737,14 +785,15 @@
 				<Safe/>
 				<TailSpin/>
 			</tags>
+			<APINid>3741</APINid>
 		</move>
 		<move>
 			<id>50</id>
 			<name>d/f+4, 2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m, m</hitLevel>
 			<damage>14,10,25</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -752,14 +801,15 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3742</APINid>
 		</move>
 		<move>
 			<id>51</id>
 			<name>d/f+4, 2, b, f+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m, m</hitLevel>
 			<damage>14, 10, 30</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -767,11 +817,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3743</APINid>
 		</move>
 		<move>
 			<id>52</id>
 			<name>d/f+3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm, m</hitLevel>
 			<damage>10,20</damage>
 			<StartUp>17</StartUp>
@@ -782,11 +833,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3744</APINid>
 		</move>
 		<move>
 			<id>53</id>
 			<name>d+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm (TC)</hitLevel>
 			<damage>5</damage>
 			<StartUp>10 cs4</StartUp>
@@ -797,11 +849,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3745</APINid>
 		</move>
 		<move>
 			<id>54</id>
 			<name>d+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm (TC)</hitLevel>
 			<damage>8</damage>
 			<StartUp>11 cs4</StartUp>
@@ -812,14 +865,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3746</APINid>
 		</move>
 		<move>
 			<id>55</id>
 			<name>d+2, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm, m</hitLevel>
 			<damage>8,14</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-10</BlockFrame>
 			<HitFrame>+1</HitFrame>
 			<CounterHitFrame>+1</CounterHitFrame>
@@ -827,11 +881,12 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3747</APINid>
 		</move>
 		<move>
 			<id>56</id>
 			<name>d+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l</hitLevel>
 			<damage>10</damage>
 			<StartUp>13</StartUp>
@@ -842,11 +897,12 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3748</APINid>
 		</move>
 		<move>
 			<id>57</id>
 			<name>d+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>12</damage>
 			<StartUp>20 cs6</StartUp>
@@ -857,14 +913,15 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3749</APINid>
 		</move>
 		<move>
 			<id>58</id>
 			<name>d+4, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, m</hitLevel>
 			<damage>12,21</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame> JG</HitFrame>
 			<CounterHitFrame>JG</CounterHitFrame>
@@ -872,14 +929,15 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3750</APINid>
 		</move>
 		<move>
 			<id>59</id>
 			<name>d+4, 1~2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, m</hitLevel>
 			<damage>12,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-9</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -887,14 +945,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3751</APINid>
 		</move>
 		<move>
 			<id>60</id>
 			<name>d+4, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, h</hitLevel>
 			<damage>12,23</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -902,14 +961,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3752</APINid>
 		</move>
 		<move>
 			<id>61</id>
 			<name>d+4, d+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, l (TC)</hitLevel>
 			<damage>12,10</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-19</BlockFrame>
 			<HitFrame>-8</HitFrame>
 			<CounterHitFrame>-8</CounterHitFrame>
@@ -917,11 +977,12 @@
 				<NeedsWork/>
 				<Punishable>-19</Punishable>
 			</tags>
+			<APINid>3753</APINid>
 		</move>
 		<move>
 			<id>62</id>
 			<name>d+1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>27</damage>
 			<StartUp>16</StartUp>
@@ -932,11 +993,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3754</APINid>
 		</move>
 		<move>
 			<id>63</id>
 			<name>d/b+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TC)</hitLevel>
 			<damage>17</damage>
 			<StartUp>19 cs6~15</StartUp>
@@ -947,11 +1009,12 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3755</APINid>
 		</move>
 		<move>
 			<id>64</id>
 			<name>d/b+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>13</damage>
 			<StartUp>15</StartUp>
@@ -962,14 +1025,15 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3756</APINid>
 		</move>
 		<move>
 			<id>65</id>
 			<name>d/b+2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, l</hitLevel>
 			<damage>13,7</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-11</BlockFrame>
 			<HitFrame>-4</HitFrame>
 			<CounterHitFrame>0</CounterHitFrame>
@@ -977,11 +1041,12 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>3757</APINid>
 		</move>
 		<move>
 			<id>66</id>
 			<name>d/b+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>12</damage>
 			<StartUp>16 cs4</StartUp>
@@ -992,12 +1057,13 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>3758</APINid>
 		</move>
 		<move>
 			<id>67</id>
 			<name>d/b+4</name>
-			<command> </command>
-			<hitLevel>l </hitLevel>
+			<command/>
+			<hitLevel>l</hitLevel>
 			<damage>11</damage>
 			<StartUp>15</StartUp>
 			<BlockFrame>-12</BlockFrame>
@@ -1007,14 +1073,15 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3759</APINid>
 		</move>
 		<move>
 			<id>68</id>
 			<name>d/b+4, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, m</hitLevel>
 			<damage>11,21</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-10</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1022,11 +1089,12 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3760</APINid>
 		</move>
 		<move>
 			<id>69</id>
 			<name>b+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>18</damage>
 			<StartUp>18</StartUp>
@@ -1037,11 +1105,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3761</APINid>
 		</move>
 		<move>
 			<id>70</id>
 			<name>b+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>14</damage>
 			<StartUp>13</StartUp>
@@ -1052,14 +1121,15 @@
 				<NeedsWork/>
 				<Punishable>-10</Punishable>
 			</tags>
+			<APINid>3762</APINid>
 		</move>
 		<move>
 			<id>71</id>
 			<name>b+2, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h</hitLevel>
 			<damage>14,15</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-12</BlockFrame>
 			<HitFrame>+4</HitFrame>
 			<CounterHitFrame>+4</CounterHitFrame>
@@ -1067,14 +1137,15 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3763</APINid>
 		</move>
 		<move>
 			<id>72</id>
 			<name>b+2, 3, 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h, h, m</hitLevel>
 			<damage>14,15,21</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1082,11 +1153,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3764</APINid>
 		</move>
 		<move>
 			<id>73</id>
 			<name>b+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>17</damage>
 			<StartUp>27 cs6</StartUp>
@@ -1097,14 +1169,15 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3765</APINid>
 		</move>
 		<move>
 			<id>74</id>
 			<name>b+3, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, l (TC)</hitLevel>
 			<damage>17,10</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-8</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1112,11 +1185,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3766</APINid>
 		</move>
 		<move>
 			<id>75</id>
 			<name>b+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>20</damage>
 			<StartUp>18</StartUp>
@@ -1129,11 +1203,12 @@
 				<Homing/>
 				<TailSpin/>
 			</tags>
+			<APINid>3767</APINid>
 		</move>
 		<move>
 			<id>76</id>
 			<name>b+1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>23</damage>
 			<StartUp>21</StartUp>
@@ -1144,11 +1219,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3768</APINid>
 		</move>
 		<move>
 			<id>77</id>
 			<name>u/b or u+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>12</damage>
 			<StartUp>18 js9</StartUp>
@@ -1159,11 +1235,12 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3769</APINid>
 		</move>
 		<move>
 			<id>78</id>
 			<name>u/f+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>17</damage>
 			<StartUp>15</StartUp>
@@ -1174,11 +1251,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3770</APINid>
 		</move>
 		<move>
 			<id>79</id>
 			<name>u/b or u or u/f+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>17</damage>
 			<StartUp>15</StartUp>
@@ -1189,11 +1267,12 @@
 				<NeedsWork/>
 				<Punishable>-12</Punishable>
 			</tags>
+			<APINid>3771</APINid>
 		</move>
 		<move>
 			<id>80</id>
 			<name>u/b+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>14</damage>
 			<StartUp>15 js9</StartUp>
@@ -1204,11 +1283,12 @@
 				<NeedsWork/>
 				<Punishable>-22</Punishable>
 			</tags>
+			<APINid>3772</APINid>
 		</move>
 		<move>
 			<id>81</id>
 			<name>u+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>16</damage>
 			<StartUp>15 js9</StartUp>
@@ -1219,11 +1299,12 @@
 				<NeedsWork/>
 				<Punishable>-20</Punishable>
 			</tags>
+			<APINid>3773</APINid>
 		</move>
 		<move>
 			<id>82</id>
 			<name>u/f+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>18</damage>
 			<StartUp>15 js9</StartUp>
@@ -1234,11 +1315,12 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3774</APINid>
 		</move>
 		<move>
 			<id>83</id>
 			<name>u/b+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>14</damage>
 			<StartUp>15 js9</StartUp>
@@ -1249,11 +1331,12 @@
 				<NeedsWork/>
 				<Punishable>-24</Punishable>
 			</tags>
+			<APINid>3775</APINid>
 		</move>
 		<move>
 			<id>84</id>
 			<name>u+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>16</damage>
 			<StartUp>15 js9</StartUp>
@@ -1264,11 +1347,12 @@
 				<NeedsWork/>
 				<Punishable>-20</Punishable>
 			</tags>
+			<APINid>3776</APINid>
 		</move>
 		<move>
 			<id>85</id>
 			<name>u/f+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>8</damage>
 			<StartUp>16 js9</StartUp>
@@ -1279,14 +1363,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3777</APINid>
 		</move>
 		<move>
 			<id>86</id>
 			<name>u/f+4, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>8,8</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>JG</HitFrame>
 			<CounterHitFrame>JG</CounterHitFrame>
@@ -1294,14 +1379,15 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3778</APINid>
 		</move>
 		<move>
 			<id>87</id>
 			<name>u/f+4, 3, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m, m</hitLevel>
 			<damage>8,8,25</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-6</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1309,11 +1395,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3779</APINid>
 		</move>
 		<move>
 			<id>88</id>
-			<name>u/f+3+4 </name>
-			<command> </command>
+			<name>u/f+3+4</name>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>30</damage>
 			<StartUp>35 js7</StartUp>
@@ -1324,11 +1411,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3780</APINid>
 		</move>
 		<move>
 			<id>89</id>
 			<name>u/f, N, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>25</damage>
 			<StartUp>23 js9</StartUp>
@@ -1339,12 +1427,13 @@
 				<NeedsWork/>
 				<Punishable>-18</Punishable>
 			</tags>
+			<APINid>3781</APINid>
 		</move>
 		<move>
 			<id>90</id>
 			<name>f, F+1</name>
-			<command> </command>
-			<hitLevel>m </hitLevel>
+			<command/>
+			<hitLevel>m</hitLevel>
 			<damage>11</damage>
 			<StartUp>11</StartUp>
 			<BlockFrame>-2</BlockFrame>
@@ -1354,14 +1443,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3782</APINid>
 		</move>
 		<move>
 			<id>91</id>
 			<name>f, F+1, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h</hitLevel>
 			<damage>11,17</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-4</BlockFrame>
 			<HitFrame>+15k</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1370,11 +1460,12 @@
 				<Safe/>
 				<TailSpin/>
 			</tags>
+			<APINid>3783</APINid>
 		</move>
 		<move>
 			<id>92</id>
 			<name>f, F+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>23</damage>
 			<StartUp>18</StartUp>
@@ -1385,11 +1476,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3784</APINid>
 		</move>
 		<move>
 			<id>93</id>
 			<name>F, F+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>21</damage>
 			<StartUp>12</StartUp>
@@ -1400,11 +1492,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3785</APINid>
 		</move>
 		<move>
 			<id>94</id>
 			<name>f, F+1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>27</damage>
 			<StartUp>13</StartUp>
@@ -1416,11 +1509,12 @@
 				<Safe/>
 				<WallBounce/>
 			</tags>
+			<APINid>3786</APINid>
 		</move>
 		<move>
 			<id>95</id>
 			<name>d, d/f+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>14</damage>
 			<StartUp>11</StartUp>
@@ -1431,14 +1525,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3787</APINid>
 		</move>
 		<move>
 			<id>96</id>
 			<name>d, d/f+1, 3 or 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (CES)</hitLevel>
 			<damage>14</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>+2</BlockFrame>
 			<HitFrame>+8</HitFrame>
 			<CounterHitFrame>+13</CounterHitFrame>
@@ -1446,14 +1541,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3788</APINid>
 		</move>
 		<move>
 			<id>97</id>
 			<name>d, d/f+1, 3 or 4 (no sequential move)</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (CES)</hitLevel>
 			<damage>14</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-8</BlockFrame>
 			<HitFrame>-2</HitFrame>
 			<CounterHitFrame>+3</CounterHitFrame>
@@ -1461,14 +1557,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3789</APINid>
 		</move>
 		<move>
 			<id>98</id>
 			<name>d, d/f+1, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>14,25</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-14</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1476,11 +1573,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3790</APINid>
 		</move>
 		<move>
 			<id>99</id>
 			<name>qcf+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>15</damage>
 			<StartUp>15</StartUp>
@@ -1491,11 +1589,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3791</APINid>
 		</move>
 		<move>
 			<id>100</id>
 			<name>f, f, f+1 or WR+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>28</damage>
 			<StartUp>12</StartUp>
@@ -1506,11 +1605,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3792</APINid>
 		</move>
 		<move>
 			<id>101</id>
 			<name>f, f, f+1 or WR+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>15</damage>
 			<StartUp>14</StartUp>
@@ -1521,14 +1621,15 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3793</APINid>
 		</move>
 		<move>
 			<id>102</id>
 			<name>f, f, f+2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>15,21</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1536,11 +1637,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3794</APINid>
 		</move>
 		<move>
 			<id>103</id>
 			<name>f, f, f+3 or WR+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TJ)</hitLevel>
 			<damage>30</damage>
 			<StartUp>23 js3</StartUp>
@@ -1551,11 +1653,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3795</APINid>
 		</move>
 		<move>
 			<id>104</id>
 			<name>FC+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm (TC)</hitLevel>
 			<damage>5</damage>
 			<StartUp>10</StartUp>
@@ -1566,11 +1669,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3796</APINid>
 		</move>
 		<move>
 			<id>105</id>
 			<name>FC+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm (TC)</hitLevel>
 			<damage>8</damage>
 			<StartUp>11</StartUp>
@@ -1581,11 +1685,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3797</APINid>
 		</move>
 		<move>
 			<id>106</id>
 			<name>FC+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>12</damage>
 			<StartUp>16</StartUp>
@@ -1596,11 +1701,12 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>3798</APINid>
 		</move>
 		<move>
 			<id>107</id>
 			<name>FC+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>10</damage>
 			<StartUp>12</StartUp>
@@ -1611,11 +1717,12 @@
 				<NeedsWork/>
 				<Punishable>-15</Punishable>
 			</tags>
+			<APINid>3799</APINid>
 		</move>
 		<move>
 			<id>108</id>
 			<name>WS+1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>15</damage>
 			<StartUp>15</StartUp>
@@ -1626,11 +1733,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3800</APINid>
 		</move>
 		<move>
 			<id>109</id>
 			<name>WS+1~2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>20</damage>
 			<StartUp>32</StartUp>
@@ -1641,11 +1749,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3801</APINid>
 		</move>
 		<move>
 			<id>110</id>
 			<name>WS+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>11</damage>
 			<StartUp>18</StartUp>
@@ -1656,14 +1765,15 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>3802</APINid>
 		</move>
 		<move>
 			<id>111</id>
 			<name>WS+2, 3 or 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (CES)</hitLevel>
 			<damage>11</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>+2</BlockFrame>
 			<HitFrame>+10</HitFrame>
 			<CounterHitFrame>+13</CounterHitFrame>
@@ -1671,14 +1781,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3803</APINid>
 		</move>
 		<move>
 			<id>112</id>
 			<name>WS+2, 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h</hitLevel>
 			<damage>11,20</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-4</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1686,14 +1797,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3804</APINid>
 		</move>
 		<move>
 			<id>113</id>
 			<name>WS+2, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>11,16</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-16</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1701,14 +1813,15 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3805</APINid>
 		</move>
 		<move>
 			<id>114</id>
 			<name>WS+2, 2, D</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>11, 16</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-18</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1716,14 +1829,15 @@
 				<NeedsWork/>
 				<Punishable>-18</Punishable>
 			</tags>
+			<APINid>3806</APINid>
 		</move>
 		<move>
 			<id>115</id>
 			<name>WS+2, 2*</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>11,23</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>+4</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1731,14 +1845,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3807</APINid>
 		</move>
 		<move>
 			<id>116</id>
 			<name>WS+2, 2*, D</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>11,23</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>+4</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1746,14 +1861,15 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3808</APINid>
 		</move>
 		<move>
 			<id>117</id>
 			<name>WS+2, 2, 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m, m (TC)</hitLevel>
 			<damage>11,16(23),25</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-16</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1761,12 +1877,13 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3809</APINid>
 		</move>
 		<move>
 			<id>118</id>
 			<name>WS+3</name>
-			<command> </command>
-			<hitLevel>m </hitLevel>
+			<command/>
+			<hitLevel>m</hitLevel>
 			<damage>21</damage>
 			<StartUp>14</StartUp>
 			<BlockFrame>-7</BlockFrame>
@@ -1778,12 +1895,13 @@
 				<Homing/>
 				<TailSpin/>
 			</tags>
+			<APINid>3810</APINid>
 		</move>
 		<move>
 			<id>119</id>
 			<name>WS+4</name>
-			<command> </command>
-			<hitLevel>m </hitLevel>
+			<command/>
+			<hitLevel>m</hitLevel>
 			<damage>21</damage>
 			<StartUp>11</StartUp>
 			<BlockFrame>-15</BlockFrame>
@@ -1793,11 +1911,12 @@
 				<NeedsWork/>
 				<Punishable>-15</Punishable>
 			</tags>
+			<APINid>3811</APINid>
 		</move>
 		<move>
 			<id>120</id>
 			<name>FC+d/f+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TC)</hitLevel>
 			<damage>25</damage>
 			<StartUp>12</StartUp>
@@ -1808,11 +1927,12 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3812</APINid>
 		</move>
 		<move>
 			<id>121</id>
 			<name>FC+d/f+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>9</damage>
 			<StartUp>16</StartUp>
@@ -1823,14 +1943,15 @@
 				<NeedsWork/>
 				<Punishable>-14</Punishable>
 			</tags>
+			<APINid>3813</APINid>
 		</move>
 		<move>
 			<id>122</id>
 			<name>FC+d/f+4, 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, m (TJ)</hitLevel>
 			<damage>9,23</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-17</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -1838,11 +1959,12 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>3814</APINid>
 		</move>
 		<move>
 			<id>123</id>
 			<name>SS 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m (TC)</hitLevel>
 			<damage>15</damage>
 			<StartUp>18 cs6</StartUp>
@@ -1853,11 +1975,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3815</APINid>
 		</move>
 		<move>
 			<id>124</id>
 			<name>SS 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>23</damage>
 			<StartUp>20</StartUp>
@@ -1868,11 +1991,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3816</APINid>
 		</move>
 		<move>
 			<id>125</id>
 			<name>SS 3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>10,10</damage>
 			<StartUp>22</StartUp>
@@ -1883,39 +2007,42 @@
 				<NeedsWork/>
 				<Punishable>-21</Punishable>
 			</tags>
+			<APINid>3817</APINid>
 		</move>
 		<move>
 			<id>126</id>
 			<name>1+3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>(special)</hitLevel>
-			<damage> </damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
-			<HitFrame> </HitFrame>
-			<CounterHitFrame> </CounterHitFrame>
+			<damage/>
+			<StartUp/>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3818</APINid>
 		</move>
 		<move>
 			<id>127</id>
 			<name>2+3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>(special)</hitLevel>
-			<damage> </damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
-			<HitFrame> </HitFrame>
-			<CounterHitFrame> </CounterHitFrame>
+			<damage/>
+			<StartUp/>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3819</APINid>
 		</move>
 		<move>
 			<id>128</id>
 			<name>b, b, u/b (back against wall)</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>21</damage>
 			<StartUp>36</StartUp>
@@ -1926,11 +2053,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3820</APINid>
 		</move>
 		<move>
 			<id>129</id>
 			<name>BT 1 or 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>15</damage>
 			<StartUp>8</StartUp>
@@ -1941,11 +2069,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3821</APINid>
 		</move>
 		<move>
 			<id>130</id>
 			<name>BT 3 or 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>18</damage>
 			<StartUp>10</StartUp>
@@ -1956,11 +2085,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3822</APINid>
 		</move>
 		<move>
 			<id>131</id>
 			<name>BT d+1 or d+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>sm</hitLevel>
 			<damage>10</damage>
 			<StartUp>10</StartUp>
@@ -1971,11 +2101,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3823</APINid>
 		</move>
 		<move>
 			<id>132</id>
 			<name>BT d+3 or d+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l</hitLevel>
 			<damage>12</damage>
 			<StartUp>10</StartUp>
@@ -1986,39 +2117,42 @@
 				<NeedsWork/>
 				<Punishable>-11</Punishable>
 			</tags>
+			<APINid>3824</APINid>
 		</move>
 		<move>
 			<id>133</id>
 			<name>3+4 or BT 3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>(CES)</hitLevel>
-			<damage> </damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
-			<HitFrame> </HitFrame>
-			<CounterHitFrame> </CounterHitFrame>
+			<damage/>
+			<StartUp/>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3825</APINid>
 		</move>
 		<move>
 			<id>134</id>
 			<name>u+3+4 or d+3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>(CES)</hitLevel>
-			<damage> </damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
-			<HitFrame> </HitFrame>
-			<CounterHitFrame> </CounterHitFrame>
+			<damage/>
+			<StartUp/>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3826</APINid>
 		</move>
 		<move>
 			<id>135</id>
 			<name>CES 1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h</hitLevel>
 			<damage>14</damage>
 			<StartUp>15</StartUp>
@@ -2029,11 +2163,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3827</APINid>
 		</move>
 		<move>
 			<id>136</id>
 			<name>CES 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>20</damage>
 			<StartUp>18</StartUp>
@@ -2045,11 +2180,12 @@
 				<Safe/>
 				<TailSpin/>
 			</tags>
+			<APINid>3828</APINid>
 		</move>
 		<move>
 			<id>137</id>
 			<name>CES 3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>10</damage>
 			<StartUp>18</StartUp>
@@ -2060,14 +2196,15 @@
 				<NeedsWork/>
 				<Punishable>-17</Punishable>
 			</tags>
+			<APINid>3829</APINid>
 		</move>
 		<move>
 			<id>138</id>
 			<name>CES 3, 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, m</hitLevel>
 			<damage>10,27</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-13</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -2075,11 +2212,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3830</APINid>
 		</move>
 		<move>
 			<id>139</id>
 			<name>CES 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l (TC)</hitLevel>
 			<damage>14</damage>
 			<StartUp>20 cs6</StartUp>
@@ -2090,14 +2228,15 @@
 				<NeedsWork/>
 				<Punishable>-26</Punishable>
 			</tags>
+			<APINid>3831</APINid>
 		</move>
 		<move>
 			<id>140</id>
 			<name>CES 4, 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l, m (TC)</hitLevel>
 			<damage>14,27</damage>
-			<StartUp> </StartUp>
+			<StartUp/>
 			<BlockFrame>-16</BlockFrame>
 			<HitFrame>KND</HitFrame>
 			<CounterHitFrame>KND</CounterHitFrame>
@@ -2105,11 +2244,12 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3832</APINid>
 		</move>
 		<move>
 			<id>141</id>
 			<name>CES 1+2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>18</damage>
 			<StartUp>19</StartUp>
@@ -2120,39 +2260,42 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3833</APINid>
 		</move>
 		<move>
 			<id>142</id>
 			<name>f+3</name>
-			<command> </command>
+			<command/>
 			<hitLevel>(special)</hitLevel>
-			<damage> </damage>
+			<damage/>
 			<StartUp>js13</StartUp>
-			<BlockFrame> </BlockFrame>
-			<HitFrame> </HitFrame>
-			<CounterHitFrame> </CounterHitFrame>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3834</APINid>
 		</move>
 		<move>
 			<id>143</id>
 			<name>f+3, D or D/B</name>
-			<command> </command>
+			<command/>
 			<hitLevel>(recover crouch)</hitLevel>
-			<damage> </damage>
-			<StartUp> </StartUp>
-			<BlockFrame> </BlockFrame>
-			<HitFrame> </HitFrame>
-			<CounterHitFrame> </CounterHitFrame>
+			<damage/>
+			<StartUp/>
+			<BlockFrame/>
+			<HitFrame/>
+			<CounterHitFrame/>
 			<tags>
 				<NeedsWork/>
 			</tags>
+			<APINid>3835</APINid>
 		</move>
 		<move>
 			<id>144</id>
 			<name>f+3~1</name>
-			<command> </command>
+			<command/>
 			<hitLevel>h (TJ)</hitLevel>
 			<damage>24</damage>
 			<StartUp>19 js18</StartUp>
@@ -2163,12 +2306,13 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3836</APINid>
 		</move>
 		<move>
 			<id>145</id>
 			<name>f+3, 1</name>
-			<command> </command>
-			<hitLevel>m </hitLevel>
+			<command/>
+			<hitLevel>m</hitLevel>
 			<damage>15</damage>
 			<StartUp>39</StartUp>
 			<BlockFrame>-13</BlockFrame>
@@ -2178,11 +2322,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3837</APINid>
 		</move>
 		<move>
 			<id>146</id>
 			<name>f+3, 2</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m</hitLevel>
 			<damage>20</damage>
 			<StartUp>31</StartUp>
@@ -2193,11 +2338,12 @@
 				<NeedsWork/>
 				<Safe/>
 			</tags>
+			<APINid>3838</APINid>
 		</move>
 		<move>
 			<id>147</id>
 			<name>f+3, 4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>l</hitLevel>
 			<damage>17</damage>
 			<StartUp>33</StartUp>
@@ -2208,11 +2354,12 @@
 				<NeedsWork/>
 				<Punishable>-13</Punishable>
 			</tags>
+			<APINid>3839</APINid>
 		</move>
 		<move>
 			<id>148</id>
 			<name>f+3, u/f+3+4</name>
-			<command> </command>
+			<command/>
 			<hitLevel>m, h</hitLevel>
 			<damage>8,12</damage>
 			<StartUp>39</StartUp>
@@ -2223,6 +2370,7 @@
 				<NeedsWork/>
 				<Punishable>-16</Punishable>
 			</tags>
+			<APINid>3840</APINid>
 		</move>
 	</moves>
 	<gameplans>
@@ -2465,4 +2613,14 @@
 			</moves>
 		</gameplan>
 	</gameplans>
+	<stances>
+		<stance>
+			<name>Neutral</name>
+			<entry>
+				<command>N</command>
+				<movename>Universal_32769</movename>
+				<entryDelay>0</entryDelay>
+			</entry>
+		</stance>
+	</stances>
 </character>

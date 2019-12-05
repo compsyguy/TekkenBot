@@ -16,6 +16,7 @@ if os.path.isfile(sys.argv[2] + ".json"):
 
 r = requests.get(sys.argv[1])
 soup = BeautifulSoup(r.text, 'html.parser')
+print(soup)
 
 t = soup.find_all('table')
 r = t[0].find_all('tr')
