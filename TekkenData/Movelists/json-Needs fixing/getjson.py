@@ -14,7 +14,14 @@ if os.path.isfile(sys.argv[2] + ".json"):
     print("json file already exists.")
     sys.exit()
 
-r = requests.get(sys.argv[1])
+headers = {
+    'User-Agent': 'My User Agent 1.0',
+}
+
+r = requests.get(sys.argv[1], headers=headers)
+#s = requests.session()
+#response = s.get(sys.argv[1])
+#print(r.text)
 soup = BeautifulSoup(r.text, 'html.parser')
 print(soup)
 
