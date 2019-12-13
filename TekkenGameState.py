@@ -207,7 +207,7 @@ class TekkenGameReader:
                     second_address_base = self.GetValueFromAddress(processHandle, player_data_base_address, is64bit = True)
                     for i in range(8):  # for rollback purposes, there are 8 copies of the game state, each one updatating once every 8 frames
                         potential_second_address = second_address_base + (i * self.c['MemoryAddressOffsets']['rollback_frame_offset'])
-                        potential_frame_count = self.GetValueFromAddress(processHandle, potential_second_address +  self.c['GameDataAddress']['frame_count'])
+                        potential_frame_count = self.GetValueFromAddress(processHandle, potential_second_address +  self.c['GameDataAddress']['frame_count'], is64bit=True)
                         last_eight_frames.append((potential_frame_count, potential_second_address))
 
                     if rollback_frame >= len(last_eight_frames):
