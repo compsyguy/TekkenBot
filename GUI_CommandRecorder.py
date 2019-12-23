@@ -15,7 +15,7 @@ class GUI_CommandRecorder(AcademyBot):
         super().__init__(bot_commands)
         self.GUI_Recorder = Toplevel()
         self.GUI_Recorder.wm_title("Command Recorder")
-        self.GUI_Recorder.geometry(str(500) + 'x' + str(150))
+        self.GUI_Recorder.geometry(str(500) + 'x' + str(200))
         self.recorder = None
         
         self.recording = False
@@ -24,25 +24,34 @@ class GUI_CommandRecorder(AcademyBot):
         #self.launcher = TekkenBotLauncher(AcademyBot, True)
         self.gameState = None
         
+        #Command label
         self.InputLabel = Label(self.GUI_Recorder, text="Command")
         self.InputLabel.grid(row=0, column=0, padx=5, pady=5)
-        
+        #Command Input Box
         self.InputBox = Text(self.GUI_Recorder, height=3, width=50)
         self.InputBox.grid(row=0, column=1, columnspan=2, padx=5, pady=5)
         
+        #Record Button
         self.RecordButtonText = StringVar()
         self.RecordButtonText.set("Record")
         self.RecordBtn = Button(self.GUI_Recorder, textvariable=self.RecordButtonText, command=self.recordCallback)
-        self.RecordBtn.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
+        self.RecordBtn.grid(row=1, column=0, columnspan=1, padx=5, pady=5)
         
-        #self.StopRecBtn = Button(self.GUI_Recorder, text="Stop Recording", command=self.stopRecording)
-        #self.StopRecBtn.grid(row=1, column=1, padx=5, pady=5)
-        
+        #Test Button
         self.TestBtn = Button(self.GUI_Recorder, text="Test Command", command=self.testCallback)
-        self.TestBtn.grid(row=1, column=2, padx=5, pady=5)
+        self.TestBtn.grid(row=1, column=1, padx=5, pady=5)
         
+        #Save Button
         self.SaveBtn = Button(self.GUI_Recorder, text="Save Movelist", command=self.saveMovelist)
-        self.SaveBtn.grid(row=2, column=1, padx=5, pady=5)
+        self.SaveBtn.grid(row=1, column=2, padx=5, pady=5)
+        
+        #Move Name Label
+        self.MoveNameLabel = Label(self.GUI_Recorder, text="Move Names")
+        self.MoveNameLabel.grid(row=2, column=0, padx=5, pady=5)
+        
+        self.MoveNameBox = Text(self.GUI_Recorder, height=3, width=50)
+        self.MoveNameBox.grid(row=2, column=1, columnspan=2, padx=5, pady=5)
+        
         
         self.testCommand = ""
         
@@ -116,6 +125,7 @@ class GUI_CommandRecorder(AcademyBot):
     def record(self):
         self.recording = True
         self.InputBox.delete("1.0", END)
+        self.MoveNameBox.delete("1.0", END)
         self.RecordButtonText.set("Stop Recording")
         self.recorder = CommandRecorder(self)
         self.OverlayPrefix = "Recording"
@@ -143,6 +153,21 @@ class GUI_CommandRecorder(AcademyBot):
             
             if(move != None):
                 self.InputBox.insert(END, move)
+                
+            
+            
+            LastMoveName = ""
+            LastHitOutcome = ""
+            for info in self.recorder.ExtraInfo:
+                MoveName = info[0]
+                HitOutcome = info[1]
+                if(MoveName != LastMoveName or HitOutcome != LastHitOutcome):
+                    self.MoveNameBox.insert(END, MoveName + "\t" + str(HitOutcome) + "\n")
+                    LastMoveName = MoveName
+                    LastHitOutcome = HitOutcome
+                
+            
+                
         self.RecordButtonText.set("Record")
         self.OverlayPrefix = "Stopped Recording"
     

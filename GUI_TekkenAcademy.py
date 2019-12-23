@@ -164,7 +164,8 @@ class GUI_TekkenAcademy(Tk):
 
     def switchToTest(self):
         print("Switching to Test Bot")
-        self.launcher = TekkenBotLauncher(BotTest, False)
+        #self.launcher = TekkenBotLauncher(BotTest, False)
+        self.launcher = TekkenBotLauncher(BotPunisher, False)
         self.overlay = GUI_TestOverlay(self, self.launcher, (1000, 35), (450, 170))
         self.launcher.botBrain.overlay = self.overlay
 

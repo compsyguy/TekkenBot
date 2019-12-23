@@ -89,6 +89,8 @@ class CommandRecorder(object):
         self.button=''
         self.frames_to_hold=1
         self.started = None
+        self.MoveNames = []
+        self.ExtraInfo = []
         
         self.symbol_map = {
             InputDirectionCodes.u : 'u',
@@ -128,15 +130,22 @@ class CommandRecorder(object):
             bufferable = self.launcher.gameState.stateLog[-1].bot.is_bufferable
             parry1 = self.launcher.gameState.stateLog[-1].bot.is_parry_1
             parry2 = self.launcher.gameState.stateLog[-1].bot.is_parry_2
+            self.MoveNames.append(self.launcher.gameState.GetCurrentBotMoveName())
+            
+            self.ExtraInfo.append([self.launcher.gameState.GetCurrentBotMoveName(), self.launcher.gameState.stateLog[-1].opp.hit_outcome])
+            
         else:
             input = self.launcher.gameState.stateLog[-1].opp.GetInputState()
             cancelable = self.launcher.gameState.stateLog[-1].opp.is_cancelable
             bufferable = self.launcher.gameState.stateLog[-1].opp.is_bufferable
             parry1 = self.launcher.gameState.stateLog[-1].opp.is_parry_1
             parry2 = self.launcher.gameState.stateLog[-1].opp.is_parry_2
+            self.MoveNames.append(self.launcher.gameState.GetCurrentOppMoveName())
+            
+            self.ExtraInfo.append([self.launcher.gameState.GetCurrentOppMoveName(), self.launcher.gameState.stateLog[-1].bot.hit_outcome])
+            
         frame_count = self.launcher.gameState.stateLog[-1].frame_count
-        
-        
+               
         character=self.launcher.gameState.stateLog[-1].bot.character_name
 #        if self.f == None:
 #            self.f = open('.\\xml_maker\\'+character.capitalize()+'_outputplayback.txt','a')
