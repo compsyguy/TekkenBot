@@ -156,15 +156,42 @@ class GUI_CommandRecorder(AcademyBot):
                 
             
             
-            LastMoveName = ""
-            LastHitOutcome = ""
-            for info in self.recorder.ExtraInfo:
-                MoveName = info[0]
-                HitOutcome = info[1]
-                if(MoveName != LastMoveName or HitOutcome != LastHitOutcome):
-                    self.MoveNameBox.insert(END, MoveName + "\t" + str(HitOutcome) + "\n")
-                    LastMoveName = MoveName
-                    LastHitOutcome = HitOutcome
+            extra_info = self.recorder.extra_process()
+            first_line = True
+            for info in extra_info:
+                if first_line:
+                    for type in info:
+                        self.MoveNameBox.insert(END, type + "\t")
+                    self.MoveNameBox.insert(END, "\n")
+                    first_line = False
+                    
+                for type in info:
+                    self.MoveNameBox.insert(END, str(info[type]) + "\t")
+                    
+                self.MoveNameBox.insert(END, "\n")
+                
+#            last_move_name = ""
+#            last_hit_outcome = ""
+#            first_line = True
+#            ignore_movenames = ['Universal_32769', 'sWALK_00B', 'sWALK_00BMv', 'sWALK_00BLp', 'sWALK_00F']
+#            for info in self.recorder.ExtraInfo:
+#                if first_line:
+#                    for type in info:
+#                        self.MoveNameBox.insert(END, type + "\t")
+#                    self.MoveNameBox.insert(END, "\n")
+#                    first_line = False
+#                    
+#                #don't bother saving ignorable moves
+#                if(info['move_name'] in ignore_movenames):
+#                    continue
+#                    
+#                if(info['move_name'] != last_move_name or info['hit_outcome'] != last_hit_outcome):
+#                    for type in info:
+#                        self.MoveNameBox.insert(END, str(info[type]) + "\t")
+#                    #self.MoveNameBox.insert(END, str(move_id) + "\t" + move_name + "\t" + str(move_timer) + "\t" + str(hit_outcome) + "\n")
+#                    self.MoveNameBox.insert(END, "\n")
+#                    last_move_name = info['move_name']
+#                    last_hit_outcome = info['hit_outcome']
                 
             
                 

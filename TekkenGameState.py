@@ -255,8 +255,16 @@ class TekkenGameReader:
 
                     # FIXME: This seems like it would always be true.
                     # The old code seems to be doing the same, so I don't know.
-                    p1_bot.player_data_dict['use_opponent_movelist'] = p1_bot.player_data_dict['PlayerDataAddress.movelist_to_use'] == self.p2_movelist_to_use
-                    p2_bot.player_data_dict['use_opponent_movelist'] = p2_bot.player_data_dict['PlayerDataAddress.movelist_to_use'] == self.p1_movelist_to_use
+                    
+                    ###############################
+                    # Psylence - I have no idea what this code was meant for. 
+                    #   Since I'm not sure why you would want the bot to use the opponent's movelist. 
+                    #   I'm just hard coding to false for now
+                    ###############################
+                    #p1_bot.player_data_dict['use_opponent_movelist'] = p1_bot.player_data_dict['PlayerDataAddress.movelist_to_use'] == self.p2_movelist_to_use
+                    p1_bot.player_data_dict['use_opponent_movelist'] = False
+                    #p2_bot.player_data_dict['use_opponent_movelist'] = p2_bot.player_data_dict['PlayerDataAddress.movelist_to_use'] == self.p1_movelist_to_use
+                    p2_bot.player_data_dict['use_opponent_movelist'] = False
 
                     p1_bot.player_data_dict['movelist_parser'] = self.p1_movelist_parser
                     p2_bot.player_data_dict['movelist_parser'] = self.p2_movelist_parser

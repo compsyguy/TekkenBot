@@ -122,7 +122,7 @@ class CommandRecorder(object):
         #    print("stateLog is empty")
         #    return
         
-        self.launcher.gameState.stateLog[-1].is_player_player_one = True #TURN ANALYSE 2P SIDE
+        #self.launcher.gameState.stateLog[-1].is_player_player_one = True #TURN ANALYSE 2P SIDE
 
         if self.launcher.gameState.stateLog[-1].is_player_player_one: #player one player two
             input = self.launcher.gameState.stateLog[-1].bot.GetInputState()
@@ -132,7 +132,17 @@ class CommandRecorder(object):
             parry2 = self.launcher.gameState.stateLog[-1].bot.is_parry_2
             self.MoveNames.append(self.launcher.gameState.GetCurrentBotMoveName())
             
-            self.ExtraInfo.append([self.launcher.gameState.GetCurrentBotMoveName(), self.launcher.gameState.stateLog[-1].opp.hit_outcome])
+            ExtraInfoFrame = {}
+            ExtraInfoFrame['move_id'] = self.launcher.gameState.stateLog[-1].bot.move_id
+            ExtraInfoFrame['move_name'] = self.launcher.gameState.GetCurrentBotMoveName()
+            ExtraInfoFrame['startup'] = self.launcher.gameState.stateLog[-1].bot.startup
+            ExtraInfoFrame['startup_end'] = self.launcher.gameState.stateLog[-1].bot.startup_end
+            ExtraInfoFrame['move_timer'] = self.launcher.gameState.stateLog[-1].bot.move_timer
+            ExtraInfoFrame['hit_outcome'] = self.launcher.gameState.stateLog[-1].opp.hit_outcome
+            ExtraInfoFrame['recovery'] = self.launcher.gameState.stateLog[-1].bot.recovery
+            
+            
+            self.ExtraInfo.append(ExtraInfoFrame)
             
         else:
             input = self.launcher.gameState.stateLog[-1].opp.GetInputState()
@@ -473,6 +483,25 @@ class CommandRecorder(object):
 
             #return movelist
 
+    # removes extraneous information from the extra info.
+    # It looks for when the move name or hit outcome changes
+    def extra_process(self):
+        last_move_name = ""
+        last_hit_outcome = ""
+        ignore_movenames = ['Universal_32769', 'sWALK_00B', 'sWALK_00BMv', 'sWALK_00BLp', 'sWALK_00F']
+        processed = []
+        for info in self.ExtraInfo:
+            #don't bother saving ignorable moves
+            if(info['move_name'] in ignore_movenames):
+                continue
+                
+            if(info['move_name'] != last_move_name or info['hit_outcome'] != last_hit_outcome):
+                processed.append(info)
+                last_move_name = info['move_name']
+                last_hit_outcome = info['hit_outcome']
+
+        return processed
+        
     def parser(self, playback):
         move=[]
         moves=[]
