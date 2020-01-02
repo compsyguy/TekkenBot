@@ -488,6 +488,7 @@ class CommandRecorder(object):
     def extra_process(self):
         last_move_name = ""
         last_hit_outcome = ""
+        last_move_id = 0
         ignore_movenames = ['Universal_32769', 'sWALK_00B', 'sWALK_00BMv', 'sWALK_00BLp', 'sWALK_00F']
         processed = []
         for info in self.ExtraInfo:
@@ -495,10 +496,11 @@ class CommandRecorder(object):
             if(info['move_name'] in ignore_movenames):
                 continue
                 
-            if(info['move_name'] != last_move_name or info['hit_outcome'] != last_hit_outcome):
+            if(info['move_name'] != last_move_name or info['hit_outcome'] != last_hit_outcome or info['move_id'] != last_move_id):
                 processed.append(info)
                 last_move_name = info['move_name']
                 last_hit_outcome = info['hit_outcome']
+                last_move_id = info['move_id']
 
         return processed
         

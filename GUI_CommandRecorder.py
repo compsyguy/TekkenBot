@@ -9,6 +9,8 @@ from BotData import BotBehaviors
 import win32.user32 as user32
 import movelist
 
+import xml.etree.ElementTree as ET
+
 class GUI_CommandRecorder(AcademyBot):
         
     def __init__(self, bot_commands):
@@ -178,6 +180,18 @@ class GUI_CommandRecorder(AcademyBot):
         self.playback = True
         self.testCommand = self.InputBox.get("1.0", 'end-1c')
         self.workingMove.find('.//command').text = self.testCommand
+        
+        info_node = self.workingMove.find('.//info')
+        if info_node == None:
+            info_node = ET.SubElement(self.workingMove, "info")
+            info_frames = self.recorder.extra_process()
+            for info_frame in info_frames:
+                info_frame_node = ET.SubElement(info_node, "info_frame")
+                for info in info_frame:
+                    n = ET.SubElement(info_frame_node, info)
+                    n.text = str(info_frame[info])
+                
+        
         self.OverlayPrefix = "Testing Recording"
 
     def saveMovelist(self):
