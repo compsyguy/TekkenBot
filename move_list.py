@@ -51,6 +51,7 @@ class move_node:
         self.active_codes = None    #see MovelistParser.py line 261: class ActiveCodes(Enum)
         
         self.move_name = ""
+        self.range = 0              #see TekkenGameState.py GetRangeOfMove()
         
         self.cab_be_done_from_neutral = False #see MovelistParser.py line 137: if node.cancel_window_1 >= 0x7FFF:
 
