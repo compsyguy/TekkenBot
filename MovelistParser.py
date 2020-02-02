@@ -3,13 +3,15 @@ from collections import Counter
 from collections import defaultdict
 from MoveInfoEnums import InputDirectionCodes
 
+import csv
+
 class MovelistParser:
     class EscapeAll(bytes):
         def __str__(self):
             return 'b\'{}\''.format(''.join('\\x{:02x}'.format(b) for b in self))
 
     class MoveNode:
-        def __init__(self, forty_bytes, offset, all_bytes, all_names):
+        def __init__(self, forty_bytes, offset, all_bytes, all_names, csv_writer):
 
             #self.input_bytes = forty_bytes[0:8]
 
@@ -54,6 +56,17 @@ class MovelistParser:
                 self.name = all_names[self.move_id]
             else:
                 self.name = str(self.move_id)
+            
+            ####
+            ##This code is used for pulling data from the movelist nodes. Commented out since its only useful for inspection
+            #csv_writer.writerow([self.direction_bytes, self.unknown_input_dir, 
+            #                     self.attack_bytes, self.button_press, 
+            #                     self.pointer_one, self.pointer_two, 
+            #                     self.number_one, self.number_two, 
+            #                     self.unknown_bool, self.cancel_window_1, 
+            #                     self.cancel_window_2, self.move_id, 
+            #                     self.move_requires_input, self.name])
+            ####
 
         def __repr__(self):
             return '{} | {} |{:x} | {} | {} | {:x} | {:x} | {} | {} | {} | {:x} | {}'.format(
@@ -68,6 +81,8 @@ class MovelistParser:
 
 
     def parse_header(self):
+    
+        
         header_length = 0x2e8
         header_bytes = self.bytes[0:header_length]
         identifier = self.header_line(0)
@@ -81,6 +96,29 @@ class MovelistParser:
         self.char_name = self.bytes[char_name_address:developer_name_address].strip(b'\00').decode('utf-8')
         print("Parsing movelist for {}".format(self.char_name))
 
+        #################
+        ##This code is used for pulling data from the movelist nodes. Commented out since its only useful for inspection
+        #move_list_file = open("tmp/" + self.char_name, mode="w", newline='')
+        #move_list_csv = csv.writer(move_list_file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        #move_list_csv.writerow(["Direction Bytes",
+        #                        "Unknown Input Dir",
+        #                        "Attack Bytes",
+        #                        "Button Press",
+        #                        "Pointer One",
+        #                        "Pointer Two",
+        #                        "Number One",
+        #                        "Number Two",
+        #                        "Unknown Bool",
+        #                        "Cancel Window 1",
+        #                        "Cancel Window 2",
+        #                        "Move Id",
+        #                        "move Requires Input",
+        #                        "Name"])
+        #################
+        #This is here to make when we're not outputting to csv
+        move_list_csv = None
+        #################
+        
         unknown_regions = {}
         for i in range(42, 91, 2):
             unknown_regions[i] = self.header_line(i)
@@ -95,14 +133,26 @@ class MovelistParser:
 
         self.move_nodes_raw = self.bytes[unknown_regions[54]:unknown_regions[58]] #there's two regions of move nodes, first one might be blocks????
         self.move_nodes = []
+        #print(len(self.move_nodes_raw))
         for i in range(0, len(self.move_nodes_raw), 40):
-            self.move_nodes.append(MovelistParser.MoveNode(self.move_nodes_raw[i:i+40], self.pointer, self.bytes, self.names))
-
+            ##########
+            self.move_nodes.append(MovelistParser.MoveNode(self.move_nodes_raw[i:i+40], self.pointer, self.bytes, self.names, move_list_csv))
+            ##########
 
         self.linked_nodes_raw = self.bytes[unknown_regions[46]:unknown_regions[48]]
         self.linked_nodes = []
+        
+        #################
+        ##This code is used for pulling data from the movelist nodes. Commented out since its only useful for inspection
+        #move_list_csv.writerow("")
+        #print(len(self.linked_nodes_raw))
         #for i in range(0, len(self.linked_nodes_raw), 24):
-
+        #for i in range(0, len(self.linked_nodes_raw), 2):
+        #    row = []
+        #    for k in range(0, 12, 2):
+        #        row.append(int(struct.unpack('<H', self.linked_nodes_raw[i+k:i+k+2])[0]))
+        #    move_list_csv.writerow(row)
+        ################
         #for node in self.move_nodes:
             #if node.move_id == 324:
                 #print(node.move_id)
@@ -146,7 +196,8 @@ class MovelistParser:
                 inputs = self.democratically_chosen_input[node.move_id]
             inputs.append((node.direction_bytes, node.attack_bytes, node.button_press))
 
-
+        #for node in self.move_nodes:
+        #    print(node.direction_bytes)
 
         sort_directions = {}
         sort_directions = defaultdict(lambda : 0, sort_directions)
