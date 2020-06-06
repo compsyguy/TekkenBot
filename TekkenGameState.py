@@ -186,7 +186,14 @@ class TekkenGameReader:
                 value = self.module_address
                 for i, offset in enumerate(addresses):
                     if i + 1 < len(addresses):
-                        value = self.GetValueFromAddress(processHandle, value + offset, is64bit=True)
+                        #value = self.GetValueFromAddress(processHandle, value + offset, is64bit=True)
+                        data = c.c_ulonglong()
+                        bytesRead = c.c_ulonglong()
+                        successful = ReadProcessMemory(processHandle, value + offset, c.byref(data), c.sizeof(data), c.byref(bytesRead))
+                        if not successful:
+                            e = GetLastError()
+                            break;
+                        value = data.value
                     else:
                         value = self.GetValueFromAddress(processHandle, value + offset, isString=False)
                 
